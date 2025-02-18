@@ -1,0 +1,63 @@
+<html><head><title>Elizabeth Jane Wood (n&eacute;e Jarvis) 1857 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Elizabeth Jane Wood (n&eacute;e Jarvis) 1857 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I3057.html">George Jarvis</a> and <a href="I3131.html">Jane Richardson</a><b>Elizabeth Jarvis</b> was born in London, England in 1857<span class="citation">1,2</span> and married <a href="I3051.html">James Wood</a> (with whom she had 1 child, William Henry, ) on St Mary&apos;s Church, Battersea Church Road, Battersea, London on Jul 16, 1876<span class="citation">3</span>. On Apr 2, 1871, she lived on Europa Cottage, Church Road, Battersea, London<span class="citation">1</span>. </p><h2>Parents</h2><ol><li><a href="I3057.html">George</a> was born in 1841</li><li><a href="I3131.html">Jane</a> was born in 1835</li></ol><h2>Children</h2><ol><li><a href="I3033.html">William Henry</a> was born on Jun 11, 1880</li></ol><h2>Citations</h2><ol><li>1871 England, Wales &amp; Scotland Census - Findmypast (was age 14 and the daughter of the head of the household)</li><li>England Marriages 1538-1973 - Findmypast</li><li>England &amp; Wales Marriages 1837-2005 - Findmypast</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=bmd/m/1876/3/az/000147/251" target="_blank">England &amp; Wales marriages 1837-2005 - BMD/M/1876/3/AZ/000147/251</a><br><a href="https://search.findmypast.co.uk/record?id=r_843164701/2" target="_blank">England Marriages 1538-1973 - R_843164701/2</a><br><a href="https://search.findmypast.co.uk/record?id=r_853659878/2" target="_blank">England Marriages 1538-1973 - R_853659878/2</a><br><a href="https://search.findmypast.co.uk/record?id=gbc/1871/0004299991" target="_blank">1871 England, Wales &amp; Scotland Census - GBC/1871/0004299991</a><br><h2>Family Tree</h2><img src="img/family-tree-I3052.png" width="287" height="266" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I3057.html" title="George Jarvis\nb. 1841" alt="" coords="5,9,101,57"/><area shape="rect" id="node3" href="I3052.html" title="Elizabeth Jarvis\nb. 1857" alt="" coords="62,109,169,157"/><area shape="rect" id="node2" href="I3131.html" title="Jane Richardson\nb. 1835\nd. abt Feb 1910" alt="" coords="124,5,235,61"/><area shape="rect" id="node4" href="I3051.html" title="James Wood\nb. abt 1855" alt="" coords="193,109,281,157"/><area shape="rect" id="node5" href="I3033.html" title="William Wood\nb. 11 Jun 1880\nd. abt May 1952" alt="" coords="60,205,171,261"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.502939175, -0.17671645], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.527076, -0.1828474]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Europa+Cottage,+Church+Road,+Battersea,+London,+England">Europa Cottage, Church Road, Battersea, London, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
+var marker = L.marker([51.47880235, -0.1705855]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Marys+Church,+Battersea+Church+Road,+Battersea,+London,+England">St Marys Church, Battersea Church Road, Battersea, London, England</a><br><p>Marriage on Jul 16, 1876</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.502939175, -0.17671645], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

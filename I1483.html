@@ -1,0 +1,64 @@
+<html><head><title>Mary Stupple 1839 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Mary Stupple 1839 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Mary Ann</b>, the wife of <a href="I174.html">James Stupple</a> (the three times great-uncle of <a href="I1.html">Nigel Horne</a>), was born in Herne Bay, Kent, England in 1839<span class="citation">1</span>had 6 children, John, Ada E, Florence Eliza, James Henry, Frederick and George Edward.</p><p>Throughout her life, she lived at Queen Street in Herne Bay on Apr 2, 1871<span class="citation">3</span>; and at 10 Victoria Terrace in Herne Bay on Apr 3, 1881<span class="citation">2</span> and on Apr 5, 1891<span class="citation">1</span>. </p><h2>Children</h2><ol><li><a href="I2000.html">John</a> was born <i>c.</i> 1863</li><li><a href="I1766.html">Florence Eliza</a> was born in 1868</li><li><a href="I1484.html">James Henry</a> was born on Aug 21, 1870</li><li><a href="I1767.html">Frederick</a> was born on Jan 11, 1873</li><li><a href="I1482.html">George Edward</a> was born <i>c.</i> 1875</li></ol><h2>Citations</h2><ol><li>1891 England, Wales &amp; Scotland Census - Findmypast (was age 52 and the wife of the head of the household)</li><li>1881 England, Wales &amp; Scotland Census - Findmypast (was age 40 and the wife of the head of the household)</li><li>1871 England, Wales &amp; Scotland Census - Findmypast (was age 31 and the wife of the head of the household)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I1483.png" width="747" height="170" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I1483.html" title="Mary Ann\nb. 1839" alt="" coords="307,9,383,57"/><area shape="rect" id="node2" href="I174.html" title="James Stupple\nb. abt May 1838\nd. abt May 1917" alt="" coords="407,5,517,61"/><area shape="rect" id="node3" href="I2000.html" title="John Stupple\nb. abt 1863" alt="" coords="5,113,98,161"/><area shape="rect" id="node5" href="I1766.html" title="Florence Stuppell\nb. 1868" alt="" coords="218,113,336,161"/><area shape="rect" id="node6" href="I1484.html" title="James Stuppell\nb. 21 Aug 1870" alt="" coords="360,113,466,161"/><area shape="rect" id="node7" href="I1767.html" title="Frederick Stupple\nb. 11 Jan 1873\nd. 27 Feb 1929" alt="" coords="490,109,608,165"/><area shape="rect" id="node8" href="I1482.html" title="George Stupple\nb. abt 1875\nd. abt May 1931" alt="" coords="631,109,741,165"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.36938365, 0.80899502], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.3721003, 0.48465704]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=10+Victoria+Terrace,+Herne+Bay,+Kent,+England">10 Victoria Terrace, Herne Bay, Kent, England</a><br><p>Living on Apr 5, 1891</p><p>Living on Apr 3, 1881</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne+Bay,+Kent,+England">Herne Bay, Kent, England</a><br><p>Birth in 1839</p>'); markers.push(marker);
+var marker = L.marker([51.36979258143734, 1.1272978194205807]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Queen+Street,+Herne+Bay,+Kent,+England">Queen Street, Herne Bay, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.36938365, 0.80899502], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

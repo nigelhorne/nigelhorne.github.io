@@ -1,0 +1,63 @@
+<html><head><title>Ann Lawrence (n&eacute;e Cooper) c1780 - 1833</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Ann Lawrence (n&eacute;e Cooper) c1780 - 1833</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Ann Cooper</b>, the 3 times great-grandmother of <a href="I1.html">Nigel Horne</a>, was born in Kent, England <i>c.</i> 1780 and married <a href="I137.html">Zechariah Lawrence</a> (a laborer with whom she had 7 children: <a href="I3680.html">John</a>, <a href="I3681.html">Stephen</a>, <a href="I230.html">Thomas</a>, <a href="I3673.html">Edward</a>, <a href="I3674.html">Henry</a>, <a href="I3675.html">Ezekiel</a> and <a href="I104.html">William</a>) at St. Clements Church, Sandwich, Kent on Dec 18, 1807<span class="citation">1</span>. In 1807, she lived in Sandwich, Kent, England. <p>She died in 1833 and was buried on Jul 29, 1833.</p><h2>Children</h2><ol><li><a href="I3680.html">John</a> was born <i>c.</i> 1780</li><li><a href="I3681.html">Stephen</a> was born <i>c.</i> 1782</li><li><a href="I230.html">Thomas</a> was born <i>c.</i> 1808</li><li><a href="I3673.html">Edward</a> was born <i>c.</i> 1819</li><li><a href="I3674.html">Henry</a> was born <i>c.</i> 1822</li><li><a href="I3675.html">Ezekiel</a> was born <i>c.</i> 1823</li><li><a href="I104.html">William</a> was born <i>c.</i> 1827</li></ol><h2>Citations</h2><ol><li>Familysearch.org (<a href="http://www.familysearch.org/Eng/search/IGI/individual_record.asp?recid=100010036903&amp;lds=1&amp;region=2&amp;frompage=99">www.familysearch.org</a>)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I136.png" width="968" height="170" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I136.html" title="Ann Cooper\nb. abt 1780\nd. 1833" alt="" coords="436,5,524,61"/><area shape="rect" id="node2" href="I137.html" title="Zechariah Lawrence\nb. abt 1784\nd. abt 1833" alt="" coords="547,5,679,61"/><area shape="rect" id="node3" href="I3680.html" title="John Lawrence\nb. abt 1780" alt="" coords="5,113,109,161"/><area shape="rect" id="node4" href="I3681.html" title="Stephen Lawrence\nb. abt 1782" alt="" coords="132,113,254,161"/><area shape="rect" id="node5" href="I230.html" title="Thomas Laurence\nb. abt 1808\nd. 30 Apr 1878" alt="" coords="278,109,396,165"/><area shape="rect" id="node6" href="I3673.html" title="Edward Lawrence\nb. abt 1819" alt="" coords="420,113,539,161"/><area shape="rect" id="node7" href="I3674.html" title="Henry Lawrence\nb. abt 1822" alt="" coords="564,113,675,161"/><area shape="rect" id="node8" href="I3675.html" title="Ezekiel Lawrence\nb. abt 1823" alt="" coords="699,113,818,161"/><area shape="rect" id="node9" href="I104.html" title="William Lawrence\nb. abt 1827\nd. 11 Jun 1898" alt="" coords="842,109,962,165"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.2702031881978, 1.34609210361535], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.266667, 1.35]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sandwich,+Kent,+England">Sandwich, Kent, England</a><br><p>Living in 1807</p>'); markers.push(marker);
+var marker = L.marker([51.27373937639556, 1.3421842072306962]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St.+Clements+Church,+Sandwich,+Kent,+England">St. Clements Church, Sandwich, Kent, England</a><br><p>Marriage on Dec 18, 1807</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.2702031881978, 1.34609210361535], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

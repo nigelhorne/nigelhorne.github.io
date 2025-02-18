@@ -1,0 +1,66 @@
+<html><head><title>Uldene A Bainbridge (n&eacute;e Reynolds) 1896 - 1980</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Uldene A Bainbridge (n&eacute;e Reynolds) 1896 - 1980</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Uldene Reynolds</b>, the wife of <a href="I2070.html">George Milton Bainbridge</a> (the third cousin three-times-removed on the mother's side of <a href="I1.html">Nigel Horne</a>), was born in Michigan, USA in 1896<span class="citation">1,2</span> and married George (a boilermaker with whom she had 5 children: <a href="I2126.html">Donald Arthur</a>, <a href="I2413.html">Florence</a>, <a href="I2414.html">Velma</a>, <a href="I2415.html">Cleo</a> and <a href="I2416.html">Phyllis</a>, along with 4 surviving children) in Grand Haven, Michigan, USA on Sep 23, 1915.</p><p>Throughout her life, Uldene lived in several places: in St Joseph, Indiana, USA on Jan 1, 1920<span class="citation">1</span>; in Calumet, Lake, Indiana on Apr 1, 1930<span class="citation">2</span>; and in Hammond, Lake, Indiana on Apr 1, 1940<span class="citation">3</span>. <p>She died in 1980 and was buried at Elmwood Cemetery, Hammond, Lake, Indiana after 1980.</p><h2>Children</h2><ol><li><a href="I2126.html">Donald Arthur</a> was born in 1916</li></ol><h2>Citations</h2><ol><li>US Census 1920 - Findmypast (was age 23 and the wife of the head of the household)</li><li>US Census 1930 - Findmypast (was age 34 and the wife of the head of the household)</li><li>US Census 1940 - Findmypast (was age 43 and the wife of the head of the household)</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=usc/1940/1462426440" target="_blank">US Census 1940 - USC/1940/1462426440</a><br><h2>Family Tree</h2><img src="img/family-tree-I2125.png" width="521" height="170" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2125.html" title="Uldene Reynolds\nb. 1896\nd. 1980" alt="" coords="229,5,345,61"/><area shape="rect" id="node2" href="I2070.html" title="George Bainbridge\nb. 19 Dec 1892\nd. 1 Aug 1964" alt="" coords="370,5,495,61"/><area shape="rect" id="node3" href="I2126.html" title="Donald Bainbridge\nb. 1916\nd. 1934" alt="" coords="5,109,132,165"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([40.521935, -86.65154665], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([41.58519, -87.35568]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Calumet,+Lake,+Indiana,+USA">Calumet, Lake, Indiana, USA</a><br><p>Living on Apr 1, 1930</p>'); markers.push(marker);
+var marker = L.marker([41.58948, -87.49476]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Elmwood+Cemetery,+Hammond,+Lake,+Indiana,+USA">Elmwood Cemetery, Hammond, Lake, Indiana, USA</a><br><p>Burial</p>'); markers.push(marker);
+var marker = L.marker([43.06307, -86.22839]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Grand+Haven,+Michigan,+USA">Grand Haven, Michigan, USA</a><br><p>Marriage on Sep 23, 1915</p>'); markers.push(marker);
+var marker = L.marker([37.9808, -86.9643]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Hammond,+Lake,+Indiana,+USA">Hammond, Lake, Indiana, USA</a><br><p>Living on Apr 1, 1940</p>'); markers.push(marker);
+var marker = L.marker([38.4000000, -85.8083333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Joseph,+Indiana,+USA">St Joseph, Indiana, USA</a><br><p>Living on Jan 1, 1920</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([40.521935, -86.65154665], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

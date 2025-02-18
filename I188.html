@@ -1,0 +1,63 @@
+<html><head><title>John Mount - 1818</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>John Mount - 1818</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>John Mount</b> was the 5 times great-grandfather of <a href="I1.html">Nigel Horne</a> and married <a href="I187.html">Margaret Lamb</a> (with whom he had 11 children: <a href="I175.html">Thomas</a>, <a href="I258.html">Isaac</a>, <a href="I259.html">William</a>, <a href="I251.html">Mary</a>, <a href="I256.html">Alice</a>, <a href="I253.html">Ann M</a>, <a href="I252.html">John</a>, <a href="I250.html">James</a>, <a href="I257.html">Mary</a>, <a href="I254.html">Maria</a> and <a href="I255.html">Margaret</a>) in Monkton, Kent, England on Feb 15, 1772<span class="citation">1</span>. In 1772, he lived in St Nicholas-at-Wade, Kent, England which is where he died in 1818. He was buried there on May 13, 1818 (KFHS CD17).</p><h2>Children</h2><ol><li><a href="I175.html">Thomas</a> was born in 1774</li><li><a href="I258.html">Isaac</a> was born <i>c.</i> 1776</li><li><a href="I259.html">William</a> was born <i>c.</i> 1778</li><li><a href="I251.html">Mary</a> was born <i>c.</i> 1782</li><li><a href="I256.html">Alice</a> was born <i>c.</i> 1783</li><li><a href="I253.html">Ann M</a> was born <i>c.</i> 1784</li><li><a href="I252.html">John</a> was born <i>c.</i> 1786</li><li><a href="I250.html">James</a> was born <i>c.</i> 1791</li><li><a href="I257.html">Mary</a> was born <i>c.</i> 1792</li><li><a href="I254.html">Maria</a> was born <i>c.</i> 1793</li><li><a href="I255.html">Margaret</a> was born <i>c.</i> 1796</li></ol><h2>Citations</h2><ol><li>Familysearch.org (<a href="http://www.familysearch.org/Eng/search/IGI/individual_record.asp?recid=100010036903&amp;lds=1&amp;region=2&amp;frompage=99">www.familysearch.org</a>)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I188.png" width="1308" height="170" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I188.html" title="John Mount\nd. 1818" alt="" coords="613,9,700,57"/><area shape="rect" id="node2" href="I187.html" title="Margaret Lamb\nb. abt 1745\nd. Jan 1822" alt="" coords="724,5,829,61"/><area shape="rect" id="node3" href="I175.html" title="Thomas Mount\nb. 1774\nd. 23 Aug 1851" alt="" coords="5,109,111,165"/><area shape="rect" id="node4" href="I258.html" title="Isaac Mount\nb. abt 1776\nd. 1791" alt="" coords="135,109,224,165"/><area shape="rect" id="node5" href="I259.html" title="William Mount\nb. abt 1778" alt="" coords="247,113,352,161"/><area shape="rect" id="node6" href="I251.html" title="Mary Mount\nb. abt 1782" alt="" coords="376,113,466,161"/><area shape="rect" id="node7" href="I256.html" title="Alice Mount\nb. abt 1783" alt="" coords="490,113,581,161"/><area shape="rect" id="node8" href="I253.html" title="Ann Mount\nb. abt 1784\nd. 29 Apr 1861" alt="" coords="606,109,708,165"/><area shape="rect" id="node9" href="I252.html" title="John Mount\nb. abt 1786" alt="" coords="732,113,819,161"/><area shape="rect" id="node10" href="I250.html" title="James Mount\nb. abt 1791" alt="" coords="843,113,937,161"/><area shape="rect" id="node11" href="I257.html" title="Mary Mount\nb. abt 1792\nd. 1792" alt="" coords="961,109,1051,165"/><area shape="rect" id="node12" href="I254.html" title="Maria Mount\nb. abt 1793\nd. 1800" alt="" coords="1075,109,1169,165"/><area shape="rect" id="node13" href="I255.html" title="Margaret Mount\nb. abt 1796\nd. abt 1797" alt="" coords="1192,109,1302,165"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.3433013, 1.26879975], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.333333, 1.283333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Monkton,+Kent,+England">Monkton, Kent, England</a><br><p>Marriage on Feb 15, 1772</p>'); markers.push(marker);
+var marker = L.marker([51.3532696, 1.2542665]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Nicholas-at-Wade,+Kent,+England">St Nicholas-at-Wade, Kent, England</a><br><p>Burial on May 13, 1818</p><p>Living in 1772</p><p>Death in 1818</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.3433013, 1.26879975], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

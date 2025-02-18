@@ -1,0 +1,65 @@
+<html><head><title>Christopher James Grant 1883 - c1954</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Christopher James Grant 1883 - c1954</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Christopher Grant</b> was born in South Shields, Tyne and Wear, England on Sep 18, 1883<span class="citation">1,2,3</span> and married <a href="I3039.html">Henrietta Myers</a> (with whom he had 4 children: <a href="I3065.html">Henrietta Briscoe Nicholson</a>, <a href="I3066.html">Christopher James</a>, <a href="I3080.html">Robert Myers</a> and <a href="I3074.html">Alan</a>) in Tynemouth, Tyne and Wear, England around Aug 1906<span class="citation">4</span>.</p><p>Throughout his life, he lived at 96 Elsdon Street in Tynemouth on Apr 2, 1911<span class="citation">5</span>; and on 4 Coast Road in Tynemouth on Sep 29, 1939<span class="citation">1</span>. <p>He died <i>c.</i> May 1954 in Tynemouth<span class="citation">3</span>.</p><h2>Children</h2><ol><li><a href="I3065.html">Henrietta Briscoe Nicholson</a> was born on Feb 22, 1908</li><li><a href="I3066.html">Christopher James</a> was born on Dec 11, 1909</li><li><a href="I3080.html">Robert Myers</a> was born on Sep 12, 1912</li><li><a href="I3074.html">Alan</a> was born on Sep 15, 1923</li></ol><h2>Citations</h2><ol><li>1939 Register - Findmypast (was the head of the household)</li><li>England &amp; Wales births 1837-2006 - Findmypast</li><li>England &amp; Wales deaths 1837-2007 - Findmypast</li><li>England &amp; Wales Marriages 1837-2005 - Findmypast</li><li>1911 Census for England &amp; Wales - Findmypast (was age 27 and the head of the household)</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=tna/r39/2952/2952c/014/18" target="_blank">1939 Register - TNA/R39/2952/2952C/014/18</a><br><a href="https://search.findmypast.co.uk/record?id=bmd/m/1906/3/az/000159/179" target="_blank">England &amp; Wales marriages 1837-2005 - BMD/M/1906/3/AZ/000159/179</a><br><a href="https://search.findmypast.co.uk/record?id=bmd/d/1954/2/az/000372/080" target="_blank">England &amp; Wales deaths 1837-2007 - BMD/D/1954/2/AZ/000372/080</a><br><a href="https://search.findmypast.co.uk/record?id=bmd/b/1883/4/az/000218/060" target="_blank">England &amp; Wales births 1837-2006 - BMD/B/1883/4/AZ/000218/060</a><br><a href="https://search.findmypast.co.uk/record?id=gbc/1911/rg14/30762/0399/1" target="_blank">1911 Census for England &amp; Wales - GBC/1911/RG14/30762/0399/1</a><br><h2>Family Tree</h2><img src="img/family-tree-I3062.png" width="522" height="170" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I3062.html" title="Christopher Grant\nb. 18 Sep 1883\nd. abt May 1954" alt="" coords="207,5,326,61"/><area shape="rect" id="node2" href="I3039.html" title="Henrietta Myers\nb. 15 Aug 1885\nd. 25 Jun 1952" alt="" coords="351,5,460,61"/><area shape="rect" id="node3" href="I3065.html" title="Henrietta Grant\nb. 22 Feb 1908\nd. abt Nov 1979" alt="" coords="5,109,115,165"/><area shape="rect" id="node4" href="I3066.html" title="Christopher Grant\nb. 11 Dec 1909\nd. abt Feb 1962" alt="" coords="139,109,258,165"/><area shape="rect" id="node5" href="I3080.html" title="Robert Grant\nb. 12 Sep 1912\nd. abt Feb 1990" alt="" coords="282,109,387,165"/><area shape="rect" id="node6" href="I3074.html" title="Alan Grant\nb. 15 Sep 1923\nd. 31 Aug 2014" alt="" coords="411,109,517,165"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([55.004167, -1.43080903216541], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([54.99378225, -1.41119124]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=4+Coast+Road,+Tynemouth,+Tyne+and+Wear,+England">4 Coast Road, Tynemouth, Tyne and Wear, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
+var marker = L.marker([55.003245995205816, -1.4504268243308185]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=96+Elsdon+Street,+Tynemouth,+Tyne+and+Wear,+England">96 Elsdon Street, Tynemouth, Tyne and Wear, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([54.987778, -1.421389]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=South+Shields,+Tyne+and+Wear,+England">South Shields, Tyne and Wear, England</a><br><p>Birth on Sep 18, 1883</p>'); markers.push(marker);
+var marker = L.marker([55.020556, -1.449444]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Tynemouth,+Tyne+and+Wear,+England">Tynemouth, Tyne and Wear, England</a><br><p>Death <i>c.</i> May 1954</p><p>Marriage <i>c.</i> Aug 1906</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([55.004167, -1.43080903216541], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

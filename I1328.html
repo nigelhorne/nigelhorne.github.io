@@ -1,0 +1,66 @@
+<html><head><title>Sarah Forman (n&eacute;e Spratt) c1821 - 1865</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Sarah Forman (n&eacute;e Spratt) c1821 - 1865</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I68.html">William Spratt</a> (a laborer) and <a href="I67.html">Mary Hughes</a><b>Sarah Spratt</b>, the three times great-aunt of <a href="I1.html">Nigel Horne</a>, was born in St Nicholas-at-Wade, Kent, England <i>c.</i> 1821, was baptized there on Oct 14, 1821 and also married <a href="I2009.html">William Forman</a> (with whom she had 1 child, Thomas, ) there, on Oct 12, 1845<span class="citation">1</span>.</p><p>Throughout her life, she lived at The Street in St Nicholas-at-Wade on Jun 6, 1841<span class="citation">2</span>; and at Pepper Alley in St Nicholas-at-Wade on Mar 30, 1851<span class="citation">3</span>. <p>She died on Mar 12, 1865 in New Plymouth, Taranaki, New Zealand and was buried there at Te Henui after Mar 12, 1865.</p><h2>Parents</h2><ol><li><a href="I68.html">William</a> was born on May 14, 1789</li><li><a href="I67.html">Mary</a> was born in 1792</li></ol><h2>Children</h2><ol><li><a href="I3559.html">Thomas</a> was born in 1862</li></ol><h2>Citations</h2><ol><li>Kent, Canterbury Archdeaconry Marriages - Findmypast</li><li>1841 England, Wales &amp; Scotland Census - Findmypast (was age 15)</li><li>1851 England, Wales &amp; Scotland Census - Findmypast (was age 29)</li></ol><h2>Media</h2><h3>Spratt - Foreman - burial record</h3><a href="img/M4078-Spratt-Foreman-burial-record.jpg" target="_blank"><img src="img/M4078-Spratt-Foreman-burial-record.jpg" alt="Spratt - Foreman - burial record" width="175" height="235"></a><br><h3>William Foreman - Sarah Spratt - gravestone</h3><a href="img/M4079-William-Foreman-Sarah-Spratt-gravestone.jpg" target="_blank"><img src="img/M4079-William-Foreman-Sarah-Spratt-gravestone.jpg" alt="William Foreman - Sarah Spratt - gravestone" width="175" height="262"></a><br><a href="https://search.findmypast.co.uk/record?id=GBPRS/CANT/M/97245466/2" target="_blank">Canterbury Marriages Transcription - GBPRS-CANT-M-97245466-2</a><br><a href="https://search.findmypast.co.uk/record?id=gbc/1841/0013960499" target="_blank">1841 England, Wales &amp; Scotland Census - GBC/1841/0013960499</a><br><a href="https://search.findmypast.co.uk/record?id=gbc/1851/0005871512" target="_blank">1851 England, Wales &amp; Scotland Census - GBC/1851/0005871512</a><br><h2>Family Tree</h2><img src="img/family-tree-I1328.png" width="312" height="274" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I68.html" title="William Spratt\nb. 14 May 1789\nd. 6 Mar 1862" alt="" coords="5,5,113,61"/><area shape="rect" id="node3" href="I1328.html" title="Sarah Spratt\nb. abt 1821\nd. 12 Mar 1865" alt="" coords="70,109,174,165"/><area shape="rect" id="node2" href="I67.html" title="Mary Hughes\nb. 1792\nd. abt 1837" alt="" coords="137,5,232,61"/><area shape="rect" id="node4" href="I2009.html" title="William Forman\nb. abt 1820\nd. 8 Sep 1910" alt="" coords="198,109,306,165"/><area shape="rect" id="node5" href="I3559.html" title="Thomas Foreman\nb. 1862\nd. 1942" alt="" coords="64,213,179,268"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([6.14358243916757, 27.8263276258705], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([-39.066667, 174.083333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=New+Plymouth,+Taranaki,+New+Zealand">New Plymouth, Taranaki, New Zealand</a><br><p>Death on Mar 12, 1865</p>'); markers.push(marker);
+var marker = L.marker([34.001666, -118.437993]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Pepper+Alley,+St+Nicholas-at-Wade,+Kent,+England">Pepper Alley, St Nicholas-at-Wade, Kent, England</a><br><p>Living on Mar 30, 1851</p>'); markers.push(marker);
+var marker = L.marker([51.3532696, 1.2542665]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Nicholas-at-Wade,+Kent,+England">St Nicholas-at-Wade, Kent, England</a><br><p>Marriage on Oct 12, 1845</p><p>Baptized on Oct 14, 1821</p><p>Birth <i>c.</i> 1821</p>'); markers.push(marker);
+var marker = L.marker([-39.05151749038841, 174.09064825174107]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Te+Henui,+New+Plymouth,+Taranaki,+New+Zealand">Te Henui, New Plymouth, Taranaki, New Zealand</a><br><p>Burial</p>'); markers.push(marker);
+var marker = L.marker([51.35383187833515, 1.252269721575844]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Street,+St+Nicholas-at-Wade,+Kent,+England">The Street, St Nicholas-at-Wade, Kent, England</a><br><p>Living on Jun 6, 1841</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([6.14358243916757, 27.8263276258705], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

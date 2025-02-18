@@ -1,0 +1,65 @@
+<html><head><title>Ross Peters 1895 - 1986</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Ross Peters 1895 - 1986</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The son of <a href="I1121.html">Harrison Peters</a> and <a href="I1159.html">Maria Robertson</a><b>Ross Peters</b>, the fourth cousin once-removed on the father&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Kamloops District, British Columbia, Canada on Oct 20, 1895<span class="citation">1,2,3,4</span> and married <a href="I1182.html">Alcine Oakes</a> (with whom he had 3 children: <a href="I1183.html">Harrison Ross</a>, <a href="I3129.html">Blanche Marie</a> and <a href="I3128.html">Delbert Alicen</a>, along with 1 surviving child) in Edmonton, Alberta, Canada in 1920.</p><p>Throughout his life, he lived in Humboldt, Saskatchewan, Canada in 1906<span class="citation">1</span> and in 1911<span class="citation">2</span>; and at 907 Howe Street, Vancouver, British Columbia, Canada in 1918<span class="citation">4</span>. That is also where he died on Oct 20, 1986 in Edmonton.</p><h2>Parents</h2><ol><li><a href="I1121.html">Harrison Fletcher</a> was born on Aug 29, 1867</li><li><a href="I1159.html">Maria Ellen</a> was born <i>c.</i> 1872</li></ol><h2>Children</h2><ol><li><a href="I1183.html">Harrison Ross</a> was born on Mar 19, 1921</li><li><a href="I3128.html">Delbert Alicen</a> was born on Oct 10, 1927</li></ol><h2>Citations</h2><ol><li>1906 Canada Census of Manitoba, Saskatchewan, and Alberta Ancestry.com Operations Inc (Relation to Head of House: SonMarital Status: Single)</li><li>1911 Census of Canada Online publication - Provo, UT, USA: Ancestry.com Operations Inc, 2006. .Original data - Library and Archives Canada. Census of Canada, 1911. Ottawa, Ontario, Canada: Library and Archives Canada, 2007. http://www.collectionscanada.gc.ca/databases/census-19 (Marital Status: SingleRelation to Head of House: Child)</li><li>British Columbia, Canada, Birth Index, 1872-1903 Ancestry.com Operations Inc</li><li>Canada, Soldiers of the First World War, 1914-1918 Ancestry.com Operations, Inc.</li><li>Canada Census 1911 - Findmypast (was a child in the household)</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=can/census/1911/06767529" target="_blank">Canada Census 1911 - CAN/CENSUS/1911/06767529</a><br><a href="https://search.findmypast.co.uk/record?id=us/mcv/101185/01079588479926420931" target="_blank">British Columbia, Canada, Birth Index, 1854&acirc;&#128;&#147;1903 - US/MCV/101185/01079588479926420931</a><br><h2>Family Tree</h2><img src="img/family-tree-I1158.png" width="353" height="274" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I1121.html" title="Harrison Peters\nb. 29 Aug 1867\nd. 25 May 1925" alt="" coords="49,5,156,61"/><area shape="rect" id="node3" href="I1158.html" title="Ross Peters\nb. 20 Oct 1895\nd. 20 Oct 1986" alt="" coords="118,109,221,165"/><area shape="rect" id="node2" href="I1159.html" title="Maria Robertson\nb. abt 1872\nd. 28 May 1963" alt="" coords="180,5,292,61"/><area shape="rect" id="node4" href="I1182.html" title="Alcine Oakes\nb. 26 Apr 1901\nd. 23 Feb 1976" alt="" coords="245,109,347,165"/><area shape="rect" id="node5" href="I1183.html" title="Harrison Peters\nb. 19 Mar 1921\nd. 13 Dec 2010" alt="" coords="5,213,110,268"/><area shape="rect" id="node7" href="I3128.html" title="Delbert Peters\nb. 10 Oct 1927\nd. 30 Dec 2015" alt="" coords="229,213,334,268"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.415617, -114.1237735], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([49.281094, -123.122047]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=907+Howe+Street,+Vancouver,+British+Columbia,+Canada">907 Howe Street, Vancouver, British Columbia, Canada</a><br><p>Living in 1918</p>'); markers.push(marker);
+var marker = L.marker([53.55014, -113.46871]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Edmonton,+Alberta,+Canada">Edmonton, Alberta, Canada</a><br><p>Marriage in 1920</p><p>Death on Oct 20, 1986</p>'); markers.push(marker);
+var marker = L.marker([52.20005, -105.1255]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Humboldt,+Saskatchewan,+Canada">Humboldt, Saskatchewan, Canada</a><br><p>Living in 1906</p>'); markers.push(marker);
+var marker = L.marker([50.6758269, -120.339415]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kamloops+District,+British+Columbia,+Canada">Kamloops District, British Columbia, Canada</a><br><p>Birth on Oct 20, 1895</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.415617, -114.1237735], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

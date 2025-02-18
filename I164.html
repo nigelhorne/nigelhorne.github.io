@@ -1,0 +1,68 @@
+<html><head><title>Edward Dale 1783 - c1870</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Edward Dale 1783 - c1870</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Edward Dale</b>, the 4 times great-grandfather of <a href="I1.html">Nigel Horne</a>, was born in Canterbury, Kent, England in 1783<span class="citation">1</span> and married <a href="I163.html">Ann Stone</a> (with whom he had 5 children: <a href="I80.html">Edward</a>, <a href="I1898.html">Elizabeth</a>, <a href="I2215.html">William</a>, <a href="I2213.html">Esther</a> and <a href="I2214.html">Frances</a>) at St Mary Bredin&apos;s Church in Canterbury on Jul 13, 1806<span class="citation">3</span>.</p><p>Throughout his life, Edward lived in several places: in Chartham Hatch, Kent, England on Jun 6, 1841<span class="citation">7</span>; on North Lane, Westgate in Canterbury on Mar 30, 1851<span class="citation">6</span>; and at Nunnery Cottages in Canterbury on Apr 7, 1861<span class="citation">5</span>. <p>He died <i>c.</i> Jan 1870 in Bridge, Kent, England<span class="citation">2</span> and was buried at St Mary, Chartham, Kent on Jan 7, 1870<span class="citation">4</span>.</p><h2>Children</h2><ol><li><a href="I80.html">Edward</a> was born in 1806</li><li><a href="I1898.html">Elizabeth</a> was born <i>c.</i> 1808</li><li><a href="I2215.html">William</a> was born <i>c.</i> 1825</li><li><a href="I2213.html">Esther</a> was born <i>c.</i> 1826</li><li><a href="I2214.html">Frances</a> was born <i>c.</i> 1829</li></ol><h2>Citations</h2><ol><li>Kent, Canterbury Archdeaconry burials 1538-1988 - Findmypast</li><li>England &amp; Wales deaths 1837-2007 - Findmypast</li><li>Kent, Canterbury Archdeaconry marriages 1538-1928 - Findmypast</li><li>Kent, Canterbury Archdeaconry burials 1538-1988 - Findmypast</li><li>1861 England, Wales &amp; Scotland Census - Findmypast (was age 84 and the brother of the head of the household)</li><li>1851 England, Wales &amp; Scotland Census - Findmypast (was age 70 and the head of the household)</li><li>1841 England, Wales &amp; Scotland Census - Findmypast (was age 55)</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=bmd/d/1870/1/az/000094/030" target="_blank">England &amp; Wales deaths 1837-2007 - BMD/D/1870/1/AZ/000094/030</a><br><a href="https://search.findmypast.co.uk/record?id=gbprs/cant/m/97174419/1" target="_blank">Kent, Canterbury Archdeaconry marriages 1538-1928 - GBPRS/CANT/M/97174419/1</a><br><a href="https://search.findmypast.co.uk/record?id=r_847966590" target="_blank">England Marriages 1538-1973 - R_847966590</a><br><a href="https://search.findmypast.co.uk/record?id=gbprs/cant/d/95595682" target="_blank">Kent, Canterbury Archdeaconry burials 1538-1988 - GBPRS/CANT/D/95595682</a><br><a href="https://search.findmypast.co.uk/record?id=gbc/1851/0005790120" target="_blank">1851 England, Wales &amp; Scotland Census - GBC/1851/0005790120</a><br><a href="https://search.findmypast.co.uk/record?id=gbc/1841/0014002980" target="_blank">1841 England, Wales &amp; Scotland Census - GBC/1841/0014002980</a><br><h2>Family Tree</h2><img src="img/family-tree-I164.png" width="598" height="170" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I164.html" title="Edward Dale\nb. 1783\nd. abt Jan 1870" alt="" coords="264,5,367,61"/><area shape="rect" id="node2" href="I163.html" title="Ann Stone\nb. abt 1785" alt="" coords="392,9,474,57"/><area shape="rect" id="node3" href="I80.html" title="Edward Dale\nb. 1806\nd. 5 Mar 1894" alt="" coords="5,109,103,165"/><area shape="rect" id="node4" href="I1898.html" title="Elizabeth Dale\nb. abt 1808\nd. abt May 1850" alt="" coords="127,109,237,165"/><area shape="rect" id="node5" href="I2215.html" title="William Dale\nb. abt 1825\nd. abt Aug 1910" alt="" coords="261,109,370,165"/><area shape="rect" id="node6" href="I2213.html" title="Esther Dale\nb. abt 1826" alt="" coords="393,113,478,161"/><area shape="rect" id="node7" href="I2214.html" title="Frances Dale\nb. abt 1829" alt="" coords="502,113,593,161"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([49.492228, -60.603191], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.233333, 1.116667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bridge,+Kent,+England">Bridge, Kent, England</a><br><p>Death <i>c.</i> Jan 1870</p>'); markers.push(marker);
+var marker = L.marker([51.266667, 1.083333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Canterbury,+Kent,+England">Canterbury, Kent, England</a><br><p>Birth in 1783</p>'); markers.push(marker);
+var marker = L.marker([51.271000150000006, 1.0148461685648626]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chartham+Hatch,+Kent,+England">Chartham Hatch, Kent, England</a><br><p>Living on Jun 6, 1841</p>'); markers.push(marker);
+var marker = L.marker([47.710927, -122.323049]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=North+Lane,+Westgate,+Canterbury,+Kent,+England">North Lane, Westgate, Canterbury, Kent, England</a><br><p>Living on Mar 30, 1851</p>'); markers.push(marker);
+var marker = L.marker([51.2717795, 1.0807307]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Nunnery+Cottages,+Canterbury,+Kent,+England">Nunnery Cottages, Canterbury, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
+var marker = L.marker([51.273529, 1.0840103]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+Bredins+Church,+Canterbury,+Kent,+England">St Mary Bredins Church, Canterbury, Kent, England</a><br><p>Marriage on Jul 13, 1806</p>'); markers.push(marker);
+var marker = L.marker([51.255900499999996, 1.0180764569357008]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary,+Chartham,+Kent,+England">St Mary, Chartham, Kent, England</a><br><p>Burial on Jan 7, 1870</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([49.492228, -60.603191], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

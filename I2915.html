@@ -1,0 +1,64 @@
+<html><head><title>Leonard Charles Eric Webb 1917 - 1947</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Leonard Charles Eric Webb 1917 - 1947</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Leonard Webb</b>, the husband of <a href="I2745.html">Phyllis Jessie Clara Tutt</a> (the second cousin once-removed on the father's side of <a href="I1.html">Nigel Horne</a>), was born in Finglesham, Kent, England on Feb 6, 1917<span class="citation">1,2,3</span>. He married Phyllis (a domestic servant) in St Lawrence, Thanet, Kent, England on Mar 30, 1940<span class="citation">4</span>. On Sep 29, 1939, he lived in Northbourne, Kent, England<span class="citation">1</span>. <p>He died on Aug 6, 1947 in Finglesham<span class="citation">3</span>.</p><h2>Citations</h2><ol><li>1939 Register - Findmypast (was the son of the head of the household)</li><li>England &amp; Wales births 1837-2006 - Findmypast</li><li>England &amp; Wales deaths 1837-2007 - Findmypast</li><li>England &amp; Wales Marriages 1837-2005 - Findmypast</li></ol><h2>Media</h2><h3>Thanet Advertiser - 5 Apr 1940</h3><a href="img/M7852-Thanet-Advertiser-5-Apr-1940.jpg" target="_blank"><img src="img/M7852-Thanet-Advertiser-5-Apr-1940.jpg" alt="Thanet Advertiser - 5 Apr 1940" width="175" height="238"></a><br><a href="https://search.findmypast.co.uk/record?id=bmd/m/1940/1/az/001651/060" target="_blank">England &amp; Wales marriages 1837-2005 - BMD/M/1940/1/AZ/001651/060</a><br><a href="https://search.findmypast.co.uk/transcript?id=TNA/R39/1822/1822K/020/31" target="_blank">1939 Register - TNA-R39-1822-1822K-020-31</a><br><a href="https://search.findmypast.co.uk/record?id=bmd/d/1947/3/az/000886/149" target="_blank">England &amp; Wales deaths 1837-2007 - BMD/D/1947/3/AZ/000886/149</a><br><a href="https://search.findmypast.co.uk/record?id=bmd/b/1917/1/az/001404/127" target="_blank">England &amp; Wales births 1837-2006 - BMD/B/1917/1/AZ/001404/127</a><br><h2>Family Tree</h2><img src="img/family-tree-I2915.png" width="245" height="66" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2915.html" title="Leonard Webb\nb. 6 Feb 1917\nd. 6 Aug 1947" alt="" coords="5,5,106,61"/><area shape="rect" id="node2" href="I2745.html" title="Phyllis Tutt\nb. 21 Mar 1916\nd. abt May 1988" alt="" coords="130,5,240,61"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.2769637, 1.36772495], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.2355213, 1.3464627]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Finglesham,+Kent,+England">Finglesham, Kent, England</a><br><p>Death on Aug 6, 1947</p><p>Birth on Feb 6, 1917</p>'); markers.push(marker);
+var marker = L.marker([51.216667, 1.333333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Northbourne,+Kent,+England">Northbourne, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
+var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Marriage on Mar 30, 1940</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.2769637, 1.36772495], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

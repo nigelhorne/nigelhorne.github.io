@@ -1,0 +1,64 @@
+<html><head><title>Harriett Horne (n&eacute;e Woods) 1860 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Harriett Horne (n&eacute;e Woods) 1860 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Harriett Woods</b>, the wife of <a href="I198.html">Thomas Warner Horne</a> (the great-great-uncle of <a href="I1.html">Nigel Horne</a>), was born in Cobham, Surrey, England in 1860<span class="citation">1</span> and married Thomas (a brewer&apos;s drayman with whom she had 7 children: <a href="I2170.html">Ellen</a>, <a href="I1852.html">Thomas William</a>, <a href="I1853.html">Maria Annie</a>, <a href="I1854.html">John Christopher</a>, <a href="I1855.html">Rosa Emily</a>, <a href="I1850.html">Frederick Sidney</a> and <a href="I1851.html">Hilda Alice</a>) in St Pancras, London, England around Nov 1878<span class="citation">2</span>.</p><p>Throughout her life, she lived at Derby Buildings, Britannia Street in St Pancras on Apr 3, 1881<span class="citation">3</span>, on Mar 31, 1901<span class="citation">4</span>, on Apr 2, 1911<span class="citation">5</span> and on Jun 19, 1921<span class="citation">1</span>. </p><h2>Children</h2><ol><li><a href="I2170.html">Ellen</a> was born <i>c.</i> 1880</li><li><a href="I1852.html">Thomas William</a> was born on Jun 13, 1881</li><li><a href="I1853.html">Maria Annie</a> was born on Oct 15, 1883</li><li><a href="I1854.html">John Christopher</a> was born on Feb 18, 1886</li><li><a href="I1855.html">Rosa Emily</a> was born on Apr 7, 1888</li><li><a href="I1850.html">Frederick Sidney</a> was born on Sep 19, 1890</li><li><a href="I1851.html">Hilda Alice</a> was born on Jun 27, 1898</li></ol><h2>Citations</h2><ol><li>1921 Census Of England &amp; Wales - Findmypast (was age 61 and the wife of the head of the household)</li><li>England &amp; Wales Marriages 1837-2005 - Findmypast</li><li>1881 England, Wales &amp; Scotland Census - Findmypast (was age 20 and the wife of the head of the household)</li><li>1901 England, Wales &amp; Scotland Census - Findmypast (was age 40 and the wife of the head of the household)</li><li>1911 Census for England &amp; Wales - Findmypast (was age 50 and the wife of the head of the household)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I1849.png" width="869" height="170" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I1849.html" title="Harriett Woods\nb. 1860" alt="" coords="375,9,478,57"/><area shape="rect" id="node2" href="I198.html" title="Thomas Horne\nb. abt Nov 1854\nd. 1929" alt="" coords="502,5,612,61"/><area shape="rect" id="node3" href="I2170.html" title="Ellen Horne\nb. abt 1880" alt="" coords="5,113,93,161"/><area shape="rect" id="node4" href="I1852.html" title="Thomas Horne\nb. 13 Jun 1881" alt="" coords="117,113,218,161"/><area shape="rect" id="node5" href="I1853.html" title="Maria Horne\nb. 15 Oct 1883\nd. abt Aug 1975" alt="" coords="243,109,351,165"/><area shape="rect" id="node6" href="I1854.html" title="John Horne\nb. 18 Feb 1886\nd. 30 Sep 1973" alt="" coords="375,109,478,165"/><area shape="rect" id="node7" href="I1855.html" title="Rosa Horne\nb. 7 Apr 1888\nd. 4 Oct 1941" alt="" coords="501,109,597,165"/><area shape="rect" id="node8" href="I1850.html" title="Frederick Horne\nb. 19 Sep 1890\nd. abt Nov 1969" alt="" coords="621,109,730,165"/><area shape="rect" id="node9" href="I1851.html" title="Hilda Horne\nb. 27 Jun 1898\nd. abt Nov 1981" alt="" coords="754,109,864,165"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.4316515, -0.26433445], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.32997, -0.4113]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Cobham,+Surrey,+England">Cobham, Surrey, England</a><br><p>Birth in 1860</p>'); markers.push(marker);
+var marker = L.marker([51.5300576, -0.1173689]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Derby+Buildings,+Britannia+Street,+St+Pancras,+London,+England">Derby Buildings, Britannia Street, St Pancras, London, England</a><br><p>Living on Apr 2, 1911</p><p>Living on Jun 19, 1921</p><p>Living on Mar 31, 1901</p><p>Living on Apr 3, 1881</p>'); markers.push(marker);
+var marker = L.marker([51.533333, -.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Pancras,+London,+England">St Pancras, London, England</a><br><p>Marriage <i>c.</i> Nov 1878</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.4316515, -0.26433445], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

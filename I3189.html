@@ -1,0 +1,64 @@
+<html><head><title>Elsie Louisa Mary Pope 1915 - 1969</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Elsie Louisa Mary Pope 1915 - 1969</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>A dressmaker and the eldest of 3 children of <a href="I3186.html">Frederick Pope</a> (a fruiterer) and <a href="I3188.html">Florence Newman</a><b>Elsie Pope</b>, the fourth cousin once-removed on the father&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Brentford, London, England on Aug 10, 1915<span class="citation">1,2,3</span>.</p><p>Throughout her life, she lived on 86 District Road, Sudbury, London, England on Sep 29, 1939<span class="citation">1</span> and in 1969 (the same place as her father had been living on Sep 29, 1939). <p>She died on Dec 30, 1969 in Brent, London, England<span class="citation">3,4</span>.</p><h2>Parents</h2><ol><li><a href="I3186.html">Frederick Ernest</a> was born on Apr 21, 1892</li><li><a href="I3188.html">Florence Caroline</a> was born on Nov 26, 1892</li></ol><h2>Citations</h2><ol><li>1939 Register - Findmypast (was the daughter of the head of the household)</li><li>England &amp; Wales births 1837-2006 - Findmypast</li><li>England &amp; Wales deaths 1837-2007 - Findmypast</li><li>England &amp; Wales Government Probate Death Index 1858-2019 - Findmypast</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=bmd/d/1969/4/az/001018/045" target="_blank">England &amp; Wales deaths 1837-2007 - BMD/D/1969/4/AZ/001018/045</a><br><a href="https://search.findmypast.co.uk/record?id=bmd/b/1915/3/az/001112/058" target="_blank">England &amp; Wales births 1837-2006 - BMD/B/1915/3/AZ/001112/058</a><br><a href="https://search.findmypast.co.uk/record?id=gbor/govprobate/c/1970-1970/00180168" target="_blank">England &amp; Wales Government Probate Death Index 1858-2019 - GBOR/GOVPROBATE/C/1970-1970/00180168</a><br><a href="https://search.findmypast.co.uk/transcript?id=TNA/R39/0946/0946I/016/29" target="_blank">1939 Register - TNA-R39-0946-0946I-016-29</a><br><h2>Family Tree</h2><img src="img/family-tree-I3189.png" width="262" height="170" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I3186.html" title="Frederick Pope\nb. 21 Apr 1892\nd. 28 May 1959" alt="" coords="5,5,113,61"/><area shape="rect" id="node3" href="I3189.html" title="Elsie Pope\nb. 10 Aug 1915\nd. 30 Dec 1969" alt="" coords="74,109,180,165"/><area shape="rect" id="node2" href="I3188.html" title="Florence Newman\nb. 26 Nov 1892" alt="" coords="136,9,256,57"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.519625, -0.310596840895136], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.55262705967199, -0.3188936817902729]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=86+District+Road,+Sudbury,+London,+England">86 District Road, Sudbury, London, England</a><br><p>Living on Sep 29, 1939</p><p>Living in 1969</p>'); markers.push(marker);
+var marker = L.marker([51.55306, -0.3023]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Brent,+London,+England">Brent, London, England</a><br><p>Death on Dec 30, 1969</p>'); markers.push(marker);
+var marker = L.marker([51.48619, -0.3083]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Brentford,+London,+England">Brentford, London, England</a><br><p>Birth on Aug 10, 1915</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.519625, -0.310596840895136], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

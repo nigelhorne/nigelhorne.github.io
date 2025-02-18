@@ -1,0 +1,67 @@
+<html><head><title>William Strand 1804 - 1889</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>William Strand 1804 - 1889</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>William Strand</b>, the husband of <a href="I452.html">Anna Maria Poysden</a> (the four times great-aunt of <a href="I1.html">Nigel Horne</a>), was born in Chislet, Kent, England in 1804<span class="citation">1,2,3,4,5,6</span> and married Anna (with whom he had 4 children: <a href="I3024.html">Eliza</a>, <a href="I3025.html">William</a>, <a href="I3026.html">Joseph Thomas</a> and <a href="I3027.html">Edwin</a>, along with 2 surviving children) in Sturry, Kent, England on Jun 1, 1833<span class="citation">8</span>.</p><p>William spent all of his life in Kent, England. Throughout his life, he lived in several places around the county: at his birthplace in 1841<span class="citation">1</span> and in 1851<span class="citation">2</span>; in Upstreet, Kent, England on Mar 30, 1851<span class="citation">9</span>; in St Nicholas-at-Wade, Kent, England in 1861<span class="citation">3</span>; in Herne, Kent, England in 1871<span class="citation">4</span>; and at his birthplace in 1881<span class="citation">5</span>. <p>He died in Jan/feb/mar 1889 in Dover, Kent, England<span class="citation">6,7</span>.</p><h2>Children</h2><ol><li><a href="I3024.html">Eliza</a> was born in 1841</li><li><a href="I3025.html">William</a> was born in 1843</li></ol><h2>Citations</h2><ol><li>1841 England Census Online publication - Provo, UT, USA: The Generations Network, Inc., 2006.Original data - Census Returns of England and Wales, 1841. Kew, Surrey, England: The National Archives of the UK (TNA): Public Record Office (PRO), 1841. Data imaged from the National</li><li>1851 England Census Online publication - Provo, UT, USA: The Generations Network, Inc., 2005.Original data - Census Returns of England and Wales, 1851. Kew, Surrey, England: The National Archives of the UK (TNA): Public Record Office (PRO), 1851. Data imaged from the National</li><li>1861 England Census Online publication - Provo, UT, USA: The Generations Network, Inc., 2005.Original data - Census Returns of England and Wales, 1861. Kew, Surrey, England: The National Archives of the UK (TNA): Public Record Office (PRO), 1861. Data imaged from the National</li><li>1871 England Census Online publication - Provo, UT, USA: The Generations Network, Inc., 2004.Original data - Census Returns of England and Wales, 1871. Kew, Surrey, England: The National Archives of the UK (TNA): Public Record Office (PRO), 1871. Data imaged from the National</li><li>1881 England Census Online publication - Provo, UT, USA: The Generations Network, Inc., 2004. 1881 British Isles Census Index provided by The Church of Jesus Christ of Latter-day Saints &copy; Copyright 1999 Intellectual Reserve, Inc. All rights reserved. All use is subject to the</li><li>England &amp; Wales, FreeBMD Death Index: 1837-1915 Online publication - Provo, UT, USA: The Generations Network, Inc., 2006.Original data - General Register Office. England and Wales Civil Registration Indexes. London, England: General Register Office. &copy; Crown copyright. Published by permission of the Cont</li><li>Public Member Trees Online publication - Provo, UT, USA: The Generations Network, Inc., 2006.Original data - Family trees submitted by Ancestry members.Original data: Family trees submitted by Ancestry members.</li><li>England Marriages 1538-1973 - Findmypast</li><li>1851 England, Wales &amp; Scotland Census - Findmypast (was age 46 and the head of the household)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I453.png" width="420" height="162" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I453.html" title="William Strand\nb. 1804\nd. Jan/Feb/Mar 1889" alt="" coords="156,5,289,61"/><area shape="rect" id="node2" href="I452.html" title="Anna Poysden\nb. abt 1805\nd. 16 Sep 1878" alt="" coords="312,5,415,61"/><area shape="rect" id="node3" href="I3024.html" title="Eliza Strand\nb. 1841" alt="" coords="5,109,93,157"/><area shape="rect" id="node4" href="I3025.html" title="William Strand\nb. 1843" alt="" coords="116,109,219,157"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.2433013, 1.2083335], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.3343213, 1.1915536]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chislet,+Kent,+England">Chislet, Kent, England</a><br><p>Living in 1841</p><p>Living in 1851</p><p>Living in 1881</p><p>Birth in 1804</p>'); markers.push(marker);
+var marker = L.marker([51.133333, 1.3]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Dover,+Kent,+England">Dover, Kent, England</a><br><p>Death in Jan/feb/mar 1889</p>'); markers.push(marker);
+var marker = L.marker([51.333333, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne,+Kent,+England">Herne, Kent, England</a><br><p>Living in 1871</p>'); markers.push(marker);
+var marker = L.marker([51.3532696, 1.2542665]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Nicholas-at-Wade,+Kent,+England">St Nicholas-at-Wade, Kent, England</a><br><p>Living in 1861</p>'); markers.push(marker);
+var marker = L.marker([51.283333, 1.116667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sturry,+Kent,+England">Sturry, Kent, England</a><br><p>Marriage on Jun 1, 1833</p>'); markers.push(marker);
+var marker = L.marker([51.3238777, 1.1958853]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Upstreet,+Kent,+England">Upstreet, Kent, England</a><br><p>Living on Mar 30, 1851</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.2433013, 1.2083335], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

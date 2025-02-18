@@ -1,0 +1,62 @@
+<html><head><title>Jackson Swain 1825 - 1870</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Jackson Swain 1825 - 1870</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Jackson Swain</b>, the husband of <a href="I2026.html">Charlotte Serjeant</a> (the first cousin five-times-removed on the mother's side of <a href="I1.html">Nigel Horne</a>), was born in Ohio, USA in 1825<span class="citation">1</span> and married Charlotte (with whom he had 7 children: <a href="I2141.html">James E</a>, <a href="I2142.html">Mary E</a>, <a href="I2138.html">George G</a>, <a href="I2144.html">Idella Josephine</a>, <a href="I2145.html">Charles F</a>, <a href="I2146.html">Frances E</a> and <a href="I2139.html">Ella O</a>) in Allen, Indiana, USA on May 28, 1848. On Jun 1, 1850, he lived in Allen<span class="citation">1</span>. <p>He died on Jan 20, 1870 in Indiana.</p><h2>Children</h2><ol><li><a href="I2141.html">James E</a> was born <i>c.</i> 1846</li><li><a href="I2142.html">Mary E</a> was born <i>c.</i> 1849</li><li><a href="I2138.html">George G</a> was born <i>c.</i> 1852</li><li><a href="I2144.html">Idella Josephine</a> was born on Nov 23, 1853</li><li><a href="I2145.html">Charles F</a> was born <i>c.</i> 1859</li><li><a href="I2146.html">Frances E</a> was born <i>c.</i> 1862</li><li><a href="I2139.html">Ella O</a> was born on Jun 25, 1863</li></ol><h2>Citations</h2><ol><li>Us Census 1850 - Findmypast (was age 25)</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=usc/1850/004193367/00267/008" target="_blank">US Census 1850 - USC/1850/004193367/00267/008</a><br><h2>Family Tree</h2><img src="img/family-tree-I2030.png" width="844" height="170" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2030.html" title="Jackson Swain\nb. 1825\nd. 20 Jan 1870" alt="" coords="360,5,461,61"/><area shape="rect" id="node2" href="I2026.html" title="Charlotte Serjeant\nb. 28 Mar 1829\nd. 17 Mar 1920" alt="" coords="486,5,605,61"/><area shape="rect" id="node3" href="I2141.html" title="James Swain\nb. abt 1846" alt="" coords="5,113,96,161"/><area shape="rect" id="node4" href="I2142.html" title="Mary Swain\nb. abt 1849" alt="" coords="120,113,208,161"/><area shape="rect" id="node5" href="I2138.html" title="George Swain\nb. abt 1852\nd. 16 Feb 1926" alt="" coords="231,109,334,165"/><area shape="rect" id="node6" href="I2144.html" title="Idella Swain\nb. 23 Nov 1853\nd. 30 Aug 1930" alt="" coords="357,109,464,165"/><area shape="rect" id="node7" href="I2145.html" title="Charles Swain\nb. abt 1859\nd. 16 Jan 1861" alt="" coords="488,109,589,165"/><area shape="rect" id="node8" href="I2146.html" title="Frances Swain\nb. abt 1862\nd. 6 Jul 1862" alt="" coords="613,109,712,165"/><area shape="rect" id="node9" href="I2139.html" title="Ella Swain\nb. 25 Jun 1863\nd. 23 Oct 1934" alt="" coords="737,109,839,165"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([41.090284, -85.100068], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([41.090284, -85.100068]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Allen,+Indiana,+USA">Allen, Indiana, USA</a><br><p>Living on Jun 1, 1850</p><p>Marriage on May 28, 1848</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([41.090284, -85.100068], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

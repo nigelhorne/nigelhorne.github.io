@@ -1,0 +1,64 @@
+<html><head><title>Mabel Minnie Mount (n&eacute;e Clarke) 1881 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Mabel Minnie Mount (n&eacute;e Clarke) 1881 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Mabel Clarke</b>, the wife of <a href="I2659.html">Edward Thomas Mount</a> (the second cousin three-times-removed on the mother's side of <a href="I1.html">Nigel Horne</a>), was born in Hackney, London, England in 1881<span class="citation">1</span> and married Edward (a stoker gas with whom she had 4 children: <a href="I3553.html">George</a>, <a href="I3554.html">Edward</a>, <a href="I3555.html">Ivan James Frederick</a> and <a href="I2661.html">Francis John</a>, along with 1 surviving child) at Christ Church, Herne Bay, Kent, England on Oct 28, 1906<span class="citation">2</span>. On Apr 2, 1911, she lived at 46 King Street in Herne Bay<span class="citation">1</span>. </p><h2>Children</h2><ol><li><a href="I3553.html">George</a> was born in 1904</li><li><a href="I3555.html">Ivan James Frederick</a> was born on Mar 6, 1909</li><li><a href="I2661.html">Francis John</a> was born on Aug 17, 1911</li></ol><h2>Citations</h2><ol><li>1911 Census for England &amp; Wales - Findmypast (was age 30 and the wife of the head of the household)</li><li>Kent, Canterbury Archdeaconry Marriages - Findmypast</li></ol><h2>Media</h2><h3>Mabel Minnie Clarke</h3><a href="img/M7638-Mabel-Minnie-Clarke.jpg" target="_blank"><img src="img/M7638-Mabel-Minnie-Clarke.jpg" alt="Mabel Minnie Clarke" width="175" height="253"></a><br><h3>Mabel Minnie Clarke</h3><a href="https://search.findmypast.co.uk/record?id=GBPRS/CANT/M/97074316/2" target="_blank">Kent, Canterbury Archdeaconry Marriages Image - GBPRS-CANT-PB350-CCA-U3-204-1-8-00026</a><br><a href="https://search.findmypast.co.uk/record?id=gbprs/cant/m/94100430/2" target="_blank">Kent, Canterbury Archdeaconry banns - GBPRS/CANT/M/94100430/2</a><br><h2>Family Tree</h2><img src="img/family-tree-I2660.png" width="460" height="282" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2660.html" title="&lt;TABLE&gt;" alt="" coords="168,5,274,173"/><area shape="rect" id="node2" href="I2659.html" title="Edward Mount\nb. 3 Mar 1879\nd. 1 Feb 1953" alt="" coords="299,61,402,117"/><area shape="rect" id="node3" href="I3553.html" title="George Mount\nb. 1904" alt="" coords="5,224,107,272"/><area shape="rect" id="node5" href="I3555.html" title="Ivan Mount\nb. 6 Mar 1909\nd. 17 Jan 1971" alt="" coords="227,221,328,276"/><area shape="rect" id="node6" href="I2661.html" title="Francis Mount\nb. 17 Aug 1911\nd. 31 Jan 1995" alt="" coords="351,221,454,276"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.4119095, 0.6455656], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.273819, 1.3411312]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=46+King+Street,+Herne+Bay,+Kent,+England">46 King Street, Herne Bay, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.3703753, 1.1288867184162061]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Christ+Church,+Herne+Bay,+Kent,+England">Christ Church, Herne Bay, Kent, England</a><br><p>Marriage on Oct 28, 1906</p>'); markers.push(marker);
+var marker = L.marker([51.55, -0.05]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Hackney,+London,+England">Hackney, London, England</a><br><p>Birth in 1881</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.4119095, 0.6455656], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

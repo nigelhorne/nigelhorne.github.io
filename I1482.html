@@ -1,0 +1,67 @@
+<html><head><title>George Edward Stupple c1875 - c1931</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>George Edward Stupple c1875 - c1931</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>A house painter and the child of <a href="I174.html">James Stupple</a> (a mariner) and <a href="I1483.html">Mary Ann</a><b>George Stupple</b>, the first cousin three-times-removed on the mother&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Herne Bay, Kent, England <i>c.</i> 1875<span class="citation">1,2</span> and baptized there on Aug 1, 1875. He married <a href="I1919.html">Elizabeth Medhurst</a> there at Christ Church, on Oct 16, 1898.</p><p>George spent all of his life in Kent, England. Throughout his life, he lived in several places around the county: at Victoria Terrace, Herne, Kent, England in 1881<span class="citation">1</span> and on Apr 3, 1881<span class="citation">1</span>; at 10 Victoria Terrace in Herne Bay in 1891; and at Alfred Cottages, Grand Drive in Herne Bay on Apr 2, 1911<span class="citation">4</span> (when he was living with his father, James). <p>He died <i>c.</i> May 1931 in Blean, Kent, England<span class="citation">3</span>.</p><h2>Parents</h2><ol><li><a href="I174.html">James</a> was born <i>c.</i> May 1838</li><li><a href="I1483.html">Mary Ann</a> was born in 1839</li></ol><h2>Citations</h2><ol><li>1881 England, Wales &amp; Scotland Census - Findmypast (was age 5 and the son of the head of the household)</li><li>England &amp; Wales births 1837-2006 - Findmypast</li><li>England &amp; Wales deaths 1837-2007 - Findmypast</li><li>1911 Census for England &amp; Wales - Findmypast (was age 36 and the head of the household)</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=GBPRS/CANT/M/97074142/1" target="_blank">Canterbury Marriages Transcription - GBPRS-CANT-M-97074142-1</a><br><a href="https://search.findmypast.co.uk/record?id=bmd/m/1898/4/az/000374/097" target="_blank">England &amp; Wales marriages 1837-2008 - BMD/M/1898/4/AZ/000374/097</a><br><a href="https://search.findmypast.co.uk/record?id=gbc/1911/rg14/04352/0159/1" target="_blank">1911 Census for England &amp; Wales - GBC/1911/RG14/04352/0159/1</a><br><a href="https://search.findmypast.co.uk/record?id=bmd/d/1931/2/az/000874/143" target="_blank">England &amp; Wales deaths 1837-2007 - BMD/D/1931/2/AZ/000874/143</a><br><h2>Family Tree</h2><img src="img/family-tree-I1482.png" width="275" height="170" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I174.html" title="James Stupple\nb. abt May 1838\nd. abt May 1917" alt="" coords="5,5,116,61"/><area shape="rect" id="node3" href="I1482.html" title="George Stupple\nb. abt 1875\nd. abt May 1931" alt="" coords="64,109,174,165"/><area shape="rect" id="node2" href="I1483.html" title="Mary Ann\nb. 1839" alt="" coords="140,9,216,57"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.222181525, 0.80899502], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.3721003, 0.48465704]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=10+Victoria+Terrace,+Herne+Bay,+Kent,+England">10 Victoria Terrace, Herne Bay, Kent, England</a><br><p>Living in 1891</p>'); markers.push(marker);
+var marker = L.marker([51.3692599, 1.1025261]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Alfred+Cottages,+Grand+Drive,+Herne+Bay,+Kent,+England">Alfred Cottages, Grand Drive, Herne Bay, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.3, 1.05]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Blean,+Kent,+England">Blean, Kent, England</a><br><p>Death <i>c.</i> May 1931</p>'); markers.push(marker);
+var marker = L.marker([51.3703753, 1.1288867184162061]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Christ+Church,+Herne+Bay,+Kent,+England">Christ Church, Herne Bay, Kent, England</a><br><p>Marriage on Oct 16, 1898</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne+Bay,+Kent,+England">Herne Bay, Kent, England</a><br><p>Birth <i>c.</i> 1875</p><p>Baptized on Aug 1, 1875</p>'); markers.push(marker);
+var marker = L.marker([51.07226275, 1.11912015]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Victoria+Terrace,+Herne,+Kent,+England">Victoria Terrace, Herne, Kent, England</a><br><p>Living on Apr 3, 1881</p><p>Living in 1881</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.222181525, 0.80899502], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

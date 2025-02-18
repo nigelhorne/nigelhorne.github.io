@@ -1,0 +1,65 @@
+<html><head><title>Joseph Johnson cNov 1861 - c1918</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Joseph Johnson cNov 1861 - c1918</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>A general laborer and bricklayer&apos;s laborer and the child of <a href="I3789.html">Joseph Johnson</a> (an agricultural laborer) and <a href="I1563.html">Mary Warner</a><b>Joseph Johnson</b>, the first cousin three-times-removed on the father&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in St Peters, Thanet, Kent, England <i>c.</i> Nov 1861<span class="citation">1</span> and baptized there on Jan 12, 1862.</p><p>Throughout his life, he lived at 1 Serene Place, Broadstairs, Kent, England on Apr 2, 1871<span class="citation">3</span>, when he was living with his grandfather, Isaac; and on 21 Magdala Road, St Peters, Thanet, Kent on Apr 5, 1891<span class="citation">5</span> and on Mar 31, 1901<span class="citation">4</span>. <p>He died <i>c.</i> Feb 1918 in Thanet, Kent, England<span class="citation">2</span>.</p><h2>Parents</h2><ol><li><a href="I3789.html">Joseph</a> was born <i>c.</i> 1830</li><li><a href="I1563.html">Mary Ann</a> was born <i>c.</i> 1831</li></ol><h2>Citations</h2><ol><li>England &amp; Wales births 1837-2006 - Findmypast</li><li>England &amp; Wales deaths 1837-2007 - Findmypast</li><li>1871 England, Wales &amp; Scotland Census - Findmypast (was age 9 and the son of the head of the household)</li><li>1901 England, Wales &amp; Scotland Census - Findmypast (was age 40 and a nephew in the household)</li><li>1891 England, Wales &amp; Scotland Census - Findmypast (was age 27 and a nephew in the household)</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/transcript?id=BMD/B/1861/4/AZ/000618/099" target="_blank">England &amp; Wales Births 1837-2006 - BMD/B/1861/4/AZ/000618/099</a><br><a href="https://search.findmypast.co.uk/transcript?id=GBPRS/CANT/B/96349736" target="_blank">Kent Baptisms - GBPRS/CANT/B/96349736</a><br><a href="https://search.findmypast.co.uk/transcript?id=GBC/1901/0007466600" target="_blank">1901 England, Wales &amp; Scotland Census - GBC/1901/0007466600</a><br><a href="https://search.findmypast.co.uk/transcript?id=BMD/D/1918/1/AZ/000561/106" target="_blank">England &amp; Wales Deaths 1837-2007 - BMD/D/1918/1/AZ/000561/106</a><br><a href="https://search.findmypast.co.uk/transcript?id=GBC/1891/0005914367" target="_blank">1891 England, Wales &amp; Scotland Census - GBC/1891/0005914367</a><br><h2>Family Tree</h2><img src="img/family-tree-I3792.png" width="232" height="162" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I3789.html" title="Joseph Johnson\nb. abt 1830" alt="" coords="5,5,112,53"/><area shape="rect" id="node3" href="I3792.html" title="Joseph Johnson\nb. abt Nov 1861\nd. abt Feb 1918" alt="" coords="65,101,174,157"/><area shape="rect" id="node2" href="I1563.html" title="Mary Warner\nb. abt 1831" alt="" coords="136,5,227,53"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.3630279112078, 1.428965525], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.3584698, 1.44126405]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=1+Serene+Place,+Broadstairs,+Kent,+England">1 Serene Place, Broadstairs, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
+var marker = L.marker([51.36758602241564, 1.4217678982737914]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=21+Magdala+Road,+St+Peters,+Thanet,+Kent,+England">21 Magdala Road, St Peters, Thanet, Kent, England</a><br><p>Living on Apr 5, 1891</p><p>Living on Mar 31, 1901</p>'); markers.push(marker);
+var marker = L.marker([51.366626249999996, 1.422089133458278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters,+Thanet,+Kent,+England">St Peters, Thanet, Kent, England</a><br><p>Baptized on Jan 12, 1862</p><p>Birth <i>c.</i> Nov 1861</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death <i>c.</i> Feb 1918</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.3630279112078, 1.428965525], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

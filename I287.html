@@ -1,0 +1,64 @@
+<html><head><title>Daphne Patricia Philpott (n&eacute;e Hudson) cAug 1928 - 2018</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Daphne Patricia Philpott (n&eacute;e Hudson) cAug 1928 - 2018</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I286.html">William Hudson</a> (a milkman) and <a href="I41.html">Lilian Lawrence</a><b>Daphne Hudson</b>, a cousin on the mother&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Thanet, Kent, England <i>c.</i> Aug 1928<span class="citation">1,2</span>. She married <a href="I827.html">Raymond Philpott</a> (with whom she had 1 surviving child) at St Mary the Virgin Church, Minster in Thanet on Sep 30, 1950<span class="citation">3</span>. In 2003, she lived on 3 Ash Road, Sandwich, Kent, England. <p>She died on Jan 24, 2018.</p><h2>Parents</h2><ol><li><a href="I286.html">William Charles</a> was born on Dec 27, 1898</li><li><a href="I41.html">Lilian Florence</a> was born on Jan 29, 1908</li></ol><h2>Citations</h2><ol><li>England &amp; Wales births 1837-2006 - Findmypast</li><li>England &amp; Wales, Birth Index: 1916-2005 Online publication - Provo, UT, USA: The Generations Network, Inc., 2008.Original data - General Register Office. England and Wales Civil Registration Indexes. London, England: General Register Office. &copy; Crown copyright. Published by permission of the Cont</li><li>England &amp; Wales, Marriage Index: 1916-2005 Online publication - Provo, UT, USA: The Generations Network, Inc., 2009.Original data - General Register Office. England and Wales Civil Registration Indexes. London, England: General Register Office. &copy; Crown copyright. Published by permission of the Cont</li></ol><h2>Media</h2><h3>Mum and Dad Marriage</h3><a href="img/M13-Mum-and-Dad-Marriage.jpg" target="_blank"><img src="img/M13-Mum-and-Dad-Marriage.jpg" alt="Mum and Dad Marriage" width="175" height="111"></a><br><h3>Mum and Dad Marriage</h3><h3>Thanet Advertiser 28 Jun 1929 - Minster Fete baby show result</h3><a href="img/M1607-Thanet-Advertiser-28-Jun-1929-Minster-Fete-baby-show-result.jpg" target="_blank"><img src="img/M1607-Thanet-Advertiser-28-Jun-1929-Minster-Fete-baby-show-result.jpg" alt="Thanet Advertiser 28 Jun 1929 - Minster Fete baby show result" width="175" height="24"></a><br><h3>Thanet Advertiser 6 Oct 1950</h3><a href="img/M1608-Thanet-Advertiser-6-Oct-1950.jpg" target="_blank"><img src="img/M1608-Thanet-Advertiser-6-Oct-1950.jpg" alt="Thanet Advertiser 6 Oct 1950" width="175" height="615"></a><br><h3>Daphne Hudson</h3><a href="img/M1605-Daphne-Hudson.jpg" target="_blank"><img src="img/M1605-Daphne-Hudson.jpg" alt="Daphne Hudson" width="175" height="165"></a><br><h3>Thanet Advertiser 6 Oct 1950 (2)</h3><a href="img/M1609-Thanet-Advertiser-6-Oct-1950--2.jpg" target="_blank"><img src="img/M1609-Thanet-Advertiser-6-Oct-1950--2.jpg" alt="Thanet Advertiser 6 Oct 1950 (2)" width="175" height="65"></a><br><h3>Daphne Hudson</h3><a href="https://search.findmypast.co.uk/record?id=bmd/m/1950/3/ao/000813/100" target="_blank">England &amp; Wales marriages 1837-2008 - BMD/M/1950/3/AO/000813/100</a><br><a href="https://search.findmypast.co.uk/record?id=bmd/b/1928/3/az/000604/107" target="_blank">England &amp; Wales births 1837-2006 - BMD/B/1928/3/AZ/000604/107</a><br><h2>Family Tree</h2><img src="img/family-tree-I287.png" width="294" height="394" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I286.html" title="William Hudson\nb. 27 Dec 1898\nd. 6 Jan 1963" alt="" coords="5,5,116,61"/><area shape="rect" id="node3" href="I287.html" title="&lt;TABLE&gt;" alt="" coords="62,109,192,293"/><area shape="rect" id="node2" href="I41.html" title="Lilian Lawrence\nb. 29 Jan 1908\nd. 15 Apr 1976" alt="" coords="140,5,250,61"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.3227602448893, 1.36631223066638], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.27885348977853, 1.3276380212572017]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=3+Ash+Road,+Sandwich,+Kent,+England">3 Ash Road, Sandwich, Kent, England</a><br><p>Living in 2003</p>'); markers.push(marker);
+var marker = L.marker([51.330420950000004, 1.3159574613327614]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+the+Virgin+Church,+Minster,+Thanet,+Kent,+England">St Mary the Virgin Church, Minster, Thanet, Kent, England</a><br><p>Marriage on Sep 30, 1950</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Birth <i>c.</i> Aug 1928</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.3227602448893, 1.36631223066638], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

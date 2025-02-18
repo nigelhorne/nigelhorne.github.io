@@ -1,0 +1,65 @@
+<html><head><title>William Edward Knowler 1878 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>William Edward Knowler 1878 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I3397.html">John Knowler</a> and <a href="I2322.html">Elizabeth Dale</a><b>William Knowler</b>, the second cousin three-times-removed on the father&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Chartham, Kent, England in 1878<span class="citation">1,2,3</span>. Like his father, he was a general laborer. </p><p>Throughout his life, William lived in several places: in Bilting, Kent, England on Apr 3, 1881<span class="citation">1</span>; at The Lees, Chilham, Kent on Mar 31, 1901<span class="citation">2</span>; and at Round Oast Cottage, Ospringe, Kent on Apr 2, 1911<span class="citation">3</span> (when he was living with his parents). </p><h2>Parents</h2><ol><li><a href="I3397.html">John</a> was born in 1843</li><li><a href="I2322.html">Elizabeth Ann</a> was born <i>c.</i> Nov 1851</li></ol><h2>Citations</h2><ol><li>1881 England, Wales &amp; Scotland Census - Findmypast (was age 3 and the son of the head of the household)</li><li>1901 England, Wales &amp; Scotland Census - Findmypast (was age 23 and the son of the head of the household)</li><li>1911 Census for England &amp; Wales - Findmypast (was age 33 and the son of the head of the household)</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=gbc/1911/rg14/04400/0039/3" target="_blank">1911 Census for England &amp; Wales - GBC/1911/RG14/04400/0039/3</a><br><h2>Family Tree</h2><img src="img/family-tree-I3399.png" width="243" height="162" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I3397.html" title="John Knowler\nb. 1843" alt="" coords="5,9,104,57"/><area shape="rect" id="node3" href="I3399.html" title="William Knowler\nb. 1878" alt="" coords="61,109,176,157"/><area shape="rect" id="node2" href="I2322.html" title="Elizabeth Dale\nb. abt Nov 1851\nd. abt Nov 1918" alt="" coords="128,5,237,61"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.254217, 0.94329945], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.2041349, 0.9389592]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bilting,+Kent,+England">Bilting, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
+var marker = L.marker([51.25, 1.016667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chartham,+Kent,+England">Chartham, Kent, England</a><br><p>Birth in 1878</p>'); markers.push(marker);
+var marker = L.marker([51.3042991, 0.8699319]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Round+Oast+Cottage,+Ospringe,+Kent,+England">Round Oast Cottage, Ospringe, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.2438902, 0.9637959]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Lees,+Chilham,+Kent,+England">The Lees, Chilham, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.254217, 0.94329945], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

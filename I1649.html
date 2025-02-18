@@ -1,0 +1,64 @@
+<html><head><title>Dora Forest Simmerman 1922 - 2004</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Dora Forest Simmerman 1922 - 2004</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Dora Simmerman</b>, the husband of <a href="I1631.html">Katherine Bixler</a> (the fifth cousin once-removed on the mother's side of <a href="I1.html">Nigel Horne</a>), was born on Mar 11, 1922<span class="citation">1,2,3</span> and. He married Katherine (with whom he had 5 surviving children <a href="I1659.html">Richard Andrew</a>, <a href="I1663.html">Kathy</a>, <a href="I1665.html">Janice J</a>, <a href="I1661.html">Michael</a> and <a href="I1667.html">David</a>) in Brightwood, Marion, Indiana, USA on Aug 11, 1945.<p>He died on Aug 18, 2004 in Greencastle, Putnam, Indiana<span class="citation">1,2,3</span> and was buried there at Forest Hill Cemetery after Aug 18, 2004.</p><h2>Citations</h2><ol><li>Social Security Death Index - Findmypast</li><li>U.S. Veteran&apos;s Gravesites - Findmypast</li><li>United States Obituary Notices - Findmypast</li></ol><h2>Media</h2><h3>Katherine Bixler - Doar Forest - gravestone</h3><a href="img/M4962-Katherine-Bixler-Doar-Forest-gravestone.jpg" target="_blank"><img src="img/M4962-Katherine-Bixler-Doar-Forest-gravestone.jpg" alt="Katherine Bixler - Doar Forest - gravestone" width="175" height="131"></a><br><h3>Dora Forest Simmerman</h3><a href="img/M5041-Dora-Forest-Simmerman.jpg" target="_blank"><img src="img/M5041-Dora-Forest-Simmerman.jpg" alt="Dora Forest Simmerman" width="175" height="263"></a><br><a href="https://search.findmypast.co.uk/record?id=USBMD/SSDI/312165158" target="_blank">Social Security Death Index Transcription - USBMD-SSDI-312165158</a><br><a href="https://search.findmypast.co.uk/record?id=USM/VETGRV/2169461" target="_blank">US Veterans Gravesites Transcription - USM-VETGRV-2169461</a><br><a href="https://search.findmypast.co.uk/transcript?id=US/TRIB/035722106" target="_blank">United States Obituary Notices - US-TRIB-035722106</a><br><h2>Family Tree</h2><img src="img/family-tree-I1649.png" width="467" height="297" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I1649.html" title="&lt;TABLE&gt;" alt="" coords="170,5,296,196"/><area shape="rect" id="node2" href="I1631.html" title="Katherine Bixler\nb. 15 May 1928\nd. 6 Nov 2011" alt="" coords="320,73,432,128"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([39.45727, -85.976095], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([39.80365, -86.10971]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Brightwood,+Marion,+Indiana,+USA">Brightwood, Marion, Indiana, USA</a><br><p>Marriage on Aug 11, 1945</p>'); markers.push(marker);
+var marker = L.marker([39.11089, -85.08746]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Forest+Hill+Cemetery,+Greencastle,+Putnam,+Indiana,+USA">Forest Hill Cemetery, Greencastle, Putnam, Indiana, USA</a><br><p>Burial</p>'); markers.push(marker);
+var marker = L.marker([39.64449, -86.86473]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Greencastle,+Putnam,+Indiana,+USA">Greencastle, Putnam, Indiana, USA</a><br><p>Death on Aug 18, 2004</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([39.45727, -85.976095], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

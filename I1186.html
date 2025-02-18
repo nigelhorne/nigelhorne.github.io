@@ -1,0 +1,64 @@
+<html><head><title>Richmond Noble McBeath 1878 - 1952</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Richmond Noble McBeath 1878 - 1952</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The son of <a href="I1131.html">Donald McBeath</a> (a farmer) and <a href="I1116.html">Jane Peters</a><b>Richmond Mcbeath</b>, the third cousin twice-removed on the father&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in New Brunswick, Canada on Dec 3, 1878<span class="citation">1,2,3</span> and married his cousin on his mother&apos;s side <a href="I1126.html">Lilly Peters</a> (with whom he had 2 children: <a href="I1185.html">Stanley Leigh</a> and <a href="I1184.html">Helen Mae</a>) in Richibucto, Kent, New Brunswick on Apr 6, 1915<span class="citation">4</span>.</p><p>Throughout his life, Richmond lived in several places: in Richibucto, Kent, New Brunswick in 1891<span class="citation">1</span>; in Kent, New Brunswick, Canada in 1911<span class="citation">5</span>; and in Richibucto, New Brunswick on Jun 1, 1921<span class="citation">2</span> (the same place as his mother had been living in 1911). <p>He died on Aug 22, 1952 in Kent<span class="citation">3</span> and was buried in Rexton, New Brunswick after Aug 22, 1952<span class="citation">3</span>.</p><h2>Parents</h2><ol><li><a href="I1131.html">Donald</a> was born in Sep 1843</li><li><a href="I1116.html">Jane Marion</a> was born on Apr 23, 1850</li></ol><h2>Children</h2><ol><li><a href="I1185.html">Stanley Leigh</a> was born on Apr 24, 1916</li><li><a href="I1184.html">Helen Mae</a> was born on Apr 9, 1919</li></ol><h2>Citations</h2><ol><li>1891 Census of Canada Ancestry.com Operations Inc (Marital Status: SingleRelation to Head of House: Fils)</li><li>1921 Census of Canada Ancestry.com Operations Inc (Marital Status: MarriedRelation to Head of House: Chef)</li><li>Canada, Find A Grave Index, 1600s-Current Ancestry.com Operations, Inc.</li><li>Acadia, Canada, Vital and Church Records (Drouin Collection), 1670-1946 Ancestry.com Operations Inc</li><li>Canada Census 1911 - Findmypast (was the son of the head of the household)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I1186.png" width="321" height="274" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I1131.html" title="Donald McBeath\nb. Sep 1843\nd. 1940" alt="" coords="7,5,122,61"/><area shape="rect" id="node3" href="I1186.html" title="Richmond McBeath\nb. 3 Dec 1878\nd. 22 Aug 1952" alt="" coords="65,109,197,165"/><area shape="rect" id="node2" href="I1116.html" title="Jane Peters\nb. 23 Apr 1850\nd. 5 Jan 1943" alt="" coords="146,5,249,61"/><area shape="rect" id="node4" href="I1126.html" title="Lilly Peters\nb. 1 Oct 1886\nd. 1969" alt="" coords="221,109,316,165"/><area shape="rect" id="node5" href="I1185.html" title="Stanley McBeath\nb. 24 Apr 1916\nd. 21 Apr 1945" alt="" coords="5,213,121,268"/><area shape="rect" id="node6" href="I1184.html" title="Helen McBeath\nb. 9 Apr 1919\nd. 12 Dec 2008" alt="" coords="145,213,253,268"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([46.63208, -65.064595], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([46.58343, -65.24875]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kent,+New+Brunswick,+Canada">Kent, New Brunswick, Canada</a><br><p>Living in 1911</p><p>Death on Aug 22, 1952</p>'); markers.push(marker);
+var marker = L.marker([46.64983, -64.88294]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Rexton,+Kent,+New+Brunswick,+Canada">Rexton, Kent, New Brunswick, Canada</a><br><p>Burial</p>'); markers.push(marker);
+var marker = L.marker([46.68073, -64.88044]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Richibucto,+Kent,+New+Brunswick,+Canada">Richibucto, Kent, New Brunswick, Canada</a><br><p>Living in 1891</p><p>Living on Jun 1, 1921</p><p>Marriage on Apr 6, 1915</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([46.63208, -65.064595], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

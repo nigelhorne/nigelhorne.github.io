@@ -1,0 +1,63 @@
+<html><head><title>Dorcas Anne Hutchison (n&eacute;e Atkinson) 1855 - 1930</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Dorcas Anne Hutchison (n&eacute;e Atkinson) 1855 - 1930</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The eldest of 3 children of <a href="I2388.html">Thomas Atkinson</a> and <a href="I2387.html">Mary Warman</a><b>Dorcas Atkinson</b>, the third cousin twice-removed on the father&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in New Brunswick, Canada on May 4, 1855 and married <a href="I2390.html">John Hutchison</a> (with whom she had 2 children: <a href="I2391.html">Mary Jane</a> and <a href="I3218.html">John Hedley</a>) in Harcourt, Kent, New Brunswick on Dec 2, 1884.<p>She died on Mar 14, 1930 in Canada and was buried at Saint Andrews Presbyterian Cemetery, Harcourt, Kent, New Brunswick after Mar 14, 1930.</p><h2>Parents</h2><ol><li><a href="I2387.html">Mary Jane</a> was born on Jan 9, 1833</li></ol><h2>Children</h2><ol><li><a href="I2391.html">Mary Jane</a> was born on Mar 2, 1885</li><li><a href="I3218.html">John Hedley</a> was born on Feb 7, 1896</li></ol><h2>Media</h2><h3>Dorcas Atkinson - Gravestone</h3><a href="img/M6981-Dorcas-Atkinson-Gravestone.jpg" target="_blank"><img src="img/M6981-Dorcas-Atkinson-Gravestone.jpg" alt="Dorcas Atkinson - Gravestone" width="175" height="262"></a><br><h2>Family Tree</h2><img src="img/family-tree-I2389.png" width="322" height="274" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2388.html" title="Thomas Atkinson" alt="" coords="5,9,123,57"/><area shape="rect" id="node3" href="I2389.html" title="Dorcas Atkinson\nb. 4 May 1855\nd. 14 Mar 1930" alt="" coords="73,109,186,165"/><area shape="rect" id="node2" href="I2387.html" title="Mary Warman\nb. 9 Jan 1833\nd. 27 Jul 1903" alt="" coords="147,5,245,61"/><area shape="rect" id="node4" href="I2390.html" title="John Hutchison\nb. 8 Jul 1855\nd. 10 Feb 1937" alt="" coords="209,109,316,165"/><area shape="rect" id="node5" href="I2391.html" title="Mary Hutchison\nb. 2 Mar 1885\nd. 30 Jun 1964" alt="" coords="8,213,118,268"/><area shape="rect" id="node6" href="I3218.html" title="John Hutchison\nb. 7 Feb 1896\nd. 24 Jun 1997" alt="" coords="142,213,250,268"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([45.77750685, -66.15038465], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([46.46683, -65.24877]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Harcourt,+Kent,+New+Brunswick,+Canada">Harcourt, Kent, New Brunswick, Canada</a><br><p>Marriage on Dec 2, 1884</p>'); markers.push(marker);
+var marker = L.marker([45.0881837, -67.0519993]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Saint+Andrews+Presbyterian+Cemetery,+Harcourt,+Kent,+New+Brunswick,+Canada">Saint Andrews Presbyterian Cemetery, Harcourt, Kent, New Brunswick, Canada</a><br><p>Burial</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([45.77750685, -66.15038465], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

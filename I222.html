@@ -1,0 +1,64 @@
+<html><head><title>Benjamin Cowell 1780 - c1841</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Benjamin Cowell 1780 - c1841</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The 3rd of 7 children of <a href="I121.html">Troward Cowell</a> and <a href="I116.html">Sarah Doughty</a><b>Benjamin Cowell</b>, the four times great-uncle of <a href="I1.html">Nigel Horne</a>, was born in Margate, Kent, England on Jan 2, 1780<span class="citation">1</span>, was baptized there at St John the Baptist Church on Jan 30, 1780 andhad 3 children with Mary Ann Taylor: <a href="I1511.html">Mary Ann</a>, <a href="I1512.html">Elizabeth</a> and <a href="I1513.html">Benjamin</a>.<p>He died <i>c.</i> Nov 1841 in Thanet, Kent, England<span class="citation">2</span>.</p><h2>Parents</h2><ol><li><a href="I121.html">Troward</a> was born <i>c.</i> 1747</li><li><a href="I116.html">Sarah</a> was born <i>c.</i> 1753</li></ol><h2>Children</h2><ol><li><a href="I1511.html">Mary Ann</a> was born on May 25, 1812</li><li><a href="I1512.html">Elizabeth</a> was born in 1825</li><li><a href="I1513.html">Benjamin</a> was born in 1825</li></ol><h2>Citations</h2><ol><li>Kent Baptisms - Findmypast</li><li>England &amp; Wales deaths 1837-2007 - Findmypast</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=bmd/d/1841/4/ae/000440/022" target="_blank">England &amp; Wales deaths 1837-2007 - BMD/D/1841/4/AE/000440/022</a><br><a href="https://search.findmypast.co.uk/record?id=gbprs/cant/b/96208137" target="_blank">Kent Baptisms - GBPRS/CANT/B/96208137</a><br><a href="https://search.findmypast.co.uk/record?id=r_883173268" target="_blank">England Births &amp; Baptisms 1538-1975 - R_883173268</a><br><h2>Family Tree</h2><img src="img/family-tree-I222.png" width="400" height="274" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I121.html" title="Troward Cowell\nb. abt 1747\nd. abt 1835" alt="" coords="74,5,185,61"/><area shape="rect" id="node3" href="I222.html" title="Benjamin Cowell\nb. 2 Jan 1780\nd. abt Nov 1841" alt="" coords="136,109,254,165"/><area shape="rect" id="node2" href="I116.html" title="Sarah Doughty\nb. abt 1753\nd. 1836" alt="" coords="209,5,312,61"/><area shape="rect" id="node4" href="I1510.html" title="Mary Taylor" alt="" coords="278,113,366,161"/><area shape="rect" id="node5" href="I1511.html" title="Mary Cowell\nb. 25 May 1812\nd. 1812" alt="" coords="5,213,113,268"/><area shape="rect" id="node6" href="I1512.html" title="Elizabeth Cowell\nb. 1825" alt="" coords="137,216,253,264"/><area shape="rect" id="node7" href="I1513.html" title="Benjamin Cowell\nb. 1825\nd. abt Nov 1862" alt="" coords="278,213,395,268"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.375221125, 1.40021203003805], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.383333, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Margate,+Kent,+England">Margate, Kent, England</a><br><p>Birth on Jan 2, 1780</p>'); markers.push(marker);
+var marker = L.marker([51.38377525, 1.3837570600761082]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+John+the+Baptist+Church,+Margate,+Kent,+England">St John the Baptist Church, Margate, Kent, England</a><br><p>Baptized on Jan 30, 1780</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death <i>c.</i> Nov 1841</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.375221125, 1.40021203003805], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

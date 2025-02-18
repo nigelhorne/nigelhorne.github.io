@@ -1,0 +1,67 @@
+<html><head><title>Willard Edward Bixler 1933 - 2000</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Willard Edward Bixler 1933 - 2000</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The son of <a href="I1787.html">Willard Bixler</a> (a logger) and <a href="I2131.html">Mildred Kiser</a><b>Willard Bixler</b>, the fifth cousin once-removed on the mother&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Clay, Owen, Indiana, USA on Jul 17, 1933<span class="citation">1,2,3,4</span>. He married <a href="I2133.html">Marcella Chambers</a> in Owen, Indiana, USA on Oct 7, 1955<span class="citation">5</span>.</p><p>Throughout his life, he lived in Spencer, Indiana in 1956; and at 105 S. West Street, Spencer, Indiana in 2000. He served in the Army (<em>pFC US Army - Korea</em>).<p>He died on Oct 7, 2000 at Bloomington Hospital, Bloomington, Monroe, Indiana<span class="citation">2,3</span> (cardiac arrest) and was buried at Riverside Cemetery, Spencer, Indiana on Oct 12, 2000 (a warm, sunny day).</p><h2>Parents</h2><ol><li><a href="I1787.html">Willard Wallace</a> was born on Oct 1, 1905</li><li><a href="I2131.html">Mildred Susanna</a> was born on Aug 27, 1913</li></ol><h2>Citations</h2><ol><li>Social Security Death Index - Findmypast</li><li>U.S. Veteran&apos;s Gravesites - Findmypast</li><li>United States Billion Graves index - Findmypast</li><li>United States Marriages - Findmypast</li><li>United States Marriages - Findmypast</li></ol><h2>Media</h2><h3>1956 - Bedford City Directory</h3><a href="img/M6291-1956-Bedford-City-Directory.jpg" target="_blank"><img src="img/M6291-1956-Bedford-City-Directory.jpg" alt="1956 - Bedford City Directory" width="175" height="286"></a><br><h3>Willard Bixler - gravestone</h3><a href="img/M6292-Willard-Bixler-gravestone.jpg" target="_blank"><img src="img/M6292-Willard-Bixler-gravestone.jpg" alt="Willard Bixler - gravestone" width="175" height="130"></a><br><a href="https://search.findmypast.co.uk/record?id=usm/vetgrv/2211038" target="_blank">U.S. Veteran&#39;s Gravesites - USM/VETGRV/2211038</a><br><a href="https://search.findmypast.co.uk/record?id=fs/mar/34108751/1" target="_blank">United States Marriages - FS/MAR/34108751/1</a><br><a href="https://search.findmypast.co.uk/record?id=usbmd/ssdi/311344117" target="_blank">Social Security Death Index - USBMD/SSDI/311344117</a><br><a href="https://search.findmypast.co.uk/record?id=us/bmd/billion/011336112" target="_blank">United States Billion Graves index - US/BMD/BILLION/011336112</a><br><a href="https://search.findmypast.co.uk/record?id=us/bmd/billion/026656834" target="_blank">United States Billion Graves index - US/BMD/BILLION/026656834</a><br><a href="https://search.findmypast.co.uk/record?id=r_75589247" target="_blank">United States Marriages - R_75589247</a><br><h2>Family Tree</h2><img src="img/family-tree-I2132.png" width="271" height="170" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I1787.html" title="Willard Bixler\nb. 1 Oct 1905\nd. 23 Oct 1995" alt="" coords="5,5,108,61"/><area shape="rect" id="node3" href="I2132.html" title="Willard Bixler\nb. 17 Jul 1933\nd. 7 Oct 2000" alt="" coords="71,109,170,165"/><area shape="rect" id="node2" href="I2131.html" title="Mildred Kiser\nb. 27 Aug 1913\nd. 27 Jul 1933" alt="" coords="132,5,237,61"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([38.884706, -86.348296], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([39.287119393469, -86.764924265431]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=105+S.+West+Street,+Spencer,+Owen,+Indiana,+USA">105 S. West Street, Spencer, Owen, Indiana, USA</a><br><p>Living in 2000</p>'); markers.push(marker);
+var marker = L.marker([39.15989, -86.54012]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bloomington+Hospital,+Bloomington,+Monroe,+Indiana,+USA">Bloomington Hospital, Bloomington, Monroe, Indiana, USA</a><br><p>Death on Oct 7, 2000</p>'); markers.push(marker);
+var marker = L.marker([39.439101, -87.119952]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Clay,+Owen,+Indiana,+USA">Clay, Owen, Indiana, USA</a><br><p>Birth on Jul 17, 1933</p>'); markers.push(marker);
+var marker = L.marker([39.30795, -86.818225]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Owen,+Indiana,+USA">Owen, Indiana, USA</a><br><p>Marriage on Oct 7, 1955</p>'); markers.push(marker);
+var marker = L.marker([39.74504, -85.57664]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Riverside+Cemetery,+Spencer,+Owen,+Indiana,+USA">Riverside Cemetery, Spencer, Owen, Indiana, USA</a><br><p>Burial on Oct 12, 2000</p>'); markers.push(marker);
+var marker = L.marker([38.024372, -87.013205]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Spencer,+Owen,+Indiana,+USA">Spencer, Owen, Indiana, USA</a><br><p>Living in 1956</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([38.884706, -86.348296], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

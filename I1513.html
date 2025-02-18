@@ -1,0 +1,64 @@
+<html><head><title>Benjamin Cowell 1825 - c1862</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Benjamin Cowell 1825 - c1862</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>A mariner and the child of <a href="I222.html">Benjamin Cowell</a> and <a href="I1510.html">Mary Taylor</a><b>Benjamin Cowell</b>, the first cousin four-times-removed on the mother&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Ramsgate, Kent, England in 1825<span class="citation">1</span> and married <a href="I1514.html">Sarah Ewen</a> (a needlewoman with whom he had 3 children: <a href="I1515.html">Benjamin William</a>, <a href="I1516.html">George Henry</a> and <a href="I1517.html">John Charles</a>) at St George&apos;s Church in Ramsgate on Jul 26, 1857<span class="citation">1</span>.<p>He died <i>c.</i> Nov 1862 in Thanet, Kent, England<span class="citation">2</span> and was buried at St George&apos;s Church in Ramsgate on Nov 8, 1862<span class="citation">3,4</span>.</p><h2>Parents</h2><ol><li><a href="I222.html">Benjamin</a> was born on Jan 2, 1780</li></ol><h2>Children</h2><ol><li><a href="I1515.html">Benjamin William</a> was born <i>c.</i> Nov 1858</li><li><a href="I1516.html">George Henry</a> was born on Aug 25, 1860</li><li><a href="I1517.html">John Charles</a> was born on May 10, 1862</li></ol><h2>Citations</h2><ol><li>Kent, Canterbury Archdeaconry marriages 1538-1928 - Findmypast</li><li>England &amp; Wales deaths 1837-2007 - Findmypast</li><li>Kent, Canterbury Archdeaconry burials 1538-1988 - Findmypast</li><li>Kent Burials - Findmypast</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=gbprs/cant/d/95515330" target="_blank">Kent, Canterbury Archdeaconry burials 1538-1988 - GBPRS/CANT/D/95515330</a><br><a href="https://search.findmypast.co.uk/record?id=bmd/d/1862/4/ah/000606/003" target="_blank">England &amp; Wales deaths 1837-2007 - BMD/D/1862/4/AH/000606/003</a><br><a href="https://search.findmypast.co.uk/record?id=gbprs/cant/m/97005490/1" target="_blank">Kent, Canterbury Archdeaconry marriages 1538-1928 - GBPRS/CANT/M/97005490/1</a><br><a href="https://search.findmypast.co.uk/record?id=bmd/m/1857/3/am/000426/022" target="_blank">England &amp; Wales marriages 1837-2008 - BMD/M/1857/3/AM/000426/022</a><br><a href="https://search.findmypast.co.uk/record?id=r_848240186" target="_blank">England Marriages 1538-1973 - R_848240186</a><br><a href="https://search.findmypast.co.uk/record?id=gbprs/cant/d/95522942" target="_blank">Kent Burials - GBPRS/CANT/D/95522942</a><br><h2>Family Tree</h2><img src="img/family-tree-I1513.png" width="394" height="274" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I222.html" title="Benjamin Cowell\nb. 2 Jan 1780\nd. abt Nov 1841" alt="" coords="80,5,197,61"/><area shape="rect" id="node3" href="I1513.html" title="Benjamin Cowell\nb. 1825\nd. abt Nov 1862" alt="" coords="143,109,260,165"/><area shape="rect" id="node2" href="I1510.html" title="Mary Taylor" alt="" coords="221,9,310,57"/><area shape="rect" id="node4" href="I1514.html" title="Sarah Ewen\nb. 1 Jan 1827\nd. abt Jun 1893" alt="" coords="284,109,388,165"/><area shape="rect" id="node5" href="I1515.html" title="Benjamin Cowell\nb. abt Nov 1858\nd. 1 Jul 1937" alt="" coords="5,213,123,268"/><area shape="rect" id="node6" href="I1516.html" title="George Cowell\nb. 25 Aug 1860\nd. abt Aug 1942" alt="" coords="147,213,256,268"/><area shape="rect" id="node7" href="I1517.html" title="John Cowell\nb. 10 May 1862\nd. abt Feb 1927" alt="" coords="280,213,387,268"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.3505945, 1.36616195], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth in 1825</p>'); markers.push(marker);
+var marker = L.marker([51.3360596, 1.4179069]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Georges+Church,+Ramsgate,+Kent,+England">St Georges Church, Ramsgate, Kent, England</a><br><p>Burial on Nov 8, 1862</p><p>Marriage on Jul 26, 1857</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death <i>c.</i> Nov 1862</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.3505945, 1.36616195], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

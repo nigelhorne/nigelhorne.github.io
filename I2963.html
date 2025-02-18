@@ -1,0 +1,65 @@
+<html><head><title>Marjorie Annie Crayford Barton (n&eacute;e Young) 1909 - 2000</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Marjorie Annie Crayford Barton (n&eacute;e Young) 1909 - 2000</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Marjorie Young</b>, the wife of <a href="I321.html">Arthur George Barton OBE</a> (the first cousin once-removed on the father's side of <a href="I1.html">Nigel Horne</a>), was born in Herne Bay, Kent, England on May 17, 1909<span class="citation">1,2,3,4</span> and. She married Arthur (with whom she had 2 surviving children <a href="I2965.html">Brian C</a> and <a href="I2964.html">Christopher J</a>) in Blean, Kent, England around Aug 1936<span class="citation">7</span>.</p><p>Throughout her life, she lived at Spicers Farm, Broomfield, Reculver, Kent on Apr 2, 1911<span class="citation">1</span>; and on Three Ways, Reculver Road in Herne Bay on Sep 29, 1939<span class="citation">2</span>. <p>She died on Sep 22, 2000 in Staffordshire, England<span class="citation">4,5,6</span>.</p><h2>Citations</h2><ol><li>1911 Census for England &amp; Wales - Findmypast (was age 1 and the daughter of the head of the household)</li><li>1939 Register - Findmypast (was recorded at this address)</li><li>England &amp; Wales births 1837-2006 - Findmypast</li><li>England &amp; Wales deaths 1837-2007 - Findmypast</li><li>England &amp; Wales Government Probate Death Index 1858-2019 - Findmypast</li><li><a href="https://probatesearch.service.gov.uk/Wills?Surname=barton&amp;SurnameGrants=barton&amp;YearOfDeath=2000&amp;YearOfDeathGrants=2000&amp;IsGrantSearch=True&amp;IsCalendarSearch=False&amp;sort=FirstName&amp;sortdir=ASC&amp;page=5#wills">https://probatesearch.service.gov.uk/Wills?Surname=barton&amp;SurnameGrants=barton&amp;YearOfDeath=2000&amp;YearOfDeathGrants=2000&amp;IsGrantSearch=True&amp;IsCalendarSearch=False&amp;sort=FirstName&amp;sortdir=ASC&amp;page=5#wills</a></li><li>England &amp; Wales Marriages 1837-2005 - Findmypast</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=bmd/m/1936/3/az/001841/119" target="_blank">England &amp; Wales marriages 1837-2005 - BMD/M/1936/3/AZ/001841/119</a><br><a href="https://search.findmypast.co.uk/record?id=gbc/1911/rg14/04360/0219/4" target="_blank">1911 Census for England &amp; Wales - GBC/1911/RG14/04360/0219/4</a><br><a href="https://search.findmypast.co.uk/record?id=bmd/b/1909/2/az/000684/286" target="_blank">England &amp; Wales births 1837-2006 - BMD/B/1909/2/AZ/000684/286</a><br><a href="https://search.findmypast.co.uk/transcript?id=TNA/R39/1741/1741D/003/26" target="_blank">1939 Register - TNA-R39-1741-1741D-003-26</a><br><a href="https://search.findmypast.co.uk/transcript?id=BMD/D/2000/9/83517263" target="_blank">England &amp; Wales Deaths 1837-2007 - BMD-D-2000-9-83517263</a><br><a href="https://search.findmypast.co.uk/record?id=gbor/govprobate/b/1999-1900/00023483" target="_blank">England &amp; Wales Government Probate Death Index 1858-2019 - GBOR/GOVPROBATE/B/1999-1900/00023483</a><br><h2>Family Tree</h2><img src="img/family-tree-I2963.png" width="300" height="162" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2963.html" title="Marjorie Young\nb. 17 May 1909\nd. 22 Sep 2000" alt="" coords="36,5,143,61"/><area shape="rect" id="node2" href="I321.html" title="Arthur Barton OBE\nb. 26 Jul 1911\nd. 25 Jun 1963" alt="" coords="167,5,294,61"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.3397572, 1.12470235], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.3, 1.05]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Blean,+Kent,+England">Blean, Kent, England</a><br><p>Marriage <i>c.</i> Aug 1936</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne+Bay,+Kent,+England">Herne Bay, Kent, England</a><br><p>Birth on May 17, 1909</p>'); markers.push(marker);
+var marker = L.marker([51.3523842, 1.1431982]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Spicers+Farm,+Broomfield,+Reculver,+Kent,+England">Spicers Farm, Broomfield, Reculver, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.3795144, 1.1994047]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Three+Ways,+Reculver+Road,+Herne+Bay,+Kent,+England">Three Ways, Reculver Road, Herne Bay, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.3397572, 1.12470235], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

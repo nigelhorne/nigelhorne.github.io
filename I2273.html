@@ -1,0 +1,68 @@
+<html><head><title>Albert William Pointer cFeb 1869 - 1936</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Albert William Pointer cFeb 1869 - 1936</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>A carbonizing foreman and the child of <a href="I2268.html">George Pointer</a> (a house carpenter) and <a href="I1472.html">Esther Spratt</a><b>Albert Pointer</b>, the first cousin three-times-removed on the father&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in St Peters, Thanet, Kent, England <i>c.</i> Feb 1869<span class="citation">1,2</span>. He married <a href="I2468.html">Charlotte Sales</a> in Lewisham, London, England around Feb 1891<span class="citation">4</span>.</p><p>Throughout his life, Albert lived in several places: on Station Road, Birchington, Kent, England on Apr 3, 1881<span class="citation">5</span>; on Offley Road, Lambeth, London on Mar 31, 1901<span class="citation">7</span>; on Blackfriars Road, Southwark, London on Apr 2, 1911<span class="citation">6</span>; and at 25 Acorn Buildings, Acorn Place, Peckham, London in 1936. <p>He died on Aug 1, 1936 in Camberwell, London, England<span class="citation">2,3</span>.</p><h2>Parents</h2><ol><li><a href="I2268.html">George</a> was born <i>c.</i> 1838</li><li><a href="I1472.html">Esther</a> was born in 1836</li></ol><h2>Citations</h2><ol><li>England &amp; Wales births 1837-2006 - Findmypast</li><li>England &amp; Wales deaths 1837-2007 - Findmypast</li><li>England &amp; Wales Government Probate Death Index 1858-2019 - Findmypast</li><li>England &amp; Wales Marriages 1837-2005 - Findmypast</li><li>1881 England, Wales &amp; Scotland Census - Findmypast (was age 12 and the son of the head of the household)</li><li>1911 Census for England &amp; Wales - Findmypast (was age 42 and the head of the household)</li><li>1901 England, Wales &amp; Scotland Census - Findmypast (was age 32 and the head of the household)</li></ol><h2>Media</h2><h3>Albert William Pointer - Probate</h3><a href="img/M6718-Albert-William-Pointer-Probate.jpg" target="_blank"><img src="img/M6718-Albert-William-Pointer-Probate.jpg" alt="Albert William Pointer - Probate" width="175" height="26"></a><br><a href="https://search.findmypast.co.uk/record?id=bmd/b/1869/1/az/000564/021" target="_blank">England &amp; Wales births 1837-2006 - BMD/B/1869/1/AZ/000564/021</a><br><a href="https://search.findmypast.co.uk/record?id=gbc/1901/0004362467" target="_blank">1901 England, Wales &amp; Scotland Census - GBC/1901/0004362467</a><br><a href="https://search.findmypast.co.uk/record?id=gbc/1911/rg14/01782/0017/1" target="_blank">1911 Census for England &amp; Wales - GBC/1911/RG14/01782/0017/1</a><br><a href="https://search.findmypast.co.uk/record?id=bmd/m/1891/1/az/000218/131" target="_blank">England &amp; Wales marriages 1837-2008 - BMD/M/1891/1/AZ/000218/131</a><br><a href="https://search.findmypast.co.uk/record?id=bmd/d/1936/3/az/000652/063" target="_blank">England &amp; Wales deaths 1837-2007 - BMD/D/1936/3/AZ/000652/063</a><br><a href="https://search.findmypast.co.uk/record?id=gbc/1881/0004822325" target="_blank">1881 England, Wales &amp; Scotland Census - GBC/1881/0004822325</a><br><a href="https://search.findmypast.co.uk/record?id=gbor/govprobate/c/1936-1936/00099804" target="_blank">England &amp; Wales Government Probate Death Index 1858-2019 - GBOR/GOVPROBATE/C/1936-1936/00099804</a><br><h2>Family Tree</h2><img src="img/family-tree-I2273.png" width="306" height="170" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2268.html" title="George Pointer\nb. abt 1838" alt="" coords="5,9,109,57"/><area shape="rect" id="node3" href="I2273.html" title="Albert Pointer\nb. abt Feb 1869\nd. 1 Aug 1936" alt="" coords="68,109,174,165"/><area shape="rect" id="node2" href="I1472.html" title="Esther Spratt\nb. 1836\nd. abt Apr 1885" alt="" coords="132,5,238,61"/><area shape="rect" id="node4" href="I2468.html" title="Charlotte Sales\nb. 1869" alt="" coords="197,113,301,161"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.435437825, 0.654570582733736], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.4327287, -0.0481152]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=25+Acorn+Buildings,+Acorn+Place,+Peckham,+London,+England">25 Acorn Buildings, Acorn Place, Peckham, London, England</a><br><p>Living in 1936</p>'); markers.push(marker);
+var marker = L.marker([51.5042494, -0.1043057]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Blackfriars+Road,+Southwark,+London,+England">Blackfriars Road, Southwark, London, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.4739, -0.09381]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Camberwell,+London,+England">Camberwell, London, England</a><br><p>Death on Aug 1, 1936</p>'); markers.push(marker);
+var marker = L.marker([51.46431, -0.01193]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lewisham,+London,+England">Lewisham, London, England</a><br><p>Marriage <i>c.</i> Feb 1891</p>'); markers.push(marker);
+var marker = L.marker([51.47993991211914, -0.11294796799080595]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Offley+Road,+Lambeth,+London,+England">Offley Road, Lambeth, London, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
+var marker = L.marker([51.366626249999996, 1.422089133458278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters,+Thanet,+Kent,+England">St Peters, Thanet, Kent, England</a><br><p>Birth <i>c.</i> Feb 1869</p>'); markers.push(marker);
+var marker = L.marker([51.37541493263274, 1.3048362721409439]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Station+Road,+Birchington,+Kent,+England">Station Road, Birchington, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.435437825, 0.654570582733736], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

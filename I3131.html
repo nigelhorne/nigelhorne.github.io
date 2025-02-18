@@ -1,0 +1,63 @@
+<html><head><title>Jane Jarvis (n&eacute;e Richardson) 1835 - c1910</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Jane Jarvis (n&eacute;e Richardson) 1835 - c1910</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Jane Richardson</b> was born in 1835<span class="citation">1</span> and had 4 children with George Jarvis: <a href="I3132.html">Charles George</a>, <a href="I3052.html">Elizabeth Jane</a>, <a href="I3143.html">George</a> and <a href="I3144.html">Arthur</a>. On Apr 2, 1871, she lived on Europa Cottage, Church Road, Battersea, London, England<span class="citation">2</span>. <p>She died <i>c.</i> Feb 1910 in Wandsworth, London, England<span class="citation">1</span>.</p><h2>Children</h2><ol><li><a href="I3132.html">Charles George</a> was born <i>c.</i> May 1855</li><li><a href="I3052.html">Elizabeth Jane</a> was born in 1857</li><li><a href="I3143.html">George</a> was born in 1862</li><li><a href="I3144.html">Arthur</a> was born in 1868</li></ol><h2>Citations</h2><ol><li>England &amp; Wales deaths 1837-2007 - Findmypast</li><li>1871 England, Wales &amp; Scotland Census - Findmypast (was age 29 and the wife of the head of the household)</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=bmd/d/1910/1/az/000195/237" target="_blank">England &amp; Wales deaths 1837-2007 - BMD/D/1910/1/AZ/000195/237</a><br><h2>Family Tree</h2><img src="img/family-tree-I3131.png" width="488" height="170" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I3131.html" title="Jane Richardson\nb. 1835\nd. abt Feb 1910" alt="" coords="201,5,312,61"/><area shape="rect" id="node2" href="I3057.html" title="George Jarvis\nb. 1841" alt="" coords="336,9,431,57"/><area shape="rect" id="node3" href="I3132.html" title="Charles Jarvis\nb. abt May 1855\nd. 1896" alt="" coords="5,109,116,165"/><area shape="rect" id="node4" href="I3052.html" title="Elizabeth Jarvis\nb. 1857" alt="" coords="140,113,248,161"/><area shape="rect" id="node5" href="I3143.html" title="George Jarvis\nb. 1862" alt="" coords="272,113,367,161"/><area shape="rect" id="node6" href="I3144.html" title="Arthur Jarvis\nb. 1868" alt="" coords="391,113,482,161"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.492388, -0.1953437], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.527076, -0.1828474]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Europa+Cottage,+Church+Road,+Battersea,+London,+England">Europa Cottage, Church Road, Battersea, London, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
+var marker = L.marker([51.4577, -0.20784]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wandsworth,+London,+England">Wandsworth, London, England</a><br><p>Death <i>c.</i> Feb 1910</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.492388, -0.1953437], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

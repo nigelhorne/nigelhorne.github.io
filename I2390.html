@@ -1,0 +1,64 @@
+<html><head><title>John Christie Hutchison 1855 - 1937</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>John Christie Hutchison 1855 - 1937</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>John Hutchison</b>, the husband of <a href="I2389.html">Dorcas Anne Atkinson</a> (the third cousin twice-removed on the father's side of <a href="I1.html">Nigel Horne</a>), was born in New Brunswick, Canada on Jul 8, 1855<span class="citation">1</span> and married Dorcas (with whom he had 2 children: <a href="I2391.html">Mary Jane</a> and <a href="I3218.html">John Hedley</a>) in Harcourt, Kent, New Brunswick on Dec 2, 1884. In 1861, he lived in Queens, New Brunswick, Canada<span class="citation">1</span>. <p>He died on Feb 10, 1937 in Edmundston, Madawaska, New Brunswick.</p><h2>Children</h2><ol><li><a href="I2391.html">Mary Jane</a> was born on Mar 2, 1885</li><li><a href="I3218.html">John Hedley</a> was born on Feb 7, 1896</li></ol><h2>Citations</h2><ol><li>Canada Census 1861 - Findmypast (was the son of the head of the household)</li></ol><h2>Media</h2><h3>John Hutchison</h3><a href="img/M6982-John-Hutchison.jpg" target="_blank"><img src="img/M6982-John-Hutchison.jpg" alt="John Hutchison" width="175" height="262"></a><br><a href="https://search.findmypast.co.uk/record?id=can/census/1861/02653642" target="_blank">Canada Census 1861 - CAN/CENSUS/1861/02653642</a><br><a href="https://search.findmypast.co.uk/record?id=can/census/1871/00234127" target="_blank">Canada Census 1871 - CAN/CENSUS/1871/00234127</a><br><h2>Family Tree</h2><img src="img/family-tree-I2390.png" width="327" height="305" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2390.html" title="&lt;TABLE&gt;" alt="" coords="68,5,186,196"/><area shape="rect" id="node2" href="I2389.html" title="Dorcas Atkinson\nb. 4 May 1855\nd. 14 Mar 1930" alt="" coords="210,73,322,128"/><area shape="rect" id="node3" href="I2391.html" title="Mary Hutchison\nb. 2 Mar 1885\nd. 30 Jun 1964" alt="" coords="5,244,116,299"/><area shape="rect" id="node4" href="I3218.html" title="John Hutchison\nb. 7 Feb 1896\nd. 24 Jun 1997" alt="" coords="140,244,248,299"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([46.60357, -66.786945], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([47.3737, -68.32512]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Edmundston,+Madawaska,+New+Brunswick,+Canada">Edmundston, Madawaska, New Brunswick, Canada</a><br><p>Death on Feb 10, 1937</p>'); markers.push(marker);
+var marker = L.marker([46.46683, -65.24877]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Harcourt,+Kent,+New+Brunswick,+Canada">Harcourt, Kent, New Brunswick, Canada</a><br><p>Marriage on Dec 2, 1884</p>'); markers.push(marker);
+var marker = L.marker([45.83344, -65.99886]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Queens,+New+Brunswick,+Canada">Queens, New Brunswick, Canada</a><br><p>Living in 1861</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([46.60357, -66.786945], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

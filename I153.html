@@ -1,0 +1,64 @@
+<html><head><title>Ann Stuple (n&eacute;e Mount) c1804 - 1882</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Ann Stuple (n&eacute;e Mount) c1804 - 1882</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I175.html">Thomas Mount</a> (an agricultural laborer) and <a href="I178.html">Mary Buxey</a><b>Ann Mount</b>, the 3 times great-grandmother of <a href="I1.html">Nigel Horne</a>, was born in Sturry, Kent, England <i>c.</i> 1804<span class="citation">1,2,3,4,5</span> and married <a href="I152.html">Isaac Stuple</a> (with whom she had 5 children: <a href="I115.html">Abraham</a>, <a href="I176.html">Thomas</a>, <a href="I177.html">Jane</a>, <a href="I174.html">James</a> and <a href="I173.html">Emily</a>) in Herne, Kent, England on Oct 13, 1830.</p><p>Ann spent all of her life in Kent, England. Throughout her life, she lived in Herne in 1851<span class="citation">1</span> (the same place as her mother had been living in 1797), in 1861<span class="citation">2</span> (the same place as her father had been living in 1851) and in 1871<span class="citation">3</span>; and Blean Union Workhouse in Herne on Apr 3, 1881<span class="citation">4</span> which is where she died in 1882<span class="citation">5</span> (oct/Nov/Dec). </p><h2>Parents</h2><ol><li><a href="I175.html">Thomas</a> was born in 1774</li><li><a href="I178.html">Mary Elizabeth</a> was born in 1779</li></ol><h2>Children</h2><ol><li><a href="I115.html">Abraham</a> was born <i>c.</i> 1827</li><li><a href="I176.html">Thomas</a> was born <i>c.</i> 1831</li><li><a href="I177.html">Jane</a> was born <i>c.</i> 1833</li><li><a href="I174.html">James</a> was born <i>c.</i> May 1838</li><li><a href="I173.html">Emily</a> was born <i>c.</i> 1846</li></ol><h2>Citations</h2><ol><li>1851 England Census Online publication - Provo, UT, USA: The Generations Network, Inc., 2005.Original data - Census Returns of England and Wales, 1851. Kew, Surrey, England: The National Archives of the UK (TNA): Public Record Office (PRO), 1851. Data imaged from the National</li><li>1861 England Census Online publication - Provo, UT, USA: The Generations Network, Inc., 2005.Original data - Census Returns of England and Wales, 1861. Kew, Surrey, England: The National Archives of the UK (TNA): Public Record Office (PRO), 1861. Data imaged from the National</li><li>1871 England Census Online publication - Provo, UT, USA: The Generations Network, Inc., 2004.Original data - Census Returns of England and Wales, 1871. Kew, Surrey, England: The National Archives of the UK (TNA): Public Record Office (PRO), 1871. Data imaged from the National</li><li>1881 England Census Online publication - Provo, UT, USA: The Generations Network, Inc., 2004. 1881 British Isles Census Index provided by The Church of Jesus Christ of Latter-day Saints &copy; Copyright 1999 Intellectual Reserve, Inc. All rights reserved. All use is subject to the</li><li>England &amp; Wales, FreeBMD Death Index: 1837-1915 Online publication - Provo, UT, USA: The Generations Network, Inc., 2006.Original data - General Register Office. England and Wales Civil Registration Indexes. London, England: General Register Office. &copy; Crown copyright. Published by permission of the Cont</li></ol><h2>Family Tree</h2><img src="img/family-tree-I153.png" width="623" height="274" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I175.html" title="Thomas Mount\nb. 1774\nd. 23 Aug 1851" alt="" coords="204,5,310,61"/><area shape="rect" id="node3" href="I153.html" title="Ann Mount\nb. abt 1804\nd. 1882" alt="" coords="274,109,360,165"/><area shape="rect" id="node2" href="I178.html" title="Mary Buxey\nb. 1779\nd. 1858" alt="" coords="334,5,423,61"/><area shape="rect" id="node4" href="I152.html" title="Isaac Stuple\nb. 1799\nd. Apr/May/Jun 1870" alt="" coords="384,109,522,165"/><area shape="rect" id="node5" href="I115.html" title="Abraham Mount\nb. abt 1827\nd. 12 May 1897" alt="" coords="5,213,117,268"/><area shape="rect" id="node6" href="I176.html" title="Thomas Stupple\nb. abt 1831\nd. abt Nov 1899" alt="" coords="141,213,250,268"/><area shape="rect" id="node7" href="I177.html" title="Jane Stuple\nb. abt 1833\nd. Sep 1910" alt="" coords="274,213,360,268"/><area shape="rect" id="node8" href="I174.html" title="James Stupple\nb. abt May 1838\nd. abt May 1917" alt="" coords="383,213,494,268"/><area shape="rect" id="node9" href="I173.html" title="Emily Stupple\nb. abt 1846\nd. Sep 1910" alt="" coords="518,213,617,268"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.31678018, 1.125], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.35022736, 1.13315368]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Blean+Union+Workhouse,+Herne,+Kent,+England">Blean Union Workhouse, Herne, Kent, England</a><br><p>Death in 1882</p><p>Living on Apr 3, 1881</p>'); markers.push(marker);
+var marker = L.marker([51.333333, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne,+Kent,+England">Herne, Kent, England</a><br><p>Marriage on Oct 13, 1830</p><p>Living in 1851</p><p>Living in 1871</p><p>Living in 1861</p>'); markers.push(marker);
+var marker = L.marker([51.283333, 1.116667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sturry,+Kent,+England">Sturry, Kent, England</a><br><p>Birth <i>c.</i> 1804</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.31678018, 1.125], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

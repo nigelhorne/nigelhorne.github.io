@@ -1,0 +1,65 @@
+<html><head><title>Alfred Thomas Gower 1876 - 1948</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Alfred Thomas Gower 1876 - 1948</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Alfred Gower</b>, the husband of <a href="I2998.html">Lily Spain</a> (the second cousin twice-removed on the father's side of <a href="I1.html">Nigel Horne</a>), was born in Bermondsey, London, England in 1876<span class="citation">1</span> and married Lily (with whom he had 6 children: <a href="I3000.html">Adelaide Sylvia</a>, <a href="I3664.html">Irene Violet</a>, <a href="I3001.html">Cecil</a>, <a href="I3665.html">Margaret Mary</a>, <a href="I3666.html">Patricia Winifred Jean</a> and <a href="I3667.html">Alfred Joseph</a>) in Wandsworth, London, England around Aug 1908<span class="citation">2</span>. On Apr 2, 1911, he lived on St James Road, Camberwell, London<span class="citation">1</span>. <p>He died on Mar 18, 1948 on 23 Thanet Road, Broadstairs, Kent, England.</p><h2>Children</h2><ol><li><a href="I3000.html">Adelaide Sylvia</a> was born in 1909</li><li><a href="I3664.html">Irene Violet</a> was born on Jul 14, 1911</li><li><a href="I3001.html">Cecil</a> was born on Mar 26, 1913</li><li><a href="I3665.html">Margaret Mary</a> was born on Dec 22, 1919</li><li><a href="I3666.html">Patricia Winifred Jean</a> was born on Feb 23, 1922</li><li><a href="I3667.html">Alfred Joseph</a> was born <i>c.</i> Jan 1929</li></ol><h2>Citations</h2><ol><li>1911 Census for England &amp; Wales - Findmypast (was age 35 and the head of the household)</li><li>England &amp; Wales Marriages 1837-2005 - Findmypast</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=bmd/m/1908/3/az/000153/033" target="_blank">England &amp; Wales marriages 1837-2005 - BMD/M/1908/3/AZ/000153/033</a><br><a href="https://search.findmypast.co.uk/transcript?id=GBC/1911/RG14/02540/0163/1" target="_blank">1911 Census For England &amp; Wales - GBC-1911-RG14-02540-0163-1</a><br><h2>Family Tree</h2><img src="img/family-tree-I2999.png" width="882" height="170" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2999.html" title="Alfred Gower\nb. 1876\nd. 18 Mar 1948" alt="" coords="413,5,517,61"/><area shape="rect" id="node2" href="I2998.html" title="Lily Spain\nb. 1 May 1888\nd. 3 Feb 1953" alt="" coords="542,5,642,61"/><area shape="rect" id="node3" href="I3000.html" title="Adelaide Spain&#45;Gower\nb. 1909\nd. Oct 1972" alt="" coords="5,109,152,165"/><area shape="rect" id="node4" href="I3664.html" title="Irene Spain&#45;Gower\nb. 14 Jul 1911\nd. abt Dec 1996" alt="" coords="176,109,299,165"/><area shape="rect" id="node5" href="I3001.html" title="Cecil Spain&#45;Gower\nb. 26 Mar 1913\nd. 28 Jan 2000" alt="" coords="322,109,448,165"/><area shape="rect" id="node6" href="I3665.html" title="Margaret Spain&#45;Gower\nb. 22 Dec 1919\nd. abt Oct 1983" alt="" coords="472,109,618,165"/><area shape="rect" id="node7" href="I3666.html" title="Patricia Gower\nb. 23 Feb 1922\nd. abt Dec 1998" alt="" coords="642,109,750,165"/><area shape="rect" id="node8" href="I3667.html" title="Alfred Gower\nb. abt Jan 1929\nd. abt Jan 1929" alt="" coords="774,109,877,165"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([51.4176535635151, 0.61008038875025], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.337367127030284, 1.4280007775005006]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=23+Thanet+Road,+Broadstairs,+Kent,+England">23 Thanet Road, Broadstairs, Kent, England</a><br><p>Death on Mar 18, 1948</p>'); markers.push(marker);
+var marker = L.marker([51.49794, -0.06607]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bermondsey,+London,+England">Bermondsey, London, England</a><br><p>Birth in 1876</p>'); markers.push(marker);
+var marker = L.marker([51.474549550000006, -0.07293588777018314]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+James+Road,+Camberwell,+London,+England">St James Road, Camberwell, London, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.4577, -0.20784]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wandsworth,+London,+England">Wandsworth, London, England</a><br><p>Marriage <i>c.</i> Aug 1908</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([51.4176535635151, 0.61008038875025], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

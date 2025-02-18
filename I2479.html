@@ -1,0 +1,64 @@
+<html><head><title>Verlin Miller 1890 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Verlin Miller 1890 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The son of <a href="I2353.html">Henry Miller</a> and <a href="I2352.html">Charlotte Pool</a><b>Verlin Miller</b>, the third cousin three-times-removed on the mother&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Clay, Indiana, USA on May 1, 1890<span class="citation">1</span> and. He married <a href="I2480.html">Fannie Love</a> (with whom he had 1 surviving child) in Clay in 1915<span class="citation">1</span>.</p><p>Throughout his life, he lived in Owen, Indiana, USA on Jun 1, 1900<span class="citation">3</span>; and on Howesville Road, Lewis, Indiana on Jan 1, 1920<span class="citation">2</span>. </p><h2>Parents</h2><ol><li><a href="I2353.html">Henry William Charles</a> was born on Jul 5, 1843</li><li><a href="I2352.html">Charlotte Maria</a> was born on Feb 7, 1847</li></ol><h2>Citations</h2><ol><li>United States Marriages - Findmypast</li><li>US Census 1920 - Findmypast (was age 29 and the head of the household)</li><li>US Census 1900 - Findmypast (was the son of the head of the household)</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=usc/1920/004964848/00152/092" target="_blank">US Census 1920 - USC/1920/004964848/00152/092</a><br><a href="https://search.findmypast.co.uk/record?id=fs/mar/37204090/1" target="_blank">United States Marriages - FS/MAR/37204090/1</a><br><a href="https://search.findmypast.co.uk/record?id=r_1128510951" target="_blank">United States Marriages - R_1128510951</a><br><a href="https://search.findmypast.co.uk/record?id=r_1128510951/1" target="_blank">United States Marriages - R_1128510951/1</a><br><h2>Family Tree</h2><img src="img/family-tree-I2479.png" width="296" height="258" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2353.html" title="Henry Miller\nb. 5 Jul 1843\nd. 3 Jul 1902" alt="" coords="5,5,98,61"/><area shape="rect" id="node3" href="I2479.html" title="Verlin Miller\nb. 1 May 1890" alt="" coords="61,109,162,157"/><area shape="rect" id="node2" href="I2352.html" title="Charlotte Pool\nb. 7 Feb 1847\nd. 21 Apr 1921" alt="" coords="122,5,224,61"/><area shape="rect" id="node4" href="I2480.html" title="Fannie Love\nb. 14 Mar 1889" alt="" coords="186,109,290,157"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([39.30804395, -86.98259115], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([39.439101, -87.119952]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Clay,+Indiana,+USA">Clay, Indiana, USA</a><br><p>Birth on May 1, 1890</p><p>Marriage in 1915</p>'); markers.push(marker);
+var marker = L.marker([39.1769869, -87.1469573]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Howesville+Road,+Lewis,+Clay,+Indiana,+USA">Howesville Road, Lewis, Clay, Indiana, USA</a><br><p>Living on Jan 1, 1920</p>'); markers.push(marker);
+var marker = L.marker([39.30795, -86.818225]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Owen,+Indiana,+USA">Owen, Indiana, USA</a><br><p>Living on Jun 1, 1900</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([39.30804395, -86.98259115], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>

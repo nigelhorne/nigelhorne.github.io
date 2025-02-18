@@ -1,0 +1,69 @@
+<html><head><title>Dulcie Isabella Arnold (n&eacute;e Bloy) 1907 - 2001</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Dulcie Isabella Arnold (n&eacute;e Bloy) 1907 - 2001</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The younger of 2 children of <a href="I2278.html">Francis Bloy</a> (a plumber) and <a href="I2276.html">Alice Pointer</a><b>Dulcie Bloy</b>, the second cousin twice-removed on the father&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Birchington, Kent, England on Jun 22, 1907<span class="citation">1</span>. She married <a href="I2281.html">George Arnold</a> in La Jolla, San Diego, California, USA on Sep 7, 1936.</p><p>Throughout her life, Dulcie lived in several places: on Kingsdown House, St Peters Park Road, Broadstairs, Kent, England on Apr 2, 1911<span class="citation">4</span>; in Mesa, Maricopa, Arizona, USA on Jan 1, 1920<span class="citation">2</span>; in Kirkwood, St. Louis, Missouri, USA on Apr 1, 1930<span class="citation">3</span>; in Warrenton, Warren, Missouri in 1935; and in St. Louis on Apr 1, 1940<span class="citation">5</span>. <p>She died on Dec 13, 2001 in Fillmore, Ventura, California.</p><h2>Parents</h2><ol><li><a href="I2278.html">Francis Joseph Field</a> was born on Dec 14, 1879</li><li><a href="I2276.html">Alice Mary</a> was born on Jan 29, 1879</li></ol><h2>Citations</h2><ol><li>England &amp; Wales births 1837-2006 - Findmypast</li><li>US Census 1920 - Findmypast (was age 12 and the daughter of the head of the household)</li><li>US Census 1930 - Findmypast (was age 22 and the daughter of the head of the household)</li><li>1911 Census for England &amp; Wales - Findmypast (was age 3 and the daughter of the head of the household)</li><li>US Census 1940 - Findmypast (was age 32 and the wife of the head of the household)</li></ol><h2>Media</h2><h3>Dulcie Isabella Bloy</h3><a href="img/M6761-Dulcie-Isabella-Bloy.jpg" target="_blank"><img src="img/M6761-Dulcie-Isabella-Bloy.jpg" alt="Dulcie Isabella Bloy" width="175" height="234"></a><br><h3>Dulcie Isabella Bloy - 2</h3><a href="img/M6765-Dulcie-Isabella-Bloy-2.jpg" target="_blank"><img src="img/M6765-Dulcie-Isabella-Bloy-2.jpg" alt="Dulcie Isabella Bloy - 2" width="175" height="237"></a><br><h3>Warrenton Banner - 19 Jun 1936</h3><a href="img/M6766-Warrenton-Banner-19-Jun-1936.jpg" target="_blank"><img src="img/M6766-Warrenton-Banner-19-Jun-1936.jpg" alt="Warrenton Banner - 19 Jun 1936" width="175" height="159"></a><br><h3>Dulcie Bloy - 3</h3><a href="img/M6768-Dulcie-Bloy-3.jpg" target="_blank"><img src="img/M6768-Dulcie-Bloy-3.jpg" alt="Dulcie Bloy - 3" width="175" height="254"></a><br><h3>Dulcie Bloy - 4</h3><a href="img/M6769-Dulcie-Bloy-4.jpg" target="_blank"><img src="img/M6769-Dulcie-Bloy-4.jpg" alt="Dulcie Bloy - 4" width="175" height="196"></a><br><a href="https://search.findmypast.co.uk/record?id=bmd/b/1907/3/az/000057/348" target="_blank">England &amp; Wales births 1837-2006 - BMD/B/1907/3/AZ/000057/348</a><br><a href="https://search.findmypast.co.uk/record?id=gbc/1911/rg14/04505/0767/6" target="_blank">1911 Census for England &amp; Wales - GBC/1911/RG14/04505/0767/6</a><br><a href="https://search.findmypast.co.uk/record?id=usc/1920/004964230/00636/038" target="_blank">US Census 1920 - USC/1920/004964230/00636/038</a><br><a href="https://search.findmypast.co.uk/record?id=usc/1940/1505917347" target="_blank">US Census 1940 - USC/1940/1505917347</a><br><h2>Family Tree</h2><img src="img/family-tree-I2280.png" width="280" height="305" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2278.html" title="Francis Bloy\nb. 14 Dec 1879\nd. 16 Jun 1941" alt="" coords="5,5,110,61"/><area shape="rect" id="node3" href="I2280.html" title="&lt;TABLE&gt;" alt="" coords="64,109,179,299"/><area shape="rect" id="node2" href="I2276.html" title="Alice Pointer\nb. 29 Jan 1879\nd. 26 Nov 1959" alt="" coords="134,5,240,61"/></map>
+		<head>
+			<title>Interactive Map</title>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+			<style>
+				#map { width: 600px; height: 400px; }
+				#search-box { margin: 10px; padding: 5px; }
+				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+			</style>
+		</head>
+	<h2>Map</h2><center>
+		<!--
+			<input type="text" id="search-box" placeholder="Enter location">
+			<button id="reset-button">Reset Map</button>
+		-->
+		<div id="map"></div>
+		<script>
+			var map = L.map('map').setView([42.1166685, -58.74575735], 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+			var markers = [];
+	var marker = L.marker([51.366667, 1.3]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Birchington,+Kent,+England">Birchington, Kent, England</a><br><p>Birth on Jun 22, 1907</p>'); markers.push(marker);
+var marker = L.marker([34.39916, -118.91815]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fillmore,+Ventura,+California,+USA">Fillmore, Ventura, California, USA</a><br><p>Death on Dec 13, 2001</p>'); markers.push(marker);
+var marker = L.marker([51.3369374, 1.4266353]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kingsdown+House,+St+Peters+Park+Road,+Broadstairs,+Kent,+England">Kingsdown House, St Peters Park Road, Broadstairs, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([38.58339, -90.40678]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kirkwood,+St.+Louis,+Missouri,+USA">Kirkwood, St. Louis, Missouri, USA</a><br><p>Living on Apr 1, 1930</p>'); markers.push(marker);
+var marker = L.marker([32.86667, -117.27722]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=La+Jolla,+San+Diego,+California,+USA">La Jolla, San Diego, California, USA</a><br><p>Marriage on Sep 7, 1936</p>'); markers.push(marker);
+var marker = L.marker([33.42227, -111.82264]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Mesa,+Maricopa,+Arizona,+USA">Mesa, Maricopa, Arizona, USA</a><br><p>Living on Jan 1, 1920</p>'); markers.push(marker);
+var marker = L.marker([38.62727, -90.19789]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St.+Louis,+Missouri,+USA">St. Louis, Missouri, USA</a><br><p>Living on Apr 1, 1940</p>'); markers.push(marker);
+var marker = L.marker([38.81144, -91.14154]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Warrenton,+Warren,+Missouri,+USA">Warrenton, Warren, Missouri, USA</a><br><p>Living in 1935</p>'); markers.push(marker);
+		document.getElementById('reset-button').addEventListener('click', function() {
+			map.setView([42.1166685, -58.74575735], 12);
+		});
+
+		document.getElementById('search-box').addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				var query = event.target.value.trim();
+				if (!query) {
+					alert('Please enter a valid location.');
+					return;
+				}
+
+				fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`, {
+					headers: { 'User-Agent': '__PACKAGE__' }
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.length > 0) {
+						var lat = data[0].lat;
+						var lon = data[0].lon;
+						map.setView([lat, lon], 14);
+						var searchMarker = L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
+						markers.push(searchMarker);
+					} else {
+						alert('No results found. Try a different location.');
+					}
+				})
+				.catch(error => {
+					console.error('Error fetching location:', error);
+					alert('Failed to fetch location. Please check your internet connection and try again.');
+				});
+			}
+		});
+
+		</script>
+	</center>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>
