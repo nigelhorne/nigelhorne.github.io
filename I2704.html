@@ -1,6 +1,4 @@
-<html><head><title>Laura Ada Dale (n&eacute;e Simmons) 1894 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Laura Ada Dale (n&eacute;e Simmons) 1894 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Laura Simmons</b>, the wife of <a href="I2701.html">Edward William Alfred Dale</a> (the second cousin twice-removed on the father's side of <a href="I1.html">Nigel Horne</a>), was born on May 7, 1894<span class="citation">1</span>. She married Edward (an agricultural laborer) at St Mary&apos;s Church, Chartham, Kent, England on Dec 26, 1915<span class="citation">2</span>. On Sep 29, 1939, she lived on 27 London Road, Swale, Kent<span class="citation">1</span>. </p><h2>Citations</h2><ol><li>1939 Register - Findmypast (was the wife of the head of the household)</li><li>England &amp; Wales Marriages 1837-2005 - Findmypast</li></ol><h2>Family Tree</h2><img src="img/family-tree-I2704.png" width="243" height="66" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2704.html" title="Laura Simmons\nb. 7 May 1894" alt="" coords="5,9,111,57"/><area shape="rect" id="node2" href="I2701.html" title="Edward Dale\nb. 12 Feb 1887\nd. abt Jan 1944" alt="" coords="134,5,238,61"/></map>
-		<head>
-			<title>Interactive Map</title>
+<html><head><title>Laura Ada Dale (n&eacute;e Simmons) 1894 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Laura Ada Dale (n&eacute;e Simmons) 1894 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Laura Simmons</b>, the wife of <a href="I2701.html">Edward William Alfred Dale</a> (the second cousin twice-removed on the father's side of <a href="I1.html">Nigel Horne</a>), was born on 7 May 1894<span class="citation">1</span>. She married Edward (an agricultural labourer) at St Mary&apos;s Church, Chartham, Kent, England on 26 Dec 1915<span class="citation">2</span>. On 29 Sept 1939, she lived on 27 London Road, Swale, Kent<span class="citation">1</span>. </p><h2>Citations</h2><ol><li>1939 Register - Findmypast (was the wife of the head of the household)</li><li>England &amp; Wales Marriages 1837-2005 - Findmypast</li></ol><h2>Family Tree</h2><img src="img/family-tree-I2704.png" width="287" height="65" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2704.html" title="Laura Simmons\nb. 7 May 1894" alt="" coords="5,9,135,57"/><area shape="rect" id="node2" href="I2701.html" title="Edward Dale\nb. 12 Feb 1887\nd. abt Jan 1944" alt="" coords="159,5,282,60"/></map>
 			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 			<style>
@@ -8,7 +6,6 @@
 				#search-box { margin: 10px; padding: 5px; }
 				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
 			</style>
-		</head>
 	<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
@@ -16,16 +13,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2990909741379, 0.872321074137931], 12);
+			var map = L.map('map').setView([51.2990909741379, 0.872321074137931], 17);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.34221614827587, 0.7265583482758621]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=27+London+Road,+Swale,+Kent,+England">27 London Road, Swale, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.2559658, 1.0180838]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Marys+Church,+Chartham,+Kent,+England">St Marys Church, Chartham, Kent, England</a><br><p>Marriage on Dec 26, 1915</p>'); markers.push(marker);
+	var marker = L.marker([51.34221614827587, 0.7265583482758621]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=27+London+Road,+Swale,+Kent,+England">27 London Road, Swale, Kent, England</a><br><p>Living on 29 Sept 1939</p>'); markers.push(marker);
+var marker = L.marker([51.2559658, 1.0180838]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Marys+Church,+Chartham,+Kent,+England">St Marys Church, Chartham, Kent, England</a><br><p>Marriage on 26 Dec 1915</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2990909741379, 0.872321074137931], 12);
+			map.setView([51.2990909741379, 0.872321074137931], 17);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -60,4 +57,4 @@ var marker = L.marker([51.2559658, 1.0180838]).addTo(map).bindPopup('<a href="ht
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>

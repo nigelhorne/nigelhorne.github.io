@@ -1,6 +1,4 @@
-<html><head><title>Sarah Peters 1888 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Sarah Peters 1888 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Sarah</b>, the wife of <a href="I1894.html">Alonzo Frederick Peters</a> (the third cousin twice-removed on the father's side of <a href="I1.html">Nigel Horne</a>), was born in Pennsylvania, USA in 1888<span class="citation">1</span>.</p><p>Throughout her life, she lived in Ravenna, King, Washington, USA in 1930<span class="citation">1</span> and on Apr 1, 1930<span class="citation">1</span>; and in Ferncliff, Rollingbay, Kitsap, Washington on Apr 1, 1940<span class="citation">2</span>. </p><h2>Citations</h2><ol><li>US Census 1930 - Findmypast (was age 42 and the wife of the head of the household)</li><li>US Census 1940 - Findmypast (was age 53 and the wife of the head of the household)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I1896.png" width="211" height="66" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I1896.html" title="Sarah J\nb. 1888" alt="" coords="5,9,77,57"/><area shape="rect" id="node2" href="I1894.html" title="Alonzo Peters\nb. 21 Jan 1877\nd. 14 Dec 1947" alt="" coords="101,5,206,61"/></map>
-		<head>
-			<title>Interactive Map</title>
+<html><head><title>Sarah Peters 1888 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Sarah Peters 1888 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Sarah</b>, the wife of <a href="I1894.html">Alonzo Frederick Peters</a> (the third cousin twice-removed on the father's side of <a href="I1.html">Nigel Horne</a>), was born in Pennsylvania, USA in 1888<span class="citation">1</span>.</p><p>Throughout her life, she lived in Ravenna, King, Washington, USA in 1930<span class="citation">1</span> and on 1 Apr 1930<span class="citation">1</span>; and in Ferncliff, Rollingbay, Kitsap, Washington on 1 Apr 1940<span class="citation">2</span>. </p><h2>Citations</h2><ol><li>US Census 1930 - Findmypast (was age 42 and the wife of the head of the household)</li><li>US Census 1940 - Findmypast (was age 53 and the wife of the head of the household)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I1896.png" width="229" height="65" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I1896.html" title="Sarah J\nb. 1888" alt="" coords="5,9,77,57"/><area shape="rect" id="node2" href="I1894.html" title="Alonzo Peters\nb. 21 Jan 1877\nd. 14 Dec 1947" alt="" coords="102,5,223,60"/></map>
 			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 			<style>
@@ -8,7 +6,6 @@
 				#search-box { margin: 10px; padding: 5px; }
 				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
 			</style>
-		</head>
 	<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
@@ -16,16 +13,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([47.659125, -122.40402], 12);
+			var map = L.map('map').setView([47.659125, -122.40402], 17);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([47.6426, -122.51041]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ferncliff,+Rollingbay,+Kitsap,+Washington,+USA">Ferncliff, Rollingbay, Kitsap, Washington, USA</a><br><p>Living on Apr 1, 1940</p>'); markers.push(marker);
-var marker = L.marker([47.67565, -122.29763]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ravenna,+King,+Washington,+USA">Ravenna, King, Washington, USA</a><br><p>Living on Apr 1, 1930</p><p>Living in 1930</p>'); markers.push(marker);
+	var marker = L.marker([47.6426, -122.51041]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ferncliff,+Rollingbay,+Kitsap,+Washington,+USA">Ferncliff, Rollingbay, Kitsap, Washington, USA</a><br><p>Living on 1 Apr 1940</p>'); markers.push(marker);
+var marker = L.marker([47.67565, -122.29763]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ravenna,+King,+Washington,+USA">Ravenna, King, Washington, USA</a><br><p>Living in 1930</p><p>Living on 1 Apr 1930</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([47.659125, -122.40402], 12);
+			map.setView([47.659125, -122.40402], 17);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -60,4 +57,4 @@ var marker = L.marker([47.67565, -122.29763]).addTo(map).bindPopup('<a href="htt
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>

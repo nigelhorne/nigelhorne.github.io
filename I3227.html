@@ -1,6 +1,4 @@
-<html><head><title>William Fraser Atkinson 1902 - 1953</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>William Fraser Atkinson 1902 - 1953</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I3223.html">Arthur Atkinson</a> and <a href="I3224.html">Georgette Fraser</a><b>William Atkinson</b>, the third cousin twice-removed on the father&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in 1902 and married <a href="I3228.html">Winifred MacDonald</a> (with whom he had 1 child, Emma Elizabeth, ) in Melfort, Saskatchewan, Canada on Nov 20, 1924.<p>He died in 1953.</p><h2>Parents</h2><ol><li><a href="I3223.html">Arthur Bowden</a> was born in 1866</li><li><a href="I3224.html">Georgette A</a> was born <i>c.</i> 1865</li></ol><h2>Children</h2><ol><li><a href="I3229.html">Emma Elizabeth</a> was born on Aug 24, 1925</li></ol><h2>Family Tree</h2><img src="img/family-tree-I3227.png" width="351" height="274" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I3223.html" title="Arthur Atkinson\nb. 1866\nd. 1943" alt="" coords="5,5,116,61"/><area shape="rect" id="node3" href="I3227.html" title="William Atkinson\nb. 1902\nd. 1953" alt="" coords="68,109,186,165"/><area shape="rect" id="node2" href="I3224.html" title="Georgette Fraser\nb. abt 1865" alt="" coords="140,9,250,57"/><area shape="rect" id="node4" href="I3228.html" title="Winifred MacDonald\nb. abt 1903\nd. 1972" alt="" coords="210,109,346,165"/><area shape="rect" id="node5" href="I3229.html" title="Emma Atkinson\nb. 24 Aug 1925\nd. 2002" alt="" coords="73,213,181,268"/></map>
-		<head>
-			<title>Interactive Map</title>
+<html><head><title>William Fraser Atkinson 1902 - 1953</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>William Fraser Atkinson 1902 - 1953</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I3223.html">Arthur Atkinson</a> and <a href="I3224.html">Georgette Fraser</a><b>William Atkinson</b>, the third cousin twice-removed on the father&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in 1902 and married <a href="I3228.html">Winifred MacDonald</a> (with whom he had 1 child, Emma Elizabeth, ) in Melfort, Saskatchewan, Canada on 20 Nov 1924.<p>He died in 1953.</p><h2>Parents</h2><ol><li><a href="I3223.html">Arthur Bowden</a> was born in 1866</li><li><a href="I3224.html">Georgette A</a> was born <i>c.</i> 1865</li></ol><h2>Children</h2><ol><li><a href="I3229.html">Emma Elizabeth</a> was born on 24 Aug 1925</li></ol><h2>Family Tree</h2><img src="img/family-tree-I3227.png" width="411" height="271" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I3223.html" title="Arthur Atkinson\nb. 1866\nd. 1943" alt="" coords="5,5,136,60"/><area shape="rect" id="node3" href="I3227.html" title="William Atkinson\nb. 1902\nd. 1953" alt="" coords="81,108,218,163"/><area shape="rect" id="node2" href="I3224.html" title="Georgette Fraser\nb. abt 1865" alt="" coords="160,9,299,57"/><area shape="rect" id="node4" href="I3228.html" title="Winifred MacDonald\nb. abt 1903\nd. 1972" alt="" coords="243,108,405,163"/><area shape="rect" id="node5" href="I3229.html" title="Emma Atkinson\nb. 24 Aug 1925\nd. 2002" alt="" coords="84,211,215,265"/></map>
 			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 			<style>
@@ -8,7 +6,6 @@
 				#search-box { margin: 10px; padding: 5px; }
 				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
 			</style>
-		</head>
 	<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
@@ -16,15 +13,15 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([52.86673, -104.61768], 12);
+			var map = L.map('map').setView([52.86673, -104.61768], 17);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([52.86673, -104.61768]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Melfort,+Saskatchewan,+Canada">Melfort, Saskatchewan, Canada</a><br><p>Marriage on Nov 20, 1924</p>'); markers.push(marker);
+	var marker = L.marker([52.86673, -104.61768]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Melfort,+Saskatchewan,+Canada">Melfort, Saskatchewan, Canada</a><br><p>Marriage on 20 Nov 1924</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([52.86673, -104.61768], 12);
+			map.setView([52.86673, -104.61768], 17);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -59,4 +56,4 @@
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>

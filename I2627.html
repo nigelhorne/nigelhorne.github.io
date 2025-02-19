@@ -1,6 +1,4 @@
-<html><head><title>Sarah A E Payton 1875 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Sarah A E Payton 1875 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I2454.html">William Payton</a> (a brickmaker) and <a href="I2453.html">Caroline Mount</a><b>Sarah Payton</b>, the second cousin three-times-removed on the mother&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Herne, Kent, England in 1875<span class="citation">1</span>. On Apr 3, 1881, she lived at Brickfield in Herne<span class="citation">1</span>. </p><h2>Parents</h2><ol><li><a href="I2454.html">William</a> was born in 1844</li><li><a href="I2453.html">Caroline</a> was born <i>c.</i> Aug 1849</li></ol><h2>Citations</h2><ol><li>1881 England, Wales &amp; Scotland Census - Findmypast (was age 6 and the daughter of the head of the household)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I2627.png" width="248" height="162" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2454.html" title="William Payton\nb. 1844\nd. 1907" alt="" coords="5,5,111,61"/><area shape="rect" id="node3" href="I2627.html" title="Sarah A E Payton\nb. 1875" alt="" coords="66,109,181,157"/><area shape="rect" id="node2" href="I2453.html" title="Caroline Mount\nb. abt Aug 1849\nd. abt Feb 1933" alt="" coords="134,5,243,61"/></map>
-		<head>
-			<title>Interactive Map</title>
+<html><head><title>Sarah A E Payton 1875 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Sarah A E Payton 1875 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I2454.html">William Payton</a> (a brickmaker) and <a href="I2453.html">Caroline Mount</a><b>Sarah Payton</b>, the second cousin three-times-removed on the mother&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Herne, Kent, England in 1875<span class="citation">1</span>. On 3 Apr 1881, she lived at Brickfield in Herne<span class="citation">1</span>. </p><h2>Parents</h2><ol><li><a href="I2454.html">William</a> was born in 1844</li><li><a href="I2453.html">Caroline</a> was born <i>c.</i> Aug 1849</li></ol><h2>Citations</h2><ol><li>1881 England, Wales &amp; Scotland Census - Findmypast (was age 6 and the daughter of the head of the household)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I2627.png" width="288" height="161" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2454.html" title="William Payton\nb. 1844\nd. 1907" alt="" coords="5,5,129,60"/><area shape="rect" id="node3" href="I2627.html" title="Sarah A E Payton\nb. 1875" alt="" coords="71,108,213,156"/><area shape="rect" id="node2" href="I2453.html" title="Caroline Mount\nb. abt Aug 1849\nd. abt Feb 1933" alt="" coords="153,5,283,60"/></map>
 			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 			<style>
@@ -8,7 +6,6 @@
 				#search-box { margin: 10px; padding: 5px; }
 				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
 			</style>
-		</head>
 	<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
@@ -16,16 +13,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.347190925, 1.09958770780928], 12);
+			var map = L.map('map').setView([51.355349425, 1.09957620780928], 17);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.36104885, 1.0658424156185649]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Brickfield,+Herne,+Kent,+England">Brickfield, Herne, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
-var marker = L.marker([51.333333, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne,+Kent,+England">Herne, Kent, England</a><br><p>Birth in 1875</p>'); markers.push(marker);
+	var marker = L.marker([51.36104885, 1.0658424156185649]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Brickfield,+Herne,+Kent,+England">Brickfield, Herne, Kent, England</a><br><p>Living on 3 Apr 1881</p>'); markers.push(marker);
+var marker = L.marker([51.34965, 1.13331]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne,+Kent,+England">Herne, Kent, England</a><br><p>Birth in 1875</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.347190925, 1.09958770780928], 12);
+			map.setView([51.355349425, 1.09957620780928], 17);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -60,4 +57,4 @@ var marker = L.marker([51.333333, 1.133333]).addTo(map).bindPopup('<a href="http
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>

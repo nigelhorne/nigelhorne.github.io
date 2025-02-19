@@ -1,6 +1,4 @@
-<html><head><title>John Culmer c1849 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>John Culmer c1849 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>A field worker and the child of <a href="I1349.html">George Culmer</a> (an agricultural laborer) and <a href="I1350.html">Harriet Marten</a><b>John Culmer</b>, the first cousin three-times-removed on the mother&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Canterbury, Kent, England <i>c.</i> 1849. On Apr 7, 1861, he lived at St Thomas Hill in Canterbury<span class="citation">1</span>. </p><h2>Parents</h2><ol><li><a href="I1349.html">George</a> was born <i>c.</i> 1824</li><li><a href="I1350.html">Harriet</a> was born <i>c.</i> 1826</li></ol><h2>Citations</h2><ol><li>1861 England, Wales &amp; Scotland Census - Findmypast (was age 12 and the son of the head of the household)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I1361.png" width="245" height="162" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I1349.html" title="George Culmer\nb. abt 1824\nd. abt Nov 1912" alt="" coords="5,5,115,61"/><area shape="rect" id="node3" href="I1361.html" title="John Culmer\nb. abt 1849" alt="" coords="79,109,169,157"/><area shape="rect" id="node2" href="I1350.html" title="Harriet Marten\nb. abt 1826" alt="" coords="139,9,240,57"/></map>
-		<head>
-			<title>Interactive Map</title>
+<html><head><title>John Culmer c1849 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>John Culmer c1849 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>A field worker and the child of <a href="I1349.html">George Culmer</a> (an agricultural labourer) and <a href="I1350.html">Harriet Marten</a><b>John Culmer</b>, the first cousin three-times-removed on the mother&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Canterbury, Kent, England <i>c.</i> 1849. On 7 Apr 1861, he lived at St Thomas Hill in Canterbury<span class="citation">1</span>. </p><h2>Parents</h2><ol><li><a href="I1349.html">George</a> was born <i>c.</i> 1824</li><li><a href="I1350.html">Harriet</a> was born <i>c.</i> 1826</li></ol><h2>Citations</h2><ol><li>1861 England, Wales &amp; Scotland Census - Findmypast (was age 12 and the son of the head of the household)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I1361.png" width="290" height="161" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I1349.html" title="George Culmer\nb. abt 1824\nd. abt Nov 1912" alt="" coords="5,5,135,60"/><area shape="rect" id="node3" href="I1361.html" title="John Culmer\nb. abt 1849" alt="" coords="93,108,199,156"/><area shape="rect" id="node2" href="I1350.html" title="Harriet Marten\nb. abt 1826" alt="" coords="159,9,285,57"/></map>
 			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 			<style>
@@ -8,7 +6,6 @@
 				#search-box { margin: 10px; padding: 5px; }
 				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
 			</style>
-		</head>
 	<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
@@ -16,16 +13,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2789150425407, 1.07136319596218], 12);
+			var map = L.map('map').setView([51.2835635425407, 1.07088169596219], 17);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.266667, 1.083333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Canterbury,+Kent,+England">Canterbury, Kent, England</a><br><p>Birth <i>c.</i> 1849</p>'); markers.push(marker);
-var marker = L.marker([51.2911630850815, 1.05939339192437]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Thomas+Hill,+Canterbury,+Kent,+England">St Thomas Hill, Canterbury, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
+	var marker = L.marker([51.275964, 1.08237]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Canterbury,+Kent,+England">Canterbury, Kent, England</a><br><p>Birth <i>c.</i> 1849</p>'); markers.push(marker);
+var marker = L.marker([51.2911630850815, 1.05939339192437]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Thomas+Hill,+Canterbury,+Kent,+England">St Thomas Hill, Canterbury, Kent, England</a><br><p>Living on 7 Apr 1861</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2789150425407, 1.07136319596218], 12);
+			map.setView([51.2835635425407, 1.07088169596219], 17);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -60,4 +57,4 @@ var marker = L.marker([51.2911630850815, 1.05939339192437]).addTo(map).bindPopup
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>

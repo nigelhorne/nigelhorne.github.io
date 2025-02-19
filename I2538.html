@@ -1,6 +1,4 @@
-<html><head><title>Frederick John Dixon 1897 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Frederick John Dixon 1897 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Frederick Dixon</b>, the husband of <a href="I1309.html">Georgina Hannah Culmer</a> (the first cousin twice-removed on the mother's side of <a href="I1.html">Nigel Horne</a>), was born on Jan 17, 1897 and married Georgina (with whom he had 2 children: <a href="I3158.html">Frederick Charles</a> and <a href="I3159.html">Arthur S</a>) at St Paul&apos;s Church, Haringey, London, England on Jun 9, 1919.</p><h2>Children</h2><ol><li><a href="I3158.html">Frederick Charles</a> was born on Apr 7, 1922</li><li><a href="I3159.html">Arthur S</a> was born on Aug 29, 1923</li></ol><h2>Family Tree</h2><img src="img/family-tree-I2538.png" width="328" height="170" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2538.html" title="Frederick Dixon\nb. 17 Jan 1897" alt="" coords="72,9,182,57"/><area shape="rect" id="node2" href="I1309.html" title="Georgina Culmer\nb. 17 May 1898\nd. 16 Apr 1995" alt="" coords="207,5,322,61"/><area shape="rect" id="node3" href="I3158.html" title="Frederick Dixon\nb. 7 Apr 1922\nd. abt Nov 1990" alt="" coords="5,109,116,165"/><area shape="rect" id="node4" href="I3159.html" title="Arthur Dixon\nb. 29 Aug 1923\nd. abt Nov 1999" alt="" coords="139,109,248,165"/></map>
-		<head>
-			<title>Interactive Map</title>
+<html><head><title>Frederick John Dixon 1897 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Frederick John Dixon 1897 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Frederick Dixon</b>, the husband of <a href="I1309.html">Georgina Hannah Culmer</a> (the first cousin twice-removed on the mother's side of <a href="I1.html">Nigel Horne</a>), was born on 17 Jan 1897 and married Georgina (with whom he had 2 children: <a href="I3158.html">Frederick Charles</a> and <a href="I3159.html">Arthur S</a>) at St Paul&apos;s Church, Haringey, London, England on 9 Jun 1919.</p><h2>Children</h2><ol><li><a href="I3158.html">Frederick Charles</a> was born on 7 Apr 1922</li><li><a href="I3159.html">Arthur S</a> was born on 29 Aug 1923</li></ol><h2>Family Tree</h2><img src="img/family-tree-I2538.png" width="381" height="168" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2538.html" title="Frederick Dixon\nb. 17 Jan 1897" alt="" coords="83,9,213,57"/><area shape="rect" id="node2" href="I1309.html" title="Georgina Culmer\nb. 17 May 1898\nd. 16 Apr 1995" alt="" coords="237,5,376,60"/><area shape="rect" id="node3" href="I3158.html" title="Frederick Dixon\nb. 7 Apr 1922\nd. abt Nov 1990" alt="" coords="5,108,136,163"/><area shape="rect" id="node4" href="I3159.html" title="Arthur Dixon\nb. 29 Aug 1923\nd. abt Nov 1999" alt="" coords="161,108,290,163"/></map>
 			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 			<style>
@@ -8,7 +6,6 @@
 				#search-box { margin: 10px; padding: 5px; }
 				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
 			</style>
-		</head>
 	<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
@@ -16,15 +13,15 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.5783324, -0.1040903], 12);
+			var map = L.map('map').setView([51.5783324, -0.1040903], 17);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.5783324, -0.1040903]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Pauls+Church,+Haringey,+London,+England">St Pauls Church, Haringey, London, England</a><br><p>Marriage on Jun 9, 1919</p>'); markers.push(marker);
+	var marker = L.marker([51.5783324, -0.1040903]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Pauls+Church,+Haringey,+London,+England">St Pauls Church, Haringey, London, England</a><br><p>Marriage on 9 Jun 1919</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.5783324, -0.1040903], 12);
+			map.setView([51.5783324, -0.1040903], 17);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -59,4 +56,4 @@
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>

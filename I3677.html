@@ -1,6 +1,4 @@
-<html><head><title>William Henry Solly c1852 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>William Henry Solly c1852 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I3675.html">Ezekiel Lawrence</a> (a laborer bricklayer) and <a href="I3676.html">Albania Solly</a><b>William Solly</b>, the first cousin three-times-removed on the mother&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in St Lawrence, Thanet, Kent, England <i>c.</i> 1852. On Apr 7, 1861, he lived at Broad Street, Ramsgate, Kent, England<span class="citation">1</span>. </p><h2>Parents</h2><ol><li><a href="I3675.html">Ezekiel</a> was born <i>c.</i> 1823</li><li><a href="I3676.html">Albania</a> was born <i>c.</i> 1831</li></ol><h2>Citations</h2><ol><li>1861 England, Wales &amp; Scotland Census - Findmypast (was age 9 and the son of the head of the household)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I3677.png" width="251" height="155" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I3675.html" title="Ezekiel Lawrence\nb. abt 1823" alt="" coords="5,5,124,53"/><area shape="rect" id="node3" href="I3677.html" title="William Solly\nb. abt 1852" alt="" coords="82,101,178,149"/><area shape="rect" id="node2" href="I3676.html" title="Albania Solly\nb. abt 1831" alt="" coords="148,5,245,53"/></map>
-		<head>
-			<title>Interactive Map</title>
+<html><head><title>William Henry Solly c1852 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>William Henry Solly c1852 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I3675.html">Ezekiel Lawrence</a> (a labourer bricklayer) and <a href="I3676.html">Albania Solly</a><b>William Solly</b>, the first cousin three-times-removed on the mother&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in St Lawrence, Thanet, Kent, England <i>c.</i> 1852. On 7 Apr 1861, he lived at Broad Street, Ramsgate, Kent, England<span class="citation">1</span>. </p><h2>Parents</h2><ol><li><a href="I3675.html">Ezekiel</a> was born <i>c.</i> 1823</li><li><a href="I3676.html">Albania</a> was born <i>c.</i> 1831</li></ol><h2>Citations</h2><ol><li>1861 England, Wales &amp; Scotland Census - Findmypast (was age 9 and the son of the head of the household)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I3677.png" width="287" height="155" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I3675.html" title="Ezekiel Lawrence\nb. abt 1823" alt="" coords="5,5,147,53"/><area shape="rect" id="node3" href="I3677.html" title="William Solly\nb. abt 1852" alt="" coords="95,101,206,149"/><area shape="rect" id="node2" href="I3676.html" title="Albania Solly\nb. abt 1831" alt="" coords="171,5,282,53"/></map>
 			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 			<style>
@@ -8,7 +6,6 @@
 				#search-box { margin: 10px; padding: 5px; }
 				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
 			</style>
-		</head>
 	<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
@@ -16,16 +13,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3359617391078, 1.41063411857079], 12);
+			var map = L.map('map').setView([51.3359617391078, 1.41063411857079], 17);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.334663078215605, 1.4191513371415705]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Broad+Street,+Ramsgate,+Kent,+England">Broad Street, Ramsgate, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
+	var marker = L.marker([51.334663078215605, 1.4191513371415705]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Broad+Street,+Ramsgate,+Kent,+England">Broad Street, Ramsgate, Kent, England</a><br><p>Living on 7 Apr 1861</p>'); markers.push(marker);
 var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Birth <i>c.</i> 1852</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3359617391078, 1.41063411857079], 12);
+			map.setView([51.3359617391078, 1.41063411857079], 17);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -60,4 +57,4 @@ var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="ht
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>

@@ -1,6 +1,4 @@
-<html><head><title>Rebecca Laurence c1806 - 1853</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Rebecca Laurence c1806 - 1853</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Rebecca</b>, the wife of <a href="I230.html">Thomas Laurence</a> (the three times great-uncle of <a href="I1.html">Nigel Horne</a>), was born in Sandwich, Kent, England <i>c.</i> 1806<span class="citation">1</span>. In 1851, she lived in Ash, Kent, England<span class="citation">1</span> which is where she died in 1853. </p><h2>Citations</h2><ol><li>1851 England Census Online publication - Provo, UT, USA: The Generations Network, Inc., 2005.Original data - Census Returns of England and Wales, 1851. Kew, Surrey, England: The National Archives of the UK (TNA): Public Record Office (PRO), 1851. Data imaged from the National (Relation to Head of House: Wife)</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=GBC/1851/0005904820" target="_blank">1851 England, Wales &amp; Scotland Census Transcription - GBC-1851-0005904820</a><br><h2>Family Tree</h2><img src="img/family-tree-I1261.png" width="235" height="66" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I1261.html" title="Rebecca\nb. abt 1806\nd. 1853" alt="" coords="5,5,88,61"/><area shape="rect" id="node2" href="I230.html" title="Thomas Laurence\nb. abt 1808\nd. 30 Apr 1878" alt="" coords="112,5,229,61"/></map>
-		<head>
-			<title>Interactive Map</title>
+<html><head><title>Rebecca Laurence c1806 - 1853</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Rebecca Laurence c1806 - 1853</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Rebecca</b>, the wife of <a href="I230.html">Thomas Laurence</a> (the three times great-uncle of <a href="I1.html">Nigel Horne</a>), was born in Sandwich, Kent, England <i>c.</i> 1806<span class="citation">1</span>. In 1851, she lived in Ash, Kent, England<span class="citation">1</span> which is where she died in 1853. </p><h2>Citations</h2><ol><li>1851 England Census Online publication - Provo, UT, USA: The Generations Network, Inc., 2005.Original data - Census Returns of England and Wales, 1851. Kew, Surrey, England: The National Archives of the UK (TNA): Public Record Office (PRO), 1851. Data imaged from the National (Relation to Head of House: Wife)</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=GBC/1851/0005904820" target="_blank">1851 England, Wales &amp; Scotland Census Transcription - GBC-1851-0005904820</a><br><h2>Family Tree</h2><img src="img/family-tree-I1261.png" width="277" height="65" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I1261.html" title="Rebecca\nb. abt 1806\nd. 1853" alt="" coords="5,5,103,60"/><area shape="rect" id="node2" href="I230.html" title="Thomas Laurence\nb. abt 1808\nd. 30 Apr 1878" alt="" coords="127,5,271,60"/></map>
 			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 			<style>
@@ -8,7 +6,6 @@
 				#search-box { margin: 10px; padding: 5px; }
 				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
 			</style>
-		</head>
 	<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
@@ -16,16 +13,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2728010751616, 1.3139480279914], 12);
+			var map = L.map('map').setView([51.28649635, 1.31627695], 17);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.2789351503232, 1.2778960559828]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ash,+Kent,+England">Ash, Kent, England</a><br><p>Death in 1853</p><p>Living in 1851</p>'); markers.push(marker);
-var marker = L.marker([51.266667, 1.35]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sandwich,+Kent,+England">Sandwich, Kent, England</a><br><p>Birth <i>c.</i> 1806</p>'); markers.push(marker);
+	var marker = L.marker([51.29774, 1.291723]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ash,+Kent,+England">Ash, Kent, England</a><br><p>Living in 1851</p><p>Death in 1853</p>'); markers.push(marker);
+var marker = L.marker([51.2752527, 1.3408309]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sandwich,+Kent,+England">Sandwich, Kent, England</a><br><p>Birth <i>c.</i> 1806</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2728010751616, 1.3139480279914], 12);
+			map.setView([51.28649635, 1.31627695], 17);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -60,4 +57,4 @@ var marker = L.marker([51.266667, 1.35]).addTo(map).bindPopup('<a href="https://
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 18, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>
