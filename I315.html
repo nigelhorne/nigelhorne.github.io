@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.425943275, 0.523265774975051], 12);
+			var map = L.map('map').setView([51.368056, 1.165278], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,12 +21,12 @@
 	var marker = L.marker([51.368056, 1.165278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Beltinge,+Kent,+England">Beltinge, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.3, 1.05]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Blean,+Kent,+England">Blean, Kent, England</a><br><p>Death on Jan 21, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.333333, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne,+Kent,+England">Herne, Kent, England</a><br><p>Birth <i>c.</i> Aug 1853</p>'); markers.push(marker);
-var marker = L.marker([51.36894805, 1.1526971892493796]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=103+Reculver+Road,+Beltinge,+Kent,+England">103 Reculver Road, Beltinge, Kent, England</a><br><p>Living in 1902</p><p>Living on Mar 31, 1901</p><p>Living in 1903</p>'); markers.push(marker);
-var marker = L.marker([51.3795144, 1.1994047]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sidney+Villa,+Reculver+Road,+Beltinge,+Kent,+England">Sidney Villa, Reculver Road, Beltinge, Kent, England</a><br><p>Living in 1909</p><p>Living in 1939</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.36894805, 1.1526971892493796]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=103+Reculver+Road,+Beltinge,+Kent,+England">103 Reculver Road, Beltinge, Kent, England</a><br><p>Living on Mar 31, 1901</p><p>Living in 1903</p><p>Living in 1902</p>'); markers.push(marker);
+var marker = L.marker([51.3795144, 1.1994047]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sidney+Villa,+Reculver+Road,+Beltinge,+Kent,+England">Sidney Villa, Reculver Road, Beltinge, Kent, England</a><br><p>Living on Apr 2, 1911</p><p>Living in 1909</p><p>Living in 1939</p>'); markers.push(marker);
 var marker = L.marker([51.350453112456705, 1.134730987212137]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Martin,+Herne,+Kent,+England">St Martin, Herne, Kent, England</a><br><p>Baptized on Sep 4, 1853</p>'); markers.push(marker);
 var marker = L.marker([51.551886550000006, -0.15287315004989746]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Martin,+Kentish+Town,+London,+England">St Martin, Kentish Town, London, England</a><br><p>Marriage on Jan 1, 1885</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.425943275, 0.523265774975051], 12);
+			map.setView([51.368056, 1.165278], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

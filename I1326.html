@@ -12,20 +12,20 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.443791, 0.5614245], 12);
+			var map = L.map('map').setView([51.3829597, 1.3868649], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.3829597, 1.3868649]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=4+Church+Road,+Margate,+Kent,+England">4 Church Road, Margate, Kent, England</a><br><p>Living in 1955</p>'); markers.push(marker);
-var marker = L.marker([51.4886309, 0.0869676]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=6+Pleasant+Place,+Margate,+Kent,+England">6 Pleasant Place, Margate, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.4886309, 0.0869676]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=6+Pleasant+Place,+Margate,+Kent,+England">6 Pleasant Place, Margate, Kent, England</a><br><p>Living on Apr 2, 1911</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.55306, -0.3023]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Brent,+London,+England">Brent, London, England</a><br><p>Death <i>c.</i> May 1988</p>'); markers.push(marker);
 var marker = L.marker([51.33696535, 1.425149]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Holy+Trinity,+Ramsgate,+Kent,+England">Holy Trinity, Ramsgate, Kent, England</a><br><p>Baptized on Apr 18, 1908</p>'); markers.push(marker);
 var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth on Jan 22, 1908</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> Nov 1951</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.443791, 0.5614245], 12);
+			map.setView([51.3829597, 1.3868649], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

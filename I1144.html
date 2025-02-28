@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([40.6588485, -75.6879811286891], 12);
+			var map = L.map('map').setView([35.150897, -84.862698], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([46.1637377, -66.51326425737825]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Marys,+York,+New+Brunswick,+Canada">St Marys, York, New Brunswick, Canada</a><br><p>Living in 1901</p>'); markers.push(marker);
 var marker = L.marker([46.1668, -66.99888]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=York,+New+Brunswick,+Canada">York, New Brunswick, Canada</a><br><p>Living in 1911</p><p>Death on Jun 24, 1914</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([40.6588485, -75.6879811286891], 12);
+			map.setView([35.150897, -84.862698], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3561507953595, 1.35389287865965], 12);
+			var map = L.map('map').setView([51.337698849999995, 1.4052344808011135], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,10 +22,10 @@
 var marker = L.marker([51.37777959071898, 1.2911187573192988]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=6+Minnis+Road,+Birchington,+Kent,+England">6 Minnis Road, Birchington, Kent, England</a><br><p>Living in 1971</p>'); markers.push(marker);
 var marker = L.marker([51.341320173059756, 1.4130248409808024]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=85+Winstanley+Crescent,+St+Lawrence,+Thanet,+Kent,+England">85 Winstanley Crescent, St Lawrence, Thanet, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth on Aug 13, 1903</p>'); markers.push(marker);
-var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death <i>c.</i> Feb 2001</p><p>Marriage <i>c.</i> Aug 1928</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> Aug 1928</p><p>Death <i>c.</i> Feb 2001</p>'); markers.push(marker);
 var marker = L.marker([51.341320173059756, 1.4130248409808024]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Winstanley+Crescent,+St+Lawrence,+Thanet,+Kent,+England">Winstanley Crescent, St Lawrence, Thanet, Kent, England</a><br><p>Living in 1903</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3561507953595, 1.35389287865965], 12);
+			map.setView([51.337698849999995, 1.4052344808011135], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

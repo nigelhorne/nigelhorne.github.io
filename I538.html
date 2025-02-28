@@ -12,17 +12,17 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.33178035, 1.24971651715409], 12);
+			var map = L.map('map').setView([51.27979995, 1.082766034308178], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.27979995, 1.082766034308178]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Christ+Church+Cathedral,+Canterbury,+Kent,+England">Christ Church Cathedral, Canterbury, Kent, England</a><br><p>Marriage on Feb 4, 1747</p>'); markers.push(marker);
-var marker = L.marker([51.38376075, 1.3837245600761081]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+John+the+Baptist+Church,+Margate,+Kent,+England">St John the Baptist Church, Margate, Kent, England</a><br><p>Baptized on May 22, 1717</p><p>Burial on Mar 8, 1760</p>'); markers.push(marker);
+var marker = L.marker([51.38376075, 1.3837245600761081]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+John+the+Baptist+Church,+Margate,+Kent,+England">St John the Baptist Church, Margate, Kent, England</a><br><p>Burial on Mar 8, 1760</p><p>Baptized on May 22, 1717</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death on Mar 4, 1760</p><p>Birth in 1717</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.33178035, 1.24971651715409], 12);
+			map.setView([51.27979995, 1.082766034308178], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

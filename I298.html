@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.053736375, -0.726141974187141], 12);
+			var map = L.map('map').setView([51.37367275, 1.3060260516257176], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([50.7886837, -0.6524164]).addTo(map).bindPopup('<a href="h
 var marker = L.marker([50.782505, -0.6720331]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Saint+Stephen,+Murina+Avenue,+Bognor+Regis,+West+Sussex,+England">Saint Stephen, Murina Avenue, Bognor Regis, West Sussex, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.0258315, -0.4945319]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Streele+Cottages,+Billingshurst,+West+Sussex,+England">Streele Cottages, Billingshurst, West Sussex, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.053736375, -0.726141974187141], 12);
+			map.setView([51.37367275, 1.3060260516257176], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

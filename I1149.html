@@ -12,17 +12,17 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([49.1568110944776, -122.873473631567], 12);
+			var map = L.map('map').setView([49.20727218895516, -122.92185726313426], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([49.20727218895516, -122.92185726313426]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=511+Ninth+Street,+New+Westminster,+British+Columbia,+Canada">511 Ninth Street, New Westminster, British Columbia, Canada</a><br><p>Living on Jun 1, 1921</p>'); markers.push(marker);
-var marker = L.marker([49.20678, -122.91092]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=New+Westminster,+British+Columbia,+Canada">New Westminster, British Columbia, Canada</a><br><p>Birth on Dec 26, 1902</p><p>Living in 1911</p>'); markers.push(marker);
+var marker = L.marker([49.20678, -122.91092]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=New+Westminster,+British+Columbia,+Canada">New Westminster, British Columbia, Canada</a><br><p>Living in 1911</p><p>Birth on Dec 26, 1902</p>'); markers.push(marker);
 var marker = L.marker([49.10635, -122.82509]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Surrey,+British+Columbia,+Canada">Surrey, British Columbia, Canada</a><br><p>Death on Nov 29, 1982</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([49.1568110944776, -122.873473631567], 12);
+			map.setView([49.20727218895516, -122.92185726313426], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

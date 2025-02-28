@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3396131, 0.939301611317524], 12);
+			var map = L.map('map').setView([51.36240895, 1.4274551226350478], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.383333, 1.416667]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth on Jan 6, 1911</p><p>Living in 1937</p>'); markers.push(marker);
 var marker = L.marker([51.2958932, 0.4511481]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Salem+Baptist+Church,+St+Peters,+Thanet,+Kent,+England">Salem Baptist Church, St Peters, Thanet, Kent, England</a><br><p>Marriage on Aug 5, 1937</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3396131, 0.939301611317524], 12);
+			map.setView([51.36240895, 1.4274551226350478], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

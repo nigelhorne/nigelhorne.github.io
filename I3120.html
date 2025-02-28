@@ -12,16 +12,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([41.487855, -75.56574], 12);
+			var map = L.map('map').setView([41.4948, -75.53685], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([41.4948, -75.53685]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Archbald,+Lackawanna,+Pennsylvania,+USA">Archbald, Lackawanna, Pennsylvania, USA</a><br><p>Birth on Apr 2, 1868</p><p>Living on Jun 1, 1900</p><p>Living on Jun 1, 1880</p>'); markers.push(marker);
+	var marker = L.marker([41.4948, -75.53685]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Archbald,+Lackawanna,+Pennsylvania,+USA">Archbald, Lackawanna, Pennsylvania, USA</a><br><p>Birth on Apr 2, 1868</p><p>Living on Jun 1, 1880</p><p>Living on Jun 1, 1900</p>'); markers.push(marker);
 var marker = L.marker([41.48091, -75.59463]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Blakely,+Lackawanna,+Pennsylvania,+USA">Blakely, Lackawanna, Pennsylvania, USA</a><br><p>Death on Mar 24, 1939</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([41.487855, -75.56574], 12);
+			map.setView([41.4948, -75.53685], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

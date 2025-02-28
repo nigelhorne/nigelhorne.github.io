@@ -12,18 +12,18 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.1798824674618, 1.31348354792745], 12);
+			var map = L.map('map').setView([51.22643193492358, 1.4015173029671706], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.22643193492358, 1.4015173029671706]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=112+Union+Road,+Dover,+Kent,+England">112 Union Road, Dover, Kent, England</a><br><p>Living in 1947</p><p>Living on Sep 29, 1939</p><p>Living on Jun 19, 1921</p>'); markers.push(marker);
-var marker = L.marker([51.133333, 1.3]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Dover,+Kent,+England">Dover, Kent, England</a><br><p>Death <i>c.</i> Feb 1991</p><p>Birth on Jun 7, 1910</p>'); markers.push(marker);
+	var marker = L.marker([51.22643193492358, 1.4015173029671706]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=112+Union+Road,+Dover,+Kent,+England">112 Union Road, Dover, Kent, England</a><br><p>Living on Jun 19, 1921</p><p>Living in 1947</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
+var marker = L.marker([51.133333, 1.3]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Dover,+Kent,+England">Dover, Kent, England</a><br><p>Birth on Jun 7, 1910</p><p>Death <i>c.</i> Feb 1991</p>'); markers.push(marker);
 var marker = L.marker([51.1963962, 1.2656253]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lansdowne+Cottages,+Union+Road,+Dover,+Kent,+England">Lansdowne Cottages, Union Road, Dover, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.2258481, 1.2254497928877366]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+the+Virgin,+Dover,+Kent,+England">St Mary the Virgin, Dover, Kent, England</a><br><p>Baptized on Jul 23, 1910</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.1798824674618, 1.31348354792745], 12);
+			map.setView([51.22643193492358, 1.4015173029671706], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([47.902810875, -93.89568], 12);
+			var map = L.map('map').setView([49.22219175, -122.89724868131952], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,10 +20,10 @@
 			var markers = [];
 	var marker = L.marker([49.22219175, -122.89724868131952]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fraser+Cemetery,+New+Westminster,+British+Columbia,+Canada">Fraser Cemetery, New Westminster, British Columbia, Canada</a><br><p>Burial</p>'); markers.push(marker);
 var marker = L.marker([46.58343, -65.24875]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kent,+New+Brunswick,+Canada">Kent, New Brunswick, Canada</a><br><p>Living in 1881</p>'); markers.push(marker);
-var marker = L.marker([49.20678, -122.91092]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=New+Westminster,+British+Columbia,+Canada">New Westminster, British Columbia, Canada</a><br><p>Marriage on Nov 21, 1886</p><p>Living in 1901</p><p>Death on Jun 1, 1942</p>'); markers.push(marker);
+var marker = L.marker([49.20678, -122.91092]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=New+Westminster,+British+Columbia,+Canada">New Westminster, British Columbia, Canada</a><br><p>Marriage on Nov 21, 1886</p><p>Death on Jun 1, 1942</p><p>Living in 1901</p>'); markers.push(marker);
 var marker = L.marker([46.68073, -64.88044]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Richibucto,+Kent,+New+Brunswick,+Canada">Richibucto, Kent, New Brunswick, Canada</a><br><p>Living in 1871</p><p>Birth on Jul 7, 1864</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([47.902810875, -93.89568], 12);
+			map.setView([49.22219175, -122.89724868131952], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

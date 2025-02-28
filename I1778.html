@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([41.2829045, -98.1795055], 12);
+			var map = L.map('map').setView([41.4225, -100.19346], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([41.40195, -99.63928]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([41.05389, -95.8814]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Islands+In+Platte+River,+Buffalo,+Nebraska,+USA">Islands In Platte River, Buffalo, Nebraska, USA</a><br><p>Living on Apr 1, 1940</p>'); markers.push(marker);
 var marker = L.marker([41.511919, -100.477611]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Logan,+Logan,+Nebraska,+USA">Logan, Logan, Nebraska, USA</a><br><p>Living in 1950</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([41.2829045, -98.1795055], 12);
+			map.setView([41.4225, -100.19346], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

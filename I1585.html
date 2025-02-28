@@ -12,20 +12,20 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3481403024316, 1.365542], 12);
+			var map = L.map('map').setView([51.33380165, 1.40338195], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.33380165, 1.40338195]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=12+King+Edward+Road,+Ramsgate,+Kent,+England">12 King Edward Road, Ramsgate, Kent, England</a><br><p>Living on Jun 19, 1921</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.333257665545574, 1.4051254513537277]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=26+Lorne+Road,+St+Lawrence,+Thanet,+Kent,+England">26 Lorne Road, St Lawrence, Thanet, Kent, England</a><br><p>Living in 1963</p><p>Living in 1965</p>'); markers.push(marker);
+	var marker = L.marker([51.33380165, 1.40338195]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=12+King+Edward+Road,+Ramsgate,+Kent,+England">12 King Edward Road, Ramsgate, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Living on Jun 19, 1921</p>'); markers.push(marker);
+var marker = L.marker([51.333257665545574, 1.4051254513537277]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=26+Lorne+Road,+St+Lawrence,+Thanet,+Kent,+England">26 Lorne Road, St Lawrence, Thanet, Kent, England</a><br><p>Living in 1965</p><p>Living in 1963</p>'); markers.push(marker);
 var marker = L.marker([51.339339997715044, 1.4101827271718217]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=4+Stanley+Road,+Ramsgate,+Kent,+England">4 Stanley Road, Ramsgate, Kent, England</a><br><p>Living in 1974</p>'); markers.push(marker);
-var marker = L.marker([51.32961360486314, 1.4146509405139243]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Paragon+Street,+Ramsgate,+Kent,+England">5 Paragon Street, Ramsgate, Kent, England</a><br><p>Living in 1953</p><p>Living in 1955</p>'); markers.push(marker);
+var marker = L.marker([51.32961360486314, 1.4146509405139243]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Paragon+Street,+Ramsgate,+Kent,+England">5 Paragon Street, Ramsgate, Kent, England</a><br><p>Living in 1955</p><p>Living in 1953</p>'); markers.push(marker);
 var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth on Sep 21, 1915</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death <i>c.</i> Aug 1990</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3481403024316, 1.365542], 12);
+			map.setView([51.33380165, 1.40338195], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

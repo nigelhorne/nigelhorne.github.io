@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3287957296451, 0.625547818470483], 12);
+			var map = L.map('map').setView([51.33179833456586, 1.4013584130953776], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,12 +22,12 @@
 var marker = L.marker([51.132576659290194, 1.3018186226593151]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=13+Shooters+Hill,+Buckland,+Kent,+England">13 Shooters Hill, Buckland, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 var marker = L.marker([51.5250148, -0.159441]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=18+Clarence+Terrace,+Ramsgate,+Kent,+England">18 Clarence Terrace, Ramsgate, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 var marker = L.marker([51.13285311792277, 1.3005419397214857]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=40+George+Street,+Buckland,+Kent,+England">40 George Street, Buckland, Kent, England</a><br><p>Living on Mar 30, 1851</p>'); markers.push(marker);
-var marker = L.marker([51.340357, 1.4105366369409662]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=7+Hillbrow+Road,+St+Lawrence,+Thanet,+Kent,+England">7 Hillbrow Road, St Lawrence, Thanet, Kent, England</a><br><p>Death on Dec 18, 1915</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.340357, 1.4105366369409662]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=7+Hillbrow+Road,+St+Lawrence,+Thanet,+Kent,+England">7 Hillbrow Road, St Lawrence, Thanet, Kent, England</a><br><p>Living on Apr 2, 1911</p><p>Death on Dec 18, 1915</p>'); markers.push(marker);
 var marker = L.marker([51.3403837, 1.4104812630590329]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=8+Hillbrow+Road,+St+Lawrence,+Thanet,+Kent,+England">8 Hillbrow Road, St Lawrence, Thanet, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.133333, 1.3]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Dover,+Kent,+England">Dover, Kent, England</a><br><p>Birth on Jan 16, 1851</p>'); markers.push(marker);
 var marker = L.marker([51.36180496, 1.38640749]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence+Parish+Church,+St+Lawrence,+Thanet,+Kent,+England">St Lawrence Parish Church, St Lawrence, Thanet, Kent, England</a><br><p>Marriage on Apr 29, 1876</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3287957296451, 0.625547818470483], 12);
+			map.setView([51.33179833456586, 1.4013584130953776], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

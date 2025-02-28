@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.273086185, 1.21633065], 12);
+			var map = L.map('map').setView([51.3520348, 1.3159943], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.233333, 1.116667]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth on Nov 23, 1906</p>'); markers.push(marker);
 var marker = L.marker([51.19413757, 1.31023574]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Lodge,+Studdal,+Kent,+England">The Lodge, Studdal, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.273086185, 1.21633065], 12);
+			map.setView([51.3520348, 1.3159943], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

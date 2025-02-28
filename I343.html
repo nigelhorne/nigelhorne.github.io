@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([32.664382865, 1.532897], 12);
+			var map = L.map('map').setView([51.38743973, 1.38076293], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -28,7 +28,7 @@ var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([13.941326, 121.150686]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Square,+Stourmouth,+Kent,+England">The Square, Stourmouth, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 var marker = L.marker([51.3060062, 1.2656574]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Westmarsh,+Kent,+England">Westmarsh, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([32.664382865, 1.532897], 12);
+			map.setView([51.38743973, 1.38076293], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3047618983087, 1.04443870676516], 12);
+			var map = L.map('map').setView([51.3175662, 0.89132115], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,10 +20,10 @@
 			var markers = [];
 	var marker = L.marker([51.3175662, 0.89132115]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+Mill+Place,+Faversham,+Kent,+England">2 Mill Place, Faversham, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.27619079661742, 1.338877413530322]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=3+Guildcount+Lane,+Sandwich,+Kent,+England">3 Guildcount Lane, Sandwich, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Baptized on Dec 14, 1883</p><p>Marriage <i>c.</i> Nov 1905</p><p>Birth on Nov 19, 1883</p>'); markers.push(marker);
+var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Marriage <i>c.</i> Nov 1905</p><p>Birth on Nov 19, 1883</p><p>Baptized on Dec 14, 1883</p>'); markers.push(marker);
 var marker = L.marker([51.333333, .75]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sittingbourne,+Kent,+England">Sittingbourne, Kent, England</a><br><p>Death on Nov 27, 1967</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3047618983087, 1.04443870676516], 12);
+			map.setView([51.3175662, 0.89132115], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

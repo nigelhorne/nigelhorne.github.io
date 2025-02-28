@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.42040984, 0.556119799348141], 12);
+			var map = L.map('map').setView([51.3604284241334, 1.4432301738912718], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -30,7 +30,7 @@ var marker = L.marker([51.42370400023185, -0.14366722462587647]).addTo(map).bind
 var marker = L.marker([51.366626249999996, 1.422089133458278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters,+Thanet,+Kent,+England">St Peters, Thanet, Kent, England</a><br><p>Birth <i>c.</i> Mar 1860</p>'); markers.push(marker);
 var marker = L.marker([51.14266968, 0.90553451]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Willesborough+House,+Willesborough,+Kent,+England">Willesborough House, Willesborough, Kent, England</a><br><p>Living in 1881</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.42040984, 0.556119799348141], 12);
+			map.setView([51.3604284241334, 1.4432301738912718], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

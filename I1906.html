@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([52.4859415, -0.0467041998230855], 12);
+			var map = L.map('map').setView([51.4800506, -0.19608918], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -30,7 +30,7 @@ var marker = L.marker([51.25607681, 1.01697254]).addTo(map).bindPopup('<a href="
 var marker = L.marker([51.3360596, 1.4179069]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Georges+Church,+Ramsgate,+Kent,+England">St Georges Church, Ramsgate, Kent, England</a><br><p>Marriage on Jan 19, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.255900499999996, 1.0180764569357008]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary,+Chartham,+Kent,+England">St Mary, Chartham, Kent, England</a><br><p>Baptized on Feb 11, 1877</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([52.4859415, -0.0467041998230855], 12);
+			map.setView([51.4800506, -0.19608918], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

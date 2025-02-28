@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([37.41849275, -92.024977], 12);
+			var map = L.map('map').setView([38.37224, -96.54278], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([36.4629355, -86.963842]).addTo(map).bindPopup('<a href="h
 var marker = L.marker([38.338511, -97.086112]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Marion,+Marion,+Kansas,+USA">Marion, Marion, Kansas, USA</a><br><p>Marriage on Feb 23, 1951</p>'); markers.push(marker);
 var marker = L.marker([38.37405, -96.56378]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Prairie+Grove+Cemetery,+Cottonwood+Falls,+Chase,+Kansas,+USA">Prairie Grove Cemetery, Cottonwood Falls, Chase, Kansas, USA</a><br><p>Burial on Mar 15, 2008</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([37.41849275, -92.024977], 12);
+			map.setView([38.37224, -96.54278], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

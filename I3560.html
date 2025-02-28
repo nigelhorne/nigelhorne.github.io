@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([-39.71152605, 174.46416305], 12);
+			var map = L.map('map').setView([-39.6647191, 174.4449931], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([-39.6647191, 174.4449931]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Alton,+South+Taranaki,+Taranaki,+New+Zealand">Alton, South Taranaki, Taranaki, New Zealand</a><br><p>Birth on Jan 9, 1892</p>'); markers.push(marker);
 var marker = L.marker([-39.758333, 174.483333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Patea,+Taranaki,+New+Zealand">Patea, Taranaki, New Zealand</a><br><p>Death <i>c.</i> Jun 1945</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([-39.71152605, 174.46416305], 12);
+			map.setView([-39.6647191, 174.4449931], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

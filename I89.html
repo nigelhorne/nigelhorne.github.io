@@ -12,21 +12,21 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.28482465, 1.20564131340003], 12);
+			var map = L.map('map').setView([51.26611, 1.191408], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.26611, 1.191408]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bramling,+Littlebourne,+Kent,+England">Bramling, Littlebourne, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
-var marker = L.marker([51.286247, 1.2245115]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fourturnings,+Preston,+Wingham,+Kent,+England">Fourturnings, Preston, Wingham, Kent, England</a><br><p>Living on Apr 7, 1861</p><p>Living on Mar 30, 1851</p>'); markers.push(marker);
+var marker = L.marker([51.286247, 1.2245115]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fourturnings,+Preston,+Wingham,+Kent,+England">Fourturnings, Preston, Wingham, Kent, England</a><br><p>Living on Mar 30, 1851</p><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 var marker = L.marker([51.3035393, 1.2273881]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Preston,+Kent,+England">Preston, Kent, England</a><br><p>Living in 1841</p><p>Living in 1871</p>'); markers.push(marker);
 var marker = L.marker([51.28736115, 1.18389463]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Andrews+Church,+Wickhambreaux,+Kent,+England">St Andrews Church, Wickhambreaux, Kent, England</a><br><p>Marriage on May 14, 1831</p>'); markers.push(marker);
 var marker = L.marker([51.2873602243831, 1.18389452680006]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wickhambreaux,+Kent,+England">Wickhambreaux, Kent, England</a><br><p>Birth <i>c.</i> 1807</p><p>Baptized on Aug 23, 1807</p>'); markers.push(marker);
 var marker = L.marker([51.273739, 1.1943596]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wingham+Street,+Wickhambreaux,+Kent,+England">Wingham Street, Wickhambreaux, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.2733564843807, 1.21509032186889]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wingham,+Kent,+England">Wingham, Kent, England</a><br><p>Death in Jul/aug/sep 1895</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.28482465, 1.20564131340003], 12);
+			map.setView([51.26611, 1.191408], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

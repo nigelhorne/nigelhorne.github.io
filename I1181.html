@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3234541150724, 0.286785509214151], 12);
+			var map = L.map('map').setView([51.19032476215342, 0.27065105905129255], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([51.190250875442786, 0.2719390542579133]).addTo(map).bindP
 var marker = L.marker([51.2873845, 0.44074943661462895]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+James+the+Great,+East+Malling,+Kent,+England">St James the Great, East Malling, Kent, England</a><br><p>Marriage on Aug 30, 1885</p>'); markers.push(marker);
 var marker = L.marker([51.456657354702024, 0.13282158181367268]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Standard+Road,+Bexley,+London,+England">Standard Road, Bexley, London, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3234541150724, 0.286785509214151], 12);
+			map.setView([51.19032476215342, 0.27065105905129255], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

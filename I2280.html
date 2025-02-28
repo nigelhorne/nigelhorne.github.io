@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([42.1166685, -58.74575735], 12);
+			var map = L.map('map').setView([51.366667, 1.3], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,14 +20,14 @@
 			var markers = [];
 	var marker = L.marker([51.366667, 1.3]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Birchington,+Kent,+England">Birchington, Kent, England</a><br><p>Birth on Jun 22, 1907</p>'); markers.push(marker);
 var marker = L.marker([34.39916, -118.91815]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fillmore,+Ventura,+California,+USA">Fillmore, Ventura, California, USA</a><br><p>Death on Dec 13, 2001</p>'); markers.push(marker);
-var marker = L.marker([51.3369374, 1.4266353]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kingsdown+House,+St+Peters+Park+Road,+Broadstairs,+Kent,+England">Kingsdown House, St Peters Park Road, Broadstairs, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.3813202, 1.3867628]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kingsdown+House,+St+Peters+Park+Road,+Broadstairs,+Kent,+England">Kingsdown House, St Peters Park Road, Broadstairs, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([38.58339, -90.40678]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kirkwood,+St.+Louis,+Missouri,+USA">Kirkwood, St. Louis, Missouri, USA</a><br><p>Living on Apr 1, 1930</p>'); markers.push(marker);
 var marker = L.marker([32.86667, -117.27722]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=La+Jolla,+San+Diego,+California,+USA">La Jolla, San Diego, California, USA</a><br><p>Marriage on Sep 7, 1936</p>'); markers.push(marker);
 var marker = L.marker([33.42227, -111.82264]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Mesa,+Maricopa,+Arizona,+USA">Mesa, Maricopa, Arizona, USA</a><br><p>Living on Jan 1, 1920</p>'); markers.push(marker);
 var marker = L.marker([38.62727, -90.19789]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St.+Louis,+Missouri,+USA">St. Louis, Missouri, USA</a><br><p>Living on Apr 1, 1940</p>'); markers.push(marker);
 var marker = L.marker([38.81144, -91.14154]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Warrenton,+Warren,+Missouri,+USA">Warrenton, Warren, Missouri, USA</a><br><p>Living in 1935</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([42.1166685, -58.74575735], 12);
+			map.setView([51.366667, 1.3], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

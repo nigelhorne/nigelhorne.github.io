@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.1488215, -0.067487932384241], 12);
+			var map = L.map('map').setView([51.44751628963835, 0.016927789766051676], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([51.46431, -0.01193]).addTo(map).bindPopup('<a href="https
 var marker = L.marker([51.3657877, -0.0061604]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+John+The+Baptist+Churchyard,+West+Wickham,+Kent,+England">St John The Baptist Churchyard, West Wickham, Kent, England</a><br><p>Burial</p>'); markers.push(marker);
 var marker = L.marker([51.0591101737035, 0.648357135231518]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Strood,+Kent,+England">Strood, Kent, England</a><br><p>Birth on Nov 21, 1916</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.1488215, -0.067487932384241], 12);
+			map.setView([51.44751628963835, 0.016927789766051676], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

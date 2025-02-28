@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([39.6135195, -94.575456], 12);
+			var map = L.map('map').setView([40.203034, -94.421535], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,11 +20,11 @@
 			var markers = [];
 	var marker = L.marker([40.203034, -94.421535]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Gentry,+Missouri,+USA">Gentry, Missouri, USA</a><br><p>Living on Jan 1, 1920</p>'); markers.push(marker);
 var marker = L.marker([39.024005, -94.463242]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Jackson,+Gentry,+Missouri,+USA">Jackson, Gentry, Missouri, USA</a><br><p>Living on Apr 1, 1930</p>'); markers.push(marker);
-var marker = L.marker([40.05138, -94.52412]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=King+City,+Gentry,+Missouri,+USA">King City, Gentry, Missouri, USA</a><br><p>Burial</p><p>Death on Dec 7, 1971</p>'); markers.push(marker);
+var marker = L.marker([40.05138, -94.52412]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=King+City,+Gentry,+Missouri,+USA">King City, Gentry, Missouri, USA</a><br><p>Death on Dec 7, 1971</p><p>Burial</p>'); markers.push(marker);
 var marker = L.marker([39.3154, -94.729377]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Platte,+Missouri,+USA">Platte, Missouri, USA</a><br><p>Birth on Jul 4, 1879</p>'); markers.push(marker);
 var marker = L.marker([39.56555, -94.44801]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Plattsburg,+Clinton,+Missouri,+USA">Plattsburg, Clinton, Missouri, USA</a><br><p>Marriage on Jul 12, 1899</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([39.6135195, -94.575456], 12);
+			map.setView([40.203034, -94.421535], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

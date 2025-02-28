@@ -12,21 +12,21 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3163101562284, 1.09236549360607], 12);
+			var map = L.map('map').setView([51.3, 1.05], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.3, 1.05]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Blean,+Kent,+England">Blean, Kent, England</a><br><p>Death <i>c.</i> Aug 1875</p>'); markers.push(marker);
-var marker = L.marker([51.34849297723959, 1.1320981478323147]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne+Street,+Herne,+Kent,+England">Herne Street, Herne, Kent, England</a><br><p>Living on Jun 6, 1841</p><p>Living on Mar 30, 1851</p>'); markers.push(marker);
+var marker = L.marker([51.34849297723959, 1.1320981478323147]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne+Street,+Herne,+Kent,+England">Herne Street, Herne, Kent, England</a><br><p>Living on Mar 30, 1851</p><p>Living on Jun 6, 1841</p>'); markers.push(marker);
 var marker = L.marker([51.333333, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne,+Kent,+England">Herne, Kent, England</a><br><p>Birth <i>c.</i> 1809</p>'); markers.push(marker);
 var marker = L.marker([51.350453112456705, 1.134730987212137]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Martin,+Herne,+Kent,+England">St Martin, Herne, Kent, England</a><br><p>Baptized on Apr 23, 1809</p>'); markers.push(marker);
 var marker = L.marker([51.2821672, 1.0830933]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+Northgate,+Canterbury,+Kent,+England">St Mary Northgate, Canterbury, Kent, England</a><br><p>Marriage on Feb 19, 1833</p>'); markers.push(marker);
 var marker = L.marker([51.29850935, 1.1201651018136842]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Nicholas,+Sturry,+Kent,+England">St Nicholas, Sturry, Kent, England</a><br><p>Burial on Sep 23, 1875</p>'); markers.push(marker);
 var marker = L.marker([51.3002503, 1.1216018]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sturry+Street,+Sturry,+Kent,+England">Sturry Street, Sturry, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3163101562284, 1.09236549360607], 12);
+			map.setView([51.3, 1.05], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

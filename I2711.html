@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([50.642086575, 1.91294848179765], 12);
+			var map = L.map('map').setView([51.25, 1.016667], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,10 +20,10 @@
 			var markers = [];
 	var marker = L.marker([51.25, 1.016667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chartham,+Kent,+England">Chartham, Kent, England</a><br><p>Birth <i>c.</i> Jan 1894</p>'); markers.push(marker);
 var marker = L.marker([50.028272650000005, 2.8113771107196266]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Delville+Wood,+Somme,+Hauts-de-France,+France">Delville Wood, Somme, Hauts-de-France, France</a><br><p>Death on Aug 31, 1916</p>'); markers.push(marker);
-var marker = L.marker([51.249736592108086, 1.0145198528756818]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Shalmsford+Street,+Chartham,+Kent,+England">Shalmsford Street, Chartham, Kent, England</a><br><p>Living on Apr 2, 1911</p><p>Living on Mar 31, 1901</p>'); markers.push(marker);
+var marker = L.marker([51.249736592108086, 1.0145198528756818]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Shalmsford+Street,+Chartham,+Kent,+England">Shalmsford Street, Chartham, Kent, England</a><br><p>Living on Mar 31, 1901</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.255900499999996, 1.0180764569357008]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary,+Chartham,+Kent,+England">St Mary, Chartham, Kent, England</a><br><p>Baptized on Jan 21, 1894</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([50.642086575, 1.91294848179765], 12);
+			map.setView([51.25, 1.016667], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

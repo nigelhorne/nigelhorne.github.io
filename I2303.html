@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3569125925303, 0.825], 12);
+			var map = L.map('map').setView([51.31566898506059, 0.8880195018261713], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,10 +24,10 @@ var marker = L.marker([51.31566898506059, 0.8880195018261713]).addTo(map).bindPo
 var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Birth on Aug 27, 1872</p><p>Living in 1896</p>'); markers.push(marker);
 var marker = L.marker([51.333333, .75]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sittingbourne,+Kent,+England">Sittingbourne, Kent, England</a><br><p>Death on Jan 4, 1957</p>'); markers.push(marker);
 var marker = L.marker([51.3171337, 0.8948972967967537]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+Of+Charity,+Faversham,+Kent,+England">St Mary Of Charity, Faversham, Kent, England</a><br><p>Marriage on Jan 1, 1896</p>'); markers.push(marker);
-var marker = L.marker([51.31770234463006, 0.892466282549902]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=1+Quay+Lane,+Faversham,+Kent,+England">1 Quay Lane, Faversham, Kent, England</a><br><p>Living in 1913</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.31770234463006, 0.892466282549902]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=1+Quay+Lane,+Faversham,+Kent,+England">1 Quay Lane, Faversham, Kent, England</a><br><p>Living on Apr 2, 1911</p><p>Living in 1913</p>'); markers.push(marker);
 var marker = L.marker([51.316505735322906, 0.8872019165512923]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=West+Street,+Faversham,+Kent,+England">West Street, Faversham, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3569125925303, 0.825], 12);
+			map.setView([51.31566898506059, 0.8880195018261713], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

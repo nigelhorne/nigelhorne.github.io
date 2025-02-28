@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([42.3303274, -43.983777], 12);
+			var map = L.map('map').setView([54.3112648, -3.3758113], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -28,7 +28,7 @@ var marker = L.marker([51.3519424255066, 0.667886060288684]).addTo(map).bindPopu
 var marker = L.marker([51.0787766, 1.1817893]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ss+Mary+and+Eanswith,+Folkestone,+Kent,+England">Ss Mary and Eanswith, Folkestone, Kent, England</a><br><p>Marriage on Aug 13, 1837</p>'); markers.push(marker);
 var marker = L.marker([51.0940841, 1.1157134920763128]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Nicholas,+Newington,+Hythe,+Kent,+England">St Nicholas, Newington, Hythe, Kent, England</a><br><p>Baptized on Jan 26, 1817</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([42.3303274, -43.983777], 12);
+			map.setView([54.3112648, -3.3758113], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,16 +12,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.27227905, 1.12608842792016], 12);
+			var map = L.map('map').setView([51.266667, 1.166667], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.266667, 1.166667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Littlebourne,+Kent,+England">Littlebourne, Kent, England</a><br><p>Burial on Oct 2, 1722</p><p>Birth in 1690</p><p>Death in Sep 1722</p>'); markers.push(marker);
+	var marker = L.marker([51.266667, 1.166667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Littlebourne,+Kent,+England">Littlebourne, Kent, England</a><br><p>Death in Sep 1722</p><p>Burial on Oct 2, 1722</p><p>Birth in 1690</p>'); markers.push(marker);
 var marker = L.marker([51.2778911, 1.0855098558403269]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St.+Paul,+Canterbury,+Kent,+England">St. Paul, Canterbury, Kent, England</a><br><p>Marriage on Jun 15, 1712</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.27227905, 1.12608842792016], 12);
+			map.setView([51.266667, 1.166667], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

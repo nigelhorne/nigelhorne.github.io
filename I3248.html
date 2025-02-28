@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([49.8432335, -34.341759], 12);
+			var map = L.map('map').setView([45.94541, -66.66558], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([53.741057, -2.017938]).addTo(map).bindPopup('<a href="htt
 var marker = L.marker([47.5209234, -65.662016]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Red+Pine,+Gloucester,+New+Brunswick,+Canada">Red Pine, Gloucester, New Brunswick, Canada</a><br><p>Birth on Oct 2, 1890</p>'); markers.push(marker);
 var marker = L.marker([45.96861255, -66.61787945]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sunny+Bank+Cemetery,+McEvoy+Street,+Fredericton,+York,+New+Brunswick,+Canada">Sunny Bank Cemetery, McEvoy Street, Fredericton, York, New Brunswick, Canada</a><br><p>Burial</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([49.8432335, -34.341759], 12);
+			map.setView([45.94541, -66.66558], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

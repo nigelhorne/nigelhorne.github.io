@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3154778371471, 1.142668075], 12);
+			var map = L.map('map').setView([51.27914896514857, 1.2763372980304233], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -27,7 +27,7 @@ var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([51.2642886742943, 1.25609253642527]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Staple,+Kent,+England">Staple, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> Feb 1915</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3154778371471, 1.142668075], 12);
+			map.setView([51.27914896514857, 1.2763372980304233], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

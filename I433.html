@@ -12,16 +12,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.35148285, 1.41957915], 12);
+			var map = L.map('map').setView([51.3362987, 1.4224913], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.3362987, 1.4224913]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+Alma+Place,+Margate,+Kent,+England">2 Alma Place, Margate, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> Nov 1956</p><p>Death on Feb 17, 1996</p><p>Birth on Oct 5, 1936</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death on Feb 17, 1996</p><p>Marriage <i>c.</i> Nov 1956</p><p>Birth on Oct 5, 1936</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.35148285, 1.41957915], 12);
+			map.setView([51.3362987, 1.4224913], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

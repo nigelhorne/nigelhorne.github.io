@@ -12,16 +12,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([46.63208, -65.064595], 12);
+			var map = L.map('map').setView([46.58343, -65.24875], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([46.58343, -65.24875]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kent,+New+Brunswick,+Canada">Kent, New Brunswick, Canada</a><br><p>Living in 1881</p>'); markers.push(marker);
-var marker = L.marker([46.68073, -64.88044]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Richibucto,+Kent,+New+Brunswick,+Canada">Richibucto, Kent, New Brunswick, Canada</a><br><p>Burial</p><p>Birth on Apr 29, 1859</p><p>Living in 1871</p><p>Living in 1891</p><p>Living in 1861</p><p>Death on Feb 5, 1906</p>'); markers.push(marker);
+var marker = L.marker([46.68073, -64.88044]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Richibucto,+Kent,+New+Brunswick,+Canada">Richibucto, Kent, New Brunswick, Canada</a><br><p>Death on Feb 5, 1906</p><p>Living in 1891</p><p>Burial</p><p>Birth on Apr 29, 1859</p><p>Living in 1871</p><p>Living in 1861</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([46.63208, -65.064595], 12);
+			map.setView([46.58343, -65.24875], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

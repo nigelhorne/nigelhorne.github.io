@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([52.2924632, -1.021995], 12);
+			var map = L.map('map').setView([52.228598, -1.0840732], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([52.25, -0.88333]).addTo(map).bindPopup('<a href="https://
 var marker = L.marker([52.22955, -1.08371]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Weedon+Bec,+Northamptonshire,+England">Weedon Bec, Northamptonshire, England</a><br><p>Birth on Nov 25, 1914</p>'); markers.push(marker);
 var marker = L.marker([52.3563284, -1.0564054]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=White+House+Flats,+Weedon+Bec,+Northamptonshire,+England">White House Flats, Weedon Bec, Northamptonshire, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([52.2924632, -1.021995], 12);
+			map.setView([52.228598, -1.0840732], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

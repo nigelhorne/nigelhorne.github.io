@@ -12,20 +12,20 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.41172235, 0.281571089940653], 12);
+			var map = L.map('map').setView([51.474221505507174, -0.3368578201186938], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.474221505507174, -0.3368578201186938]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=10+Loring+Road,+Isleworth,+London,+England">10 Loring Road, Isleworth, London, England</a><br><p>Living on Jun 19, 1921</p><p>Living on Sep 29, 1939</p><p>Living in 1944</p>'); markers.push(marker);
-var marker = L.marker([51.3175662, 0.89132115]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+Mill+Place,+Faversham,+Kent,+England">2 Mill Place, Faversham, Kent, England</a><br><p>Living on Apr 5, 1891</p><p>Living on Apr 3, 1881</p><p>Living on Mar 31, 1901</p>'); markers.push(marker);
+	var marker = L.marker([51.474221505507174, -0.3368578201186938]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=10+Loring+Road,+Isleworth,+London,+England">10 Loring Road, Isleworth, London, England</a><br><p>Living on Sep 29, 1939</p><p>Living in 1944</p><p>Living on Jun 19, 1921</p>'); markers.push(marker);
+var marker = L.marker([51.3175662, 0.89132115]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+Mill+Place,+Faversham,+Kent,+England">2 Mill Place, Faversham, Kent, England</a><br><p>Living on Apr 3, 1881</p><p>Living on Mar 31, 1901</p><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Birth on Apr 30, 1880</p>'); markers.push(marker);
 var marker = L.marker([51.5067777, -0.2399294]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lukes+Church,+Hammersmith,+London,+England">St Lukes Church, Hammersmith, London, England</a><br><p>Marriage on Apr 13, 1907</p>'); markers.push(marker);
 var marker = L.marker([51.3171337, 0.894897296796754]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+of+Charity+Church,+Church+Road,+Faversham,+Kent,+England">St Mary of Charity Church, Church Road, Faversham, Kent, England</a><br><p>Baptized on May 26, 1880</p>'); markers.push(marker);
 var marker = L.marker([51.4734184, -0.3244425]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+West+Middlesex+Hospital,+Isleworth,+London,+England">The West Middlesex Hospital, Isleworth, London, England</a><br><p>Death on Dec 10, 1944</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.41172235, 0.281571089940653], 12);
+			map.setView([51.474221505507174, -0.3368578201186938], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

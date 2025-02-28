@@ -12,13 +12,13 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.6115781, -0.4540079620086], 12);
+			var map = L.map('map').setView([51.356933747217, 0.294391010944737], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.2789351503232, 1.2778960559828]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ash,+Kent,+England">Ash, Kent, England</a><br><p>Living in 1861</p>'); markers.push(marker);
+	var marker = L.marker([51.356933747217, 0.294391010944737]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ash,+Kent,+England">Ash, Kent, England</a><br><p>Living in 1861</p>'); markers.push(marker);
 var marker = L.marker([51.27335739, 1.21509039]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ashen+Trees,+Wingham,+Kent,+England">Ashen Trees, Wingham, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 var marker = L.marker([51.2984968, 1.2367524]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Elmstone,+Kent,+England">Elmstone, Kent, England</a><br><p>Baptized on Aug 23, 1857</p>'); markers.push(marker);
 var marker = L.marker([52.48333, -2.08333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Netherton,+Sibertswold,+Kent,+England">Netherton, Sibertswold, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
@@ -29,7 +29,7 @@ var marker = L.marker([51.05, .333333]).addTo(map).bindPopup('<a href="https://n
 var marker = L.marker([52.1773579, -2.18591198]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Whittington+Terrace,+Sibertswold,+Kent,+England">Whittington Terrace, Sibertswold, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.2873602243831, 1.18389452680006]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wickhambreaux,+Kent,+England">Wickhambreaux, Kent, England</a><br><p>Living in 1871</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.6115781, -0.4540079620086], 12);
+			map.setView([51.356933747217, 0.294391010944737], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

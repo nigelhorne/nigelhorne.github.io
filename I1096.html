@@ -12,22 +12,22 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.7418047816906, 0.234696514621952], 12);
+			var map = L.map('map').setView([51.0834233, 1.1829753], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.0834233, 1.1829753]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+St+Johns+Street,+Folkestone,+Kent,+England">2 St Johns Street, Folkestone, Kent, England</a><br><p>Birth on Aug 12, 1878</p>'); markers.push(marker);
-var marker = L.marker([51.5724642, 0.0833003]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Aurelia+Cottages,+Ley+Street,+Ilford,+London,+England">5 Aurelia Cottages, Ley Street, Ilford, London, England</a><br><p>Living on Apr 2, 1911</p><p>Living on Jun 19, 1921</p><p>Living on Sep 29, 1939</p><p>Living in 1925</p>'); markers.push(marker);
+var marker = L.marker([51.5724642, 0.0833003]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Aurelia+Cottages,+Ley+Street,+Ilford,+London,+England">5 Aurelia Cottages, Ley Street, Ilford, London, England</a><br><p>Living on Apr 2, 1911</p><p>Living on Sep 29, 1939</p><p>Living on Jun 19, 1921</p><p>Living in 1925</p>'); markers.push(marker);
 var marker = L.marker([51.5892309, 0.0705639]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Barkingside+Garden+of+Rest,+Longwood+Gardens,+Ilford,+London,+England">Barkingside Garden of Rest, Longwood Gardens, Ilford, London, England</a><br><p>Burial</p>'); markers.push(marker);
 var marker = L.marker([51.08171844, 1.18028426]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Christ+Church,+Folkestone,+Kent,+England">Christ Church, Folkestone, Kent, England</a><br><p>Baptized on Sep 22, 1878</p>'); markers.push(marker);
 var marker = L.marker([52.401891123381255, -0.7135822707560959]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Edmund+Street,+Kettering,+Northamptonshire,+England">Edmund Street, Kettering, Northamptonshire, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
-var marker = L.marker([51.55765, 0.07278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ilford,+London,+England">Ilford, London, England</a><br><p>Marriage on Aug 29, 1914</p><p>Death on Sep 13, 1969</p><p>Living in 1964</p>'); markers.push(marker);
+var marker = L.marker([51.55765, 0.07278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ilford,+London,+England">Ilford, London, England</a><br><p>Living in 1964</p><p>Death on Sep 13, 1969</p><p>Marriage on Aug 29, 1914</p>'); markers.push(marker);
 var marker = L.marker([51.59865235, -0.06645675]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lansdowne+Road,+Charlton,+London,+England">Lansdowne Road, Charlton, London, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.55901413947168, -0.14401828008159587]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=York+Rise,+Highgate,+London,+England">York Rise, Highgate, London, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.7418047816906, 0.234696514621952], 12);
+			map.setView([51.0834233, 1.1829753], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

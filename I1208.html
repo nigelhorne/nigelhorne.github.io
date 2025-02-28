@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([39.874852, -85.5186565], 12);
+			var map = L.map('map').setView([41.07717075, -85.05610933], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -27,7 +27,7 @@ var marker = L.marker([41.160076, -85.174574]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([41.09824654107312, -85.15625232577786]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Marys+Avenue,+Fort+Wayne,+Allen,+Indiana,+USA">St Marys Avenue, Fort Wayne, Allen, Indiana, USA</a><br><p>Living on Jun 15, 1880</p>'); markers.push(marker);
 var marker = L.marker([38.589628, -86.096807]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Washington,+Allen,+Indiana,+USA">Washington, Allen, Indiana, USA</a><br><p>Living on Apr 15, 1910</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([39.874852, -85.5186565], 12);
+			map.setView([41.07717075, -85.05610933], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

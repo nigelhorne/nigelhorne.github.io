@@ -12,17 +12,17 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2694343560814, 1.14141911093445], 12);
+			var map = L.map('map').setView([51.269253, 1.0677479], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.269253, 1.0677479]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Old+Farm+House,+Wingham,+Kent,+England">Old Farm House, Wingham, Kent, England</a><br><p>Living on Mar 30, 1851</p><p>Living in 1851</p>'); markers.push(marker);
+	var marker = L.marker([51.269253, 1.0677479]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Old+Farm+House,+Wingham,+Kent,+England">Old Farm House, Wingham, Kent, England</a><br><p>Living in 1851</p><p>Living on Mar 30, 1851</p>'); markers.push(marker);
 var marker = L.marker([51.2655122277821, 1.1977745445423442]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wingham+Well,+Wingham,+Kent,+England">Wingham Well, Wingham, Kent, England</a><br><p>Living in 1841</p><p>Living on Jun 6, 1841</p>'); markers.push(marker);
 var marker = L.marker([51.2733564843807, 1.21509032186889]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wingham,+Kent,+England">Wingham, Kent, England</a><br><p>Baptized on Jun 25, 1837</p><p>Birth <i>c.</i> 1836</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2694343560814, 1.14141911093445], 12);
+			map.setView([51.269253, 1.0677479], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

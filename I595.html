@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([52.517062845, -0.661378025], 12);
+			var map = L.map('map').setView([51.2460048, 1.1252057], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,11 +21,11 @@
 	var marker = L.marker([51.2460048, 1.1252057]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=58+High+Street,+Walmer,+Kent,+England">58 High Street, Walmer, Kent, England</a><br><p>Living on Mar 30, 1851</p>'); markers.push(marker);
 var marker = L.marker([51.320269249999996, 1.2365816710388784]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=All+Saints+Church,+Church+Lane,+Stourmouth,+Kent,+England">All Saints Church, Church Lane, Stourmouth, Kent, England</a><br><p>Baptized on Jul 23, 1809</p>'); markers.push(marker);
 var marker = L.marker([51.233333, 1.3]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Eastry,+Kent,+England">Eastry, Kent, England</a><br><p>Marriage <i>c.</i> Feb 1842</p>'); markers.push(marker);
-var marker = L.marker([51.3203124, 1.239183790614103]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stourmouth,+Kent,+England">Stourmouth, Kent, England</a><br><p>Death on Mar 30, 1862</p><p>Birth on Jun 19, 1809</p><p>Burial</p>'); markers.push(marker);
+var marker = L.marker([51.3203124, 1.239183790614103]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stourmouth,+Kent,+England">Stourmouth, Kent, England</a><br><p>Death on Mar 30, 1862</p><p>Burial</p><p>Birth on Jun 19, 1809</p>'); markers.push(marker);
 var marker = L.marker([53.80079269, -2.6306417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Vicarage,+Castleton,+Lancashire,+England">The Vicarage, Castleton, Lancashire, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 var marker = L.marker([51.24701691, 1.30788565]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Walton+House,+Eastry,+Kent,+England">Walton House, Eastry, Kent, England</a><br><p>Living on Jun 6, 1841</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([52.517062845, -0.661378025], 12);
+			map.setView([51.2460048, 1.1252057], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

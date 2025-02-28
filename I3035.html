@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([55.0823286809025, -1.55682638906077], 12);
+			var map = L.map('map').setView([55.0021868, -1.4491282], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,12 +21,12 @@
 	var marker = L.marker([55.0021868, -1.4491282]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=16+Appleby+Street,+North+Shields,+Tyne+and+Wear,+England">16 Appleby Street, North Shields, Tyne and Wear, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([54.99583736180493, -1.4247227781215495]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+South+Street,+North+Shields,+Tyne+and+Wear,+England">2 South Street, North Shields, Tyne and Wear, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 var marker = L.marker([55.0021868, -1.4491282]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=48+Appleby+Street,+North+Shields,+Tyne+and+Wear,+England">48 Appleby Street, North Shields, Tyne and Wear, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
-var marker = L.marker([55.003245995205816, -1.4504268243308185]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=96+Elsdon+Street,+Tynemouth,+Tyne+and+Wear,+England">96 Elsdon Street, Tynemouth, Tyne and Wear, England</a><br><p>Living on Apr 2, 1911</p><p>Death on Apr 27, 1914</p>'); markers.push(marker);
+var marker = L.marker([55.003245995205816, -1.4504268243308185]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=96+Elsdon+Street,+Tynemouth,+Tyne+and+Wear,+England">96 Elsdon Street, Tynemouth, Tyne and Wear, England</a><br><p>Death on Apr 27, 1914</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([55.16882, -1.68893]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Morpeth,+Northumberland,+England">Morpeth, Northumberland, England</a><br><p>Birth <i>c.</i> Feb 1856</p>'); markers.push(marker);
 var marker = L.marker([54.998474569415485, -1.4355784309510458]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=North+Street,+North+Shields,+Tyne+and+Wear,+England">North Street, North Shields, Tyne and Wear, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 var marker = L.marker([55.009124549999996, -1.4681560889131693]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters+Church,+Tynemouth,+Tyne+and+Wear,+England">St Peters Church, Tynemouth, Tyne and Wear, England</a><br><p>Marriage on Jan 12, 1874</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([55.0823286809025, -1.55682638906077], 12);
+			map.setView([55.0021868, -1.4491282], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

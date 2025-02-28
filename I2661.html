@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.318968115, 1.108333], 12);
+			var map = L.map('map').setView([51.36715365900119, 1.129474297132655], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.266667, 1.083333]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([51.366667, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne+Bay,+Kent,+England">Herne Bay, Kent, England</a><br><p>Birth on Aug 17, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.37126923, 1.12629914]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Martins+Church,+Herne+Bay,+Kent,+England">St Martins Church, Herne Bay, Kent, England</a><br><p>Marriage on Sep 7, 1935</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.318968115, 1.108333], 12);
+			map.setView([51.36715365900119, 1.129474297132655], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

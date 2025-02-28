@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.458394615, 0.4387349], 12);
+			var map = L.map('map').setView([51.60012223, -0.0225302], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([51.3171337, 0.894897296796754]).addTo(map).bindPopup('<a 
 var marker = L.marker([51.3961668, 0.4931967144771946]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Nicholas,+Strood,+Kent,+England">St Nicholas, Strood, Kent, England</a><br><p>Marriage on Aug 7, 1916</p>'); markers.push(marker);
 var marker = L.marker([51.5481457, 0.6327793]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Cottage,+London+Road,+Leigh+On+Sea,+Essex,+England">The Cottage, London Road, Leigh On Sea, Essex, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.458394615, 0.4387349], 12);
+			map.setView([51.60012223, -0.0225302], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

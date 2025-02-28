@@ -12,20 +12,20 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([41.23765, -92.8205055], 12);
+			var map = L.map('map').setView([41.26194, -95.86083], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([41.26194, -95.86083]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Council+Bluffs,+Pottawattamie,+Iowa,+USA">Council Bluffs, Pottawattamie, Iowa, USA</a><br><p>Marriage on Nov 12, 1924</p>'); markers.push(marker);
-var marker = L.marker([41.78001, -98.6773]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ericson,+Wheeler,+Nebraska,+USA">Ericson, Wheeler, Nebraska, USA</a><br><p>Living on Apr 1, 1940</p><p>Living in 1942</p>'); markers.push(marker);
+var marker = L.marker([41.78001, -98.6773]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ericson,+Wheeler,+Nebraska,+USA">Ericson, Wheeler, Nebraska, USA</a><br><p>Living in 1942</p><p>Living on Apr 1, 1940</p>'); markers.push(marker);
 var marker = L.marker([40.69529, -98.86175]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Grand+Island,+Hall,+Nebraska,+USA">Grand Island, Hall, Nebraska, USA</a><br><p>Death on Aug 26, 1969</p>'); markers.push(marker);
 var marker = L.marker([41.599217, -86.779261]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=La+Porte,+Indiana,+USA">La Porte, Indiana, USA</a><br><p>Birth on Oct 24, 1896</p>'); markers.push(marker);
 var marker = L.marker([41.17835, -97.55255]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Osceola,+Polk,+Nebraska,+USA">Osceola, Polk, Nebraska, USA</a><br><p>Living on Apr 1, 1930</p>'); markers.push(marker);
 var marker = L.marker([40.9039, -98.38923]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Westlawn+Memorial+Cemetery,+Grand+Island,+Hall,+Nebraska,+USA">Westlawn Memorial Cemetery, Grand Island, Hall, Nebraska, USA</a><br><p>Burial</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([41.23765, -92.8205055], 12);
+			map.setView([41.26194, -95.86083], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

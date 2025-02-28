@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([41.095187725989, -85.1522689878447], 12);
+			var map = L.map('map').setView([41.090284, -85.100068], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,10 +20,10 @@
 			var markers = [];
 	var marker = L.marker([41.090284, -85.100068]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Allen,+Indiana,+USA">Allen, Indiana, USA</a><br><p>Marriage on Aug 18, 1928</p>'); markers.push(marker);
 var marker = L.marker([41.059775451978, -85.252735233929]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=8408+Covington+Road,+Fort+Wayne,+Allen,+Indiana,+USA">8408 Covington Road, Fort Wayne, Allen, Indiana, USA</a><br><p>Burial in 1985</p>'); markers.push(marker);
-var marker = L.marker([41.1306, -85.12886]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fort+Wayne,+Allen,+Indiana,+USA">Fort Wayne, Allen, Indiana, USA</a><br><p>Living on Apr 1, 1930</p><p>Living on Apr 1, 1940</p>'); markers.push(marker);
+var marker = L.marker([41.1306, -85.12886]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fort+Wayne,+Allen,+Indiana,+USA">Fort Wayne, Allen, Indiana, USA</a><br><p>Living on Apr 1, 1940</p><p>Living on Apr 1, 1930</p>'); markers.push(marker);
 var marker = L.marker([41.11572745057944, -85.05180274176045]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sheldon,+Allen,+Indiana,+USA">Sheldon, Allen, Indiana, USA</a><br><p>Birth on May 26, 1912</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([41.095187725989, -85.1522689878447], 12);
+			map.setView([41.090284, -85.100068], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

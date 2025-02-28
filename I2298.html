@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([36.777917596525, -97.567432775265], 12);
+			var map = L.map('map').setView([34.200241504729, -118.312712800171], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([38.80484, -77.04692]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([39.467325193049994, -76.822152750359]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=E+Chatsworth+Avenue,+Reisterstown,+Maryland,+USA">E Chatsworth Avenue, Reisterstown, Maryland, USA</a><br><p>Living on Apr 1, 1930</p>'); markers.push(marker);
 var marker = L.marker([34.08851, -118.234216]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Los+Angeles,+California,+USA">Los Angeles, California, USA</a><br><p>Death on Jan 10, 1974</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([36.777917596525, -97.567432775265], 12);
+			map.setView([34.200241504729, -118.312712800171], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

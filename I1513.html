@@ -12,17 +12,17 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3505945, 1.36616195], 12);
+			var map = L.map('map').setView([51.334522, 1.314417], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth in 1825</p>'); markers.push(marker);
-var marker = L.marker([51.3360596, 1.4179069]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Georges+Church,+Ramsgate,+Kent,+England">St Georges Church, Ramsgate, Kent, England</a><br><p>Burial on Nov 8, 1862</p><p>Marriage on Jul 26, 1857</p>'); markers.push(marker);
+var marker = L.marker([51.3360596, 1.4179069]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Georges+Church,+Ramsgate,+Kent,+England">St Georges Church, Ramsgate, Kent, England</a><br><p>Marriage on Jul 26, 1857</p><p>Burial on Nov 8, 1862</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death <i>c.</i> Nov 1862</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3505945, 1.36616195], 12);
+			map.setView([51.334522, 1.314417], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

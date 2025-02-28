@@ -12,20 +12,20 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([52.064281282879, 0.64747348766359], 12);
+			var map = L.map('map').setView([51.334057, 1.4156708], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.334057, 1.4156708]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=1+Spring+Villas,+Ramsgate,+Kent,+England">1 Spring Villas, Ramsgate, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.338813849999994, 1.4265799499999998]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=11+Sydney+Road,+Ramsgate,+Kent,+England">11 Sydney Road, Ramsgate, Kent, England</a><br><p>Living in 1974</p><p>Living in 1965</p><p>Living in 1963</p>'); markers.push(marker);
+var marker = L.marker([51.338813849999994, 1.4265799499999998]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=11+Sydney+Road,+Ramsgate,+Kent,+England">11 Sydney Road, Ramsgate, Kent, England</a><br><p>Living in 1963</p><p>Living in 1965</p><p>Living in 1974</p>'); markers.push(marker);
 var marker = L.marker([51.34942134462757, 1.417070970208465]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=18+Vine+Close,+Ramsgate,+Kent,+England">18 Vine Close, Ramsgate, Kent, England</a><br><p>Living in 2006</p>'); markers.push(marker);
 var marker = L.marker([51.331638715757926, 1.4157900591869352]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=31+Albert+Street,+Ramsgate,+Kent,+England">31 Albert Street, Ramsgate, Kent, England</a><br><p>Living in 1955</p>'); markers.push(marker);
-var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Death on Apr 26, 2006</p><p>Birth on Sep 14, 1925</p>'); markers.push(marker);
+var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth on Sep 14, 1925</p><p>Death on Apr 26, 2006</p>'); markers.push(marker);
 var marker = L.marker([52.79692385, -0.1316329746728194]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=61+Holbeach+Road,+Spalding,+Lincolnshire,+England">61 Holbeach Road, Spalding, Lincolnshire, England</a><br><p>Marriage on Mar 26, 1955</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([52.064281282879, 0.64747348766359], 12);
+			map.setView([51.334057, 1.4156708], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

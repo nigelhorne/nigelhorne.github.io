@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([50.992494225, 0.887587752188013], 12);
+			var map = L.map('map').setView([51.0848113, 1.1585085043760257], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.0878317722892, 1.14115615167963]).addTo(map).bindPopup
 var marker = L.marker([50.866667, .616667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ore,+Sussex,+England">Ore, Sussex, England</a><br><p>Birth in 1755</p>'); markers.push(marker);
 var marker = L.marker([51.118321449999996, 0.9595683120538832]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+the+Virgin+Church,+Smeeth,+Kent,+England">St Mary the Virgin Church, Smeeth, Kent, England</a><br><p>Marriage on Dec 6, 1777</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([50.992494225, 0.887587752188013], 12);
+			map.setView([51.0848113, 1.1585085043760257], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

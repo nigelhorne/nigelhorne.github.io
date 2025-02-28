@@ -12,15 +12,15 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([46.1866592, -42.0290799332354], 12);
+			var map = L.map('map').setView([41.087814519036, -85.134642821674], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([41.087814519036, -85.134642821674]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=1502+Spy+Run+Avenue,+Fort+Wayne,+Allen,+Indiana,+USA">1502 Spy Run Avenue, Fort Wayne, Allen, Indiana, USA</a><br><p>Living in 1916</p><p>Living in 1915</p><p>Living on Apr 19, 1910</p><p>Living on Jan 5, 1920</p>'); markers.push(marker);
-var marker = L.marker([41.065213844751, -85.14120208682]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=323+West+Dewald+Street,+Fort+Wayne,+Allen,+Indiana,+USA">323 West Dewald Street, Fort Wayne, Allen, Indiana, USA</a><br><p>Living in 1906</p><p>Living in 1905</p><p>Living in 1903</p><p>Living in 1902</p><p>Living in 1908</p>'); markers.push(marker);
-var marker = L.marker([41.080298962479, -85.139363896751]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=60+West+Main+Street,+Fort+Wayne,+Allen,+Indiana,+USA">60 West Main Street, Fort Wayne, Allen, Indiana, USA</a><br><p>Living in 1875</p><p>Living in 1873</p><p>Living in 1874</p>'); markers.push(marker);
+	var marker = L.marker([41.087814519036, -85.134642821674]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=1502+Spy+Run+Avenue,+Fort+Wayne,+Allen,+Indiana,+USA">1502 Spy Run Avenue, Fort Wayne, Allen, Indiana, USA</a><br><p>Living on Apr 19, 1910</p><p>Living on Jan 5, 1920</p><p>Living in 1916</p><p>Living in 1915</p>'); markers.push(marker);
+var marker = L.marker([41.065213844751, -85.14120208682]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=323+West+Dewald+Street,+Fort+Wayne,+Allen,+Indiana,+USA">323 West Dewald Street, Fort Wayne, Allen, Indiana, USA</a><br><p>Living in 1903</p><p>Living in 1908</p><p>Living in 1902</p><p>Living in 1905</p><p>Living in 1906</p>'); markers.push(marker);
+var marker = L.marker([41.080298962479, -85.139363896751]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=60+West+Main+Street,+Fort+Wayne,+Allen,+Indiana,+USA">60 West Main Street, Fort Wayne, Allen, Indiana, USA</a><br><p>Living in 1873</p><p>Living in 1874</p><p>Living in 1875</p>'); markers.push(marker);
 var marker = L.marker([41.0741305, -85.1374555]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=69+Douglas+Avenue,+Fort+Wayne,+Allen,+Indiana,+USA">69 Douglas Avenue, Fort Wayne, Allen, Indiana, USA</a><br><p>Living in 1879</p><p>Living in 1878</p>'); markers.push(marker);
 var marker = L.marker([41.065060476572526, -85.14760740053606]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=73+West+Dewald+Street,+Fort+Wayne,+Allen,+Indiana,+USA">73 West Dewald Street, Fort Wayne, Allen, Indiana, USA</a><br><p>Living in 1897</p><p>Living in 1891</p><p>Living on Jun 6, 1900</p>'); markers.push(marker);
 var marker = L.marker([41.090284, -85.100068]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Allen,+Indiana,+USA">Allen, Indiana, USA</a><br><p>Marriage on May 28, 1848</p>'); markers.push(marker);
@@ -29,7 +29,7 @@ var marker = L.marker([41.1306, -85.12886]).addTo(map).bindPopup('<a href="https
 var marker = L.marker([41.074247, -85.138531]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lindenwood+Cemetery,+Fort+Wayne,+Allen,+Indiana,+USA">Lindenwood Cemetery, Fort Wayne, Allen, Indiana, USA</a><br><p>Burial</p>'); markers.push(marker);
 var marker = L.marker([41.0389971, -85.2497134664708]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=7950+W+Jefferson+Blvd,+Fort+Wayne,+Allen,+Indiana,+USA">7950 W Jefferson Blvd, Fort Wayne, Allen, Indiana, USA</a><br><p>Death on Mar 17, 1920</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([46.1866592, -42.0290799332354], 12);
+			map.setView([41.087814519036, -85.134642821674], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

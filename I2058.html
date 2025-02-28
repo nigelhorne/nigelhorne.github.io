@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([53.7339696499492, -1.95828862679748], 12);
+			var map = L.map('map').setView([51.45503329989847, -0.19904982948690397], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([51.46736155, -0.1289642535949589]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+John+the+Evangelist,+Clapham,+London,+England">St John the Evangelist, Clapham, London, England</a><br><p>Marriage on Jul 22, 1878</p>'); markers.push(marker);
 var marker = L.marker([56.012906, -3.787613]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Union+Street,+Clapham,+London,+England">Union Street, Clapham, London, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([53.7339696499492, -1.95828862679748], 12);
+			map.setView([51.45503329989847, -0.19904982948690397], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

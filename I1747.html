@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([42.7460956, -97.82477025], 12);
+			var map = L.map('map').setView([41.21668, -97.43366], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([41.21668, -97.43366]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Canada,+Polk,+Nebraska,+USA">Canada, Polk, Nebraska, USA</a><br><p>Living on Jan 6, 1920</p>'); markers.push(marker);
 var marker = L.marker([44.2755112, -98.2158805]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Restlawn+Memory+Gardens,+Huron,+Beadle,+South+Dakota,+USA">Restlawn Memory Gardens, Huron, Beadle, South Dakota, USA</a><br><p>Burial</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([42.7460956, -97.82477025], 12);
+			map.setView([41.21668, -97.43366], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

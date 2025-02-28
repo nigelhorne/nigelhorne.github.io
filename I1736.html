@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.4733263, -0.000635000000000004], 12);
+			var map = L.map('map').setView([51.4487126, -0.02148742711860247], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.49794, -0.06607]).addTo(map).bindPopup('<a href="https
 var marker = L.marker([51.47785, -0.01176]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Greenwich,+London,+England">Greenwich, London, England</a><br><p>Death <i>c.</i> Aug 1985</p>'); markers.push(marker);
 var marker = L.marker([51.491, 0.0648]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Woolwich,+London,+England">Woolwich, London, England</a><br><p>Marriage <i>c.</i> May 1939</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.4733263, -0.000635000000000004], 12);
+			map.setView([51.4487126, -0.02148742711860247], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([52.368313675, -0.05299738], 12);
+			var map = L.map('map').setView([51.358967, 1.391367], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([51.358967, 1.391367]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Broadstairs,+Kent,+England">Broadstairs, Kent, England</a><br><p>Birth in 1882</p>'); markers.push(marker);
 var marker = L.marker([53.37766035, -1.49736176]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Watson+Road,+Ecclesall,+South+Yorkshire,+England">Watson Road, Ecclesall, South Yorkshire, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([52.368313675, -0.05299738], 12);
+			map.setView([51.358967, 1.391367], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

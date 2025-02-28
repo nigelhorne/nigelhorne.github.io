@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.29407635, 0.60911615], 12);
+			var map = L.map('map').setView([51.1433816, 1.2783759], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,10 +21,10 @@
 	var marker = L.marker([51.1433816, 1.2783759]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=58+Valley+Road,+Beckenham,+Kent,+England">58 Valley Road, Beckenham, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.4070273, -0.0090927]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=75+Bromley+Road,+Beckenham,+Kent,+England">75 Bromley Road, Beckenham, Kent, England</a><br><p>Living in 1990</p>'); markers.push(marker);
 var marker = L.marker([51.0938993, 0.8528776]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bromley,+Kent,+England">Bromley, Kent, England</a><br><p>Death on Sep 8, 1990</p>'); markers.push(marker);
-var marker = L.marker([51.4942534, -0.1984347]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Gardeners+Lodge,+Hillside,+Fitzroy+Park,+Highgate,+London,+England">Gardeners Lodge, Hillside, Fitzroy Park, Highgate, London, England</a><br><p>Living on Jun 19, 1921</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.4942534, -0.1984347]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Gardeners+Lodge,+Hillside,+Fitzroy+Park,+Highgate,+London,+England">Gardeners Lodge, Hillside, Fitzroy Park, Highgate, London, England</a><br><p>Living on Apr 2, 1911</p><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.383333, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Margate,+Kent,+England">Margate, Kent, England</a><br><p>Birth on Jun 21, 1907</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.29407635, 0.60911615], 12);
+			map.setView([51.1433816, 1.2783759], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

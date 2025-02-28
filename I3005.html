@@ -12,14 +12,14 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.095269725, 1.165362575], 12);
+			var map = L.map('map').setView([51.0817299, 1.1841515], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.0817299, 1.1841515]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=49+St+Johns+Street,+Folkestone,+Kent,+England">49 St Johns Street, Folkestone, Kent, England</a><br><p>Death on Jul 27, 1921</p>'); markers.push(marker);
-var marker = L.marker([51.084501033307745, 1.1778794696795927]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=65+Foord+Road,+Folkestone,+Kent,+England">65 Foord Road, Folkestone, Kent, England</a><br><p>Living on Mar 31, 1901</p><p>Living in 1919</p><p>Living on Apr 2, 1911</p><p>Living on Apr 5, 1891</p>'); markers.push(marker);
+var marker = L.marker([51.084501033307745, 1.1778794696795927]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=65+Foord+Road,+Folkestone,+Kent,+England">65 Foord Road, Folkestone, Kent, England</a><br><p>Living on Mar 31, 1901</p><p>Living in 1919</p><p>Living on Apr 5, 1891</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.1177701, 1.2390553]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Back+Berkley+Place+Cottage,+Folkestone,+Kent,+England">Back Berkley Place Cottage, Folkestone, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.0848113, 1.1585085043760257]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Cheriton+Road+Cemetery,+Folkestone,+Kent,+England">Cheriton Road Cemetery, Folkestone, Kent, England</a><br><p>Burial on Jul 30, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.08171844, 1.18028426]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Christ+Church,+Folkestone,+Kent,+England">Christ Church, Folkestone, Kent, England</a><br><p>Marriage on Sep 10, 1865</p>'); markers.push(marker);
@@ -29,7 +29,7 @@ var marker = L.marker([51.106363594362826, 1.1575145960796824]).addTo(map).bindP
 var marker = L.marker([51.1, 1.166667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Hawkinge,+Kent,+England">Hawkinge, Kent, England</a><br><p>Birth <i>c.</i> Feb 1842</p>'); markers.push(marker);
 var marker = L.marker([51.07276935, 1.09166985]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Mill+Lane,+Folkestone,+Kent,+England">Mill Lane, Folkestone, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.095269725, 1.165362575], 12);
+			map.setView([51.0817299, 1.1841515], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

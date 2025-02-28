@@ -12,18 +12,18 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3433013, 1.19371009], 12);
+			var map = L.map('map').setView([51.35022736, 1.13315368], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.35022736, 1.13315368]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Blean+Union+Workhouse,+Herne,+Kent,+England">Blean Union Workhouse, Herne, Kent, England</a><br><p>Death on Aug 23, 1851</p><p>Living on Mar 30, 1851</p>'); markers.push(marker);
-var marker = L.marker([51.333333, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne,+Kent,+England">Herne, Kent, England</a><br><p>Marriage on Nov 4, 1797</p><p>Living in 1851</p>'); markers.push(marker);
+	var marker = L.marker([51.35022736, 1.13315368]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Blean+Union+Workhouse,+Herne,+Kent,+England">Blean Union Workhouse, Herne, Kent, England</a><br><p>Living on Mar 30, 1851</p><p>Death on Aug 23, 1851</p>'); markers.push(marker);
+var marker = L.marker([51.333333, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne,+Kent,+England">Herne, Kent, England</a><br><p>Living in 1851</p><p>Marriage on Nov 4, 1797</p>'); markers.push(marker);
 var marker = L.marker([51.350453112456705, 1.134730987212137]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Martin,+Herne,+Kent,+England">St Martin, Herne, Kent, England</a><br><p>Burial on Aug 26, 1851</p>'); markers.push(marker);
-var marker = L.marker([51.3532696, 1.2542665]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Nicholas-at-Wade,+Kent,+England">St Nicholas-at-Wade, Kent, England</a><br><p>Baptized on Dec 18, 1774</p><p>Birth in 1774</p>'); markers.push(marker);
+var marker = L.marker([51.3532696, 1.2542665]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Nicholas-at-Wade,+Kent,+England">St Nicholas-at-Wade, Kent, England</a><br><p>Birth in 1774</p><p>Baptized on Dec 18, 1774</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3433013, 1.19371009], 12);
+			map.setView([51.35022736, 1.13315368], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

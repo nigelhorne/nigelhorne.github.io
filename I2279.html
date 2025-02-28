@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([42.3944685, -58.4430387500855], 12);
+			var map = L.map('map').setView([34.200241504729, -118.312712800171], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,14 +23,14 @@ var marker = L.marker([38.80484, -77.04692]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([51.366667, 1.3]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Birchington,+Kent,+England">Birchington, Kent, England</a><br><p>Birth on Dec 17, 1904</p>'); markers.push(marker);
 var marker = L.marker([39.467325193049994, -76.822152750359]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=E+Chatsworth+Avenue,+Reisterstown,+Maryland,+USA">E Chatsworth Avenue, Reisterstown, Maryland, USA</a><br><p>Living on Apr 1, 1930</p>'); markers.push(marker);
 var marker = L.marker([34.06279, -117.83784]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Forest+Lawn+Memorial+Park,+Glendale,+Los+Angeles,+California,+USA">Forest Lawn Memorial Park, Glendale, Los Angeles, California, USA</a><br><p>Burial</p>'); markers.push(marker);
-var marker = L.marker([51.3369374, 1.4266353]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kingsdown+House,+St+Peters+Park+Road,+Broadstairs,+Kent,+England">Kingsdown House, St Peters Park Road, Broadstairs, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.3813202, 1.3867628]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kingsdown+House,+St+Peters+Park+Road,+Broadstairs,+Kent,+England">Kingsdown House, St Peters Park Road, Broadstairs, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([34.19917, -118.18785]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=La+Ca&ntilde;ada+Flintridge,+Los+Angeles,+California,+USA">La Ca&ntilde;ada Flintridge, Los Angeles, California, USA</a><br><p>Living in 1993</p>'); markers.push(marker);
 var marker = L.marker([34.08851, -118.234216]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Los+Angeles,+California,+USA">Los Angeles, California, USA</a><br><p>Living in 1937</p>'); markers.push(marker);
 var marker = L.marker([33.42227, -111.82264]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Mesa,+Maricopa,+Arizona,+USA">Mesa, Maricopa, Arizona, USA</a><br><p>Living in 1920</p>'); markers.push(marker);
 var marker = L.marker([34.1936826, -118.1626407]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Scripps+Nursing+Home,+Altadena,+Los+Angeles,+California,+USA">Scripps Nursing Home, Altadena, Los Angeles, California, USA</a><br><p>Death on May 23, 1993</p>'); markers.push(marker);
 var marker = L.marker([34.054474220805, -118.273683136684]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=732+S+Burlington+Avenue,+Los+Angeles,+California,+USA">732 S Burlington Avenue, Los Angeles, California, USA</a><br><p>Living on Oct 16, 1940</p><p>Living in 1939</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([42.3944685, -58.4430387500855], 12);
+			map.setView([34.200241504729, -118.312712800171], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

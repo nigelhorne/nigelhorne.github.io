@@ -12,18 +12,18 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3018227, 1.06564974530705], 12);
+			var map = L.map('map').setView([51.3, 1.05], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.3, 1.05]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Blean,+Kent,+England">Blean, Kent, England</a><br><p>Living in 1851</p>'); markers.push(marker);
-var marker = L.marker([51.283333, 1.033333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Harbledown,+Kent,+England">Harbledown, Kent, England</a><br><p>Living in 1881</p><p>Living in 1891</p><p>Living in 1901</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.283333, 1.033333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Harbledown,+Kent,+England">Harbledown, Kent, England</a><br><p>Living in 1891</p><p>Living on Apr 2, 1911</p><p>Living in 1881</p><p>Living in 1901</p>'); markers.push(marker);
 var marker = L.marker([51.3091268, 0.8921157]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Preston,+Faversham,+Kent,+England">Preston, Faversham, Kent, England</a><br><p>Living in 1871</p>'); markers.push(marker);
-var marker = L.marker([51.3203124, 1.239183790614103]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stourmouth,+Kent,+England">Stourmouth, Kent, England</a><br><p>Birth <i>c.</i> 1826</p><p>Living in 1841</p><p>Living in 1861</p><p>Baptized on Apr 22, 1827</p>'); markers.push(marker);
+var marker = L.marker([51.3203124, 1.239183790614103]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stourmouth,+Kent,+England">Stourmouth, Kent, England</a><br><p>Living in 1841</p><p>Living in 1861</p><p>Baptized on Apr 22, 1827</p><p>Birth <i>c.</i> 1826</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3018227, 1.06564974530705], 12);
+			map.setView([51.3, 1.05], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([41.460945, -75.6075845], 12);
+			var map = L.map('map').setView([41.43348, -75.632209], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([41.43348, -75.632209]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lackawanna,+Pennsylvania,+USA">Lackawanna, Pennsylvania, USA</a><br><p>Living on Apr 15, 1910</p>'); markers.push(marker);
 var marker = L.marker([41.48841, -75.58296]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Peckville,+Lackawanna,+Pennsylvania,+USA">Peckville, Lackawanna, Pennsylvania, USA</a><br><p>Burial</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([41.460945, -75.6075845], 12);
+			map.setView([41.43348, -75.632209], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

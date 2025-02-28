@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([52.264259045, -1.1666665], 12);
+			var map = L.map('map').setView([50.833333, -.183333], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([53.733333, -2.15]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Portsmouth,+Hampshire,+England">Portsmouth, Hampshire, England</a><br><p>Death <i>c.</i> Nov 1992</p>'); markers.push(marker);
 var marker = L.marker([50.79518509, -0.67618108]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+Magdalene+Church,+South+Bersted,+West+Sussex,+England">St Mary Magdalene Church, South Bersted, West Sussex, England</a><br><p>Marriage on Oct 10, 1959</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([52.264259045, -1.1666665], 12);
+			map.setView([50.833333, -.183333], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

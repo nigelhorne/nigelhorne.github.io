@@ -12,21 +12,21 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3414531558157, 1.27698767196924], 12);
+			var map = L.map('map').setView([51.3458365, 1.3977516999999997], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.3458365, 1.3977516999999997]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=146+Newington+Road,+Ramsgate,+Kent,+England">146 Newington Road, Ramsgate, Kent, England</a><br><p>Living in 1974</p><p>Living in 1976</p><p>Living in 1971</p>'); markers.push(marker);
-var marker = L.marker([51.38462341163136, 1.4314619439384768]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=61+Percy+Avenue,+Kingsgate,+Kent,+England">61 Percy Avenue, Kingsgate, Kent, England</a><br><p>Living in 1955</p><p>Living in 1953</p><p>Living in 1965</p><p>Living in 1963</p>'); markers.push(marker);
+	var marker = L.marker([51.3458365, 1.3977516999999997]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=146+Newington+Road,+Ramsgate,+Kent,+England">146 Newington Road, Ramsgate, Kent, England</a><br><p>Living in 1971</p><p>Living in 1974</p><p>Living in 1976</p>'); markers.push(marker);
+var marker = L.marker([51.38462341163136, 1.4314619439384768]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=61+Percy+Avenue,+Kingsgate,+Kent,+England">61 Percy Avenue, Kingsgate, Kent, England</a><br><p>Living in 1963</p><p>Living in 1953</p><p>Living in 1965</p><p>Living in 1955</p>'); markers.push(marker);
 var marker = L.marker([51.3525358, 1.3860789]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Haine,+Kent,+England">Haine, Kent, England</a><br><p>Birth on Feb 4, 1920</p>'); markers.push(marker);
 var marker = L.marker([51.2982829, 1.1225134]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Meadow+Cottages,+Marshside,+Kent,+England">Meadow Cottages, Marshside, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Death on Sep 25, 1976</p>'); markers.push(marker);
 var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Baptized on Apr 25, 1920</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> May 1940</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3414531558157, 1.27698767196924], 12);
+			map.setView([51.3458365, 1.3977516999999997], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

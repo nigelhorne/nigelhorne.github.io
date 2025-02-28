@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3847554, 0.7120135], 12);
+			var map = L.map('map').setView([51.4028438, 0.00736], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([51.38230372555637, 1.4003407112328132]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=93+Victoria+Avenue,+Margate,+Kent,+England">93 Victoria Avenue, Margate, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death <i>c.</i> Nov 1984</p><p>Marriage <i>c.</i> Feb 1934</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3847554, 0.7120135], 12);
+			map.setView([51.4028438, 0.00736], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

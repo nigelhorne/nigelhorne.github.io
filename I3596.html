@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.11518067, 1.05593251138689], 12);
+			var map = L.map('map').setView([51.08619563863549, 1.1370851742309183], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,11 +21,11 @@
 	var marker = L.marker([51.08619563863549, 1.1370851742309183]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=32+Kings+Road,+Folkestone,+Kent,+England">32 Kings Road, Folkestone, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.1177701, 1.2390553]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Back+Berkley+Place+Cottage,+Folkestone,+Kent,+England">Back Berkley Place Cottage, Folkestone, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.08171844, 1.18028426]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Christ+Church,+Folkestone,+Kent,+England">Christ Church, Folkestone, Kent, England</a><br><p>Baptized on Jan 21, 1866</p>'); markers.push(marker);
-var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Folkestone,+Kent,+England">Folkestone, Kent, England</a><br><p>Death <i>c.</i> Feb 1953</p><p>Birth on Dec 17, 1865</p>'); markers.push(marker);
+var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Folkestone,+Kent,+England">Folkestone, Kent, England</a><br><p>Birth on Dec 17, 1865</p><p>Death <i>c.</i> Feb 1953</p>'); markers.push(marker);
 var marker = L.marker([51.084501033307745, 1.1778794696795927]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Foord+Road,+Folkestone,+Kent,+England">Foord Road, Folkestone, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 var marker = L.marker([51.1486429, 0.8728097227737838]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+The+Virgin,+Ashford,+Kent,+England">St Mary The Virgin, Ashford, Kent, England</a><br><p>Marriage on Jun 2, 1894</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.11518067, 1.05593251138689], 12);
+			map.setView([51.08619563863549, 1.1370851742309183], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

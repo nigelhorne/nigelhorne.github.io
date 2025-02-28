@@ -18,7 +18,7 @@
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.2656969072681, 1.3110202153984]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Woodnesborough,+Kent,+England">Woodnesborough, Kent, England</a><br><p>Death on Mar 6, 1605</p><p>Marriage in 1539</p><p>Burial on Mar 21, 1605</p><p>Birth in 1519</p>'); markers.push(marker);
+	var marker = L.marker([51.2656969072681, 1.3110202153984]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Woodnesborough,+Kent,+England">Woodnesborough, Kent, England</a><br><p>Birth in 1519</p><p>Marriage in 1539</p><p>Death on Mar 6, 1605</p><p>Burial on Mar 21, 1605</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
 			map.setView([51.2656969072681, 1.3110202153984], 12);
 		});

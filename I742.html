@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.1166665, 1.1736395], 12);
+			var map = L.map('map').setView([51.088155302102244, 1.184014063514259], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,12 +20,12 @@
 			var markers = [];
 	var marker = L.marker([51.088155302102244, 1.184014063514259]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Canterbury+Road,+Folkestone,+Kent,+England">Canterbury Road, Folkestone, Kent, England</a><br><p>Death on Dec 13, 1862</p>'); markers.push(marker);
 var marker = L.marker([51.0848113, 1.1585085043760257]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Cheriton+Road+Cemetery,+Folkestone,+Kent,+England">Cheriton Road Cemetery, Folkestone, Kent, England</a><br><p>Burial on Dec 19, 1862</p>'); markers.push(marker);
-var marker = L.marker([51.089168983803795, 1.1890883166129382]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Dover+Road,+Folkestone,+Kent,+England">Dover Road, Folkestone, Kent, England</a><br><p>Living on Mar 30, 1851</p><p>Living on Apr 7, 1861</p>'); markers.push(marker);
+var marker = L.marker([51.089168983803795, 1.1890883166129382]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Dover+Road,+Folkestone,+Kent,+England">Dover Road, Folkestone, Kent, England</a><br><p>Living on Apr 7, 1861</p><p>Living on Mar 30, 1851</p>'); markers.push(marker);
 var marker = L.marker([51.15, 1.116667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Elham,+Kent,+England">Elham, Kent, England</a><br><p>Birth in 1793</p><p>Baptized on Oct 6, 1793</p>'); markers.push(marker);
-var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Folkestone,+Kent,+England">Folkestone, Kent, England</a><br><p>Living in 1851</p><p>Marriage on Sep 29, 1813</p>'); markers.push(marker);
+var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Folkestone,+Kent,+England">Folkestone, Kent, England</a><br><p>Marriage on Sep 29, 1813</p><p>Living in 1851</p>'); markers.push(marker);
 var marker = L.marker([51.1044578, 1.230612]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lime+Kiln+Cottage,+Dover+Road,+Folkestone,+Kent,+England">Lime Kiln Cottage, Dover Road, Folkestone, Kent, England</a><br><p>Living on Jun 6, 1841</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.1166665, 1.1736395], 12);
+			map.setView([51.088155302102244, 1.184014063514259], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

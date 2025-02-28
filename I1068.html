@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3342987912252, 1.36556387414953], 12);
+			var map = L.map('map').setView([51.332441182450374, 1.4167107482990628], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,9 +22,9 @@
 var marker = L.marker([51.33340574772731, 1.414012701051555]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ethelbert+Road,+Ramsgate,+Kent,+England">Ethelbert Road, Ramsgate, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.33615639999999, 1.4139745499999998]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Paradise,+Ramsgate,+Kent,+England">Paradise, Ramsgate, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.332441182450374, 1.4167107482990628]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Queen+Street,+Ramsgate,+Kent,+England">Queen Street, Ramsgate, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
-var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Living in 1891</p><p>Birth <i>c.</i> 1865</p><p>Living in 1881</p>'); markers.push(marker);
+var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Living in 1891</p><p>Living in 1881</p><p>Birth <i>c.</i> 1865</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3342987912252, 1.36556387414953], 12);
+			map.setView([51.332441182450374, 1.4167107482990628], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

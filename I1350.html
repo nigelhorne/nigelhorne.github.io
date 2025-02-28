@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.28598525, 0.986432575], 12);
+			var map = L.map('map').setView([51.266667, 1.083333], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.2955771, 0.88953215]).addTo(map).bindPopup('<a href="h
 var marker = L.marker([51.3053035, 1.0530863]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ss+Cosmus+and+Damian,+Blean,+Kent,+England">Ss Cosmus and Damian, Blean, Kent, England</a><br><p>Marriage on Dec 14, 1851</p>'); markers.push(marker);
 var marker = L.marker([51.2911630850815, 1.05939339192437]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Thomas+Hill,+Canterbury,+Kent,+England">St Thomas Hill, Canterbury, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.28598525, 0.986432575], 12);
+			map.setView([51.266667, 1.083333], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

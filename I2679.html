@@ -12,18 +12,18 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3184241, 0.758704185436616], 12);
+			var map = L.map('map').setView([51.2413296, 1.1895941], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.2413296, 1.1895941]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Adisham,+Kent,+England">Adisham, Kent, England</a><br><p>Birth <i>c.</i> 1804</p><p>Death on Mar 27, 1893</p>'); markers.push(marker);
-var marker = L.marker([51.24408735, 1.1903161708732315]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Holy+Innocents+Church,+The+Street,+Adisham,+Kent,+England">Holy Innocents Church, The Street, Adisham, Kent, England</a><br><p>Burial on Mar 30, 1893</p><p>Baptized on Mar 10, 1805</p>'); markers.push(marker);
+var marker = L.marker([51.24408735, 1.1903161708732315]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Holy+Innocents+Church,+The+Street,+Adisham,+Kent,+England">Holy Innocents Church, The Street, Adisham, Kent, England</a><br><p>Baptized on Mar 10, 1805</p><p>Burial on Mar 30, 1893</p>'); markers.push(marker);
 var marker = L.marker([51.2861098, 1.0237469]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lime+Villas,+Wingham,+Kent,+England">Lime Villas, Wingham, Kent, England</a><br><p>Living in 1893</p>'); markers.push(marker);
 var marker = L.marker([51.3955186, 0.3270922]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=New+Barn+Farm,+Ickham,+Kent,+England">New Barn Farm, Ickham, Kent, England</a><br><p>Living on Jun 6, 1841</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3184241, 0.758704185436616], 12);
+			map.setView([51.2413296, 1.1895941], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

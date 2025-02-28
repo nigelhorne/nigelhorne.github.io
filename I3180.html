@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.111384675, 1.137501425], 12);
+			var map = L.map('map').setView([51.07934238462436, 1.1816518343917863], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -26,7 +26,7 @@ var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([51.07276935, 1.09166985]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Mill+Lane,+Folkestone,+Kent,+England">Mill Lane, Folkestone, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 var marker = L.marker([51.08171844, 1.18028426]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ss+Mary+and+Eanswith+Church,+Folkestone,+Kent,+England">Ss Mary and Eanswith Church, Folkestone, Kent, England</a><br><p>Baptized on Jan 6, 1854</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.111384675, 1.137501425], 12);
+			map.setView([51.07934238462436, 1.1816518343917863], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.451830765, 0.60242895], 12);
+			var map = L.map('map').setView([51.60012223, -0.0225302], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,11 +21,11 @@
 	var marker = L.marker([51.60012223, -0.0225302]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=15+Billet+Road,+Thurrock,+Essex,+England">15 Billet Road, Thurrock, Essex, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.3994643, 0.4960297]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=19+Cecil+Avenue,+Strood,+Kent,+England">19 Cecil Avenue, Strood, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.3995903, 0.494329]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=39+Cross+Street,+Strood,+Kent,+England">39 Cross Street, Strood, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
-var marker = L.marker([51.31521449579275, 0.8843295995241746]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=56+Tanners+Street,+Faversham,+Kent,+England">56 Tanners Street, Faversham, Kent, England</a><br><p>Living on Apr 5, 1891</p><p>Living on Apr 3, 1881</p>'); markers.push(marker);
+var marker = L.marker([51.31521449579275, 0.8843295995241746]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=56+Tanners+Street,+Faversham,+Kent,+England">56 Tanners Street, Faversham, Kent, England</a><br><p>Living on Apr 3, 1881</p><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.3035393, 1.2273881]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Preston,+Kent,+England">Preston, Kent, England</a><br><p>Birth on Jan 23, 1853</p>'); markers.push(marker);
 var marker = L.marker([51.33179465, 0.8790733]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+Of+Charitys+Church,+Church+Road,+Faversham,+Kent,+England">St Mary Of Charitys Church, Church Road, Faversham, Kent, England</a><br><p>Marriage on Aug 22, 1875</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.451830765, 0.60242895], 12);
+			map.setView([51.60012223, -0.0225302], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

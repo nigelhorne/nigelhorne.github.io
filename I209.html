@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3651733541958, 1.43039886900037], 12);
+			var map = L.map('map').setView([51.3584698, 1.44126405], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,10 +21,10 @@
 	var marker = L.marker([51.3584698, 1.44126405]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=1+Serene+Place,+Broadstairs,+Kent,+England">1 Serene Place, Broadstairs, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.371876908391684, 1.4339318474624845]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Callis+Court,+St+Peters,+Thanet,+Kent,+England">Callis Court, St Peters, Thanet, Kent, England</a><br><p>Living on Jun 6, 1841</p>'); markers.push(marker);
 var marker = L.marker([51.3584698, 1.44126405]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Serene+Place,+Broadstairs,+Kent,+England">Serene Place, Broadstairs, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
-var marker = L.marker([51.366626249999996, 1.422089133458278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters,+Thanet,+Kent,+England">St Peters, Thanet, Kent, England</a><br><p>Birth on Aug 31, 1797</p><p>Burial on Jan 2, 1875</p><p>Marriage on Nov 8, 1823</p><p>Baptized on Oct 7, 1797</p><p>Death on Dec 29, 1874</p>'); markers.push(marker);
+var marker = L.marker([51.366626249999996, 1.422089133458278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters,+Thanet,+Kent,+England">St Peters, Thanet, Kent, England</a><br><p>Burial on Jan 2, 1875</p><p>Marriage on Nov 8, 1823</p><p>Death on Dec 29, 1874</p><p>Baptized on Oct 7, 1797</p><p>Birth on Aug 31, 1797</p>'); markers.push(marker);
 var marker = L.marker([51.36314195190699, 1.4195336880007332]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Tippledore+Lane,+St+Peters,+Thanet,+Kent,+England">Tippledore Lane, St Peters, Thanet, Kent, England</a><br><p>Living on Mar 30, 1851</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3651733541958, 1.43039886900037], 12);
+			map.setView([51.3584698, 1.44126405], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

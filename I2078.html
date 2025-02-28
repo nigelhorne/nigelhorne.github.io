@@ -12,17 +12,17 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3171166, 0.895660575], 12);
+			var map = L.map('map').setView([51.3175662, 0.89132115], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.3175662, 0.89132115]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+Mill+Place,+Faversham,+Kent,+England">2 Mill Place, Faversham, Kent, England</a><br><p>Living on Mar 31, 1901</p><p>Living on Apr 2, 1911</p><p>Living on Apr 3, 1881</p><p>Living on Apr 5, 1891</p>'); markers.push(marker);
-var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Death <i>c.</i> Nov 1922</p><p>Birth on Jan 16, 1854</p>'); markers.push(marker);
+	var marker = L.marker([51.3175662, 0.89132115]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+Mill+Place,+Faversham,+Kent,+England">2 Mill Place, Faversham, Kent, England</a><br><p>Living on Apr 3, 1881</p><p>Living on Mar 31, 1901</p><p>Living on Apr 5, 1891</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Birth on Jan 16, 1854</p><p>Death <i>c.</i> Nov 1922</p>'); markers.push(marker);
 var marker = L.marker([51.3171337, 0.894897296796754]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+Of+Charity+Church,+Church+Road,+Faversham,+Kent,+England">St Mary Of Charity Church, Church Road, Faversham, Kent, England</a><br><p>Marriage on Apr 1, 1876</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3171166, 0.895660575], 12);
+			map.setView([51.3175662, 0.89132115], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

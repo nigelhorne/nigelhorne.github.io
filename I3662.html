@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.6541171655731, 1.05396085335387], 12);
+			var map = L.map('map').setView([51.94156733114614, 0.6842938605374507], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,9 +21,9 @@
 	var marker = L.marker([51.94156733114614, 0.6842938605374507]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=22+Shellcroft,+Colne+Engaine,+Essex,+England">22 Shellcroft, Colne Engaine, Essex, England</a><br><p>Living in 2018</p>'); markers.push(marker);
 var marker = L.marker([51.37000820051783, 1.4236278461702976]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=37+Westover+Gardens,+St+Peters,+Thanet,+Kent,+England">37 Westover Gardens, St Peters, Thanet, Kent, England</a><br><p>Living in 1965</p>'); markers.push(marker);
 var marker = L.marker([51.88921, 0.90421]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Colchester,+Essex,+England">Colchester, Essex, England</a><br><p>Death on Jul 26, 2018</p>'); markers.push(marker);
-var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> Nov 1957</p><p>Birth <i>c.</i> Aug 1937</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Birth <i>c.</i> Aug 1937</p><p>Marriage <i>c.</i> Nov 1957</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.6541171655731, 1.05396085335387], 12);
+			map.setView([51.94156733114614, 0.6842938605374507], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

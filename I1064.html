@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.4413324688637, 0.72012285], 12);
+			var map = L.map('map').setView([51.33340574772731, 1.414012701051555], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([51.3361061, 1.417891]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Georges+Church,+Church+Hill,+Ramsgate,+Kent,+England">St Georges Church, Church Hill, Ramsgate, Kent, England</a><br><p>Baptized on Sep 18, 1883</p>'); markers.push(marker);
 var marker = L.marker([51.54925919, 0.0223547]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+James+Church,+Forest+Gate,+London,+England">St James Church, Forest Gate, London, England</a><br><p>Marriage on Mar 24, 1913</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.4413324688637, 0.72012285], 12);
+			map.setView([51.33340574772731, 1.414012701051555], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

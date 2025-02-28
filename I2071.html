@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([17.8504806725772, 14.8603958182903], 12);
+			var map = L.map('map').setView([53.51717882308382, -1.3239305634193983], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([53.5187391451545, -1.31447545005926]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bolton-upon-Dearne,+South+Yorkshire,+England">Bolton-upon-Dearne, South Yorkshire, England</a><br><p>Birth on Jun 19, 1915</p>'); markers.push(marker);
 var marker = L.marker([-17.8177778, 31.0447222]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Harare,+Mashonaland+East,+Zimbabwe">Harare, Mashonaland East, Zimbabwe</a><br><p>Death on May 14, 1996</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([17.8504806725772, 14.8603958182903], 12);
+			map.setView([53.51717882308382, -1.3239305634193983], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

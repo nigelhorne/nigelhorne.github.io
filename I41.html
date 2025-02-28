@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3781182, 0.853597469275378], 12);
+			var map = L.map('map').setView([51.33575660738381, 1.4011056385507556], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,10 +23,10 @@ var marker = L.marker([51.4369513, 0.3060893]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([51.3473889, 1.3392577]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=7+Pouces+Cottages,+Minster,+Thanet,+Kent,+England">7 Pouces Cottages, Minster, Thanet, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.3203934, 1.3471863]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ebbsfleet+Farm+Cottages,+Ebbsfleet+Lane,+Ebbsfleet,+Kent,+England">Ebbsfleet Farm Cottages, Ebbsfleet Lane, Ebbsfleet, Kent, England</a><br><p>Living in 1952</p>'); markers.push(marker);
 var marker = L.marker([51.3192851, 1.3475649]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ebbsfleet+Farm+Cottages,+Ebbsfleet,+Kent,+England">Ebbsfleet Farm Cottages, Ebbsfleet, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.3291803, 1.3171687]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Minster,+Thanet,+Kent,+England">Minster, Thanet, Kent, England</a><br><p>Birth on Jan 29, 1908</p><p>Death on Apr 15, 1976</p><p>Baptized on Feb 21, 1908</p>'); markers.push(marker);
+var marker = L.marker([51.3291803, 1.3171687]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Minster,+Thanet,+Kent,+England">Minster, Thanet, Kent, England</a><br><p>Baptized on Feb 21, 1908</p><p>Birth on Jan 29, 1908</p><p>Death on Apr 15, 1976</p>'); markers.push(marker);
 var marker = L.marker([51.330420950000004, 1.3159574613327614]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+the+Virgin+Church,+Minster,+Thanet,+Kent,+England">St Mary the Virgin Church, Minster, Thanet, Kent, England</a><br><p>Marriage on Jun 11, 1927</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3781182, 0.853597469275378], 12);
+			map.setView([51.33575660738381, 1.4011056385507556], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

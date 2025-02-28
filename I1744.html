@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.9764702677815, -0.07816905], 12);
+			var map = L.map('map').setView([52.6452611, -1.0563381], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([51.307679435562896, 0.8966078291970861]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=60+Makenade+Avenue,+Faversham,+Kent,+England">60 Makenade Avenue, Faversham, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Birth on Dec 8, 1933</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.9764702677815, -0.07816905], 12);
+			map.setView([52.6452611, -1.0563381], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([50.6654876, 5.72125898781731], 12);
+			var map = L.map('map').setView([51.2500272064165, 0.879031975634623], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([51.2786172, 1.184417]).addTo(map).bindPopup('<a href="htt
 var marker = L.marker([51.118321449999996, 0.9595683120538832]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+the+Virgin,+Brabourne,+Kent,+England">St Mary the Virgin, Brabourne, Kent, England</a><br><p>Baptized on Apr 15, 1764</p>'); markers.push(marker);
 var marker = L.marker([50.052358, 10.563486]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Michael,+Ickham,+Kent,+England">St Michael, Ickham, Kent, England</a><br><p>Burial on Jul 20, 1827</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([50.6654876, 5.72125898781731], 12);
+			map.setView([51.2500272064165, 0.879031975634623], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

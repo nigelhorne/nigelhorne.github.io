@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3149545384075, 1.24523038751252], 12);
+			var map = L.map('map').setView([51.353707, 1.3112411455797095], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,12 +23,12 @@ var marker = L.marker([51.31030148543279, 1.1466906750250454]).addTo(map).bindPo
 var marker = L.marker([51.3248469, 1.1949545]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Nethergone,+Chislet,+Kent,+England">Nethergone, Chislet, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.272243, 1.2129775]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+the+Virgin+Church,+Wingham,+Kent,+England">St Mary the Virgin Church, Wingham, Kent, England</a><br><p>Marriage on May 13, 1856</p><p>Baptized on Jun 19, 1831</p>'); markers.push(marker);
 var marker = L.marker([51.2936057, 1.1522071]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stodmarsh+Street,+Stodmarsh,+Kent,+England">Stodmarsh Street, Stodmarsh, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
-var marker = L.marker([51.3238777, 1.1958853]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Upstreet,+Kent,+England">Upstreet, Kent, England</a><br><p>Living on Apr 5, 1891</p><p>Living on Mar 31, 1901</p>'); markers.push(marker);
+var marker = L.marker([51.3238777, 1.1958853]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Upstreet,+Kent,+England">Upstreet, Kent, England</a><br><p>Living on Mar 31, 1901</p><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.265499376815, 1.19819671655927]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wingham+Well,+Kent,+England">Wingham Well, Kent, England</a><br><p>Living on Jun 6, 1841</p>'); markers.push(marker);
 var marker = L.marker([51.2733564843807, 1.21509032186889]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wingham,+Kent,+England">Wingham, Kent, England</a><br><p>Birth <i>c.</i> 1831</p><p>Living in 1851</p>'); markers.push(marker);
 var marker = L.marker([51.3644097, 1.3437701]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Woodchurch+Farm,+Acol,+Kent,+England">Woodchurch Farm, Acol, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3149545384075, 1.24523038751252], 12);
+			map.setView([51.353707, 1.3112411455797095], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

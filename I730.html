@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.35352755, 1.4169644], 12);
+			var map = L.map('map').setView([51.33108295, 1.31549945], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([51.3403881, 1.4172618]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lukes+Church,+Hollicondane+Road,+Ramsgate,+Kent,+England">St Lukes Church, Hollicondane Road, Ramsgate, Kent, England</a><br><p>Marriage on Apr 5, 1947</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death on Apr 1, 2002</p><p>Birth on Jul 15, 1918</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.35352755, 1.4169644], 12);
+			map.setView([51.33108295, 1.31549945], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

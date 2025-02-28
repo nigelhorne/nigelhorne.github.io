@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2068100099904, 0.977538418137312], 12);
+			var map = L.map('map').setView([51.146953019980806, 0.8717438362746245], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([51.146953019980806, 0.8717438362746245]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=10+Queen+Street,+Ashford,+Kent,+England">10 Queen Street, Ashford, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.266667, 1.083333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Canterbury,+Kent,+England">Canterbury, Kent, England</a><br><p>Death <i>c.</i> May 1999</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2068100099904, 0.977538418137312], 12);
+			map.setView([51.146953019980806, 0.8717438362746245], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

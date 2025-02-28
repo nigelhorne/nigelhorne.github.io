@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.340992675, 0.233438125], 12);
+			var map = L.map('map').setView([51.48543330766962, 0.0388681280701299], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([51.090783599999995, 0.4269891974652368]).addTo(map).bindP
 var marker = L.marker([51.083333, .533333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Cranbrook,+Kent,+England">Cranbrook, Kent, England</a><br><p>Birth on Nov 28, 1876</p>'); markers.push(marker);
 var marker = L.marker([51.59865235, -0.06645675]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lansdowne+Road,+Charlton,+London,+England">Lansdowne Road, Charlton, London, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.340992675, 0.233438125], 12);
+			map.setView([51.48543330766962, 0.0388681280701299], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

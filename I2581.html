@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.420203985241, 0.399045581091024], 12);
+			var map = L.map('map').setView([51.49040797048195, 0.04809116218204711], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([51.49040797048195, 0.04809116218204711]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=60+Prospect+Vale,+Woolwich,+London,+England">60 Prospect Vale, Woolwich, London, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.35, .75]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Milton,+Kent,+England">Milton, Kent, England</a><br><p>Marriage <i>c.</i> Aug 1921</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.420203985241, 0.399045581091024], 12);
+			map.setView([51.49040797048195, 0.04809116218204711], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

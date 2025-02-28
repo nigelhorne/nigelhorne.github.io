@@ -12,19 +12,19 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([41.1024235, -85.1339594651895], 12);
+			var map = L.map('map').setView([41.085783679469, -85.167850930379], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([41.085783679469, -85.167850930379]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=1911+Sinclair+Street,+Fort+Wayne,+Allen,+Indiana,+USA">1911 Sinclair Street, Fort Wayne, Allen, Indiana, USA</a><br><p>Living in 1954</p><p>Living on Sep 12, 1918</p>'); markers.push(marker);
-var marker = L.marker([41.090284, -85.100068]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Allen,+Indiana,+USA">Allen, Indiana, USA</a><br><p>Living on Jun 1, 1900</p><p>Living on Jan 1, 1920</p>'); markers.push(marker);
-var marker = L.marker([41.1306, -85.12886]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fort+Wayne,+Allen,+Indiana,+USA">Fort Wayne, Allen, Indiana, USA</a><br><p>Living on Apr 1, 1930</p><p>Death on Oct 10, 1954</p><p>Living on Apr 1, 1940</p><p>Marriage on Nov 8, 1900</p>'); markers.push(marker);
+	var marker = L.marker([41.085783679469, -85.167850930379]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=1911+Sinclair+Street,+Fort+Wayne,+Allen,+Indiana,+USA">1911 Sinclair Street, Fort Wayne, Allen, Indiana, USA</a><br><p>Living on Sep 12, 1918</p><p>Living in 1954</p>'); markers.push(marker);
+var marker = L.marker([41.090284, -85.100068]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Allen,+Indiana,+USA">Allen, Indiana, USA</a><br><p>Living on Jan 1, 1920</p><p>Living on Jun 1, 1900</p>'); markers.push(marker);
+var marker = L.marker([41.1306, -85.12886]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fort+Wayne,+Allen,+Indiana,+USA">Fort Wayne, Allen, Indiana, USA</a><br><p>Death on Oct 10, 1954</p><p>Marriage on Nov 8, 1900</p><p>Living on Apr 1, 1930</p><p>Living on Apr 1, 1940</p>'); markers.push(marker);
 var marker = L.marker([41.074247, -85.138531]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Prairie+Grove+Cemetery,+Fort+Wayne,+Allen,+Indiana,+USA">Prairie Grove Cemetery, Fort Wayne, Allen, Indiana, USA</a><br><p>Burial on Oct 13, 1954</p>'); markers.push(marker);
 var marker = L.marker([41.09824654107312, -85.15625232577786]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Marys+Avenue,+Fort+Wayne,+Allen,+Indiana,+USA">St Marys Avenue, Fort Wayne, Allen, Indiana, USA</a><br><p>Living on Jun 15, 1880</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([41.1024235, -85.1339594651895], 12);
+			map.setView([41.085783679469, -85.167850930379], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

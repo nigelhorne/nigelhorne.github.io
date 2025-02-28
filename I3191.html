@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.067271934836, -1.801459495], 12);
+			var map = L.map('map').setView([51.55262705967199, -0.3188936817902729], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([51.41667, -0.13333]).addTo(map).bindPopup('<a href="https
 var marker = L.marker([50.58191681, -3.46958899]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Gregory+Churchyard,+Dawlish,+Devon,+England">St Gregory Churchyard, Dawlish, Devon, England</a><br><p>Burial</p>'); markers.push(marker);
 var marker = L.marker([50.66709185, -2.8909665629764563]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Torbay,+Devon,+England">Torbay, Devon, England</a><br><p>Death <i>c.</i> Nov 2003</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.067271934836, -1.801459495], 12);
+			map.setView([51.55262705967199, -0.3188936817902729], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

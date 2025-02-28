@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.249514953634, 1.2721766076992], 12);
+			var map = L.map('map').setView([51.233333, 1.233333], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([51.233333, 1.233333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Goodnestone,+Kent,+England">Goodnestone, Kent, England</a><br><p>Birth on Nov 26, 1592</p>'); markers.push(marker);
 var marker = L.marker([51.2656969072681, 1.3110202153984]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Woodnesborough,+Kent,+England">Woodnesborough, Kent, England</a><br><p>Marriage on Nov 11, 1616</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.249514953634, 1.2721766076992], 12);
+			map.setView([51.233333, 1.233333], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

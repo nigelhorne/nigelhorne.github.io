@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([52.8091704, -3.79816881407883], 12);
+			var map = L.map('map').setView([51.55262705967199, -0.3188936817902729], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.543664250000006, -0.307283178157664]).addTo(map).bindP
 var marker = L.marker([54.1321508, -7.28905445]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ballyhose,+Enniskillen,+Fermanagh,+Northern+Ireland">Ballyhose, Enniskillen, Fermanagh, Northern Ireland</a><br><p>Death on Jul 2, 1941</p>'); markers.push(marker);
 var marker = L.marker([51.48619, -0.3083]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Brentford,+London,+England">Brentford, London, England</a><br><p>Birth on Apr 15, 1918</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([52.8091704, -3.79816881407883], 12);
+			map.setView([51.55262705967199, -0.3188936817902729], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

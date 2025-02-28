@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([-33.005455, 149.34364], 12);
+			var map = L.map('map').setView([-33.41665, 149.5806], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([-32.59426, 149.5871]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Mudgee,+New+South+Wales,+Australia">Mudgee, New South Wales, Australia</a><br><p>Birth on Jan 4, 1877</p>'); markers.push(marker);
 var marker = L.marker([-33.28397, 149.10018]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Orange,+New+South+Wales,+Australia">Orange, New South Wales, Australia</a><br><p>Death in 1914</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([-33.005455, 149.34364], 12);
+			map.setView([-33.41665, 149.5806], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

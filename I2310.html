@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([12.116430685, 76.0912479741759], 12);
+			var map = L.map('map').setView([50.83629608348294, -0.7686040516482576], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([-27.08465, 152.9511]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([51.31751137, 0.89335279]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham+Parish+Church,+Faversham,+Kent,+England">Faversham Parish Church, Faversham, Kent, England</a><br><p>Marriage on Apr 16, 1938</p>'); markers.push(marker);
 var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Birth on Sep 30, 1916</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([12.116430685, 76.0912479741759], 12);
+			map.setView([50.83629608348294, -0.7686040516482576], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

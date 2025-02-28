@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.0866344164529, 1.13320703358129], 12);
+			var map = L.map('map').setView([51.08737705067305, 1.1378386730114802], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([51.0878317722892, 1.14115615167963]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Cheriton,+Kent,+England">Cheriton, Kent, England</a><br><p>Birth in 1849</p>'); markers.push(marker);
 var marker = L.marker([51.08543706061659, 1.1252579154829585]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Horn+Street,+Cheriton,+Kent,+England">Horn Street, Cheriton, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.0866344164529, 1.13320703358129], 12);
+			map.setView([51.08737705067305, 1.1378386730114802], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

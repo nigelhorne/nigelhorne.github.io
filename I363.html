@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.304108655, 1.21973198040866], 12);
+			var map = L.map('map').setView([51.351016245466866, 1.4019655990437987], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([51.3439211, 1.4224914208173234]).addTo(map).bindPopup('<a
 var marker = L.marker([51.25607681, 1.01697254]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Augustines+Hospital,+Chartham,+Kent,+England">St Augustines Hospital, Chartham, Kent, England</a><br><p>Death on Apr 12, 1945</p>'); markers.push(marker);
 var marker = L.marker([51.33465576, 1.41804445]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence+Cemetery,+Ramsgate,+Kent,+England">St Lawrence Cemetery, Ramsgate, Kent, England</a><br><p>Funeral on Apr 18, 1945</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.304108655, 1.21973198040866], 12);
+			map.setView([51.351016245466866, 1.4019655990437987], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

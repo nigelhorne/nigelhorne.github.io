@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.108042825, -0.401446329959656], 12);
+			var map = L.map('map').setView([51.36924, -0.1661538], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([51.141851149999994, -0.019559659919312786]).addTo(map).bi
 var marker = L.marker([50.8419446, -0.6626881]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Merry+End,+Nyton+Road,+Eastergate,+Sussex,+England">Merry End, Nyton Road, Eastergate, Sussex, England</a><br><p>Living in 1993</p>'); markers.push(marker);
 var marker = L.marker([51.38275265, -0.17398785]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peter+and+St+Paul,+Mitcham,+Surrey,+England">St Peter and St Paul, Mitcham, Surrey, England</a><br><p>Baptized on Mar 5, 1916</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.108042825, -0.401446329959656], 12);
+			map.setView([51.36924, -0.1661538], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

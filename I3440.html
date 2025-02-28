@@ -12,20 +12,20 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.1615829017429, 1.09575742367283], 12);
+			var map = L.map('map').setView([51.08404075, 1.1361754421874997], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.08404075, 1.1361754421874997]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=58+Royal+Military+Avenue,+Cheriton,+Kent,+England">58 Royal Military Avenue, Cheriton, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Living in 1949</p>'); markers.push(marker);
+	var marker = L.marker([51.08404075, 1.1361754421874997]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=58+Royal+Military+Avenue,+Cheriton,+Kent,+England">58 Royal Military Avenue, Cheriton, Kent, England</a><br><p>Living in 1949</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.23912505348577, 1.0503586956660231]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chartham+Downs,+Kent,+England">Chartham Downs, Kent, England</a><br><p>Death on May 5, 1949</p>'); markers.push(marker);
 var marker = L.marker([51.08737705067305, 1.1378386730114802]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Cheriton+Street,+Cheriton,+Kent,+England">Cheriton Street, Cheriton, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.0878317722892, 1.14115615167963]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Cheriton,+Kent,+England">Cheriton, Kent, England</a><br><p>Birth on Jun 13, 1890</p>'); markers.push(marker);
 var marker = L.marker([51.15, 1.116667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Elham,+Kent,+England">Elham, Kent, England</a><br><p>Marriage <i>c.</i> Aug 1911</p>'); markers.push(marker);
 var marker = L.marker([51.088032749999996, 1.121364172582079]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Martin,+Cheriton,+Kent,+England">St Martin, Cheriton, Kent, England</a><br><p>Baptized on Aug 2, 1891</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.1615829017429, 1.09575742367283], 12);
+			map.setView([51.08404075, 1.1361754421874997], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([43.2951755562284, -50.31589884], 12);
+			var map = L.map('map').setView([51.15, 1.116667], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,14 +21,14 @@
 	var marker = L.marker([51.15, 1.116667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Elham,+Kent,+England">Elham, Kent, England</a><br><p>Death <i>c.</i> May 1916</p>'); markers.push(marker);
 var marker = L.marker([51.085945, 1.1404021]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Enbrook+Buildings,+Cheriton,+Kent,+England">Enbrook Buildings, Cheriton, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.333333, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne,+Kent,+England">Herne, Kent, England</a><br><p>Birth <i>c.</i> Feb 1854</p>'); markers.push(marker);
-var marker = L.marker([51.08737705067305, 1.1378386730114802]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=High+Street,+Cheriton,+Kent,+England">High Street, Cheriton, Kent, England</a><br><p>Living on Apr 2, 1911</p><p>Living in 1914</p>'); markers.push(marker);
+var marker = L.marker([51.08737705067305, 1.1378386730114802]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=High+Street,+Cheriton,+Kent,+England">High Street, Cheriton, Kent, England</a><br><p>Living in 1914</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([35.239898, -101.772954]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Park+Terrace,+Cheriton,+Kent,+England">Park Terrace, Cheriton, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.34321425, 1.0041936000000002]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Alphege,+Canterbury,+Kent,+England">St Alphege, Canterbury, Kent, England</a><br><p>Marriage on Jan 17, 1875</p>'); markers.push(marker);
 var marker = L.marker([51.0878334, 1.14115632]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Martins+Church,+Cheriton,+Kent,+England">St Martins Church, Cheriton, Kent, England</a><br><p>Burial on May 2, 1916</p>'); markers.push(marker);
 var marker = L.marker([51.350453112456705, 1.134730987212137]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Martin,+Herne,+Kent,+England">St Martin, Herne, Kent, England</a><br><p>Baptized on Nov 12, 1854</p>'); markers.push(marker);
 var marker = L.marker([51.3002503, 1.1216018]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sturry+Street,+Sturry,+Kent,+England">Sturry Street, Sturry, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([43.2951755562284, -50.31589884], 12);
+			map.setView([51.15, 1.116667], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

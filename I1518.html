@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([50.9853907, -0.091035905], 12);
+			var map = L.map('map').setView([51.372692, 0.532351], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([51.2009335552442, 0.3058492029015929]).addTo(map).bindPop
 var marker = L.marker([51.35847855, 1.02464819]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Heliers+Nursing+Home,+Whitstable,+Kent,+England">St Heliers Nursing Home, Whitstable, Kent, England</a><br><p>Death on Feb 9, 1939</p>'); markers.push(marker);
 var marker = L.marker([50.59449, -1.20672]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ventnor,+Isle+Of+Wight,+England">Ventnor, Isle Of Wight, England</a><br><p>Birth in 1860</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([50.9853907, -0.091035905], 12);
+			map.setView([51.372692, 0.532351], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

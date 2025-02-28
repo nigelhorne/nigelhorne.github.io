@@ -12,16 +12,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3062021532082, 0.884978487817311], 12);
+			var map = L.map('map').setView([51.2500272064165, 0.879031975634623], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.2500272064165, 0.879031975634623]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Badlesmere,+Kent,+England">Badlesmere, Kent, England</a><br><p>Baptized on Jun 5, 1875</p><p>Birth <i>c.</i> 1875</p>'); markers.push(marker);
+	var marker = L.marker([51.2500272064165, 0.879031975634623]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Badlesmere,+Kent,+England">Badlesmere, Kent, England</a><br><p>Birth <i>c.</i> 1875</p><p>Baptized on Jun 5, 1875</p>'); markers.push(marker);
 var marker = L.marker([51.3623771, 0.890925]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Church+Farm+Cottage,+Harty,+Sheppey,+Kent,+England">Church Farm Cottage, Harty, Sheppey, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3062021532082, 0.884978487817311], 12);
+			map.setView([51.2500272064165, 0.879031975634623], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

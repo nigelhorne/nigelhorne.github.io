@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.512254054836, -0.249403678529159], 12);
+			var map = L.map('map').setView([51.5255368, -0.1799136752680444], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,11 +22,11 @@
 var marker = L.marker([51.47188105, -0.21094066028806582]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=792+Fulham+Road,+Fulham,+London,+England">792 Fulham Road, Fulham, London, England</a><br><p>Living in 1920</p>'); markers.push(marker);
 var marker = L.marker([51.55262705967199, -0.3188936817902729]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=86+District+Road,+Sudbury,+London,+England">86 District Road, Sudbury, London, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.48619, -0.3083]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Brentford,+London,+England">Brentford, London, England</a><br><p>Marriage <i>c.</i> May 1915</p>'); markers.push(marker);
-var marker = L.marker([51.49271, -0.25801]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chiswick,+London,+England">Chiswick, London, England</a><br><p>Baptized on May 15, 1892</p><p>Birth on Apr 21, 1892</p>'); markers.push(marker);
+var marker = L.marker([51.49271, -0.25801]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chiswick,+London,+England">Chiswick, London, England</a><br><p>Birth on Apr 21, 1892</p><p>Baptized on May 15, 1892</p>'); markers.push(marker);
 var marker = L.marker([51.48860783671316, -0.25312407022240313]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Eastbury+Grove,+Chiswick,+London,+England">Eastbury Grove, Chiswick, London, England</a><br><p>Living on Apr 2, 1911</p><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.4922098, -0.2517415]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Upham+Park+Road,+Chiswick,+London,+England">Upham Park Road, Chiswick, London, England</a><br><p>Living in 1936</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.512254054836, -0.249403678529159], 12);
+			map.setView([51.5255368, -0.1799136752680444], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

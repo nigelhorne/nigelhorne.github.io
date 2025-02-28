@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.5369386820356, -0.110626285913984], 12);
+			var map = L.map('map').setView([51.53611801572669, -0.11671187789742224], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.53926870359995, -0.11795028831552068]).addTo(map).bind
 var marker = L.marker([51.53460866047132, -0.11821257182796772]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=All+Saints,+Islington,+London,+England">All Saints, Islington, London, England</a><br><p>Marriage on Jul 29, 1922</p>'); markers.push(marker);
 var marker = L.marker([51.53622, -0.10304]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Islington,+London,+England">Islington, London, England</a><br><p>Death <i>c.</i> Feb 1951</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.5369386820356, -0.110626285913984], 12);
+			map.setView([51.53611801572669, -0.11671187789742224], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

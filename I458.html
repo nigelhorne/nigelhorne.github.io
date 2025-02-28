@@ -12,16 +12,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.23665583858, 0.964747167631476], 12);
+			var map = L.map('map').setView([51.28287915499752, 1.0843380493554744], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.28287915499752, 1.0843380493554744]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Northgate,+Canterbury,+Kent,+England">Northgate, Canterbury, Kent, England</a><br><p>Living in 1861</p>'); markers.push(marker);
-var marker = L.marker([51.1904325221625, 0.845156285907477]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Westwell,+Kent,+England">Westwell, Kent, England</a><br><p>Birth <i>c.</i> 1828</p><p>Baptized on Jan 10, 1828</p>'); markers.push(marker);
+var marker = L.marker([51.1904325221625, 0.845156285907477]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Westwell,+Kent,+England">Westwell, Kent, England</a><br><p>Baptized on Jan 10, 1828</p><p>Birth <i>c.</i> 1828</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.23665583858, 0.964747167631476], 12);
+			map.setView([51.28287915499752, 1.0843380493554744], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

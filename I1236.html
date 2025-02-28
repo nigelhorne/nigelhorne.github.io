@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([44.6227652654275, -109.607755847338], 12);
+			var map = L.map('map').setView([41.252650530855, -97.12185222717], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([41.42973, -97.36838]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([47.99288, -121.69984]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Everett,+Snohomish,+Washington,+USA">Everett, Snohomish, Washington, USA</a><br><p>Death on Dec 3, 2001</p>'); markers.push(marker);
 var marker = L.marker([47.38708566476, -122.093829697915]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=18600+SE+240th+Street,+Kent,+King,+Washington,+USA">18600 SE 240th Street, Kent, King, Washington, USA</a><br><p>Burial on Dec 10, 2001</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([44.6227652654275, -109.607755847338], 12);
+			map.setView([41.252650530855, -97.12185222717], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

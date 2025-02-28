@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([46.8319134541958, -48.2973735762688], 12);
+			var map = L.map('map').setView([51.36180496, 1.38640749], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,10 +23,10 @@ var marker = L.marker([51.371876908391684, 1.4339318474624845]).addTo(map).bindP
 var marker = L.marker([42.29195, -98.028679]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Holly+Lodge,+Rumfields,+St+Peters,+Thanet,+Kent,+England">Holly Lodge, Rumfields, St Peters, Thanet, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.36758602241564, 1.4217678982737914]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Magdala+Road,+St+Peters,+Thanet,+Kent,+England">Magdala Road, St Peters, Thanet, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.3596594, 1.4119604]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Rumfields,+St+Peters,+Thanet,+Kent,+England">Rumfields, St Peters, Thanet, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
-var marker = L.marker([51.366626249999996, 1.422089133458278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters,+Thanet,+Kent,+England">St Peters, Thanet, Kent, England</a><br><p>Baptized on Apr 16, 1837</p><p>Birth <i>c.</i> 1837</p><p>Marriage on Feb 6, 1869</p><p>Funeral on Apr 30, 1926</p>'); markers.push(marker);
+var marker = L.marker([51.366626249999996, 1.422089133458278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters,+Thanet,+Kent,+England">St Peters, Thanet, Kent, England</a><br><p>Baptized on Apr 16, 1837</p><p>Birth <i>c.</i> 1837</p><p>Funeral on Apr 30, 1926</p><p>Marriage on Feb 6, 1869</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death on Apr 26, 1926</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([46.8319134541958, -48.2973735762688], 12);
+			map.setView([51.36180496, 1.38640749], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

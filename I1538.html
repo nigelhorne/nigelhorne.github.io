@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([52.179795, -1.021995], 12);
+			var map = L.map('map').setView([52.25688, -1.16066], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([52.25, -0.88333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Northampton,+Northamptonshire,+England">Northampton, Northamptonshire, England</a><br><p>Death on Feb 27, 2001</p>'); markers.push(marker);
 var marker = L.marker([52.10271, -0.95023]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Paulerspury,+Northamptonshire,+England">Paulerspury, Northamptonshire, England</a><br><p>Birth on Feb 27, 1919</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([52.179795, -1.021995], 12);
+			map.setView([52.25688, -1.16066], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

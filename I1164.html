@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([46.0251829879047, -64.8861834552633], 12);
+			var map = L.map('map').setView([45.95707215636052, -66.63825769743838], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,9 +21,9 @@
 	var marker = L.marker([45.95707215636052, -66.63825769743838]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=182+George+Street,+Fredericton,+York,+New+Brunswick,+Canada">182 George Street, Fredericton, York, New Brunswick, Canada</a><br><p>Living in 1943</p>'); markers.push(marker);
 var marker = L.marker([46.280225975809344, -63.13410921308823]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Brackley+Point+Road,+Queens,+Prince+Edward+Island,+Canada">Brackley Point Road, Queens, Prince Edward Island, Canada</a><br><p>Living on Jun 1, 1921</p>'); markers.push(marker);
 var marker = L.marker([45.77014, -66.16166]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Gagetown,+New+Brunswick,+Canada">Gagetown, New Brunswick, Canada</a><br><p>Birth on Mar 15, 1889</p>'); markers.push(marker);
-var marker = L.marker([45.77014, -66.16166]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Gagetown,+Queens,+New+Brunswick,+Canada">Gagetown, Queens, New Brunswick, Canada</a><br><p>Marriage on Aug 11, 1915</p><p>Burial</p><p>Death in 1965</p>'); markers.push(marker);
+var marker = L.marker([45.77014, -66.16166]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Gagetown,+Queens,+New+Brunswick,+Canada">Gagetown, Queens, New Brunswick, Canada</a><br><p>Burial</p><p>Marriage on Aug 11, 1915</p><p>Death in 1965</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([46.0251829879047, -64.8861834552633], 12);
+			map.setView([45.95707215636052, -66.63825769743838], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

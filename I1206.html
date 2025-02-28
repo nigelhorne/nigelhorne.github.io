@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([39.460854, -103.5005095], 12);
+			var map = L.map('map').setView([41.090284, -85.100068], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,12 +20,12 @@
 			var markers = [];
 	var marker = L.marker([41.090284, -85.100068]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Allen,+Indiana,+USA">Allen, Indiana, USA</a><br><p>Birth on Jul 1, 1854</p>'); markers.push(marker);
 var marker = L.marker([41.56914855, -87.16538474]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Hannah+Cemetery,+Hannah,+La+Porte,+Indiana,+USA">Hannah Cemetery, Hannah, La Porte, Indiana, USA</a><br><p>Burial</p>'); markers.push(marker);
-var marker = L.marker([37.322491, -121.900951]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Hannah,+La+Porte,+Indiana,+USA">Hannah, La Porte, Indiana, USA</a><br><p>Living on Apr 1, 1930</p><p>Death on Feb 6, 1949</p><p>Living on Apr 1, 1940</p><p>Living on Apr 15, 1910</p>'); markers.push(marker);
+var marker = L.marker([37.322491, -121.900951]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Hannah,+La+Porte,+Indiana,+USA">Hannah, La Porte, Indiana, USA</a><br><p>Death on Feb 6, 1949</p><p>Living on Apr 1, 1930</p><p>Living on Apr 15, 1910</p><p>Living on Apr 1, 1940</p>'); markers.push(marker);
 var marker = L.marker([37.322491, -121.900951]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Hannah,+LaPorte,+Indiana,+USA">Hannah, LaPorte, Indiana, USA</a><br><p>Living on Jun 1, 1880</p>'); markers.push(marker);
 var marker = L.marker([41.599217, -86.779261]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=La+Porte,+Indiana,+USA">La Porte, Indiana, USA</a><br><p>Living on Jan 1, 1920</p><p>Living on Jun 1, 1900</p>'); markers.push(marker);
 var marker = L.marker([41.599217, -86.779261]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=LaPorte,+Indiana,+USA">LaPorte, Indiana, USA</a><br><p>Marriage on Oct 24, 1878</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([39.460854, -103.5005095], 12);
+			map.setView([41.090284, -85.100068], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

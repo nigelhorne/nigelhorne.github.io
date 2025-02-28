@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3999039393952, 0.659246464015526], 12);
+			var map = L.map('map').setView([51.50129237879037, 0.05283552803105161], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.3035393, 1.2273881]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([51.2985155, 1.217508]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mildreds+Church,+Preston,+Wingham,+Kent,+England">St Mildreds Church, Preston, Wingham, Kent, England</a><br><p>Marriage on Apr 6, 1872</p>'); markers.push(marker);
 var marker = L.marker([51.3060062, 1.2656574]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Westmarsh,+Kent,+England">Westmarsh, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3999039393952, 0.659246464015526], 12);
+			map.setView([51.50129237879037, 0.05283552803105161], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

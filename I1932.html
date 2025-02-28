@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([46.8297680112078, -48.3032949332709], 12);
+			var map = L.map('map').setView([51.36180496, 1.38640749], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([51.36758602241564, 1.4217678982737914]).addTo(map).bindPo
 var marker = L.marker([51.3596594, 1.4119604]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Rumfields,+St+Peters,+Thanet,+Kent,+England">Rumfields, St Peters, Thanet, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.366626249999996, 1.422089133458278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters,+Thanet,+Kent,+England">St Peters, Thanet, Kent, England</a><br><p>Living in 1901</p><p>Birth in 1870</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([46.8297680112078, -48.3032949332709], 12);
+			map.setView([51.36180496, 1.38640749], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

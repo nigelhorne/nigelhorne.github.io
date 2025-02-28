@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([47.329085, -66.51975], 12);
+			var map = L.map('map').setView([46.9168, -65.99877], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([46.9168, -65.99877]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Northumberland,+New+Brunswick,+Canada">Northumberland, New Brunswick, Canada</a><br><p>Death on Feb 2, 1966</p>'); markers.push(marker);
 var marker = L.marker([47.74137, -67.04073]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Restigouche,+New+Brunswick,+Canada">Restigouche, New Brunswick, Canada</a><br><p>Birth on Oct 13, 1893</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([47.329085, -66.51975], 12);
+			map.setView([46.9168, -65.99877], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.08310915, 1.17740315841922], 12);
+			var map = L.map('map').setView([51.084501033307745, 1.1778794696795927], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,13 +20,13 @@
 			var markers = [];
 	var marker = L.marker([51.084501033307745, 1.1778794696795927]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=69+Foord+Road,+Folkestone,+Kent,+England">69 Foord Road, Folkestone, Kent, England</a><br><p>Living in 1907</p>'); markers.push(marker);
 var marker = L.marker([51.08171844, 1.18028426]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Christ+Church,+Folkestone,+Kent,+England">Christ Church, Folkestone, Kent, England</a><br><p>Marriage on Feb 3, 1860</p>'); markers.push(marker);
-var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Folkestone,+Kent,+England">Folkestone, Kent, England</a><br><p>Living on Jun 6, 1841</p><p>Birth <i>c.</i> 1837</p>'); markers.push(marker);
+var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Folkestone,+Kent,+England">Folkestone, Kent, England</a><br><p>Birth <i>c.</i> 1837</p><p>Living on Jun 6, 1841</p>'); markers.push(marker);
 var marker = L.marker([51.0801405, 1.1749989]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sandfield+House,+Folkestone,+Kent,+England">Sandfield House, Folkestone, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.08171844, 1.18028426]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ss+Mary+and+Eanswith+Church,+Folkestone,+Kent,+England">Ss Mary and Eanswith Church, Folkestone, Kent, England</a><br><p>Baptized on Nov 19, 1837</p>'); markers.push(marker);
 var marker = L.marker([51.0858149, 1.1761135]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+John+The+Baptist,+Folkestone,+Kent,+England">St John The Baptist, Folkestone, Kent, England</a><br><p>Burial on Jul 17, 1907</p>'); markers.push(marker);
 var marker = L.marker([51.0860778, 1.1714733168384304]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Victoria+Hospital,+Folkestone,+Kent,+England">Victoria Hospital, Folkestone, Kent, England</a><br><p>Death on Jul 13, 1907</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.08310915, 1.17740315841922], 12);
+			map.setView([51.084501033307745, 1.1778794696795927], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

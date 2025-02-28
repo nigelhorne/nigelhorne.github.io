@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([44.175115, -79.5681289696646], 12);
+			var map = L.map('map').setView([43.64572763083504, -79.42130446065107], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([43.60012, -79.66632]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([44.747666550000005, -79.71495347867815]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Waubaushene+Cemetery,+Waubaushene,+Simcoe,+Ontario,+Canada">Waubaushene Cemetery, Waubaushene, Simcoe, Ontario, Canada</a><br><p>Burial</p>'); markers.push(marker);
 var marker = L.marker([44.75011, -79.69965]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Waubaushene,+Simcoe,+Ontario,+Canada">Waubaushene, Simcoe, Ontario, Canada</a><br><p>Death on Oct 5, 2018</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([44.175115, -79.5681289696646], 12);
+			map.setView([43.64572763083504, -79.42130446065107], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

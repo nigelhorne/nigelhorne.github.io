@@ -12,20 +12,20 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.27961215, 1.266238225], 12);
+			var map = L.map('map').setView([51.2622072, 1.2651698], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.2622072, 1.2651698]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Barnsole,+Kent,+England">Barnsole, Kent, England</a><br><p>Living on Apr 2, 1871</p><p>Living on Apr 3, 1881</p>'); markers.push(marker);
+	var marker = L.marker([51.2622072, 1.2651698]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Barnsole,+Kent,+England">Barnsole, Kent, England</a><br><p>Living on Apr 3, 1881</p><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.233333, 1.116667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bridge,+Kent,+England">Bridge, Kent, England</a><br><p>Death on May 25, 1913</p>'); markers.push(marker);
 var marker = L.marker([51.335175, 1.41580945]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ebenezer+Chapel,+Meeting+Street,+Ramsgate,+Kent,+England">Ebenezer Chapel, Meeting Street, Ramsgate, Kent, England</a><br><p>Marriage on Jul 29, 1888</p>'); markers.push(marker);
 var marker = L.marker([51.2240493, 1.2719509]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Shingleton+Cottages,+Eastry,+Kent,+England">Shingleton Cottages, Eastry, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.2642886742943, 1.25609253642527]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Staple,+Kent,+England">Staple, Kent, England</a><br><p>Birth on Dec 15, 1867</p><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.2656969072681, 1.3110202153984]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Woodnesborough,+Kent,+England">Woodnesborough, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.27961215, 1.266238225], 12);
+			map.setView([51.2622072, 1.2651698], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,18 +12,18 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.08142015, 1.18195805], 12);
+			var map = L.map('map').setView([51.0840996, 1.1819221], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.0840996, 1.1819221]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=26+Fancy+Street,+Folkestone,+Kent,+England">26 Fancy Street, Folkestone, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
-var marker = L.marker([51.0801525, 1.1805831]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fancy+Street,+Folkestone,+Kent,+England">Fancy Street, Folkestone, Kent, England</a><br><p>Death on Jul 26, 1869</p><p>Living on Mar 30, 1851</p>'); markers.push(marker);
+var marker = L.marker([51.0801525, 1.1805831]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fancy+Street,+Folkestone,+Kent,+England">Fancy Street, Folkestone, Kent, England</a><br><p>Living on Mar 30, 1851</p><p>Death on Jul 26, 1869</p>'); markers.push(marker);
 var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Folkestone,+Kent,+England">Folkestone, Kent, England</a><br><p>Birth in 1823</p>'); markers.push(marker);
-var marker = L.marker([51.0787407, 1.1817068354536482]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Parish+Church+of+St+Mary+and+St+Eanswythe,+Church+Street,+Folkestone,+Kent,+England">The Parish Church of St Mary and St Eanswythe, Church Street, Folkestone, Kent, England</a><br><p>Burial on Jul 30, 1869</p><p>Marriage on Nov 28, 1846</p><p>Baptized on Sep 14, 1823</p>'); markers.push(marker);
+var marker = L.marker([51.0787407, 1.1817068354536482]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Parish+Church+of+St+Mary+and+St+Eanswythe,+Church+Street,+Folkestone,+Kent,+England">The Parish Church of St Mary and St Eanswythe, Church Street, Folkestone, Kent, England</a><br><p>Baptized on Sep 14, 1823</p><p>Burial on Jul 30, 1869</p><p>Marriage on Nov 28, 1846</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.08142015, 1.18195805], 12);
+			map.setView([51.0840996, 1.1819221], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

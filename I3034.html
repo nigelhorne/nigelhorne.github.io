@@ -12,21 +12,21 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([54.96625, -1.4285138112979], 12);
+			var map = L.map('map').setView([55.0021868, -1.4491282], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([55.0021868, -1.4491282]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=16+Appleby+Street,+Chirton,+Tyne+and+Wear,+England">16 Appleby Street, Chirton, Tyne and Wear, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
-var marker = L.marker([55.01139185069852, -1.4736946225957972]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=3+Langley+Road,+Tynemouth,+Tyne+and+Wear,+England">3 Langley Road, Tynemouth, Tyne and Wear, England</a><br><p>Living on Sep 29, 1939</p><p>Death on Oct 21, 1974</p>'); markers.push(marker);
+var marker = L.marker([55.01139185069852, -1.4736946225957972]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=3+Langley+Road,+Tynemouth,+Tyne+and+Wear,+England">3 Langley Road, Tynemouth, Tyne and Wear, England</a><br><p>Death on Oct 21, 1974</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([55.00182388000119, -1.4507208068470931]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=40+Burdon+Main+Row,+Tynemouth,+Tyne+and+Wear,+England">40 Burdon Main Row, Tynemouth, Tyne and Wear, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([55.0021868, -1.4491282]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=48+Appleby+Street,+Chirton,+Tyne+and+Wear,+England">48 Appleby Street, Chirton, Tyne and Wear, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([55.0177497, -1.4562079]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Preston+Cemetery,+Walton+Avenue,+North+Shields,+Tyne+and+Wear,+England">Preston Cemetery, Walton Avenue, North Shields, Tyne and Wear, England</a><br><p>Burial</p>'); markers.push(marker);
 var marker = L.marker([54.911944, -1.383333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sunderland,+Durham,+England">Sunderland, Durham, England</a><br><p>Birth on Jun 27, 1883</p>'); markers.push(marker);
 var marker = L.marker([55.020556, -1.449444]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Tynemouth,+Tyne+and+Wear,+England">Tynemouth, Tyne and Wear, England</a><br><p>Marriage <i>c.</i> Nov 1907</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([54.96625, -1.4285138112979], 12);
+			map.setView([55.0021868, -1.4491282], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

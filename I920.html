@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3499136951333, 1.35872589820844], 12);
+			var map = L.map('map').setView([51.370647090266544, 1.300784796416883], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([51.3291803, 1.3171687]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([51.330420950000004, 1.3159574613327614]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+The+Virgin,+Minster,+Thanet,+Kent,+England">St Mary The Virgin, Minster, Thanet, Kent, England</a><br><p>Baptized on Sep 5, 1909</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> Aug 1931</p><p>Death on Oct 8, 1951</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3499136951333, 1.35872589820844], 12);
+			map.setView([51.370647090266544, 1.300784796416883], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

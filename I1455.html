@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([39.6803228604922, -85.4378555], 12);
+			var map = L.map('map').setView([41.083075720984496, -85.16428677858515], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([38.27757, -85.73718]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Jeffersonville,+Clark,+Indiana,+USA">Jeffersonville, Clark, Indiana, USA</a><br><p>Death on Oct 7, 1901</p>'); markers.push(marker);
 var marker = L.marker([41.074247, -85.138531]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Prairie+Grove+Cemetery,+Fort+Wayne,+Allen,+Indiana,+USA">Prairie Grove Cemetery, Fort Wayne, Allen, Indiana, USA</a><br><p>Burial</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([39.6803228604922, -85.4378555], 12);
+			map.setView([41.083075720984496, -85.16428677858515], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

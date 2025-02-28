@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.5458342, 0.536877020460322], 12);
+			var map = L.map('map').setView([51.34066, 1.4101016], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -26,7 +26,7 @@ var marker = L.marker([51.76013595, -0.3435077590793554]).addTo(map).bindPopup('
 var marker = L.marker([51.337545750000004, 1.4016984499999998]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence+Church,+St+Lawrence,+Thanet,+Kent,+England">St Lawrence Church, St Lawrence, Thanet, Kent, England</a><br><p>Marriage on Apr 29, 1933</p>'); markers.push(marker);
 var marker = L.marker([51.3403881, 1.4172618]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lukes+Church,+Hollicondane+Road,+Ramsgate,+Kent,+England">St Lukes Church, Hollicondane Road, Ramsgate, Kent, England</a><br><p>Baptized on Oct 22, 1902</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.5458342, 0.536877020460322], 12);
+			map.setView([51.34066, 1.4101016], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

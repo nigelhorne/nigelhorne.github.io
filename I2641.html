@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([48.2750235, -35.84121], 12);
+			var map = L.map('map').setView([45.23338, -72.58242], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([45.23338, -72.58242]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Brome,+Brome-Missiquoi,+Quebec,+Canada">Brome, Brome-Missiquoi, Quebec, Canada</a><br><p>Death on Apr 12, 1972</p>'); markers.push(marker);
 var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Birth</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([48.2750235, -35.84121], 12);
+			map.setView([45.23338, -72.58242], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

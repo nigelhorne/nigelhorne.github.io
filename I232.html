@@ -12,17 +12,17 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.28858155, 1.2577332044584], 12);
+			var map = L.map('map').setView([51.356933747217, 0.294391010944737], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.2789351503232, 1.2778960559828]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ash,+Kent,+England">Ash, Kent, England</a><br><p>Birth in 1741</p><p>Death in 1827</p>'); markers.push(marker);
+	var marker = L.marker([51.356933747217, 0.294391010944737]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ash,+Kent,+England">Ash, Kent, England</a><br><p>Death in 1827</p><p>Birth in 1741</p>'); markers.push(marker);
 var marker = L.marker([51.2984968, 1.2367524]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Elmstone,+Kent,+England">Elmstone, Kent, England</a><br><p>Living in 1770</p><p>Marriage on Jun 24, 1770</p>'); markers.push(marker);
 var marker = L.marker([51.2786663, 1.2787140089168092]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Nicholas+Church,+Ash,+Kent,+England">St Nicholas Church, Ash, Kent, England</a><br><p>Burial on May 31, 1827</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.28858155, 1.2577332044584], 12);
+			map.setView([51.356933747217, 0.294391010944737], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

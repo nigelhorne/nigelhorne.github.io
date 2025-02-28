@@ -12,20 +12,20 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3436165078991, 1.3658394], 12);
+			var map = L.map('map').setView([51.333249476849325, 1.4039426776358044], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.333249476849325, 1.4039426776358044]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=4+Bloomsbury+Road,+Ramsgate,+Kent,+England">4 Bloomsbury Road, Ramsgate, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
-var marker = L.marker([51.35663135, 1.3988243484624145]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=439+Margate+Road,+Ramsgate,+Kent,+England">439 Margate Road, Ramsgate, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Living in 1974</p><p>Living in 1955</p><p>Living in 1951</p><p>Living in 1953</p><p>Living in 1971</p><p>Living in 1965</p><p>Living in 1963</p>'); markers.push(marker);
+var marker = L.marker([51.35663135, 1.3988243484624145]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=439+Margate+Road,+Ramsgate,+Kent,+England">439 Margate Road, Ramsgate, Kent, England</a><br><p>Living in 1971</p><p>Living in 1951</p><p>Living on Sep 29, 1939</p><p>Living in 1953</p><p>Living in 1963</p><p>Living in 1974</p><p>Living in 1955</p><p>Living in 1965</p>'); markers.push(marker);
 var marker = L.marker([51.330601665798234, 1.4147706947397054]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=67+Addington+Street,+Ramsgate,+Kent,+England">67 Addington Street, Ramsgate, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth on Apr 22, 1910</p><p>Death on Jan 31, 2007</p>'); markers.push(marker);
 var marker = L.marker([51.337545750000004, 1.4016984499999998]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence+Church,+St+Lawrence,+Thanet,+Kent,+England">St Lawrence Church, St Lawrence, Thanet, Kent, England</a><br><p>Baptized on Jun 12, 1912</p>'); markers.push(marker);
 var marker = L.marker([51.3403881, 1.4172618]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lukes+Church,+Hollicondane+Road,+Ramsgate,+Kent,+England">St Lukes Church, Hollicondane Road, Ramsgate, Kent, England</a><br><p>Marriage on May 29, 1939</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3436165078991, 1.3658394], 12);
+			map.setView([51.333249476849325, 1.4039426776358044], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

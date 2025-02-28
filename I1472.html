@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3643422663164, 1.34709141078792], 12);
+			var map = L.map('map').setView([51.37367275, 1.3060260516257176], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([51.37541493263274, 1.3048362721409439]).addTo(map).bindPo
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death <i>c.</i> Apr 1885</p>'); markers.push(marker);
 var marker = L.marker([51.35383187833515, 1.252269721575844]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Street,+St+Nicholas-at-Wade,+Kent,+England">The Street, St Nicholas-at-Wade, Kent, England</a><br><p>Living on Jun 6, 1841</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3643422663164, 1.34709141078792], 12);
+			map.setView([51.37367275, 1.3060260516257176], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

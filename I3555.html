@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.302497206761, 1.1955656], 12);
+			var map = L.map('map').setView([51.37166141352206, 1.135522383021272], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -26,7 +26,7 @@ var marker = L.marker([51.3703753, 1.1288867184162061]).addTo(map).bindPopup('<a
 var marker = L.marker([51.366667, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne+Bay,+Kent,+England">Herne Bay, Kent, England</a><br><p>Birth on Mar 6, 1909</p>'); markers.push(marker);
 var marker = L.marker([51.3430273, 1.1211018]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Rosary,+Herne+Common,+Herne+Bay,+Kent,+England">The Rosary, Herne Common, Herne Bay, Kent, England</a><br><p>Living in 1971</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.302497206761, 1.1955656], 12);
+			map.setView([51.37166141352206, 1.135522383021272], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

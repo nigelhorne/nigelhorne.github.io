@@ -12,13 +12,13 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([3.9806575, 86.3104735], 12);
+			var map = L.map('map').setView([51.459695516655856, 0.05389232779257584], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.459695516655856, 0.05389232779257584]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=19A+Moira+Road,+Eltham,+London,+England">19A Moira Road, Eltham, London, England</a><br><p>Living in 1956</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
+	var marker = L.marker([51.459695516655856, 0.05389232779257584]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=19A+Moira+Road,+Eltham,+London,+England">19A Moira Road, Eltham, London, England</a><br><p>Living on Sep 29, 1939</p><p>Living in 1956</p>'); markers.push(marker);
 var marker = L.marker([51.12438877893689, 1.293128412752055]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Eaton+Road,+Dover,+Kent,+England">5 Eaton Road, Dover, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.46425790831795, 0.05490213736149077]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=70+Granby+Road,+Eltham,+London,+England">70 Granby Road, Eltham, London, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.1213338, 1.2632379]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=9+Elms+Cottage,+Hougham,+Kent,+England">9 Elms Cottage, Hougham, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
@@ -30,7 +30,7 @@ var marker = L.marker([51.1, 1.25]).addTo(map).bindPopup('<a href="https://nomin
 var marker = L.marker([51.1285976, 1.27900086]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Noahs+Ark+Road,+Dover,+Kent,+England">Noahs Ark Road, Dover, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.491, 0.0648]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Woolwich,+London,+England">Woolwich, London, England</a><br><p>Death on Apr 11, 1956</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([3.9806575, 86.3104735], 12);
+			map.setView([51.459695516655856, 0.05389232779257584], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

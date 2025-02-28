@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([48.01328, -32.074715], 12);
+			var map = L.map('map').setView([46.58343, -65.24875], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,11 +20,11 @@
 			var markers = [];
 	var marker = L.marker([46.58343, -65.24875]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kent,+New+Brunswick,+Canada">Kent, New Brunswick, Canada</a><br><p>Living in 1911</p>'); markers.push(marker);
 var marker = L.marker([46.66358, -64.80546]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Peters+Mills,+Kent,+New+Brunswick,+Canada">Peters Mills, Kent, New Brunswick, Canada</a><br><p>Birth on Jan 23, 1888</p>'); markers.push(marker);
-var marker = L.marker([46.68073, -64.88044]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Richibucto,+Kent,+New+Brunswick,+Canada">Richibucto, Kent, New Brunswick, Canada</a><br><p>Living in 1901</p><p>Living in 1891</p>'); markers.push(marker);
+var marker = L.marker([46.68073, -64.88044]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Richibucto,+Kent,+New+Brunswick,+Canada">Richibucto, Kent, New Brunswick, Canada</a><br><p>Living in 1891</p><p>Living in 1901</p>'); markers.push(marker);
 var marker = L.marker([49.44313, 1.09932]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Rouen,+Normandy,+France">Rouen, Normandy, France</a><br><p>Death on Oct 1, 1916</p>'); markers.push(marker);
 var marker = L.marker([49.4104729, 1.0667186624657428]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St.+Sever+Cemetery,+Rouen,+Normandy,+France">St. Sever Cemetery, Rouen, Normandy, France</a><br><p>Burial</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([48.01328, -32.074715], 12);
+			map.setView([46.58343, -65.24875], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

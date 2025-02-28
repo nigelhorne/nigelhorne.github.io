@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.37594165, 1.40071335], 12);
+			var map = L.map('map').setView([51.3914718, 1.3935308], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([51.3769001, 1.3887777]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Margate+General+Hospital,+Margate,+Kent,+England">Margate General Hospital, Margate, Kent, England</a><br><p>Death on Jan 13, 1949</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Birth on Nov 5, 1925</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.37594165, 1.40071335], 12);
+			map.setView([51.3914718, 1.3935308], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

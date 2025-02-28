@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([3.9806575, 86.3104735], 12);
+			var map = L.map('map').setView([51.46425790831795, 0.05490213736149077], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -27,7 +27,7 @@ var marker = L.marker([51.1285976, 1.27900086]).addTo(map).bindPopup('<a href="h
 var marker = L.marker([51.2258481, 1.2254497928877366]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+The+Virgin,+Dover,+Kent,+England">St Mary The Virgin, Dover, Kent, England</a><br><p>Baptized on Apr 2, 1876</p>'); markers.push(marker);
 var marker = L.marker([51.491, 0.0648]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Woolwich,+London,+England">Woolwich, London, England</a><br><p>Death on Oct 25, 1935</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([3.9806575, 86.3104735], 12);
+			map.setView([51.46425790831795, 0.05490213736149077], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

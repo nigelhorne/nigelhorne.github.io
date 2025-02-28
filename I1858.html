@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.57390525, -0.1556399], 12);
+			var map = L.map('map').setView([51.6144775, -0.1779468], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,9 +20,9 @@
 			var markers = [];
 	var marker = L.marker([51.6144775, -0.1779468]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=18+Derby+Buildings,+St+Pancras,+London,+England">18 Derby Buildings, St Pancras, London, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.54281, -0.15942]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Camden,+London,+England">Camden, London, England</a><br><p>Burial on Jan 15, 1926</p>'); markers.push(marker);
-var marker = L.marker([51.533333, -.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Pancras,+London,+England">St Pancras, London, England</a><br><p>Birth on Jan 4, 1921</p><p>Death <i>c.</i> Jan 1926</p>'); markers.push(marker);
+var marker = L.marker([51.533333, -.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Pancras,+London,+England">St Pancras, London, England</a><br><p>Death <i>c.</i> Jan 1926</p><p>Birth on Jan 4, 1921</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.57390525, -0.1556399], 12);
+			map.setView([51.6144775, -0.1779468], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

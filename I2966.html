@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.468350655, 0.167357175], 12);
+			var map = L.map('map').setView([51.4392152, 0.38439825], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([51.4392152, 0.38439825]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=East+Milton+Raphael+Road,+Milton,+Gravesend,+Kent,+England">East Milton Raphael Road, Milton, Gravesend, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.49748611, -0.0496839]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Rotherhide,+London,+England">Rotherhide, London, England</a><br><p>Birth <i>c.</i> 1854</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.468350655, 0.167357175], 12);
+			map.setView([51.4392152, 0.38439825], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

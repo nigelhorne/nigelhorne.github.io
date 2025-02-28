@@ -12,20 +12,20 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.346221475, 1.23512506797945], 12);
+			var map = L.map('map').setView([51.33669425, 1.4034479667882083], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.33669425, 1.4034479667882083]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=32+Chapel+Road,+Ramsgate,+Kent,+England">32 Chapel Road, Ramsgate, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Living in 1947</p>'); markers.push(marker);
+	var marker = L.marker([51.33669425, 1.4034479667882083]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=32+Chapel+Road,+Ramsgate,+Kent,+England">32 Chapel Road, Ramsgate, Kent, England</a><br><p>Living in 1947</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.33828723940705, 1.4177782768278178]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=62+Boundary+Road,+Ramsgate,+Kent,+England">62 Boundary Road, Ramsgate, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.33635355846889, 1.4202001359588916]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=77+Hardres+Street,+Ramsgate,+Kent,+England">77 Hardres Street, Ramsgate, Kent, England</a><br><p>Living on Jun 19, 1921</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.36136, 1.05005]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=County+Hospital,+Canterbury,+Kent,+England">County Hospital, Canterbury, Kent, England</a><br><p>Death on Apr 17, 1947</p>'); markers.push(marker);
 var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth on May 8, 1897</p>'); markers.push(marker);
 var marker = L.marker([51.33108295, 1.31549945]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Pauls+Church,+King+Street,+Ramsgate,+Kent,+England">St Pauls Church, King Street, Ramsgate, Kent, England</a><br><p>Baptized on May 26, 1897</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.346221475, 1.23512506797945], 12);
+			map.setView([51.33669425, 1.4034479667882083], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,16 +12,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.29948935, 1.25894889976546], 12);
+			var map = L.map('map').setView([51.2786663, 1.2787140089168092], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.2786663, 1.2787140089168092]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Nicholas,+Ash,+Kent,+England">St Nicholas, Ash, Kent, England</a><br><p>Marriage on Jan 31, 1801</p>'); markers.push(marker);
-var marker = L.marker([51.3203124, 1.239183790614103]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stourmouth,+Kent,+England">Stourmouth, Kent, England</a><br><p>Baptized on Apr 22, 1781</p><p>Birth <i>c.</i> 1781</p><p>Burial on Jun 12, 1836</p><p>Death on Jun 7, 1836</p>'); markers.push(marker);
+var marker = L.marker([51.3203124, 1.239183790614103]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stourmouth,+Kent,+England">Stourmouth, Kent, England</a><br><p>Burial on Jun 12, 1836</p><p>Death on Jun 7, 1836</p><p>Baptized on Apr 22, 1781</p><p>Birth <i>c.</i> 1781</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.29948935, 1.25894889976546], 12);
+			map.setView([51.2786663, 1.2787140089168092], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

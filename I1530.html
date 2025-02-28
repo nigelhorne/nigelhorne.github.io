@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([50.9542133892356, -1.7997607849326], 12);
+			var map = L.map('map').setView([51.5331562, -0.2066646], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([51.3973115, 0.5425477]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([51.51558, -0.1763]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Paddington,+London,+England">Paddington, London, England</a><br><p>Death <i>c.</i> May 1954</p>'); markers.push(marker);
 var marker = L.marker([50.3700213784713, -4.1420692698652]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Plymouth,+Devon,+England">Plymouth, Devon, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([50.9542133892356, -1.7997607849326], 12);
+			map.setView([51.5331562, -0.2066646], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

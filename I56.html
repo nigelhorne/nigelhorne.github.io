@@ -12,20 +12,20 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3593782824181, 1.3383789], 12);
+			var map = L.map('map').setView([51.3362987, 1.4224913], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.3362987, 1.4224913]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+Alma+Place,+Margate,+Kent,+England">2 Alma Place, Margate, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Living in 1935</p>'); markers.push(marker);
+	var marker = L.marker([51.3362987, 1.4224913]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+Alma+Place,+Margate,+Kent,+England">2 Alma Place, Margate, Kent, England</a><br><p>Living in 1935</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.3750656, 1.3848527]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+Nash+Court+Cottage,+Nash+Road,+Margate,+Kent,+England">2 Nash Court Cottage, Nash Road, Margate, Kent, England</a><br><p>Living on Apr 2, 1911</p><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.3824578648362, 1.3862995086433603]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=4+Alma+Road,+Margate,+Kent,+England">4 Alma Road, Margate, Kent, England</a><br><p>Living in 1961</p>'); markers.push(marker);
 var marker = L.marker([51.3682022, 1.3856781604131578]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Nash,+Thanet,+Kent,+England">Nash, Thanet, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.3532696, 1.2542665]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Nicholas-at-Wade,+Kent,+England">St Nicholas-at-Wade, Kent, England</a><br><p>Birth on May 3, 1896</p>'); markers.push(marker);
-var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death <i>c.</i> Feb 1979</p><p>Marriage <i>c.</i> Nov 1924</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> Nov 1924</p><p>Death <i>c.</i> Feb 1979</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3593782824181, 1.3383789], 12);
+			map.setView([51.3362987, 1.4224913], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

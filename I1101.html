@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.5153232428962, -0.364917787633245], 12);
+			var map = L.map('map').setView([51.536572535854326, 0.7481780719401416], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([51.47785, -0.01176]).addTo(map).bindPopup('<a href="https
 var marker = L.marker([51.1344434, -1.646362]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Isle+of+Wight,+Hampshire,+England">Isle of Wight, Hampshire, England</a><br><p>Death on Jun 4, 2015</p>'); markers.push(marker);
 var marker = L.marker([51.896203085792486, 0.9165264247335099]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Romford,+Essex,+England">Romford, Essex, England</a><br><p>Birth on Feb 10, 1917</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.5153232428962, -0.364917787633245], 12);
+			map.setView([51.536572535854326, 0.7481780719401416], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

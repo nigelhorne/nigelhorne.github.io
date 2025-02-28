@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.283333, 1.08409215148359], 12);
+			var map = L.map('map').setView([51.22643193492358, 1.4015173029671706], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.133333, 1.3]).addTo(map).bindPopup('<a href="https://n
 var marker = L.marker([51.1963962, 1.2656253]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lansdowne+Cottages,+Union+Road,+Dover,+Kent,+England">Lansdowne Cottages, Union Road, Dover, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.433333, .766667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sheerness,+Kent,+England">Sheerness, Kent, England</a><br><p>Birth in 1882</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.283333, 1.08409215148359], 12);
+			map.setView([51.22643193492358, 1.4015173029671706], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

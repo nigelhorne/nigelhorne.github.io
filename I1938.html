@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3144845, 0.629249166729139], 12);
+			var map = L.map('map').setView([51.1354877, 0.2622144000000053], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,11 +22,11 @@
 var marker = L.marker([51.4934813, -0.1635908]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=26+Rawlings+Street,+Chelsea,+London,+England">26 Rawlings Street, Chelsea, London, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.36180496, 1.38640749]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Burtons+Cottages,+St+Peters,+Thanet,+Kent,+England">Burtons Cottages, St Peters, Thanet, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 var marker = L.marker([51.36758602241564, 1.4217678982737914]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Magdala+Road,+St+Peters,+Thanet,+Kent,+England">Magdala Road, St Peters, Thanet, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
-var marker = L.marker([51.366626249999996, 1.422089133458278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters,+Thanet,+Kent,+England">St Peters, Thanet, Kent, England</a><br><p>Birth on May 16, 1872</p><p>Baptized on Jul 7, 1872</p>'); markers.push(marker);
+var marker = L.marker([51.366626249999996, 1.422089133458278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters,+Thanet,+Kent,+England">St Peters, Thanet, Kent, England</a><br><p>Baptized on Jul 7, 1872</p><p>Birth on May 16, 1872</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> Aug 1895</p>'); markers.push(marker);
 var marker = L.marker([51.183333, .283333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Tonbridge,+Kent,+England">Tonbridge, Kent, England</a><br><p>Death <i>c.</i> Feb 1955</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3144845, 0.629249166729139], 12);
+			map.setView([51.1354877, 0.2622144000000053], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

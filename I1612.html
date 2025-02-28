@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([39.860114, -85.5418455], 12);
+			var map = L.map('map').setView([41.106858066794, -85.034249082519], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([40.53948, -85.67581]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([39.840126, -84.986884]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Millers+Merry+Manor,+Fort+Wayne,+Allen,+Indiana,+USA">Millers Merry Manor, Fort Wayne, Allen, Indiana, USA</a><br><p>Death on Feb 2, 2000</p>'); markers.push(marker);
 var marker = L.marker([38.589628, -86.096807]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Washington,+Allen,+Indiana,+USA">Washington, Allen, Indiana, USA</a><br><p>Living on Apr 15, 1910</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([39.860114, -85.5418455], 12);
+			map.setView([41.106858066794, -85.034249082519], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

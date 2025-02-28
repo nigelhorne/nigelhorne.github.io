@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([40.525425, -98.14562], 12);
+			var map = L.map('map').setView([40.801721162489, -96.665811795146], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([39.8525, -95.53582]).addTo(map).bindPopup('<a href="https
 var marker = L.marker([41.07375, -100.75542]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lincoln,+Lancaster,+Nebraska,+USA">Lincoln, Lancaster, Nebraska, USA</a><br><p>Death on Jun 5, 2015</p>'); markers.push(marker);
 var marker = L.marker([41.17835, -97.55255]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Osceola,+Polk,+Nebraska,+USA">Osceola, Polk, Nebraska, USA</a><br><p>Living on Apr 8, 1930</p><p>Birth on Jul 24, 1923</p><p>Living on Apr 1, 1940</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([40.525425, -98.14562], 12);
+			map.setView([40.801721162489, -96.665811795146], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

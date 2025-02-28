@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.302173113891, 1.23493827227117], 12);
+			var map = L.map('map').setView([51.338834, 1.272102], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.27335739, 1.21509039]).addTo(map).bindPopup('<a href="
 var marker = L.marker([51.2655122277821, 1.1977745445423442]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wingham+Well,+Wingham,+Kent,+England">Wingham Well, Wingham, Kent, England</a><br><p>Living on Jun 6, 1841</p>'); markers.push(marker);
 var marker = L.marker([51.2733564843807, 1.21509032186889]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wingham,+Kent,+England">Wingham, Kent, England</a><br><p>Baptized on Jul 7, 1833</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.302173113891, 1.23493827227117], 12);
+			map.setView([51.338834, 1.272102], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

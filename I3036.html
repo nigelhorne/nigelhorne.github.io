@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([55.0081966809025, -1.44875038906077], 12);
+			var map = L.map('map').setView([55.0021868, -1.4491282], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([55.004722, -1.472778]).addTo(map).bindPopup('<a href="htt
 var marker = L.marker([55.009124549999996, -1.4681560889131693]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters+Church,+Tynemouth,+Tyne+and+Wear,+England">St Peters Church, Tynemouth, Tyne and Wear, England</a><br><p>Marriage on Jan 12, 1874</p>'); markers.push(marker);
 var marker = L.marker([55.020556, -1.449444]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Tynemouth,+Tyne+and+Wear,+England">Tynemouth, Tyne and Wear, England</a><br><p>Death on Mar 11, 1910</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([55.0081966809025, -1.44875038906077], 12);
+			map.setView([55.0021868, -1.4491282], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

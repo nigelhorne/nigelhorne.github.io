@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([47.705607, -38.5442016505798], 12);
+			var map = L.map('map').setView([51.3838502923468, 0.161056698840429], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.411094, 0.01188843]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([44.00176, -77.14637]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Picton,+Prince+Edward,+Ontario,+Canada">Picton, Prince Edward, Ontario, Canada</a><br><p>Marriage on Jun 7, 1916</p>'); markers.push(marker);
 var marker = L.marker([44.00012, -77.24946]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Prince+Edward,+Ontario,+Canada">Prince Edward, Ontario, Canada</a><br><p>Living in 1911</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([47.705607, -38.5442016505798], 12);
+			map.setView([51.3838502923468, 0.161056698840429], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

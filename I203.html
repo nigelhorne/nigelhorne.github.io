@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.1882186, 1.18945033681116], 12);
+			var map = L.map('map').setView([51.3744165, 1.4305676], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,9 +25,9 @@ var marker = L.marker([51.368862, 1.4077594]).addTo(map).bindPopup('<a href="htt
 var marker = L.marker([51.33465576, 1.41804445]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Cavendish+Baptist+Church,+Cavendish+Street,+Ramsgate,+Kent,+England">Cavendish Baptist Church, Cavendish Street, Ramsgate, Kent, England</a><br><p>Marriage on Jun 1, 1907</p>'); markers.push(marker);
 var marker = L.marker([51.3859799, 1.4199601]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Northdown,+Margate,+Kent,+England">Northdown, Margate, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.366626249999996, 1.422089133458278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters,+Thanet,+Kent,+England">St Peters, Thanet, Kent, England</a><br><p>Birth on Jun 18, 1867</p>'); markers.push(marker);
-var marker = L.marker([50.9904573, 0.9468671]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Cottage,+Fairfield+Road,+St+Peters,+Thanet,+Kent,+England">The Cottage, Fairfield Road, St Peters, Thanet, Kent, England</a><br><p>Death in Sep 1948</p><p>Living on Sep 29, 1939</p><p>Living in 1948</p><p>Living on Jun 19, 1921</p>'); markers.push(marker);
+var marker = L.marker([50.9904573, 0.9468671]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Cottage,+Fairfield+Road,+St+Peters,+Thanet,+Kent,+England">The Cottage, Fairfield Road, St Peters, Thanet, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Living on Jun 19, 1921</p><p>Living in 1948</p><p>Death in Sep 1948</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.1882186, 1.18945033681116], 12);
+			map.setView([51.3744165, 1.4305676], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

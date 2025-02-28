@@ -12,19 +12,19 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([49.2536185, -122.44258931], 12);
+			var map = L.map('map').setView([49.300457, -121.914889], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([49.300457, -121.914889]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chehalis,+British+Columbia,+Canada">Chehalis, British Columbia, Canada</a><br><p>Death on Feb 25, 1978</p>'); markers.push(marker);
-var marker = L.marker([49.20678, -122.91092]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=New+Westminster,+British+Columbia,+Canada">New Westminster, British Columbia, Canada</a><br><p>Birth on Jun 26, 1897</p><p>Living in 1911</p><p>Living in 1901</p>'); markers.push(marker);
+var marker = L.marker([49.20678, -122.91092]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=New+Westminster,+British+Columbia,+Canada">New Westminster, British Columbia, Canada</a><br><p>Living in 1911</p><p>Birth on Jun 26, 1897</p><p>Living in 1901</p>'); markers.push(marker);
 var marker = L.marker([49.20678, -122.91092]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=New+Westminster,+Vancouver,+British+Columbia,+Canada">New Westminster, Vancouver, British Columbia, Canada</a><br><p>Marriage on Oct 10, 1917</p>'); markers.push(marker);
 var marker = L.marker([49.23894882, -121.76583862]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Pretty+Family+Private+Cemetery,+Morris+Valley+Road,+Agassiz,+British+Columbia,+Canada">Pretty Family Private Cemetery, Morris Valley Road, Agassiz, British Columbia, Canada</a><br><p>Burial on Mar 1, 1978</p>'); markers.push(marker);
 var marker = L.marker([49.24966, -123.11934]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Vancouver,+British+Columbia,+Canada">Vancouver, British Columbia, Canada</a><br><p>Living in 1949</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([49.2536185, -122.44258931], 12);
+			map.setView([49.300457, -121.914889], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

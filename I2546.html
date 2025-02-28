@@ -12,13 +12,13 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2290704618517, 0.602924601450797], 12);
+			var map = L.map('map').setView([51.31521449579275, 0.8843295995241746], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.31521449579275, 0.8843295995241746]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=56+Tanners+Street,+Faversham,+Kent,+England">56 Tanners Street, Faversham, Kent, England</a><br><p>Living on Apr 3, 1881</p><p>Living on Apr 5, 1891</p>'); markers.push(marker);
+	var marker = L.marker([51.31521449579275, 0.8843295995241746]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=56+Tanners+Street,+Faversham,+Kent,+England">56 Tanners Street, Faversham, Kent, England</a><br><p>Living on Apr 5, 1891</p><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 var marker = L.marker([51.39903075, 0.4952744]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Cecil+Avenue,+Strood,+Kent,+England">Cecil Avenue, Strood, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Birth <i>c.</i> May 1878</p>'); markers.push(marker);
 var marker = L.marker([51.2009335552442, 0.3058492029015929]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Medway,+Kent,+England">Medway, Kent, England</a><br><p>Marriage <i>c.</i> Feb 1908</p>'); markers.push(marker);
@@ -26,7 +26,7 @@ var marker = L.marker([51.39487665, 0.49731785]).addTo(map).bindPopup('<a href="
 var marker = L.marker([51.3171337, 0.894897296796754]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+of+Charity+Church,+Church+Road,+Faversham,+Kent,+England">St Mary of Charity Church, Church Road, Faversham, Kent, England</a><br><p>Baptized on May 1, 1878</p>'); markers.push(marker);
 var marker = L.marker([51.0591101737035, 0.648357135231518]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Strood,+Kent,+England">Strood, Kent, England</a><br><p>Death <i>c.</i> May 1930</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2290704618517, 0.602924601450797], 12);
+			map.setView([51.31521449579275, 0.8843295995241746], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

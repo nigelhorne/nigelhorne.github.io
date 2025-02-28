@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([45.94735, -64.956], 12);
+			var map = L.map('map').setView([45.80016, -65.1155], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([46.09454, -64.7965]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Moncton,+Westmorland,+New+Brunswick,+Canada">Moncton, Westmorland, New Brunswick, Canada</a><br><p>Marriage</p>'); markers.push(marker);
 var marker = L.marker([45.84182, -65.00494]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Pleasant+Vale,+Albert,+New+Brunswick,+Canada">Pleasant Vale, Albert, New Brunswick, Canada</a><br><p>Birth on Nov 27, 1881</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([45.94735, -64.956], 12);
+			map.setView([45.80016, -65.1155], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

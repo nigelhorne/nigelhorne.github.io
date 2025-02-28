@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.109467375, 0.56028100872955], 12);
+			var map = L.map('map').setView([51.383251, 1.386723159064092], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([51.38067585, 1.414483292312834]).addTo(map).bindPopup('<a
 var marker = L.marker([51.3724337, 1.3786618919987514]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Margate+Cemetery,+Margate,+Kent,+England">Margate Cemetery, Margate, Kent, England</a><br><p>Burial</p>'); markers.push(marker);
 var marker = L.marker([51.3769001, 1.3887777]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate+Hospital,+Ramsgate,+Kent,+England">Ramsgate Hospital, Ramsgate, Kent, England</a><br><p>Death on Jul 17, 1988</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.109467375, 0.56028100872955], 12);
+			map.setView([51.383251, 1.386723159064092], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

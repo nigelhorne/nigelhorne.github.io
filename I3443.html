@@ -18,7 +18,7 @@
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Folkestone,+Kent,+England">Folkestone, Kent, England</a><br><p>Marriage on Oct 10, 1947</p><p>Death on Jan 17, 1981</p><p>Birth on Mar 7, 1925</p>'); markers.push(marker);
+	var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Folkestone,+Kent,+England">Folkestone, Kent, England</a><br><p>Birth on Mar 7, 1925</p><p>Death on Jan 17, 1981</p><p>Marriage on Oct 10, 1947</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
 			map.setView([51.083333, 1.183333], 12);
 		});

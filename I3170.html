@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.285354675, 0.561318247798062], 12);
+			var map = L.map('map').setView([51.07753619164533, 1.1815288301334157], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,12 +22,12 @@
 var marker = L.marker([51.49794, -0.06607]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bermondsey,+London,+England">Bermondsey, London, England</a><br><p>Marriage <i>c.</i> May 1852</p>'); markers.push(marker);
 var marker = L.marker([51.0848113, 1.1585085043760257]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Cheriton+Road+Cemetery,+Folkestone,+Kent,+England">Cheriton Road Cemetery, Folkestone, Kent, England</a><br><p>Burial on Feb 27, 1915</p>'); markers.push(marker);
 var marker = L.marker([51.08232885018721, 1.1887064955961233]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=East+Cliff+Gardens,+Folkestone,+Kent,+England">East Cliff Gardens, Folkestone, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
-var marker = L.marker([51.0801525, 1.1805831]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fancy+Street,+Folkestone,+Kent,+England">Fancy Street, Folkestone, Kent, England</a><br><p>Living on Jun 6, 1841</p><p>Living on Apr 2, 1871</p>'); markers.push(marker);
+var marker = L.marker([51.0801525, 1.1805831]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fancy+Street,+Folkestone,+Kent,+England">Fancy Street, Folkestone, Kent, England</a><br><p>Living on Apr 2, 1871</p><p>Living on Jun 6, 1841</p>'); markers.push(marker);
 var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Folkestone,+Kent,+England">Folkestone, Kent, England</a><br><p>Birth on Mar 2, 1827</p>'); markers.push(marker);
 var marker = L.marker([51.07276935, 1.09166985]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Mill+Lane,+Folkestone,+Kent,+England">Mill Lane, Folkestone, Kent, England</a><br><p>Living on Mar 30, 1851</p><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 var marker = L.marker([51.08171844, 1.18028426]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Zion+Chapel,+Fenchurch+Street,+Folkestone,+Kent,+England">Zion Chapel, Fenchurch Street, Folkestone, Kent, England</a><br><p>Baptized on May 27, 1827</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.285354675, 0.561318247798062], 12);
+			map.setView([51.07753619164533, 1.1815288301334157], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,19 +12,19 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([50.9715027, 0.0516515], 12);
+			var map = L.map('map').setView([50.7930054, -0.6790804], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([50.7930054, -0.6790804]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=24+Murina+Avenue,+Bognor+Regis,+West+Sussex,+England">24 Murina Avenue, Bognor Regis, West Sussex, England</a><br><p>Living on Sep 29, 1939</p><p>Living in 1975</p>'); markers.push(marker);
+	var marker = L.marker([50.7930054, -0.6790804]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=24+Murina+Avenue,+Bognor+Regis,+West+Sussex,+England">24 Murina Avenue, Bognor Regis, West Sussex, England</a><br><p>Living in 1975</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([50.83673, -0.78003]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chichester,+West+Sussex,+England">Chichester, West Sussex, England</a><br><p>Death on Oct 25, 1975</p>'); markers.push(marker);
 var marker = L.marker([51.15, .883333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kennington,+Kent,+England">Kennington, Kent, England</a><br><p>Birth on Mar 13, 1905</p>'); markers.push(marker);
 var marker = L.marker([51.05937576, 0.81132019]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Marys+Church,+Kenardington,+Kent,+England">St Marys Church, Kenardington, Kent, England</a><br><p>Baptized on Jun 25, 1905</p>'); markers.push(marker);
 var marker = L.marker([50.85, -.733333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Westhampnett,+Sussex,+England">Westhampnett, Sussex, England</a><br><p>Marriage on Apr 9, 1928</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([50.9715027, 0.0516515], 12);
+			map.setView([50.7930054, -0.6790804], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

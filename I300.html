@@ -12,21 +12,21 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3457777094567, 1.32662433551944], 12);
+			var map = L.map('map').setView([51.370647090266544, 1.300784796416883], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.370647090266544, 1.300784796416883]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+Mill+Row,+Birchington,+Kent,+England">2 Mill Row, Birchington, Kent, England</a><br><p>Living in 1936</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
+	var marker = L.marker([51.370647090266544, 1.300784796416883]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+Mill+Row,+Birchington,+Kent,+England">2 Mill Row, Birchington, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Living in 1936</p>'); markers.push(marker);
 var marker = L.marker([51.371286168913464, 1.3088217602064154]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=47+Park+Lane,+Birchington,+Kent,+England">47 Park Lane, Birchington, Kent, England</a><br><p>Living in 1955</p>'); markers.push(marker);
 var marker = L.marker([51.320269249999996, 1.2365816710388784]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=All+Saints,+West+Stourmouth,+Kent,+England">All Saints, West Stourmouth, Kent, England</a><br><p>Baptized on Jul 11, 1909</p>'); markers.push(marker);
-var marker = L.marker([51.3567238, 1.2435185]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Brewery+Cottages,+Upper+Stourmouth,+Kent,+England">Brewery Cottages, Upper Stourmouth, Kent, England</a><br><p>Birth on Jun 8, 1909</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.3567238, 1.2435185]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Brewery+Cottages,+Upper+Stourmouth,+Kent,+England">Brewery Cottages, Upper Stourmouth, Kent, England</a><br><p>Living on Apr 2, 1911</p><p>Birth on Jun 8, 1909</p>'); markers.push(marker);
 var marker = L.marker([51.3306835, 1.3188438]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Durlock+Farm+Cottages,+Minster,+Thanet,+Kent,+England">Durlock Farm Cottages, Minster, Thanet, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.370647090266544, 1.300784796416883]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Mill+Row,+Birchington,+Kent,+England">Mill Row, Birchington, Kent, England</a><br><p>Living in 1941</p>'); markers.push(marker);
-var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> Aug 1931</p><p>Death in Oct/nov/dec 1997</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death in Oct/nov/dec 1997</p><p>Marriage <i>c.</i> Aug 1931</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3457777094567, 1.32662433551944], 12);
+			map.setView([51.370647090266544, 1.300784796416883], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

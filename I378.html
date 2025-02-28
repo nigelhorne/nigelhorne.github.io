@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([52.155645075, 8.912024], 12);
+			var map = L.map('map').setView([50.12144025, 1.8330788582339208], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -26,7 +26,7 @@ var marker = L.marker([51.333333, 1.133333]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([49.96894815, 2.373885538932255]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Somme,+Hauts-de-France,+France">Somme, Hauts-de-France, France</a><br><p>Death on Mar 6, 1917</p>'); markers.push(marker);
 var marker = L.marker([54.342342, 17.961638]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Andrew,+Stockwell+Green,+London,+England">St Andrew, Stockwell Green, London, England</a><br><p>Marriage on Aug 31, 1913</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([52.155645075, 8.912024], 12);
+			map.setView([50.12144025, 1.8330788582339208], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

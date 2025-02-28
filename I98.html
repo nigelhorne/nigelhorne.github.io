@@ -12,20 +12,20 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3496417113471, 0.994487045307052], 12);
+			var map = L.map('map').setView([51.3, 1.05], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.3, 1.05]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Blean,+Kent,+England">Blean, Kent, England</a><br><p>Death on Jul 2, 1871</p><p>Living on Jun 6, 1841</p>'); markers.push(marker);
+	var marker = L.marker([51.3, 1.05]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Blean,+Kent,+England">Blean, Kent, England</a><br><p>Living on Jun 6, 1841</p><p>Death on Jul 2, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.4059459, 0.7497903]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Doll+House,+Blean,+Kent,+England">Doll House, Blean, Kent, England</a><br><p>Living on Mar 30, 1851</p>'); markers.push(marker);
-var marker = L.marker([51.29333752269425, 1.044936509916736]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=New+Road,+Blean,+Kent,+England">New Road, Blean, Kent, England</a><br><p>Living on Apr 7, 1861</p><p>Living on Apr 2, 1871</p>'); markers.push(marker);
+var marker = L.marker([51.29333752269425, 1.044936509916736]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=New+Road,+Blean,+Kent,+England">New Road, Blean, Kent, England</a><br><p>Living on Apr 2, 1871</p><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 var marker = L.marker([51.3053035, 1.0530863]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ss+Cosmus+and+Damian,+Blean,+Kent,+England">Ss Cosmus and Damian, Blean, Kent, England</a><br><p>Burial on Jul 9, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.29580465, 1.1271103027381137]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+the+Virgin+Church,+Fordwich,+Kent,+England">St Mary the Virgin Church, Fordwich, Kent, England</a><br><p>Marriage on Sep 9, 1820</p>'); markers.push(marker);
 var marker = L.marker([51.3203124, 1.239183790614103]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stourmouth,+Kent,+England">Stourmouth, Kent, England</a><br><p>Baptized on Apr 1, 1804</p><p>Birth <i>c.</i> 1804</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3496417113471, 0.994487045307052], 12);
+			map.setView([51.3, 1.05], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

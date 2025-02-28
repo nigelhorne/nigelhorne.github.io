@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.35356754, 1.38490368824767], 12);
+			var map = L.map('map').setView([51.333249476849325, 1.4039426776358044], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,9 +24,9 @@ var marker = L.marker([51.333257665545574, 1.4051254513537277]).addTo(map).bindP
 var marker = L.marker([51.33111458, 1.39950584]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=3+Providence+Cottage,+St+Lawrence,+Thanet,+Kent,+England">3 Providence Cottage, St Lawrence, Thanet, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.33514255382559, 1.4148543764953339]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chapel+Lane,+St+Lawrence,+Thanet,+Kent,+England">Chapel Lane, St Lawrence, Thanet, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 var marker = L.marker([51.3321147, 1.4063944]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Rear+of+Southwood+Lodge,+St+Lawrence,+Thanet,+Kent,+England">Rear of Southwood Lodge, St Lawrence, Thanet, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
-var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Living in 1851</p><p>Marriage on Nov 22, 1851</p><p>Birth in 1831</p><p>Living on Jun 6, 1841</p><p>Baptized on Jan 30, 1831</p>'); markers.push(marker);
+var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Living in 1851</p><p>Birth in 1831</p><p>Baptized on Jan 30, 1831</p><p>Marriage on Nov 22, 1851</p><p>Living on Jun 6, 1841</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.35356754, 1.38490368824767], 12);
+			map.setView([51.333249476849325, 1.4039426776358044], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

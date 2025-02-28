@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([46.31307, -65.93966], 12);
+			var map = L.map('map').setView([45.960414579990434, -66.62052004474096], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,12 +21,12 @@
 	var marker = L.marker([45.960414579990434, -66.62052004474096]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=907+Barker+Street,+Fredericton,+York,+New+Brunswick,+Canada">907 Barker Street, Fredericton, York, New Brunswick, Canada</a><br><p>Living in 1942</p>'); markers.push(marker);
 var marker = L.marker([45.97832, -66.73108]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Douglas,+York,+New+Brunswick,+Canada">Douglas, York, New Brunswick, Canada</a><br><p>Living on Jun 1, 1921</p>'); markers.push(marker);
 var marker = L.marker([45.94541, -66.66558]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fredericton,+York,+New+Brunswick,+Canada">Fredericton, York, New Brunswick, Canada</a><br><p>Death on Jul 13, 1942</p>'); markers.push(marker);
-var marker = L.marker([46.68073, -64.88044]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Richibucto,+Kent,+New+Brunswick,+Canada">Richibucto, Kent, New Brunswick, Canada</a><br><p>Birth on Mar 17, 1859</p><p>Marriage on May 2, 1882</p>'); markers.push(marker);
+var marker = L.marker([46.68073, -64.88044]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Richibucto,+Kent,+New+Brunswick,+Canada">Richibucto, Kent, New Brunswick, Canada</a><br><p>Marriage on May 2, 1882</p><p>Birth on Mar 17, 1859</p>'); markers.push(marker);
 var marker = L.marker([45.97104645, -66.62673187]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sunny+Banks+Cemetery,+South+Devon,+York,+New+Brunswick,+Canada">Sunny Banks Cemetery, South Devon, York, New Brunswick, Canada</a><br><p>Burial on Jul 14, 1942</p>'); markers.push(marker);
 var marker = L.marker([46.50013, -65.08206]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Weldford,+Kent,+New+Brunswick,+Canada">Weldford, Kent, New Brunswick, Canada</a><br><p>Living on May 28, 1891</p>'); markers.push(marker);
 var marker = L.marker([46.1668, -66.99888]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=York,+New+Brunswick,+Canada">York, New Brunswick, Canada</a><br><p>Living in 1911</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([46.31307, -65.93966], 12);
+			map.setView([45.960414579990434, -66.62052004474096], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

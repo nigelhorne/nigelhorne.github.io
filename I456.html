@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.157580675, 0.69070588211215], 12);
+			var map = L.map('map').setView([51.2124627907896, 1.3802880331903873], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -27,7 +27,7 @@ var marker = L.marker([51.2559658, 1.0180838]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([51.35, 1.066667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Swalecliffe,+Kent,+England">Swalecliffe, Kent, England</a><br><p>Birth on Nov 14, 1869</p>'); markers.push(marker);
 var marker = L.marker([51.12995952459901, 1.3020467280827575]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Widred+Road,+Dover,+Kent,+England">Widred Road, Dover, Kent, England</a><br><p>Living in 1921</p><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.157580675, 0.69070588211215], 12);
+			map.setView([51.2124627907896, 1.3802880331903873], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

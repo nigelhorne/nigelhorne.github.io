@@ -12,17 +12,17 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2769637, 1.36772495], 12);
+			var map = L.map('map').setView([51.2365393798521, 1.34499067413748], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.2365393798521, 1.34499067413748]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Finglesham,+Kent,+England">Finglesham, Kent, England</a><br><p>Birth on Feb 6, 1917</p><p>Death on Aug 6, 1947</p>'); markers.push(marker);
+	var marker = L.marker([51.2365393798521, 1.34499067413748]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Finglesham,+Kent,+England">Finglesham, Kent, England</a><br><p>Death on Aug 6, 1947</p><p>Birth on Feb 6, 1917</p>'); markers.push(marker);
 var marker = L.marker([51.216667, 1.333333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Northbourne,+Kent,+England">Northbourne, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Marriage on Mar 30, 1940</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2769637, 1.36772495], 12);
+			map.setView([51.2365393798521, 1.34499067413748], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

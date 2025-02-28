@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([41.79894335, 57.95719058], 12);
+			var map = L.map('map').setView([51.53622, -0.10304], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([32.0616667, 118.7777778]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Nanjing,+Jiangsu,+China">Nanjing, Jiangsu, China</a><br><p>Birth on May 21, 1934</p>'); markers.push(marker);
 var marker = L.marker([51.08725739, -2.86339664]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Marys+Church,+Laverton,+Somerset,+England">St Marys Church, Laverton, Somerset, England</a><br><p>Burial <i>c.</i> 2013</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([41.79894335, 57.95719058], 12);
+			map.setView([51.53622, -0.10304], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

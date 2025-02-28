@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.27100015, 1.01484616856486], 12);
+			var map = L.map('map').setView([51.271000150000006, 1.0148461685648626], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,7 +20,7 @@
 			var markers = [];
 	var marker = L.marker([51.271000150000006, 1.0148461685648626]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chartham+Hatch,+Kent,+England">Chartham Hatch, Kent, England</a><br><p>Living on Jun 6, 1841</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.27100015, 1.01484616856486], 12);
+			map.setView([51.271000150000006, 1.0148461685648626], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

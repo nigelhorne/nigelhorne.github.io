@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([38.13329275, -86.103706], 12);
+			var map = L.map('map').setView([39.632556087088, -86.855449943371], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -26,7 +26,7 @@ var marker = L.marker([36.4629355, -86.963842]).addTo(map).bindPopup('<a href="h
 var marker = L.marker([39.61921, -86.87918]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Limedale,+Putnam,+Indiana,+USA">Limedale, Putnam, Indiana, USA</a><br><p>Living on May 11, 1940</p>'); markers.push(marker);
 var marker = L.marker([39.6212, -86.84788]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Putnam+County+Hospital,+Greencastle,+Putnam,+Indiana,+USA">Putnam County Hospital, Greencastle, Putnam, Indiana, USA</a><br><p>Death on Nov 6, 2011</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([38.13329275, -86.103706], 12);
+			map.setView([39.632556087088, -86.855449943371], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

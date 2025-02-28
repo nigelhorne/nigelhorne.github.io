@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([37.07585, -104.561457], 12);
+			var map = L.map('map').setView([38.152498621479, -107.760853359372], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([35.54671, -100.97126]).addTo(map).bindPopup('<a href="htt
 var marker = L.marker([38.413615, -108.151654]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Montrose,+Colorado,+USA">Montrose, Colorado, USA</a><br><p>Living on Jan 1, 1920</p>'); markers.push(marker);
 var marker = L.marker([38.60499, -107.98229]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Olathe,+Montrose,+Colorado,+USA">Olathe, Montrose, Colorado, USA</a><br><p>Living on Apr 1, 1930</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([37.07585, -104.561457], 12);
+			map.setView([38.152498621479, -107.760853359372], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

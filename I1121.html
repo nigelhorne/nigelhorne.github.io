@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([50.115435, -93.89568], 12);
+			var map = L.map('map').setView([51.02555735, -114.0544273623185], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,12 +21,12 @@
 	var marker = L.marker([51.02555735, -114.0544273623185]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Burnsland+Cemetery,+Calgary,+Alberta,+Canada">Burnsland Cemetery, Calgary, Alberta, Canada</a><br><p>Burial</p>'); markers.push(marker);
 var marker = L.marker([51.05011, -114.08529]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Calgary,+Alberta,+Canada">Calgary, Alberta, Canada</a><br><p>Death on May 25, 1925</p>'); markers.push(marker);
 var marker = L.marker([53.55014, -113.46871]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Edmonton,+Alberta,+Canada">Edmonton, Alberta, Canada</a><br><p>Living on Jun 1, 1921</p>'); markers.push(marker);
-var marker = L.marker([52.20005, -105.1255]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Humboldt,+Saskatchewan,+Canada">Humboldt, Saskatchewan, Canada</a><br><p>Living in 1906</p><p>Living in 1911</p>'); markers.push(marker);
+var marker = L.marker([52.20005, -105.1255]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Humboldt,+Saskatchewan,+Canada">Humboldt, Saskatchewan, Canada</a><br><p>Living in 1911</p><p>Living in 1906</p>'); markers.push(marker);
 var marker = L.marker([49.20678, -122.91092]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=New+Westminster,+British+Columbia,+Canada">New Westminster, British Columbia, Canada</a><br><p>Marriage on Jun 24, 1890</p>'); markers.push(marker);
-var marker = L.marker([46.68073, -64.88044]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Richibucto,+Kent,+New+Brunswick,+Canada">Richibucto, Kent, New Brunswick, Canada</a><br><p>Living in 1881</p><p>Birth on Aug 29, 1867</p><p>Living in 1871</p>'); markers.push(marker);
+var marker = L.marker([46.68073, -64.88044]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Richibucto,+Kent,+New+Brunswick,+Canada">Richibucto, Kent, New Brunswick, Canada</a><br><p>Living in 1881</p><p>Living in 1871</p><p>Birth on Aug 29, 1867</p>'); markers.push(marker);
 var marker = L.marker([49.08313, -117.80224]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Rossland,+Kootenay+Boundary,+British+Columbia,+Canada">Rossland, Kootenay Boundary, British Columbia, Canada</a><br><p>Living in 1901</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([50.115435, -93.89568], 12);
+			map.setView([51.02555735, -114.0544273623185], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

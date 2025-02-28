@@ -12,16 +12,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3581125396307, 1.41837744398511], 12);
+			var map = L.map('map').setView([51.34955807926146, 1.420087887970218], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.34955807926146, 1.420087887970218]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=35+Prestedge+Avenue,+Ramsgate,+Kent,+England">35 Prestedge Avenue, Ramsgate, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death <i>c.</i> Nov 1980</p><p>Marriage <i>c.</i> Aug 1957</p><p>Birth on Nov 27, 1930</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> Aug 1957</p><p>Death <i>c.</i> Nov 1980</p><p>Birth on Nov 27, 1930</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3581125396307, 1.41837744398511], 12);
+			map.setView([51.34955807926146, 1.420087887970218], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

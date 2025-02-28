@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.0735695047152, 1.00210559390888], 12);
+			var map = L.map('map').setView([50.9971390094303, 0.829747760907355], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,11 +22,11 @@
 var marker = L.marker([51.08737705067305, 1.1378386730114802]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Cheriton+Street,+Cheriton,+Kent,+England">Cheriton Street, Cheriton, Kent, England</a><br><p>Living on Mar 30, 1851</p>'); markers.push(marker);
 var marker = L.marker([51.0878317722892, 1.14115615167963]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Cheriton,+Kent,+England">Cheriton, Kent, England</a><br><p>Burial on Jul 4, 1897</p><p>Birth <i>c.</i> 1825</p>'); markers.push(marker);
 var marker = L.marker([51.15, 1.116667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Elham,+Kent,+England">Elham, Kent, England</a><br><p>Death <i>c.</i> Jul 1897</p><p>Marriage <i>c.</i> Nov 1844</p>'); markers.push(marker);
-var marker = L.marker([51.08543706061659, 1.1252579154829585]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Horn+Street,+Cheriton,+Kent,+England">Horn Street, Cheriton, Kent, England</a><br><p>Living on Apr 2, 1871</p><p>Living on Apr 7, 1861</p><p>Living on Apr 3, 1881</p><p>Living in 1871</p>'); markers.push(marker);
+var marker = L.marker([51.08543706061659, 1.1252579154829585]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Horn+Street,+Cheriton,+Kent,+England">Horn Street, Cheriton, Kent, England</a><br><p>Living on Apr 2, 1871</p><p>Living on Apr 7, 1861</p><p>Living in 1871</p><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 var marker = L.marker([51.07761632975065, 1.1744634269103966]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sandgate+Road,+Hythe,+Kent,+England">Sandgate Road, Hythe, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.0878334, 1.14115632]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Martins+Church,+Cheriton,+Kent,+England">St Martins Church, Cheriton, Kent, England</a><br><p>Baptized on Mar 6, 1825</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.0735695047152, 1.00210559390888], 12);
+			map.setView([50.9971390094303, 0.829747760907355], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

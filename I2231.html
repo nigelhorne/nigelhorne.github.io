@@ -12,16 +12,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.372463766595, 1.41037634653155], 12);
+			var map = L.map('map').setView([51.378260533189916, 1.4040856930630987], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.378260533189916, 1.4040856930630987]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=74+Invicta+Road,+Margate,+Kent,+England">74 Invicta Road, Margate, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Birth on Oct 23, 1931</p><p>Death <i>c.</i> Nov 1996</p><p>Marriage <i>c.</i> Nov 1951</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> Nov 1951</p><p>Death <i>c.</i> Nov 1996</p><p>Birth on Oct 23, 1931</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.372463766595, 1.41037634653155], 12);
+			map.setView([51.378260533189916, 1.4040856930630987], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

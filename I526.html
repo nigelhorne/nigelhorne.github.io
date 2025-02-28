@@ -18,7 +18,7 @@
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.133333, 1]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Brabourne,+Kent,+England">Brabourne, Kent, England</a><br><p>Death <i>c.</i> 1796</p><p>Marriage on Apr 14, 1751</p><p>Birth</p><p>Burial on Nov 17, 1796</p>'); markers.push(marker);
+	var marker = L.marker([51.133333, 1]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Brabourne,+Kent,+England">Brabourne, Kent, England</a><br><p>Birth</p><p>Burial on Nov 17, 1796</p><p>Death <i>c.</i> 1796</p><p>Marriage on Apr 14, 1751</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
 			map.setView([51.133333, 1], 12);
 		});

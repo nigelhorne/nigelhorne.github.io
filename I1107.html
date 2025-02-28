@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.952845, -1.08861], 12);
+			var map = L.map('map').setView([51.5920133, 0.0655706], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.55765, 0.07278]).addTo(map).bindPopup('<a href="https:
 var marker = L.marker([52.38819, -2.25]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kidderminster,+Worcestershire,+England">Kidderminster, Worcestershire, England</a><br><p>Death on Sep 4, 2006</p>'); markers.push(marker);
 var marker = L.marker([51.5175, -0.04292]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stepney,+London,+England">Stepney, London, England</a><br><p>Birth on Oct 20, 1926</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.952845, -1.08861], 12);
+			map.setView([51.5920133, 0.0655706], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

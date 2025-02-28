@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([50.81934185, -0.7178747], 12);
+			var map = L.map('map').setView([50.79338074691641, -0.6711847376126869], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([50.7886837, -0.6524164]).addTo(map).bindPopup('<a href="h
 var marker = L.marker([50.7949272, -0.675744]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=South+Bersted,+Chichester,+Sussex,+England">South Bersted, Chichester, Sussex, England</a><br><p>Marriage on Jun 6, 1938</p>'); markers.push(marker);
 var marker = L.marker([50.85, -.733333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Westhampnett,+Sussex,+England">Westhampnett, Sussex, England</a><br><p>Birth on May 15, 1914</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([50.81934185, -0.7178747], 12);
+			map.setView([50.79338074691641, -0.6711847376126869], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

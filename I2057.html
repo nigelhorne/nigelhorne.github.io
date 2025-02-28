@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([53.6897865, -1.32714], 12);
+			var map = L.map('map').setView([51.44387735, -0.19816575], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([51.46736155, -0.1289642535949589]).addTo(map).bindPopup('
 var marker = L.marker([56.012906, -3.787613]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Union+Street,+Clapham,+London,+England">Union Street, Clapham, London, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.4577, -0.20784]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wandsworth,+London,+England">Wandsworth, London, England</a><br><p>Death <i>c.</i> May 1927</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([53.6897865, -1.32714], 12);
+			map.setView([51.44387735, -0.19816575], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

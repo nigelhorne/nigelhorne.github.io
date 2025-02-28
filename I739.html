@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.23356685, 1.00578214839838], 12);
+			var map = L.map('map').setView([51.15, 1.116667], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Death in Jul 1843</p>'); markers.push(marker);
 var marker = L.marker([51.3171337, 0.894897296796754]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+of+Charity+Church,+Church+Road,+Faversham,+Kent,+England">St Mary of Charity Church, Church Road, Faversham, Kent, England</a><br><p>Burial on Jul 30, 1843</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.23356685, 1.00578214839838], 12);
+			map.setView([51.15, 1.116667], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

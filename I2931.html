@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([50.8416713802684, -1.14136235], 12);
+			var map = L.map('map').setView([51.1379149, 1.2899036499999998], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([51.15189286053673, 1.2706834448830606]).addTo(map).bindPo
 var marker = L.marker([51.13786316, 1.29728365]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Andrews+Church,+Buckland,+Kent,+England">St Andrews Church, Buckland, Kent, England</a><br><p>Baptized on Jan 25, 1891</p>'); markers.push(marker);
 var marker = L.marker([50.5314499, -3.5827247]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Union+Road,+Buckland,+Kent,+England">Union Road, Buckland, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([50.8416713802684, -1.14136235], 12);
+			map.setView([51.1379149, 1.2899036499999998], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

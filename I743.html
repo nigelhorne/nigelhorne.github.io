@@ -18,7 +18,7 @@
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.15, 1.116667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Elham,+Kent,+England">Elham, Kent, England</a><br><p>Death in Apr 1762</p><p>Marriage on Nov 12, 1753</p><p>Baptized on Nov 5, 1731</p><p>Birth <i>c.</i> 1731</p><p>Burial on May 5, 1762</p>'); markers.push(marker);
+	var marker = L.marker([51.15, 1.116667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Elham,+Kent,+England">Elham, Kent, England</a><br><p>Birth <i>c.</i> 1731</p><p>Baptized on Nov 5, 1731</p><p>Marriage on Nov 12, 1753</p><p>Death in Apr 1762</p><p>Burial on May 5, 1762</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
 			map.setView([51.15, 1.116667], 12);
 		});

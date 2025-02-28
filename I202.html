@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.4427217, 0.564866786811157], 12);
+			var map = L.map('map').setView([51.374325886920204, 1.4320335736223135], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -26,7 +26,7 @@ var marker = L.marker([51.383333, 1.416667]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([51.50057602, -0.1943817]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Warwick+Gardens+Methodist+Chapel,+Kensington,+London,+England">Warwick Gardens Methodist Chapel, Kensington, London, England</a><br><p>Marriage on May 26, 1898</p>'); markers.push(marker);
 var marker = L.marker([51.55242, -0.29686]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wembley,+London,+England">Wembley, London, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.4427217, 0.564866786811157], 12);
+			map.setView([51.374325886920204, 1.4320335736223135], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

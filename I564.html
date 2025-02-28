@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2381741627533, 0.952632748060853], 12);
+			var map = L.map('map').setView([51.1244059, 1.0334255], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.3519424255066, 0.667886060288684]).addTo(map).bindPopu
 var marker = L.marker([51.16577565, 1.237379435833021]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+The+Virgin,+Lydden,+Kent,+England">St Mary The Virgin, Lydden, Kent, England</a><br><p>Baptized on Mar 26, 1769</p>'); markers.push(marker);
 var marker = L.marker([51.1904325221625, 0.845156285907477]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Westwell,+Kent,+England">Westwell, Kent, England</a><br><p>Living in 1851</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2381741627533, 0.952632748060853], 12);
+			map.setView([51.1244059, 1.0334255], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

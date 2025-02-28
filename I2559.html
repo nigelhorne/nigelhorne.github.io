@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.22296235, 0.981861254557264], 12);
+			var map = L.map('map').setView([51.3124075, 0.880389509114528], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([51.133333, .883333]).addTo(map).bindPopup('<a href="https
 var marker = L.marker([51.266667, 1.083333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Canterbury,+Kent,+England">Canterbury, Kent, England</a><br><p>Death <i>c.</i> Feb 1968</p>'); markers.push(marker);
 var marker = L.marker([51.2825354, 1.0557768]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Michael+and+All+Angels+Church,+Throwley,+Kent,+England">St Michael and All Angels Church, Throwley, Kent, England</a><br><p>Marriage on Oct 24, 1908</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.22296235, 0.981861254557264], 12);
+			map.setView([51.3124075, 0.880389509114528], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

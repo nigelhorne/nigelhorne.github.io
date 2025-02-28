@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3401900868517, 0.312913467615759], 12);
+			var map = L.map('map').setView([51.60012223, -0.0225302], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.62127, 0.30556]).addTo(map).bindPopup('<a href="https:
 var marker = L.marker([51.0591101737035, 0.648357135231518]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Strood,+Kent,+England">Strood, Kent, England</a><br><p>Birth on May 31, 1923</p>'); markers.push(marker);
 var marker = L.marker([51.4880516057574, 0.344975918361098]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thurrock,+Essex,+England">Thurrock, Essex, England</a><br><p>Marriage <i>c.</i> Nov 1950</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3401900868517, 0.312913467615759], 12);
+			map.setView([51.60012223, -0.0225302], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

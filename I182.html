@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([45.56224948, -41.38764505], 12);
+			var map = L.map('map').setView([51.33682921, 1.40161305], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,11 +23,11 @@ var marker = L.marker([51.36180496, 1.38640749]).addTo(map).bindPopup('<a href="
 var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Marriage on Mar 26, 1870</p><p>Birth in Apr/may/jun 1847</p><p>Living in 1881</p><p>Baptized on Jun 6, 1847</p>'); markers.push(marker);
 var marker = L.marker([39.762694, -84.192989]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Vessels,+Misc+Ships+at+Sea+or+Abroad,+England">Vessels, Misc Ships at Sea or Abroad, England</a><br><p>Living in 1861</p>'); markers.push(marker);
 var marker = L.marker([51.3327813, 1.4020358]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Waterworks+Cottage,+St+Lawrence,+Thanet,+Kent,+England">Waterworks Cottage, St Lawrence, Thanet, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
-var marker = L.marker([51.36180496, 1.38640749]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Waterworks+House,+Southwood+Road,+St+Lawrence,+Thanet,+Kent,+England">Waterworks House, Southwood Road, St Lawrence, Thanet, Kent, England</a><br><p>Death on Apr 28, 1923</p><p>Living in 1923</p>'); markers.push(marker);
+var marker = L.marker([51.36180496, 1.38640749]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Waterworks+House,+Southwood+Road,+St+Lawrence,+Thanet,+Kent,+England">Waterworks House, Southwood Road, St Lawrence, Thanet, Kent, England</a><br><p>Living in 1923</p><p>Death on Apr 28, 1923</p>'); markers.push(marker);
 var marker = L.marker([51.3478922, 1.4176989]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=West+Dumpton,+Thanet,+Kent,+England">West Dumpton, Thanet, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.33615035, 1.40029145]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Whitehall+Waterworks,+St+Lawrence,+Thanet,+Kent,+England">Whitehall Waterworks, St Lawrence, Thanet, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([45.56224948, -41.38764505], 12);
+			map.setView([51.33682921, 1.40161305], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

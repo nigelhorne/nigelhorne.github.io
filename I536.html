@@ -18,7 +18,7 @@
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Baptized on Jun 11, 1695</p><p>Burial on Dec 12, 1733</p><p>Birth on Jan 12, 1656</p><p>Marriage on Mar 16, 1679</p>'); markers.push(marker);
+	var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Baptized on Jun 11, 1695</p><p>Birth on Jan 12, 1656</p><p>Burial on Dec 12, 1733</p><p>Marriage on Mar 16, 1679</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
 			map.setView([51.3372604, 1.4021169], 12);
 		});

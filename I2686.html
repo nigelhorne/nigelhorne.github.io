@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.5277962111975, -0.0613574243810946], 12);
+			var map = L.map('map').setView([51.525470522395025, -0.05814294876218924], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([51.52718, -0.06109]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bethnal+Green,+London,+England">Bethnal Green, London, England</a><br><p>Birth in 1878</p>'); markers.push(marker);
 var marker = L.marker([51.5301219, -0.0645719]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters+Church,+Bethnal+Green,+London,+England">St Peters Church, Bethnal Green, London, England</a><br><p>Marriage on Mar 28, 1910</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.5277962111975, -0.0613574243810946], 12);
+			map.setView([51.525470522395025, -0.05814294876218924], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

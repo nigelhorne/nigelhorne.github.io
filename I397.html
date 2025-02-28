@@ -12,19 +12,19 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.238262095, 1.01498724734942], 12);
+			var map = L.map('map').setView([51.0878317722892, 1.14115615167963], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.0878317722892, 1.14115615167963]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Cheriton,+Kent,+England">Cheriton, Kent, England</a><br><p>Living in 1851</p>'); markers.push(marker);
-var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Folkestone,+Kent,+England">Folkestone, Kent, England</a><br><p>Living in 1841</p><p>Burial on Mar 18, 1865</p><p>Marriage on Feb 6, 1813</p>'); markers.push(marker);
-var marker = L.marker([51.116667, 1.083333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lyminge,+Kent,+England">Lyminge, Kent, England</a><br><p>Death on Mar 14, 1865</p><p>Birth <i>c.</i> 1795</p>'); markers.push(marker);
+var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Folkestone,+Kent,+England">Folkestone, Kent, England</a><br><p>Living in 1841</p><p>Marriage on Feb 6, 1813</p><p>Burial on Mar 18, 1865</p>'); markers.push(marker);
+var marker = L.marker([51.116667, 1.083333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lyminge,+Kent,+England">Lyminge, Kent, England</a><br><p>Birth <i>c.</i> 1795</p><p>Death on Mar 14, 1865</p>'); markers.push(marker);
 var marker = L.marker([51.08171844, 1.18028426]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ss+Mary+and+Eanswith+Church,+Folkestone,+Kent,+England">Ss Mary and Eanswith Church, Folkestone, Kent, England</a><br><p>Baptized on Jan 18, 1795</p>'); markers.push(marker);
 var marker = L.marker([51.39480575, 0.846641494698839]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Standford,+Kent,+England">Standford, Kent, England</a><br><p>Living in 1861</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.238262095, 1.01498724734942], 12);
+			map.setView([51.0878317722892, 1.14115615167963], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

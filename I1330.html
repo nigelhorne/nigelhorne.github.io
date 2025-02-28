@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([27.3640515562284, 16.2453615], 12);
+			var map = L.map('map').setView([51.333333, 1.133333], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([51.350453112456705, 1.134730987212137]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Martin,+Herne,+Kent,+England">St Martin, Herne, Kent, England</a><br><p>Burial on Apr 14, 1833</p>'); markers.push(marker);
 var marker = L.marker([3.37765, 31.35739]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St.+Marys,+Reculver,+Kent,+England">St. Marys, Reculver, Kent, England</a><br><p>Marriage on Oct 12, 1799</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([27.3640515562284, 16.2453615], 12);
+			map.setView([51.333333, 1.133333], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

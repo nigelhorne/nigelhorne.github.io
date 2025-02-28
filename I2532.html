@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([46.691815, -65.62377], 12);
+			var map = L.map('map').setView([46.46683, -65.24877], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([46.46683, -65.24877]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Harcourt,+Kent,+New+Brunswick,+Canada">Harcourt, Kent, New Brunswick, Canada</a><br><p>Birth on Jan 28, 1868</p><p>Marriage on Dec 28, 1892</p>'); markers.push(marker);
 var marker = L.marker([46.9168, -65.99877]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Northumberland,+New+Brunswick,+Canada">Northumberland, New Brunswick, Canada</a><br><p>Death on May 18, 1934</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([46.691815, -65.62377], 12);
+			map.setView([46.46683, -65.24877], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

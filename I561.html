@@ -12,20 +12,20 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.1768707179243, 0.939745846001328], 12);
+			var map = L.map('map').setView([51.36328413584865, 1.4283435920026568], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.36328413584865, 1.4283435920026568]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=10+Sowell+Street,+St+Peters,+Thanet,+Kent,+England">10 Sowell Street, St Peters, Thanet, Kent, England</a><br><p>Living in 1955</p><p>Living in 1974</p><p>Living in 1965</p><p>Living in 1963</p>'); markers.push(marker);
+	var marker = L.marker([51.36328413584865, 1.4283435920026568]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=10+Sowell+Street,+St+Peters,+Thanet,+Kent,+England">10 Sowell Street, St Peters, Thanet, Kent, England</a><br><p>Living in 1955</p><p>Living in 1965</p><p>Living in 1963</p><p>Living in 1974</p>'); markers.push(marker);
 var marker = L.marker([51.36240895, 1.4274551226350478]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=8+Upton+Road,+Broadstairs,+Kent,+England">8 Upton Road, Broadstairs, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.358967, 1.391367]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Broadstairs,+Kent,+England">Broadstairs, Kent, England</a><br><p>Birth on Jul 2, 1916</p><p>Death on Jul 24, 1998</p>'); markers.push(marker);
+var marker = L.marker([51.358967, 1.391367]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Broadstairs,+Kent,+England">Broadstairs, Kent, England</a><br><p>Death on Jul 24, 1998</p><p>Birth on Jul 2, 1916</p>'); markers.push(marker);
 var marker = L.marker([51.2958932, 0.4511481]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Salem+Baptist+Church,+St+Peters,+Thanet,+Kent,+England">Salem Baptist Church, St Peters, Thanet, Kent, England</a><br><p>Marriage on Aug 5, 1937</p>'); markers.push(marker);
 var marker = L.marker([51.36328413584865, 1.4283435920026568]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sowell+Street,+St+Peters,+Thanet,+Kent,+England">Sowell Street, St Peters, Thanet, Kent, England</a><br><p>Living in 1953</p>'); markers.push(marker);
 var marker = L.marker([50.9904573, 0.9468671]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Cottage,+Fairfield+Road,+St+Peters,+Thanet,+Kent,+England">The Cottage, Fairfield Road, St Peters, Thanet, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.1768707179243, 0.939745846001328], 12);
+			map.setView([51.36328413584865, 1.4283435920026568], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

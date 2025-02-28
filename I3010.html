@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.11585922, 1.09452765], 12);
+			var map = L.map('map').setView([51.083333, .95], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,9 +23,9 @@ var marker = L.marker([51.1177701, 1.2390553]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([51.0848113, 1.1585085043760257]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Cheriton+Road+Cemetery,+Folkestone,+Kent,+England">Cheriton Road Cemetery, Folkestone, Kent, England</a><br><p>Burial on Dec 24, 1908</p>'); markers.push(marker);
 var marker = L.marker([51.08171844, 1.18028426]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Christ+Church,+Folkestone,+Kent,+England">Christ Church, Folkestone, Kent, England</a><br><p>Marriage on Sep 10, 1865</p>'); markers.push(marker);
 var marker = L.marker([51.15, 1.116667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Elham,+Kent,+England">Elham, Kent, England</a><br><p>Death on Dec 20, 1908</p>'); markers.push(marker);
-var marker = L.marker([51.084501033307745, 1.1778794696795927]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Foord+Road,+Folkestone,+Kent,+England">Foord Road, Folkestone, Kent, England</a><br><p>Living on Apr 3, 1881</p><p>Living on Apr 5, 1891</p><p>Living on Mar 31, 1901</p>'); markers.push(marker);
+var marker = L.marker([51.084501033307745, 1.1778794696795927]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Foord+Road,+Folkestone,+Kent,+England">Foord Road, Folkestone, Kent, England</a><br><p>Living on Mar 31, 1901</p><p>Living on Apr 5, 1891</p><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.11585922, 1.09452765], 12);
+			map.setView([51.083333, .95], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

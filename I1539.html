@@ -12,16 +12,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.497645, -2.58113], 12);
+			var map = L.map('map').setView([52.25688, -1.16066], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([52.25688, -1.16066]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Daventry,+Northamptonshire,+England">Daventry, Northamptonshire, England</a><br><p>Marriage <i>c.</i> Feb 1941</p><p>Death <i>c.</i> Nov 1990</p>'); markers.push(marker);
+	var marker = L.marker([52.25688, -1.16066]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Daventry,+Northamptonshire,+England">Daventry, Northamptonshire, England</a><br><p>Death <i>c.</i> Nov 1990</p><p>Marriage <i>c.</i> Feb 1941</p>'); markers.push(marker);
 var marker = L.marker([50.73841, -4.0016]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Okehampton,+Devon,+England">Okehampton, Devon, England</a><br><p>Birth on Oct 16, 1916</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.497645, -2.58113], 12);
+			map.setView([52.25688, -1.16066], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

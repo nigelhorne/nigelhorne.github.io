@@ -12,17 +12,17 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.383546875, 1.40019578003805], 12);
+			var map = L.map('map').setView([51.383333, 1.416667], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.383333, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Margate,+Kent,+England">Margate, Kent, England</a><br><p>Death on Apr 1, 1738</p><p>Baptized on Jun 22, 1679</p>'); markers.push(marker);
-var marker = L.marker([51.38376075, 1.3837245600761081]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+John+the+Baptist+Church,+Margate,+Kent,+England">St John the Baptist Church, Margate, Kent, England</a><br><p>Birth on Mar 7, 1679</p><p>Burial in 1738</p>'); markers.push(marker);
+var marker = L.marker([51.38376075, 1.3837245600761081]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+John+the+Baptist+Church,+Margate,+Kent,+England">St John the Baptist Church, Margate, Kent, England</a><br><p>Burial in 1738</p><p>Birth on Mar 7, 1679</p>'); markers.push(marker);
 var marker = L.marker([51.38376075, 1.3837245600761081]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St.+John+the+Baptist+Church,+Margate,+Kent,+England">St. John the Baptist Church, Margate, Kent, England</a><br><p>Marriage on Sep 14, 1701</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.383546875, 1.40019578003805], 12);
+			map.setView([51.383333, 1.416667], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

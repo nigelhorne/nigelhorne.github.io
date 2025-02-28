@@ -12,18 +12,18 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.27194965, 0.47407355], 12);
+			var map = L.map('map').setView([51.4403527, 0.0952695], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.4403527, 0.0952695]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=26+Willersley+Avenue,+Chislehurst,+Kent,+England">26 Willersley Avenue, Chislehurst, Kent, England</a><br><p>Living in 1945</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
+	var marker = L.marker([51.4403527, 0.0952695]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=26+Willersley+Avenue,+Chislehurst,+Kent,+England">26 Willersley Avenue, Chislehurst, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Living in 1945</p>'); markers.push(marker);
 var marker = L.marker([51.0938993, 0.8528776]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bromley,+Kent,+England">Bromley, Kent, England</a><br><p>Birth on Sep 3, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.45, .216667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Dartford,+Kent,+England">Dartford, Kent, England</a><br><p>Marriage <i>c.</i> May 1963</p>'); markers.push(marker);
 var marker = L.marker([51.41652115, 0.3192713735897754]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Nicholas,+Southfleet,+Kent,+England">St Nicholas, Southfleet, Kent, England</a><br><p>Burial</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.27194965, 0.47407355], 12);
+			map.setView([51.4403527, 0.0952695], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

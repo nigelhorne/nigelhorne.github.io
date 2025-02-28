@@ -12,18 +12,18 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2921332776221, 0.419523401450796], 12);
+			var map = L.map('map').setView([51.372692, 0.532351], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.372692, 0.532351]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=157+Glencoe+Road,+Chatham,+Kent,+England">157 Glencoe Road, Chatham, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
-var marker = L.marker([51.3762914, 0.5331976]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Hope+Street,+Chatham,+Kent,+England">5 Hope Street, Chatham, Kent, England</a><br><p>Living on Apr 5, 1891</p><p>Living on Mar 31, 1901</p>'); markers.push(marker);
-var marker = L.marker([51.383333, .516667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chatham,+Kent,+England">Chatham, Kent, England</a><br><p>Birth <i>c.</i> Nov 1886</p><p>Death <i>c.</i> Nov 1931</p>'); markers.push(marker);
+var marker = L.marker([51.3762914, 0.5331976]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Hope+Street,+Chatham,+Kent,+England">5 Hope Street, Chatham, Kent, England</a><br><p>Living on Mar 31, 1901</p><p>Living on Apr 5, 1891</p>'); markers.push(marker);
+var marker = L.marker([51.383333, .516667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chatham,+Kent,+England">Chatham, Kent, England</a><br><p>Death <i>c.</i> Nov 1931</p><p>Birth <i>c.</i> Nov 1886</p>'); markers.push(marker);
 var marker = L.marker([51.2009335552442, 0.3058492029015929]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Medway,+Kent,+England">Medway, Kent, England</a><br><p>Marriage <i>c.</i> Aug 1911</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2921332776221, 0.419523401450796], 12);
+			map.setView([51.372692, 0.532351], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

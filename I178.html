@@ -12,16 +12,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.35, 1.133333], 12);
+			var map = L.map('map').setView([51.366667, 1.133333], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.366667, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne+Bay,+Kent,+England">Herne Bay, Kent, England</a><br><p>Birth in 1779</p>'); markers.push(marker);
-var marker = L.marker([51.333333, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne,+Kent,+England">Herne, Kent, England</a><br><p>Living in 1841</p><p>Burial on Jul 5, 1858</p><p>Living in 1851</p><p>Living in 1797</p><p>Marriage on Nov 4, 1797</p>'); markers.push(marker);
+var marker = L.marker([51.333333, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne,+Kent,+England">Herne, Kent, England</a><br><p>Living in 1841</p><p>Living in 1851</p><p>Living in 1797</p><p>Burial on Jul 5, 1858</p><p>Marriage on Nov 4, 1797</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.35, 1.133333], 12);
+			map.setView([51.366667, 1.133333], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

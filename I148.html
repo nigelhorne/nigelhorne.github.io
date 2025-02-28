@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.33322035, 1.36003769073363], 12);
+			var map = L.map('map').setView([51.33672635, 1.4041179201344927], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,10 +21,10 @@
 	var marker = L.marker([51.33672635, 1.4041179201344927]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=3+Claremont+Gardens,+St+Lawrence,+Thanet,+Kent,+England">3 Claremont Gardens, St Lawrence, Thanet, Kent, England</a><br><p>Death on Apr 4, 1885</p>'); markers.push(marker);
 var marker = L.marker([51.33682921, 1.40161305]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chapel+Row,+St+Lawrence,+Thanet,+Kent,+England">Chapel Row, St Lawrence, Thanet, Kent, England</a><br><p>Living on Mar 30, 1851</p>'); markers.push(marker);
 var marker = L.marker([51.3291803, 1.3171687]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Minster,+Thanet,+Kent,+England">Minster, Thanet, Kent, England</a><br><p>Birth on Dec 13, 1811</p>'); markers.push(marker);
-var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Living on Apr 6, 1841</p><p>Living in 1881</p><p>Burial on Apr 8, 1885</p><p>Living in 1861</p><p>Living in 1871</p>'); markers.push(marker);
-var marker = L.marker([51.330420950000004, 1.3159574613327614]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+the+Virgin+Church,+Minster,+Thanet,+Kent,+England">St Mary the Virgin Church, Minster, Thanet, Kent, England</a><br><p>Baptized on Jan 5, 1812</p><p>Marriage on Sep 18, 1829</p>'); markers.push(marker);
+var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Burial on Apr 8, 1885</p><p>Living on Apr 6, 1841</p><p>Living in 1881</p><p>Living in 1861</p><p>Living in 1871</p>'); markers.push(marker);
+var marker = L.marker([51.330420950000004, 1.3159574613327614]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+the+Virgin+Church,+Minster,+Thanet,+Kent,+England">St Mary the Virgin Church, Minster, Thanet, Kent, England</a><br><p>Marriage on Sep 18, 1829</p><p>Baptized on Jan 5, 1812</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.33322035, 1.36003769073363], 12);
+			map.setView([51.33672635, 1.4041179201344927], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

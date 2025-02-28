@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3347518894928, 1.3696158], 12);
+			var map = L.map('map').setView([51.33340574772731, 1.414012701051555], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,10 +23,10 @@ var marker = L.marker([51.3359396, 1.4248146]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([51.3370625965352, 1.421777335937587]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=29+Sussex+Street,+Ramsgate,+Kent,+England">29 Sussex Street, Ramsgate, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.332441182450374, 1.4167107482990628]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=76+Queen+Street,+Ramsgate,+Kent,+England">76 Queen Street, Ramsgate, Kent, England</a><br><p>Living in 1891</p><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 var marker = L.marker([51.33615639999999, 1.4139745499999998]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Paradise,+Ramsgate,+Kent,+England">Paradise, Ramsgate, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
-var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth <i>c.</i> Feb 1872</p><p>Death on Apr 20, 1922</p>'); markers.push(marker);
+var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Death on Apr 20, 1922</p><p>Birth <i>c.</i> Feb 1872</p>'); markers.push(marker);
 var marker = L.marker([51.3360596, 1.4179069]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Georges+Church,+Ramsgate,+Kent,+England">St Georges Church, Ramsgate, Kent, England</a><br><p>Baptized on May 14, 1872</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3347518894928, 1.3696158], 12);
+			map.setView([51.33340574772731, 1.414012701051555], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

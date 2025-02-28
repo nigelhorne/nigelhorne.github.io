@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3267493354963, 0.586043697441718], 12);
+			var map = L.map('map').setView([51.372692, 0.532351], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -27,7 +27,7 @@ var marker = L.marker([51.383333, .516667]).addTo(map).bindPopup('<a href="https
 var marker = L.marker([51.37208906661512, 1.1601840801683108]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=22+Reculver+Road,+Beltinge,+Kent,+England">22 Reculver Road, Beltinge, Kent, England</a><br><p>Living in 1983</p>'); markers.push(marker);
 var marker = L.marker([51.2009335552442, 0.3058492029015929]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Medway,+Kent,+England">Medway, Kent, England</a><br><p>Marriage on Jun 6, 1925</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3267493354963, 0.586043697441718], 12);
+			map.setView([51.372692, 0.532351], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

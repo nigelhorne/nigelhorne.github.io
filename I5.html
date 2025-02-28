@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([42.692456325, -58.5180775], 12);
+			var map = L.map('map').setView([51.3750656, 1.3848527], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -31,7 +31,7 @@ var marker = L.marker([51.3532696, 1.2542665]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([51.3260644, 0.8079126]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Cottage,+Foxborough+Lane,+Minster,+Thanet,+Kent,+England">The Cottage, Foxborough Lane, Minster, Thanet, Kent, England</a><br><p>Living in 1960</p>'); markers.push(marker);
 var marker = L.marker([51.3378743, 1.3327680000000015]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Way+Cottages,+Minster,+Thanet,+Kent,+England">Way Cottages, Minster, Thanet, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Living on Aug 28, 1931</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([42.692456325, -58.5180775], 12);
+			map.setView([51.3750656, 1.3848527], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

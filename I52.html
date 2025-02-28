@@ -12,18 +12,18 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.36924295, 1.33546675], 12);
+			var map = L.map('map').setView([51.3750656, 1.3848527], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.3750656, 1.3848527]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+Nash+Court+Cottage,+Nash+Road,+Margate,+Kent,+England">2 Nash Court Cottage, Nash Road, Margate, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
-var marker = L.marker([51.3852163, 1.3847597]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=4+St+Johns+Road,+Margate,+Kent,+England">4 St Johns Road, Margate, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Living in 1953</p><p>Living in 1955</p>'); markers.push(marker);
+var marker = L.marker([51.3852163, 1.3847597]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=4+St+Johns+Road,+Margate,+Kent,+England">4 St Johns Road, Margate, Kent, England</a><br><p>Living in 1953</p><p>Living in 1955</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.3532696, 1.2542665]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Nicholas-at-Wade,+Kent,+England">St Nicholas-at-Wade, Kent, England</a><br><p>Birth on Jul 28, 1891</p><p>Baptized on Aug 23, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> Nov 1924</p><p>Death <i>c.</i> Feb 1960</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.36924295, 1.33546675], 12);
+			map.setView([51.3750656, 1.3848527], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

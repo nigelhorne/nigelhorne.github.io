@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([43.1638657, -49.4956246786229], 12);
+			var map = L.map('map').setView([51.08737705067305, 1.1378386730114802], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -26,7 +26,7 @@ var marker = L.marker([51.085945, 1.1404021]).addTo(map).bindPopup('<a href="htt
 var marker = L.marker([35.239898, -101.772954]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Park+Terrace,+Cheriton,+Kent,+England">Park Terrace, Cheriton, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.0878334, 1.14115632]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Martins+Church,+Cheriton,+Kent,+England">St Martins Church, Cheriton, Kent, England</a><br><p>Baptized on Sep 13, 1885</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([43.1638657, -49.4956246786229], 12);
+			map.setView([51.08737705067305, 1.1378386730114802], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3337854, 1.32792539530705], 12);
+			var map = L.map('map').setView([51.3306835, 1.3188438], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,9 +21,9 @@
 	var marker = L.marker([51.3306835, 1.3188438]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Durlock+Farm+Cottages,+Minster,+Thanet,+Kent,+England">Durlock Farm Cottages, Minster, Thanet, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.3009038, 1.2751094]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Little+Knell+Farm+Cottage,+Knell+Lane,+Ash,+Kent,+England">Little Knell Farm Cottage, Knell Lane, Ash, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.3203124, 1.239183790614103]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stourmouth,+Kent,+England">Stourmouth, Kent, England</a><br><p>Birth on Jul 7, 1911</p>'); markers.push(marker);
-var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death <i>c.</i> Nov 1999</p><p>Marriage on Jun 4, 1932</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage on Jun 4, 1932</p><p>Death <i>c.</i> Nov 1999</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3337854, 1.32792539530705], 12);
+			map.setView([51.3306835, 1.3188438], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

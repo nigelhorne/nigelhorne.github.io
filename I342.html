@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([52.5376037, -0.28276985], 12);
+			var map = L.map('map').setView([53.6821789, -1.8311971], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,11 +20,11 @@
 			var markers = [];
 	var marker = L.marker([53.6821789, -1.8311971]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=4+Norman+Avenue,+Sculcoates,+East+Yorkshire,+England">4 Norman Avenue, Sculcoates, East Yorkshire, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.320269249999996, 1.2365816710388784]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=All+Saints,+Stourmouth,+Kent,+England">All Saints, Stourmouth, Kent, England</a><br><p>Baptized on Jun 8, 1882</p>'); markers.push(marker);
-var marker = L.marker([53.7692012, -0.3501007100502428]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sculcoates,+East+Yorkshire,+England">Sculcoates, East Yorkshire, England</a><br><p>Marriage <i>c.</i> Feb 1905</p><p>Death <i>c.</i> Feb 1926</p>'); markers.push(marker);
+var marker = L.marker([53.7692012, -0.3501007100502428]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sculcoates,+East+Yorkshire,+England">Sculcoates, East Yorkshire, England</a><br><p>Death <i>c.</i> Feb 1926</p><p>Marriage <i>c.</i> Feb 1905</p>'); markers.push(marker);
 var marker = L.marker([51.3203124, 1.239183790614103]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stourmouth,+Kent,+England">Stourmouth, Kent, England</a><br><p>Birth on May 26, 1882</p>'); markers.push(marker);
 var marker = L.marker([51.3060062, 1.2656574]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Westmarsh,+Kent,+England">Westmarsh, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([52.5376037, -0.28276985], 12);
+			map.setView([53.6821789, -1.8311971], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

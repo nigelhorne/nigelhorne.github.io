@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([52.9031260405265, 8.91704116182892], 12);
+			var map = L.map('map').setView([51.46391008105296, -0.12755567634215034], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([51.46391008105296, -0.12755567634215034]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=65+Cottage+Grove,+Stockwell,+London,+England">65 Cottage Grove, Stockwell, London, England</a><br><p>Living in 1917</p>'); markers.push(marker);
 var marker = L.marker([54.342342, 17.961638]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Andrew,+Stockwell+Green,+London,+England">St Andrew, Stockwell Green, London, England</a><br><p>Marriage on Aug 31, 1913</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([52.9031260405265, 8.91704116182892], 12);
+			map.setView([51.46391008105296, -0.12755567634215034], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

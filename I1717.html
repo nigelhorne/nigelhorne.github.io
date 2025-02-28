@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([35.9580005, -89.226537986859], 12);
+			var map = L.map('map').setView([28.379878015767, -82.663152429793], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,11 +24,11 @@ var marker = L.marker([28.606905875329, -82.210944973718]).addTo(map).bindPopup(
 var marker = L.marker([28.248758, -82.7221862]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Gulfside+Regional+Hospice+House,+New+Port+Richey,+Pasco,+Florida,+USA">Gulfside Regional Hospice House, New Port Richey, Pasco, Florida, USA</a><br><p>Death on Jun 27, 2004</p>'); markers.push(marker);
 var marker = L.marker([30.86241, -85.94327]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Hudson,+Pasco,+Florida,+USA">Hudson, Pasco, Florida, USA</a><br><p>Living in 2004</p>'); markers.push(marker);
 var marker = L.marker([38.917112, -85.979889]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Jackson,+Newton,+Indiana,+USA">Jackson, Newton, Indiana, USA</a><br><p>Living on Apr 24, 1930</p>'); markers.push(marker);
-var marker = L.marker([41.13753, -87.44864]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lake+Village,+Newton,+Indiana,+USA">Lake Village, Newton, Indiana, USA</a><br><p>Living on Apr 18, 1940</p><p>Living in 1940</p>'); markers.push(marker);
+var marker = L.marker([41.13753, -87.44864]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lake+Village,+Newton,+Indiana,+USA">Lake Village, Newton, Indiana, USA</a><br><p>Living in 1940</p><p>Living on Apr 18, 1940</p>'); markers.push(marker);
 var marker = L.marker([40.9367, -87.15086]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Rensselaer,+Jasper,+Indiana,+USA">Rensselaer, Jasper, Indiana, USA</a><br><p>Birth on Jan 13, 1925</p>'); markers.push(marker);
 var marker = L.marker([43.667243, -96.242131]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Rock,+Minnesota,+USA">Rock, Minnesota, USA</a><br><p>Marriage on Nov 26, 1963</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([35.9580005, -89.226537986859], 12);
+			map.setView([28.379878015767, -82.663152429793], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

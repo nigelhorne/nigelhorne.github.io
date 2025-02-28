@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.24247065, 0.674186756262599], 12);
+			var map = L.map('map').setView([51.391042, 0.0393574], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,11 +21,11 @@
 	var marker = L.marker([51.391042, 0.0393574]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=42+Balfour+Road,+Bromley,+Kent,+England">42 Balfour Road, Bromley, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.1379149, 1.2899036499999998]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Minnis+Terrace,+Dover,+Kent,+England">5 Minnis Terrace, Dover, Kent, England</a><br><p>Living in 1931</p>'); markers.push(marker);
 var marker = L.marker([51.0938993, 0.8528776]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bromley,+Kent,+England">Bromley, Kent, England</a><br><p>Birth on Mar 11, 1915</p>'); markers.push(marker);
-var marker = L.marker([51.133333, 1.3]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Dover,+Kent,+England">Dover, Kent, England</a><br><p>Death <i>c.</i> Feb 2001</p><p>Marriage <i>c.</i> May 1940</p>'); markers.push(marker);
+var marker = L.marker([51.133333, 1.3]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Dover,+Kent,+England">Dover, Kent, England</a><br><p>Marriage <i>c.</i> May 1940</p><p>Death <i>c.</i> Feb 2001</p>'); markers.push(marker);
 var marker = L.marker([51.13043956660688, 1.3090161125251984]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Maison+Dieu+Road,+Dover,+Kent,+England">Maison Dieu Road, Dover, Kent, England</a><br><p>Living in 1928</p>'); markers.push(marker);
 var marker = L.marker([51.2808099, 1.0776977]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peter+and+St+Pauls+Church,+Minnis+Lane,+River,+Kent,+England">St Peter and St Pauls Church, Minnis Lane, River, Kent, England</a><br><p>Burial</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.24247065, 0.674186756262599], 12);
+			map.setView([51.391042, 0.0393574], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

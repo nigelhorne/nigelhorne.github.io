@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2921332776221, 0.711258101450796], 12);
+			var map = L.map('map').setView([51.372692, 0.532351], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,9 +23,9 @@ var marker = L.marker([51.354209499999996, 1.0308767317826062]).addTo(map).bindP
 var marker = L.marker([51.3762914, 0.5331976]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Hope+Street,+Chatham,+Kent,+England">5 Hope Street, Chatham, Kent, England</a><br><p>Living on Apr 5, 1891</p><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.233333, 1.116667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bridge,+Kent,+England">Bridge, Kent, England</a><br><p>Death on Feb 21, 1972</p>'); markers.push(marker);
 var marker = L.marker([51.383333, .516667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chatham,+Kent,+England">Chatham, Kent, England</a><br><p>Birth on Apr 26, 1885</p>'); markers.push(marker);
-var marker = L.marker([51.2009335552442, 0.3058492029015929]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Medway,+Kent,+England">Medway, Kent, England</a><br><p>Marriage <i>c.</i> May 1912</p><p>Baptized on Jul 14, 1885</p>'); markers.push(marker);
+var marker = L.marker([51.2009335552442, 0.3058492029015929]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Medway,+Kent,+England">Medway, Kent, England</a><br><p>Baptized on Jul 14, 1885</p><p>Marriage <i>c.</i> May 1912</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2921332776221, 0.711258101450796], 12);
+			map.setView([51.372692, 0.532351], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

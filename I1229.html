@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([40.027321, -91.6069445], 12);
+			var map = L.map('map').setView([38.917112, -85.979889], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -26,7 +26,7 @@ var marker = L.marker([40.951375, -87.402193]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([39.80309, -87.37279]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Oakland+Cemetery,+Morocco,+Newton,+Indiana,+USA">Oakland Cemetery, Morocco, Newton, Indiana, USA</a><br><p>Burial on Oct 4, 1964</p>'); markers.push(marker);
 var marker = L.marker([40.07057, -97.234]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Silver+Creek,+Merrick,+Nebraska,+USA">Silver Creek, Merrick, Nebraska, USA</a><br><p>Birth on Jun 8, 1894</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([40.027321, -91.6069445], 12);
+			map.setView([38.917112, -85.979889], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

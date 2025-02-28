@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([41.60642865, -94.99411745], 12);
+			var map = L.map('map').setView([41.99945, -97.59839], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([41.66113, -91.53017]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Iowa+City,+Johnson,+Iowa,+USA">Iowa City, Johnson, Iowa, USA</a><br><p>Death on May 21, 1988</p>'); markers.push(marker);
 var marker = L.marker([41.2134073, -98.4580649]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Paul,+Howard,+Nebraska,+USA">St Paul, Howard, Nebraska, USA</a><br><p>Marriage on Jun 30, 1945</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([41.60642865, -94.99411745], 12);
+			map.setView([41.99945, -97.59839], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

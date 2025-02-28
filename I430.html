@@ -12,19 +12,19 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3323608124827, 1.09444030005015], 12);
+			var map = L.map('map').setView([51.378260533189916, 1.4040856930630987], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.378260533189916, 1.4040856930630987]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=74+Invicta+Road,+Margate,+Kent,+England">74 Invicta Road, Margate, Kent, England</a><br><p>Living in 1969</p><p>Living in 1965</p><p>Living in 1955</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.2813886249655, 0.772213600100302]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Doddington,+Kent,+England">Doddington, Kent, England</a><br><p>Birth on May 12, 1890</p><p>Living in 1891</p>'); markers.push(marker);
+var marker = L.marker([51.2813886249655, 0.772213600100302]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Doddington,+Kent,+England">Doddington, Kent, England</a><br><p>Living in 1891</p><p>Birth on May 12, 1890</p>'); markers.push(marker);
 var marker = L.marker([51.383333, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Margate,+Kent,+England">Margate, Kent, England</a><br><p>Death on Apr 3, 1969</p>'); markers.push(marker);
 var marker = L.marker([51.3291803, 1.3171687]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Minster,+Thanet,+Kent,+England">Minster, Thanet, Kent, England</a><br><p>Living on Apr 2, 1911</p><p>Living in 1901</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> May 1922</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3323608124827, 1.09444030005015], 12);
+			map.setView([51.378260533189916, 1.4040856930630987], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

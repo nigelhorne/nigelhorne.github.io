@@ -12,14 +12,14 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3222126338993, 0.722213636331871], 12);
+			var map = L.map('map').setView([51.4274805, 0.7748963], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.430909161684504, 0.7711900675090738]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=95+Halfway+Road,+Minster,+Swale,+Kent,+England">95 Halfway Road, Minster, Swale, Kent, England</a><br><p>Living in 1951</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.2045143777986, 0.941251420818213]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bilting,+Kent,+England">Bilting, Kent, England</a><br><p>Birth <i>c.</i> Nov 1879</p><p>Living on Apr 5, 1891</p><p>Living on Apr 3, 1881</p>'); markers.push(marker);
+	var marker = L.marker([51.430909161684504, 0.7711900675090738]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=95+Halfway+Road,+Minster,+Swale,+Kent,+England">95 Halfway Road, Minster, Swale, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Living in 1951</p>'); markers.push(marker);
+var marker = L.marker([51.2045143777986, 0.941251420818213]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bilting,+Kent,+England">Bilting, Kent, England</a><br><p>Birth <i>c.</i> Nov 1879</p><p>Living on Apr 3, 1881</p><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.430909161684504, 0.7711900675090738]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Halfway+Road,+Minster,+Swale,+Kent,+England">Halfway Road, Minster, Swale, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.39758301, 0.83382428]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Isle+of+Sheppey+General+Hospital,+Sheppey,+Kent,+England">Isle of Sheppey General Hospital, Sheppey, Kent, England</a><br><p>Death on Apr 13, 1951</p>'); markers.push(marker);
 var marker = L.marker([51.43991089, 0.762263]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sheppey+Cemetery,+Sheerness,+Kent,+England">Sheppey Cemetery, Sheerness, Kent, England</a><br><p>Burial on Apr 18, 1951</p>'); markers.push(marker);
@@ -27,7 +27,7 @@ var marker = L.marker([51.2160265, 0.9512305581865468]).addTo(map).bindPopup('<a
 var marker = L.marker([51.3961668, 0.4931967144771946]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Nicholas,+Strood,+Kent,+England">St Nicholas, Strood, Kent, England</a><br><p>Marriage on Jul 1, 1905</p>'); markers.push(marker);
 var marker = L.marker([51.2973193, 0.8688918]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Whitehill+House,+Ospringe,+Kent,+England">Whitehill House, Ospringe, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3222126338993, 0.722213636331871], 12);
+			map.setView([51.4274805, 0.7748963], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

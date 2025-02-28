@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([52.1943468, 3.83625435], 12);
+			var map = L.map('map').setView([53.2372057, 6.5891757], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,11 +21,11 @@
 	var marker = L.marker([53.2372057, 6.5891757]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Butter+Street,+Sibertswold,+Kent,+England">Butter Street, Sibertswold, Kent, England</a><br><p>Living on Mar 30, 1851</p>'); markers.push(marker);
 var marker = L.marker([51.245485, 1.3302474]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ham,+Kent,+England">Ham, Kent, England</a><br><p>Baptized on Sep 19, 1784</p>'); markers.push(marker);
 var marker = L.marker([51.183333, 1.233333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Shepherdswell,+Kent,+England">Shepherdswell, Kent, England</a><br><p>Death on May 15, 1865</p>'); markers.push(marker);
-var marker = L.marker([51.183333, 1.233333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sibertswold,+Kent,+England">Sibertswold, Kent, England</a><br><p>Living in 1841</p><p>Burial on May 19, 1865</p><p>Living in 1861</p>'); markers.push(marker);
+var marker = L.marker([51.183333, 1.233333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sibertswold,+Kent,+England">Sibertswold, Kent, England</a><br><p>Living in 1861</p><p>Living in 1841</p><p>Burial on May 19, 1865</p>'); markers.push(marker);
 var marker = L.marker([51.1514879, 1.1111421]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+the+Virgin,+Vicarage+Lane,+Elham,+Kent,+England">St Mary the Virgin, Vicarage Lane, Elham, Kent, England</a><br><p>Marriage on Nov 26, 1803</p>'); markers.push(marker);
 var marker = L.marker([51.2, 1.083333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Upper+Hardres,+Kent,+England">Upper Hardres, Kent, England</a><br><p>Birth <i>c.</i> 1784</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([52.1943468, 3.83625435], 12);
+			map.setView([53.2372057, 6.5891757], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

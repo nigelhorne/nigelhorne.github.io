@@ -12,18 +12,18 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([46.4002322, -35.0160969955416], 12);
+			var map = L.map('map').setView([51.356933747217, 0.294391010944737], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.2789351503232, 1.2778960559828]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ash,+Kent,+England">Ash, Kent, England</a><br><p>Baptized on Jan 20, 1782</p><p>Birth <i>c.</i> 1782</p>'); markers.push(marker);
+	var marker = L.marker([51.356933747217, 0.294391010944737]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ash,+Kent,+England">Ash, Kent, England</a><br><p>Birth <i>c.</i> 1782</p><p>Baptized on Jan 20, 1782</p>'); markers.push(marker);
 var marker = L.marker([41.480152, -71.310908]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=East+Street,+Stourmouth,+Kent,+England">East Street, Stourmouth, Kent, England</a><br><p>Living on Mar 30, 1851</p>'); markers.push(marker);
 var marker = L.marker([51.2786663, 1.2787140089168092]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Nicholas,+Ash,+Kent,+England">St Nicholas, Ash, Kent, England</a><br><p>Marriage on Jan 31, 1801</p>'); markers.push(marker);
 var marker = L.marker([51.3203124, 1.239183790614103]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stourmouth,+Kent,+England">Stourmouth, Kent, England</a><br><p>Death on Jun 10, 1858</p><p>Living in 1841</p><p>Burial on Jun 20, 1858</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([46.4002322, -35.0160969955416], 12);
+			map.setView([51.356933747217, 0.294391010944737], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

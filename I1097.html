@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.7403159116906, 0.298516087678252], 12);
+			var map = L.map('map').setView([52.401891123381255, -0.7135822707560959], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([51.533333, -.133333]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([51.0787407, 1.1817068354536482]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Parish+Church+of+St+Mary+and+St+Eanswythe,+Church+Street,+Folkestone,+Kent,+England">The Parish Church of St Mary and St Eanswythe, Church Street, Folkestone, Kent, England</a><br><p>Marriage on Oct 14, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.55901413947168, -0.14401828008159587]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=York+Rise,+Highgate,+London,+England">York Rise, Highgate, London, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.7403159116906, 0.298516087678252], 12);
+			map.setView([52.401891123381255, -0.7135822707560959], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

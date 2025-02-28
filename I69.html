@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2606086, 1.20482888387112], 12);
+			var map = L.map('map').setView([51.2009048, 1.0794103677422495], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,9 +20,9 @@
 			var markers = [];
 	var marker = L.marker([51.2009048, 1.0794103677422495]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Great+Hardres,+Kent,+England">Great Hardres, Kent, England</a><br><p>Birth in 1787</p>'); markers.push(marker);
 var marker = L.marker([51.245485, 1.3302474]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ham,+Kent,+England">Ham, Kent, England</a><br><p>Baptized on Feb 4, 1787</p>'); markers.push(marker);
-var marker = L.marker([51.3203124, 1.239183790614103]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stourmouth,+Kent,+England">Stourmouth, Kent, England</a><br><p>Marriage in 1806</p><p>Death in 1817</p>'); markers.push(marker);
+var marker = L.marker([51.3203124, 1.239183790614103]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stourmouth,+Kent,+England">Stourmouth, Kent, England</a><br><p>Death in 1817</p><p>Marriage in 1806</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2606086, 1.20482888387112], 12);
+			map.setView([51.2009048, 1.0794103677422495], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

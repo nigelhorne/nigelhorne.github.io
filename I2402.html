@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([39.4418872752149, -87.2080064117628], 12);
+			var map = L.map('map').setView([39.518989558656, -87.136410914416], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([39.36012455042974, -87.00761542352556]).addTo(map).bindPo
 var marker = L.marker([39.52180104263, -87.133315011522]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=421+E+National+Avenue,+Brazil,+Clay,+Indiana,+USA">421 E National Avenue, Brazil, Clay, Indiana, USA</a><br><p>Funeral on Sep 4, 2024</p>'); markers.push(marker);
 var marker = L.marker([39.4768299, -87.4083974]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Gibson+Family+Center,+Terre+Haute,+Vigo,+Indiana,+USA">The Gibson Family Center, Terre Haute, Vigo, Indiana, USA</a><br><p>Death on Aug 31, 2024</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([39.4418872752149, -87.2080064117628], 12);
+			map.setView([39.518989558656, -87.136410914416], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

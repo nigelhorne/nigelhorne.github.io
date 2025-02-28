@@ -12,20 +12,20 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.34792365, 1.36691785], 12);
+			var map = L.map('map').setView([51.34643477994345, 1.3957895629136559], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.34643477994345, 1.3957895629136559]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=27+Bathurst+Cl,+Ramsgate,+Kent,+England">27 Bathurst Cl, Ramsgate, Kent, England</a><br><p>Living in 1974</p><p>Living in 1963</p>'); markers.push(marker);
+	var marker = L.marker([51.34643477994345, 1.3957895629136559]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=27+Bathurst+Cl,+Ramsgate,+Kent,+England">27 Bathurst Cl, Ramsgate, Kent, England</a><br><p>Living in 1963</p><p>Living in 1974</p>'); markers.push(marker);
 var marker = L.marker([51.34763889300765, 1.3767691622246763]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Spratling+Street,+Manston,+Kent,+England">5 Spratling Street, Manston, Kent, England</a><br><p>Living in 1953</p>'); markers.push(marker);
 var marker = L.marker([51.34399635587674, 1.366166318770121]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=9+High+Street,+Manston,+Kent,+England">9 High Street, Manston, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.3306835, 1.3188438]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Durlock+Farm+Cottages,+Minster,+Thanet,+Kent,+England">Durlock Farm Cottages, Minster, Thanet, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.3291803, 1.3171687]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Minster,+Thanet,+Kent,+England">Minster, Thanet, Kent, England</a><br><p>Birth on Sep 8, 1912</p>'); markers.push(marker);
-var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death on Oct 14, 1991</p><p>Marriage in Oct/nov/dec 1950</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage in Oct/nov/dec 1950</p><p>Death on Oct 14, 1991</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.34792365, 1.36691785], 12);
+			map.setView([51.34643477994345, 1.3957895629136559], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

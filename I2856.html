@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([52.308333, -0.958333], 12);
+			var map = L.map('map').setView([53.692644, -1.4247972], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([53.733333, -1.583333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Morley,+West+Yorkshire,+England">Morley, West Yorkshire, England</a><br><p>Birth on Jan 22, 1874</p>'); markers.push(marker);
 var marker = L.marker([50.883333, -.333333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Steyning,+Sussex,+England">Steyning, Sussex, England</a><br><p>Marriage <i>c.</i> May 1905</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([52.308333, -0.958333], 12);
+			map.setView([53.692644, -1.4247972], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

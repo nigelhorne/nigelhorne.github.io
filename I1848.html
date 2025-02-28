@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.514193867234, -0.0648315774524626], 12);
+			var map = L.map('map').setView([51.514193867234006, -0.0648315774524626], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,7 +20,7 @@
 			var markers = [];
 	var marker = L.marker([51.514193867234006, -0.0648315774524626]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=11+Batty+Street,+Whitechapel,+London,+England">11 Batty Street, Whitechapel, London, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.514193867234, -0.0648315774524626], 12);
+			map.setView([51.514193867234006, -0.0648315774524626], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

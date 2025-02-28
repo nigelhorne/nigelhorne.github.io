@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2262870753365, 1.26773025], 12);
+			var map = L.map('map').setView([51.08737705067305, 1.1378386730114802], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -28,7 +28,7 @@ var marker = L.marker([51.3343724, 1.1920634835479003]).addTo(map).bindPopup('<a
 var marker = L.marker([51.3651971, 1.4187935]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters+Church,+The+Street,+Swingfield,+Kent,+England">St Peters Church, The Street, Swingfield, Kent, England</a><br><p>Burial on Apr 10, 1922</p>'); markers.push(marker);
 var marker = L.marker([51.0878638, 1.1359584]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wood+Cottages,+Cheriton+Street,+Cheriton,+Kent,+England">Wood Cottages, Cheriton Street, Cheriton, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2262870753365, 1.26773025], 12);
+			map.setView([51.08737705067305, 1.1378386730114802], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

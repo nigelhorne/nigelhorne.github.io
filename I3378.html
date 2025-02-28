@@ -12,16 +12,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.516235425, -0.158234025], 12);
+			var map = L.map('map').setView([51.50706085, -0.14840805], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.50706085, -0.14840805]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Little+Chesterfield+Street,+Marylebone,+London,+England">Little Chesterfield Street, Marylebone, London, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
-var marker = L.marker([51.52541, -0.16806]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Marylebone,+London,+England">Marylebone, London, England</a><br><p>Baptized on Jun 20, 1858</p><p>Birth on May 14, 1858</p><p>Death <i>c.</i> Aug 1862</p>'); markers.push(marker);
+var marker = L.marker([51.52541, -0.16806]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Marylebone,+London,+England">Marylebone, London, England</a><br><p>Birth on May 14, 1858</p><p>Baptized on Jun 20, 1858</p><p>Death <i>c.</i> Aug 1862</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.516235425, -0.158234025], 12);
+			map.setView([51.50706085, -0.14840805], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

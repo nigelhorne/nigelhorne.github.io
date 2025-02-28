@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.30785545, 1.02762374262461], 12);
+			var map = L.map('map').setView([51.3, 1.05], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([51.3085407442095, 0.96169248524921]).addTo(map).bindPopup
 var marker = L.marker([51.29333752269425, 1.044936509916736]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=New+Road,+Blean,+Kent,+England">New Road, Blean, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 var marker = L.marker([51.3053035, 1.0530863]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ss+Cosmus+and+Damians+Church,+Blean,+Kent,+England">Ss Cosmus and Damians Church, Blean, Kent, England</a><br><p>Marriage on Oct 29, 1848</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.30785545, 1.02762374262461], 12);
+			map.setView([51.3, 1.05], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

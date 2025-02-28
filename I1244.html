@@ -12,17 +12,17 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.0856331, 1.16401786690783], 12);
+			var map = L.map('map').setView([51.0879332, 1.1373721869728088], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.0879332, 1.1373721869728088]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=4+Richmond+Street,+Folkestone,+Kent,+England">4 Richmond Street, Folkestone, Kent, England</a><br><p>Living on Apr 2, 1911</p><p>Living on Mar 31, 1901</p><p>Living on Apr 5, 1891</p><p>Living on Jun 19, 1921</p>'); markers.push(marker);
+	var marker = L.marker([51.0879332, 1.1373721869728088]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=4+Richmond+Street,+Folkestone,+Kent,+England">4 Richmond Street, Folkestone, Kent, England</a><br><p>Living on Apr 5, 1891</p><p>Living on Mar 31, 1901</p><p>Living on Apr 2, 1911</p><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.085112194157574, 1.1906635468428517]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=71+Penfold+Road,+Folkestone,+Kent,+England">71 Penfold Road, Folkestone, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Folkestone,+Kent,+England">Folkestone, Kent, England</a><br><p>Death <i>c.</i> Nov 1961</p><p>Living in 1881</p><p>Birth on Apr 22, 1879</p>'); markers.push(marker);
+var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Folkestone,+Kent,+England">Folkestone, Kent, England</a><br><p>Death <i>c.</i> Nov 1961</p><p>Birth on Apr 22, 1879</p><p>Living in 1881</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.0856331, 1.16401786690783], 12);
+			map.setView([51.0879332, 1.1373721869728088], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.078051175, 1.137501425], 12);
+			var map = L.map('map').setView([51.0801525, 1.1805831], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,9 +21,9 @@
 	var marker = L.marker([51.0801525, 1.1805831]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fancy+Street,+Folkestone,+Kent,+England">Fancy Street, Folkestone, Kent, England</a><br><p>Living on Jun 6, 1841</p>'); markers.push(marker);
 var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Folkestone,+Kent,+England">Folkestone, Kent, England</a><br><p>Birth in 1795</p>'); markers.push(marker);
 var marker = L.marker([51.07276935, 1.09166985]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Mill+Lane,+Folkestone,+Kent,+England">Mill Lane, Folkestone, Kent, England</a><br><p>Death on Oct 28, 1850</p>'); markers.push(marker);
-var marker = L.marker([51.0787407, 1.1817068354536482]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Parish+Church+of+St+Mary+and+St+Eanswythe,+Church+Street,+Folkestone,+Kent,+England">Parish Church of St Mary and St Eanswythe, Church Street, Folkestone, Kent, England</a><br><p>Marriage on Jul 19, 1814</p><p>Baptized on Oct 11, 1795</p><p>Burial on Nov 2, 1850</p>'); markers.push(marker);
+var marker = L.marker([51.0787407, 1.1817068354536482]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Parish+Church+of+St+Mary+and+St+Eanswythe,+Church+Street,+Folkestone,+Kent,+England">Parish Church of St Mary and St Eanswythe, Church Street, Folkestone, Kent, England</a><br><p>Burial on Nov 2, 1850</p><p>Marriage on Jul 19, 1814</p><p>Baptized on Oct 11, 1795</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.078051175, 1.137501425], 12);
+			map.setView([51.0801525, 1.1805831], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

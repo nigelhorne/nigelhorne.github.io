@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.412188495, 0.467583625], 12);
+			var map = L.map('map').setView([51.460241974200855, -0.17728603512586452], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,12 +24,12 @@ var marker = L.marker([51.44387735, -0.19816575]).addTo(map).bindPopup('<a href=
 var marker = L.marker([51.362016, 1.1290466]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Eddington,+Kent,+England">Eddington, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne+Bay,+Kent,+England">Herne Bay, Kent, England</a><br><p>Marriage on Oct 22, 1859</p>'); markers.push(marker);
 var marker = L.marker([51.333333, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne,+Kent,+England">Herne, Kent, England</a><br><p>Birth <i>c.</i> 1832</p>'); markers.push(marker);
-var marker = L.marker([51.51907349, -0.1172629]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Mitcham+Workhouse,+Holborn,+London,+England">Mitcham Workhouse, Holborn, London, England</a><br><p>Living from Jun 16, 1903 to Jul 22, 1903</p><p>Living from Oct 11, 1904 to Dec 20, 1904</p>'); markers.push(marker);
+var marker = L.marker([51.51907349, -0.1172629]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Mitcham+Workhouse,+Holborn,+London,+England">Mitcham Workhouse, Holborn, London, England</a><br><p>Living from Oct 11, 1904 to Dec 20, 1904</p><p>Living from Jun 16, 1903 to Jul 22, 1903</p>'); markers.push(marker);
 var marker = L.marker([51.370922, 1.127771]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Salts+Lane,+Herne+Bay,+Kent,+England">Salts Lane, Herne Bay, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.3053035, 1.0530863]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ss+Cosmus+and+Damian,+Blean,+Kent,+England">Ss Cosmus and Damian, Blean, Kent, England</a><br><p>Baptized on Jul 13, 1833</p>'); markers.push(marker);
 var marker = L.marker([51.42748165, -0.15277525]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Tooting+Bec+Asylum,+Church+Lane,+Tooting+Common,+London,+England">Tooting Bec Asylum, Church Lane, Tooting Common, London, England</a><br><p>Living on Apr 2, 1911</p><p>Living on Sep 7, 1906</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.412188495, 0.467583625], 12);
+			map.setView([51.460241974200855, -0.17728603512586452], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

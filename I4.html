@@ -12,23 +12,23 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.352462525, 0.935578278119892], 12);
+			var map = L.map('map').setView([51.37509526630482, 1.3618547562397836], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.37509526630482, 1.3618547562397836]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=19+Kingston+Avenue,+Garlinge,+Kent,+England">19 Kingston Avenue, Garlinge, Kent, England</a><br><p>Living in 1971</p><p>Living in 1965</p>'); markers.push(marker);
+	var marker = L.marker([51.37509526630482, 1.3618547562397836]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=19+Kingston+Avenue,+Garlinge,+Kent,+England">19 Kingston Avenue, Garlinge, Kent, England</a><br><p>Living in 1965</p><p>Living in 1971</p>'); markers.push(marker);
 var marker = L.marker([51.33291326453887, 1.3123328545679969]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=22+Molineux+Road,+Minster,+Thanet,+Kent,+England">22 Molineux Road, Minster, Thanet, Kent, England</a><br><p>Living in 1955</p><p>Living in 1959</p>'); markers.push(marker);
 var marker = L.marker([51.375744749999996, 1.360434398670646]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=33+Fulham+Avenue,+Garlinge,+Kent,+England">33 Fulham Avenue, Garlinge, Kent, England</a><br><p>Living in 1974</p>'); markers.push(marker);
 var marker = L.marker([51.3426033, 1.3150396]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Minster+Cemetery,+Tothill+Street,+Minster,+Thanet,+Kent,+England">Minster Cemetery, Tothill Street, Minster, Thanet, Kent, England</a><br><p>Burial on Oct 20, 1997</p>'); markers.push(marker);
 var marker = L.marker([51.3291803, 1.3171687]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Minster,+Thanet,+Kent,+England">Minster, Thanet, Kent, England</a><br><p>Birth on Sep 3, 1919</p>'); markers.push(marker);
 var marker = L.marker([51.336085100000005, 1.3303234867664075]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Pansy+Cottage,+Way,+Minster,+Thanet,+Kent,+England">Pansy Cottage, Way, Minster, Thanet, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.330420950000004, 1.3159574613327614]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+the+Virgin+Church,+Minster,+Thanet,+Kent,+England">St Mary the Virgin Church, Minster, Thanet, Kent, England</a><br><p>Funeral on Oct 20, 1997</p><p>Marriage on Nov 1, 1952</p>'); markers.push(marker);
-var marker = L.marker([51.3378743, 1.3327680000000015]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Way+Cottages,+Minster,+Thanet,+Kent,+England">Way Cottages, Minster, Thanet, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Living on Aug 28, 1931</p>'); markers.push(marker);
+var marker = L.marker([51.3378743, 1.3327680000000015]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Way+Cottages,+Minster,+Thanet,+Kent,+England">Way Cottages, Minster, Thanet, Kent, England</a><br><p>Living on Aug 28, 1931</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.3724574, 0.5093018]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wisdom+Hospice,+High+Bank,+Rochester,+Kent,+England">Wisdom Hospice, High Bank, Rochester, Kent, England</a><br><p>Death on Oct 12, 1997</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.352462525, 0.935578278119892], 12);
+			map.setView([51.37509526630482, 1.3618547562397836], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

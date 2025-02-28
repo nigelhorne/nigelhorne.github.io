@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3203652636884, 0.858304244654796], 12);
+			var map = L.map('map').setView([51.31554694089223, 0.8859916147250814], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([51.30854416, 0.96169257]).addTo(map).bindPopup('<a href="
 var marker = L.marker([51.333333, .75]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sittingbourne,+Kent,+England">Sittingbourne, Kent, England</a><br><p>Death on Sep 15, 1960</p>'); markers.push(marker);
 var marker = L.marker([51.3077639, 0.9612580081188111]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Michael,+Hernhill,+Kent,+England">St Michael, Hernhill, Kent, England</a><br><p>Baptized on Jul 15, 1900</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3203652636884, 0.858304244654796], 12);
+			map.setView([51.31554694089223, 0.8859916147250814], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

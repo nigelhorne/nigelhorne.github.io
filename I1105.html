@@ -12,20 +12,20 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.55167545, 0.02019015], 12);
+			var map = L.map('map').setView([51.5724642, 0.0833003], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.5724642, 0.0833003]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Aurelia+Cottages,+Ley+Street,+Ilford,+London,+England">5 Aurelia Cottages, Ley Street, Ilford, London, England</a><br><p>Living on Sep 29, 1939</p><p>Living in 1925</p>'); markers.push(marker);
+	var marker = L.marker([51.5724642, 0.0833003]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Aurelia+Cottages,+Ley+Street,+Ilford,+London,+England">5 Aurelia Cottages, Ley Street, Ilford, London, England</a><br><p>Living in 1925</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.5723564, 0.0832954]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Aurelia+Cottages,+Ley+Street,+Ilford,+Romford,+Essex,+England">Aurelia Cottages, Ley Street, Ilford, Romford, Essex, England</a><br><p>Living on Jun 19, 1921</p><p>Living in 1921</p>'); markers.push(marker);
 var marker = L.marker([51.5892309, 0.0705639]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Barkingside+Garden+of+Rest,+Longwood+Gardens,+Ilford,+London,+England">Barkingside Garden of Rest, Longwood Gardens, Ilford, London, England</a><br><p>Burial</p>'); markers.push(marker);
-var marker = L.marker([51.55765, 0.07278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ilford,+London,+England">Ilford, London, England</a><br><p>Marriage on Aug 29, 1914</p><p>Death on Jul 23, 1969</p>'); markers.push(marker);
+var marker = L.marker([51.55765, 0.07278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ilford,+London,+England">Ilford, London, England</a><br><p>Death on Jul 23, 1969</p><p>Marriage on Aug 29, 1914</p>'); markers.push(marker);
 var marker = L.marker([51.51412, -0.03282]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Limehouse,+London,+England">Limehouse, London, England</a><br><p>Baptized on Jun 17, 1885</p>'); markers.push(marker);
 var marker = L.marker([51.5175, -0.04292]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stepney,+London,+England">Stepney, London, England</a><br><p>Birth on May 19, 1885</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.55167545, 0.02019015], 12);
+			map.setView([51.5724642, 0.0833003], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

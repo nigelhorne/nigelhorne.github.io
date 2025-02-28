@@ -12,14 +12,14 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.5083556, -0.226977], 12);
+			var map = L.map('map').setView([51.53912755, -0.20227320000000168], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.53912755, -0.20227320000000168]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=148+Priory+Park+Road,+Willesden,+London,+England">148 Priory Park Road, Willesden, London, England</a><br><p>Living in 1934</p><p>Living in 1936</p>'); markers.push(marker);
-var marker = L.marker([51.5331562, -0.2066646]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=28+Claremont+Road,+Kilburn,+London,+England">28 Claremont Road, Kilburn, London, England</a><br><p>Living on Apr 2, 1911</p><p>Living on Mar 31, 1901</p><p>Living on Jun 19, 1921</p>'); markers.push(marker);
+	var marker = L.marker([51.53912755, -0.20227320000000168]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=148+Priory+Park+Road,+Willesden,+London,+England">148 Priory Park Road, Willesden, London, England</a><br><p>Living in 1936</p><p>Living in 1934</p>'); markers.push(marker);
+var marker = L.marker([51.5331562, -0.2066646]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=28+Claremont+Road,+Kilburn,+London,+England">28 Claremont Road, Kilburn, London, England</a><br><p>Living on Apr 2, 1911</p><p>Living on Jun 19, 1921</p><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.5914712, -0.2694927]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=65+Princes+Avenue,+Wembley,+London,+England">65 Princes Avenue, Wembley, London, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.5384054, -0.19842685000000104]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=71+Victoria+Road,+Willesden,+London,+England">71 Victoria Road, Willesden, London, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.51216, -0.30204]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ealing,+London,+England">Ealing, London, England</a><br><p>Death in 1963</p>'); markers.push(marker);
@@ -28,7 +28,7 @@ var marker = L.marker([51.5135498, -0.151914]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([51.42524, -0.16394]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Tooting,+London,+England">Tooting, London, England</a><br><p>Birth on Mar 5, 1888</p>'); markers.push(marker);
 var marker = L.marker([51.53333, -0.23333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Willesden,+London,+England">Willesden, London, England</a><br><p>Marriage <i>c.</i> Aug 1922</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.5083556, -0.226977], 12);
+			map.setView([51.53912755, -0.20227320000000168], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

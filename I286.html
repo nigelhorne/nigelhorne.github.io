@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.37867235, 0.8266378], 12);
+			var map = L.map('map').setView([51.36979258143734, 1.1272978194205807], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,12 +22,12 @@
 var marker = L.marker([51.3699013, 1.128933]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=22+Underdown+Terrace,+Herne+Bay,+Kent,+England">22 Underdown Terrace, Herne Bay, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.4369513, 0.3060893]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=4+Ebbsfleet+Farm+Cottages,+Ebbsfleet+Lane,+Ebbsfleet,+Kent,+England">4 Ebbsfleet Farm Cottages, Ebbsfleet Lane, Ebbsfleet, Kent, England</a><br><p>Living in Jan 1963</p>'); markers.push(marker);
 var marker = L.marker([51.3703753, 1.1288867184162061]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Christ+Church,+Herne+Bay,+Kent,+England">Christ Church, Herne Bay, Kent, England</a><br><p>Baptized on Feb 26, 1899</p>'); markers.push(marker);
-var marker = L.marker([51.3203934, 1.3471863]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ebbsfleet+Farm+Cottages,+Ebbsfleet+Lane,+Ebbsfleet,+Kent,+England">Ebbsfleet Farm Cottages, Ebbsfleet Lane, Ebbsfleet, Kent, England</a><br><p>Living in 1955</p><p>Living on Sep 29, 1939</p><p>Living in 1936</p><p>Living in 1952</p><p>Living in 1935</p>'); markers.push(marker);
+var marker = L.marker([51.3203934, 1.3471863]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ebbsfleet+Farm+Cottages,+Ebbsfleet+Lane,+Ebbsfleet,+Kent,+England">Ebbsfleet Farm Cottages, Ebbsfleet Lane, Ebbsfleet, Kent, England</a><br><p>Living in 1955</p><p>Living in 1936</p><p>Living on Sep 29, 1939</p><p>Living in 1935</p><p>Living in 1952</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne+Bay,+Kent,+England">Herne Bay, Kent, England</a><br><p>Birth on Dec 27, 1898</p>'); markers.push(marker);
 var marker = L.marker([51.34342, 1.315704]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Hill+House+Hospital,+Tothill+Street,+Minster,+Thanet,+Kent,+England">Hill House Hospital, Tothill Street, Minster, Thanet, Kent, England</a><br><p>Death on Jan 6, 1963</p>'); markers.push(marker);
 var marker = L.marker([51.330420950000004, 1.3159574613327614]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+the+Virgin+Church,+Minster,+Thanet,+Kent,+England">St Mary the Virgin Church, Minster, Thanet, Kent, England</a><br><p>Marriage on Jun 11, 1927</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.37867235, 0.8266378], 12);
+			map.setView([51.36979258143734, 1.1272978194205807], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([39.295604, -84.6259765], 12);
+			var map = L.map('map').setView([41.083607745232, -85.138875433305], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -26,7 +26,7 @@ var marker = L.marker([41.1306, -85.12886]).addTo(map).bindPopup('<a href="https
 var marker = L.marker([41.074247, -85.138531]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lindenwood+Cemetery,+Fort+Wayne,+Allen,+Indiana,+USA">Lindenwood Cemetery, Fort Wayne, Allen, Indiana, USA</a><br><p>Burial on Mar 5, 1963</p>'); markers.push(marker);
 var marker = L.marker([41.085871948664135, -85.16196834840868]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sinclair+Street,+Fort+Wayne,+Allen,+Indiana,+USA">Sinclair Street, Fort Wayne, Allen, Indiana, USA</a><br><p>Living on May 4, 1910</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([39.295604, -84.6259765], 12);
+			map.setView([41.083607745232, -85.138875433305], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

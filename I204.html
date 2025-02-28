@@ -12,23 +12,23 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.43775685, 0.629186166729139], 12);
+			var map = L.map('map').setView([51.33110624430864, 1.4164050303116822], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.33110624430864, 1.4164050303116822]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=15+Liverpool+Lawn,+Ramsgate,+Kent,+England">15 Liverpool Lawn, Ramsgate, Kent, England</a><br><p>Living in 1913</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+	var marker = L.marker([51.33110624430864, 1.4164050303116822]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=15+Liverpool+Lawn,+Ramsgate,+Kent,+England">15 Liverpool Lawn, Ramsgate, Kent, England</a><br><p>Living on Apr 2, 1911</p><p>Living in 1913</p>'); markers.push(marker);
 var marker = L.marker([51.281219050000004, 1.0814819690760111]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=19+Palace+Street,+Canterbury,+Kent,+England">19 Palace Street, Canterbury, Kent, England</a><br><p>Living in 1918</p>'); markers.push(marker);
-var marker = L.marker([51.2979007, 1.1227789]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+Stour+Cottages,+Sturry,+Kent,+England">2 Stour Cottages, Sturry, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Living in 1949</p>'); markers.push(marker);
+var marker = L.marker([51.2979007, 1.1227789]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+Stour+Cottages,+Sturry,+Kent,+England">2 Stour Cottages, Sturry, Kent, England</a><br><p>Living in 1949</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.233333, 1.116667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bridge,+Kent,+England">Bridge, Kent, England</a><br><p>Death on Feb 20, 1949</p>'); markers.push(marker);
 var marker = L.marker([51.63798924907597, -0.0886590045701874]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Bush+Hill,+Edmonton,+London,+England">Bush Hill, Edmonton, London, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.6421807, -0.1637168]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Jackson+Road,+East+Barnet+(Herts),+Barnet,+Hertfordshire,+England">Jackson Road, East Barnet (Herts), Barnet, Hertfordshire, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.6421807, -0.1637168]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Jackson+Road,+East+Barnet+(Herts),+Hertfordshire,+England">Jackson Road, East Barnet (Herts), Hertfordshire, England</a><br><p>Living in 1901</p>'); markers.push(marker);
 var marker = L.marker([51.3859799, 1.4199601]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Northdown,+Margate,+Kent,+England">Northdown, Margate, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
-var marker = L.marker([51.366626249999996, 1.422089133458278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters,+Thanet,+Kent,+England">St Peters, Thanet, Kent, England</a><br><p>Birth on Aug 11, 1864</p><p>Baptized on Dec 11, 1864</p>'); markers.push(marker);
+var marker = L.marker([51.366626249999996, 1.422089133458278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters,+Thanet,+Kent,+England">St Peters, Thanet, Kent, England</a><br><p>Baptized on Dec 11, 1864</p><p>Birth on Aug 11, 1864</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.43775685, 0.629186166729139], 12);
+			map.setView([51.33110624430864, 1.4164050303116822], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

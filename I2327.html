@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([38.6027705, -39.81546], 12);
+			var map = L.map('map').setView([25.790365, -80.137999], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.4013192, 0.49027975]).addTo(map).bindPopup('<a href="h
 var marker = L.marker([51.415176, 0.507079]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Frindsbury,+Kent,+England">Frindsbury, Kent, England</a><br><p>Birth on Jan 25, 1859</p>'); markers.push(marker);
 var marker = L.marker([51.39812745, 0.49083195]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Montford+Road,+Strood,+Kent,+England">Montford Road, Strood, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([38.6027705, -39.81546], 12);
+			map.setView([25.790365, -80.137999], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

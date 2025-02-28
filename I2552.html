@@ -12,16 +12,16 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3159407478964, 0.892164799762087], 12);
+			var map = L.map('map').setView([51.316667, .9], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Death <i>c.</i> Feb 1896</p><p>Burial on Mar 17, 1896</p><p>Birth <i>c.</i> May 1889</p><p>Baptized on May 24, 1889</p>'); markers.push(marker);
+	var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Baptized on May 24, 1889</p><p>Birth <i>c.</i> May 1889</p><p>Burial on Mar 17, 1896</p><p>Death <i>c.</i> Feb 1896</p>'); markers.push(marker);
 var marker = L.marker([51.31521449579275, 0.8843295995241746]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Tanners+Street,+Faversham,+Kent,+England">Tanners Street, Faversham, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3159407478964, 0.892164799762087], 12);
+			map.setView([51.316667, .9], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

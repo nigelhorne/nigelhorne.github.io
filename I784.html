@@ -18,7 +18,7 @@
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.383333, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Margate,+Kent,+England">Margate, Kent, England</a><br><p>Death <i>c.</i> Apr 1668</p><p>Marriage on Oct 22, 1633</p><p>Birth <i>c.</i> 1610</p><p>Burial on May 1, 1668</p>'); markers.push(marker);
+	var marker = L.marker([51.383333, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Margate,+Kent,+England">Margate, Kent, England</a><br><p>Birth <i>c.</i> 1610</p><p>Marriage on Oct 22, 1633</p><p>Death <i>c.</i> Apr 1668</p><p>Burial on May 1, 1668</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
 			map.setView([51.383333, 1.416667], 12);
 		});

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.4381676176743, -0.121505142406756], 12);
+			var map = L.map('map').setView([51.42357583215615, -0.13426353979701716], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([51.46431, -0.01193]).addTo(map).bindPopup('<a href="https
 var marker = L.marker([51.42370400023185, -0.14366722462587647]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Penwortham+Road,+Wandsworth,+London,+England">Penwortham Road, Wandsworth, London, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.42897, -0.13184]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Streatham,+London,+England">Streatham, London, England</a><br><p>Birth <i>c.</i> Feb 1886</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.4381676176743, -0.121505142406756], 12);
+			map.setView([51.42357583215615, -0.13426353979701716], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

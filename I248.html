@@ -12,15 +12,15 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2789351503232, 1.2778960559828], 12);
+			var map = L.map('map').setView([51.356933747217, 0.294391010944737], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.2789351503232, 1.2778960559828]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ash,+Kent,+England">Ash, Kent, England</a><br><p>Baptized on Nov 22, 1692</p><p>Birth <i>c.</i> 1692</p>'); markers.push(marker);
+	var marker = L.marker([51.356933747217, 0.294391010944737]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ash,+Kent,+England">Ash, Kent, England</a><br><p>Birth <i>c.</i> 1692</p><p>Baptized on Nov 22, 1692</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2789351503232, 1.2778960559828], 12);
+			map.setView([51.356933747217, 0.294391010944737], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

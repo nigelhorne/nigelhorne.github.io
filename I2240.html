@@ -12,23 +12,23 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.37632345, 1.40303378846125], 12);
+			var map = L.map('map').setView([51.3829112, 1.3889791], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.3829112, 1.3889791]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=103+Milton+Road,+Margate,+Kent,+England">103 Milton Road, Margate, Kent, England</a><br><p>Living on Mar 31, 1901</p><p>Living on Apr 2, 1911</p><p>Living in 1915</p>'); markers.push(marker);
+	var marker = L.marker([51.3829112, 1.3889791]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=103+Milton+Road,+Margate,+Kent,+England">103 Milton Road, Margate, Kent, England</a><br><p>Living in 1915</p><p>Living on Apr 2, 1911</p><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.38344845, 1.3909262301497503]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=124+Byron+Avenue,+Margate,+Kent,+England">124 Byron Avenue, Margate, Kent, England</a><br><p>Living in 1934</p>'); markers.push(marker);
 var marker = L.marker([51.3834933, 1.390934]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=124+Byron+Road,+Margate,+Kent,+England">124 Byron Road, Margate, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.38304796201213, 1.3861459754250187]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Church+Street,+Margate,+Kent,+England">Church Street, Margate, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.3804472, 1.4148905388006343]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Holy+Trinity+Church,+Margate,+Kent,+England">Holy Trinity Church, Margate, Kent, England</a><br><p>Marriage on Apr 27, 1890</p>'); markers.push(marker);
 var marker = L.marker([51.383333, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Margate,+Kent,+England">Margate, Kent, England</a><br><p>Baptized on Apr 18, 1869</p>'); markers.push(marker);
-var marker = L.marker([51.3859799, 1.4199601]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Northdown,+Margate,+Kent,+England">Northdown, Margate, Kent, England</a><br><p>Living on Apr 2, 1871</p><p>Birth <i>c.</i> Feb 1869</p>'); markers.push(marker);
+var marker = L.marker([51.3859799, 1.4199601]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Northdown,+Margate,+Kent,+England">Northdown, Margate, Kent, England</a><br><p>Birth <i>c.</i> Feb 1869</p><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death on Jun 8, 1934</p>'); markers.push(marker);
 var marker = L.marker([51.38545901110795, 1.3861074769224968]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Victoria+Road,+Margate,+Kent,+England">Victoria Road, Margate, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.37632345, 1.40303378846125], 12);
+			map.setView([51.3829112, 1.3889791], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

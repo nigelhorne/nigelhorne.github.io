@@ -12,18 +12,18 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([50.3666793, -1.033295], 12);
+			var map = L.map('map').setView([51.5500876, 0.012763778898290688], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.5500876, 0.012763778898290688]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=50+Idmiston+Road,+Stratford,+London,+England">50 Idmiston Road, Stratford, London, England</a><br><p>Living on Sep 29, 1939</p><p>Living in 1990</p><p>Living on Jun 19, 1921</p>'); markers.push(marker);
+	var marker = L.marker([51.5500876, 0.012763778898290688]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=50+Idmiston+Road,+Stratford,+London,+England">50 Idmiston Road, Stratford, London, England</a><br><p>Living on Sep 29, 1939</p><p>Living on Jun 19, 1921</p><p>Living in 1990</p>'); markers.push(marker);
 var marker = L.marker([51.51667, 0.03333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Newham,+London,+England">Newham, London, England</a><br><p>Death on Aug 23, 1990</p>'); markers.push(marker);
 var marker = L.marker([49.183271, -2.09992]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+James,+Forest+Gate,+London,+England">St James, Forest Gate, London, England</a><br><p>Baptized on May 9, 1915</p>'); markers.push(marker);
 var marker = L.marker([51.53333, 0.01667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=West+Ham,+London,+England">West Ham, London, England</a><br><p>Birth on Dec 26, 1914</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([50.3666793, -1.033295], 12);
+			map.setView([51.5500876, 0.012763778898290688], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

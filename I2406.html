@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.87370925, -0.0666665000000001], 12);
+			var map = L.map('map').setView([52.4160638, -1.4912436], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -27,7 +27,7 @@ var marker = L.marker([51.38376075, 1.3837245600761081]).addTo(map).bindPopup('<
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> May 1917</p>'); markers.push(marker);
 var marker = L.marker([51.3825742, 1.34177345]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Eyrie,+Rotburgh+Road,+Westgate,+Kent,+England">The Eyrie, Rotburgh Road, Westgate, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.87370925, -0.0666665000000001], 12);
+			map.setView([52.4160638, -1.4912436], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([55.004167, -1.4785316], 12);
+			var map = L.map('map').setView([55.0017577, -1.5356742], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([55.003245995205816, -1.4504268243308185]).addTo(map).bind
 var marker = L.marker([54.987778, -1.421389]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=South+Shields,+Tyne+and+Wear,+England">South Shields, Tyne and Wear, England</a><br><p>Birth on Sep 18, 1883</p>'); markers.push(marker);
 var marker = L.marker([55.020556, -1.449444]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Tynemouth,+Tyne+and+Wear,+England">Tynemouth, Tyne and Wear, England</a><br><p>Marriage <i>c.</i> Aug 1906</p><p>Death <i>c.</i> May 1954</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([55.004167, -1.4785316], 12);
+			map.setView([55.0017577, -1.5356742], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

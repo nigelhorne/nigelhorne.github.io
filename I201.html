@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3502044889965, 1.3687652], 12);
+			var map = L.map('map').setView([51.368026577993035, 1.4206013852908415], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,10 +22,10 @@
 var marker = L.marker([51.3323824, 1.4231134]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=3+Elms+Park+Terrace,+Ramsgate,+Kent,+England">3 Elms Park Terrace, Ramsgate, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.34327845, 1.41241601]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Mount+Albion+Mews,+St+Lawrence,+Thanet,+Kent,+England">Mount Albion Mews, St Lawrence, Thanet, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Living in 1881</p>'); markers.push(marker);
-var marker = L.marker([51.366626249999996, 1.422089133458278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters,+Thanet,+Kent,+England">St Peters, Thanet, Kent, England</a><br><p>Birth <i>c.</i> Feb 1857</p><p>Baptized on Mar 8, 1857</p><p>Living in 1871</p>'); markers.push(marker);
+var marker = L.marker([51.366626249999996, 1.422089133458278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters,+Thanet,+Kent,+England">St Peters, Thanet, Kent, England</a><br><p>Birth <i>c.</i> Feb 1857</p><p>Living in 1871</p><p>Baptized on Mar 8, 1857</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death in 1916</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3502044889965, 1.3687652], 12);
+			map.setView([51.368026577993035, 1.4206013852908415], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

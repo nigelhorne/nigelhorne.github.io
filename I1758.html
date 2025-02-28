@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([41.0726439044645, -85.176549], 12);
+			var map = L.map('map').setView([41.08779819582, -85.166324482253], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -26,7 +26,7 @@ var marker = L.marker([41.06338, -85.25303]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([41.1306, -85.12886]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fort+Wayne,+Allen,+Indiana,+USA">Fort Wayne, Allen, Indiana, USA</a><br><p>Birth on Oct 20, 1906</p>'); markers.push(marker);
 var marker = L.marker([41.0389971, -85.2497134664708]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=7950+W+Jefferson+Blvd,+Fort+Wayne,+Allen,+Indiana,+USA">7950 W Jefferson Blvd, Fort Wayne, Allen, Indiana, USA</a><br><p>Death on Jan 7, 1963</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([41.0726439044645, -85.176549], 12);
+			map.setView([41.08779819582, -85.166324482253], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

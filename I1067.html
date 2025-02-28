@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3495540912252, 1.3676322533864], 12);
+			var map = L.map('map').setView([51.332441182450374, 1.4167107482990628], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,12 +21,12 @@
 	var marker = L.marker([51.332441182450374, 1.4167107482990628]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=38+Queen+Street,+Ramsgate,+Kent,+England">38 Queen Street, Ramsgate, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.332441182450374, 1.4167107482990628]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=47+Queen+Street,+Ramsgate,+Kent,+England">47 Queen Street, Ramsgate, Kent, England</a><br><p>Living in 1891</p>'); markers.push(marker);
 var marker = L.marker([51.333969104753756, 1.4159109400141334]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=7+Lawn+Villas,+Ramsgate,+Kent,+England">7 Lawn Villas, Ramsgate, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.332441182450374, 1.4167107482990628]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=76+Queen+Street,+Ramsgate,+Kent,+England">76 Queen Street, Ramsgate, Kent, England</a><br><p>Living on Apr 2, 1871</p><p>Living on Apr 3, 1881</p>'); markers.push(marker);
+var marker = L.marker([51.332441182450374, 1.4167107482990628]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=76+Queen+Street,+Ramsgate,+Kent,+England">76 Queen Street, Ramsgate, Kent, England</a><br><p>Living on Apr 3, 1881</p><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth on Jul 20, 1869</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death <i>c.</i> Nov 1954</p>'); markers.push(marker);
 var marker = L.marker([51.33442305, 1.4208475067727915]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+York+Arms,+King+Street,+Ramsgate,+Kent,+England">The York Arms, King Street, Ramsgate, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3495540912252, 1.3676322533864], 12);
+			map.setView([51.332441182450374, 1.4167107482990628], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

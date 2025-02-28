@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.4827183, -0.84277905], 12);
+			var map = L.map('map').setView([51.33995174, 1.31570211], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -26,7 +26,7 @@ var marker = L.marker([51.3291803, 1.3171687]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([51.3360707, 1.4101286]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Registry+Office,+Ramsgate,+Kent,+England">Registry Office, Ramsgate, Kent, England</a><br><p>Marriage on Sep 7, 1938</p>'); markers.push(marker);
 var marker = L.marker([51.3592348, 1.4448016]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Hut+Bungalow,+West+Dumpton+Lane,+Ramsgate,+Kent,+England">The Hut Bungalow, West Dumpton Lane, Ramsgate, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.4827183, -0.84277905], 12);
+			map.setView([51.33995174, 1.31570211], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([50.8536739, 0.595426081326557], 12);
+			var map = L.map('map').setView([50.85, .6], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([50.85, .6]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Hastings,+Sussex,+England">Hastings, Sussex, England</a><br><p>Baptized on Aug 16, 1663</p>'); markers.push(marker);
 var marker = L.marker([50.8573478, 0.5908521626531134]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St.+Clement,+Hastings,+Sussex,+England">St. Clement, Hastings, Sussex, England</a><br><p>Marriage on Dec 27, 1681</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([50.8536739, 0.595426081326557], 12);
+			map.setView([50.85, .6], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

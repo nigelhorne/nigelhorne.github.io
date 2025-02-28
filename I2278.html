@@ -12,20 +12,20 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([42.996647, -58.35894235], 12);
+			var map = L.map('map').setView([52.49878, 1.18089], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([52.49878, 1.18089]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Forncett,+Norfolk,+England">Forncett, Norfolk, England</a><br><p>Birth on Dec 14, 1879</p>'); markers.push(marker);
-var marker = L.marker([51.3369374, 1.4266353]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kingsdown+House,+St+Peters+Park+Road,+Broadstairs,+Kent,+England">Kingsdown House, St Peters Park Road, Broadstairs, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.3813202, 1.3867628]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kingsdown+House,+St+Peters+Park+Road,+Broadstairs,+Kent,+England">Kingsdown House, St Peters Park Road, Broadstairs, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([38.58339, -90.40678]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kirkwood,+St.+Louis,+Missouri,+USA">Kirkwood, St. Louis, Missouri, USA</a><br><p>Living on Apr 1, 1930</p>'); markers.push(marker);
 var marker = L.marker([33.494514, -112.087906]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Maricopa,+Arizona,+USA">Maricopa, Arizona, USA</a><br><p>Living on Jan 1, 1920</p>'); markers.push(marker);
 var marker = L.marker([34.14778, -118.14452]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Pasadena,+Los+Angeles,+California,+USA">Pasadena, Los Angeles, California, USA</a><br><p>Living on Apr 1, 1940</p>'); markers.push(marker);
 var marker = L.marker([51.3738187, 1.3082172]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Salem+Chapel,+Birchington,+Kent,+England">Salem Chapel, Birchington, Kent, England</a><br><p>Marriage on Aug 31, 1901</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([42.996647, -58.35894235], 12);
+			map.setView([52.49878, 1.18089], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

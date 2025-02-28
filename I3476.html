@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([54.0369891264053, -2.87362974172954], 12);
+			var map = L.map('map').setView([54, -2.88333], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([54, -2.88333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Middleton,+Lancashire,+England">Middleton, Lancashire, England</a><br><p>Marriage <i>c.</i> Aug 1948</p>'); markers.push(marker);
 var marker = L.marker([54.07397825281057, -2.863929483459087]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Oldham,+Lancashire,+England">Oldham, Lancashire, England</a><br><p>Death on Jun 18, 2006</p><p>Birth on May 15, 1920</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([54.0369891264053, -2.87362974172954], 12);
+			map.setView([54, -2.88333], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

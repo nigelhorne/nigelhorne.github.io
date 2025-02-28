@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3133352613471, 1.03080175495837], 12);
+			var map = L.map('map').setView([51.29333752269425, 1.044936509916736], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([51.29333752269425, 1.044936509916736]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=New+Road,+Blean,+Kent,+England">New Road, Blean, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 var marker = L.marker([51.333333, 1.016667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Seasalter,+Kent,+England">Seasalter, Kent, England</a><br><p>Birth in 1854</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3133352613471, 1.03080175495837], 12);
+			map.setView([51.29333752269425, 1.044936509916736], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

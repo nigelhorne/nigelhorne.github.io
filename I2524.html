@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.56034, 0.3561423], 12);
+			var map = L.map('map').setView([51.579217934441864, -0.4141214195115601], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([51.55744, -0.18213]).addTo(map).bindPopup('<a href="https
 var marker = L.marker([52.30273, -0.69446]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wellingborough,+Northamptonshire,+England">Wellingborough, Northamptonshire, England</a><br><p>Birth on Apr 30, 1905</p>'); markers.push(marker);
 var marker = L.marker([50.81795, -0.37538]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Worthing,+West+Sussex,+England">Worthing, West Sussex, England</a><br><p>Death on Feb 16, 2007</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.56034, 0.3561423], 12);
+			map.setView([51.579217934441864, -0.4141214195115601], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

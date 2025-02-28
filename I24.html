@@ -12,19 +12,19 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.28076975, 1.2371913], 12);
+			var map = L.map('map').setView([51.34225508479329, 1.3247563217615144], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.34225508479329, 1.3247563217615144]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=3+Laundry+Road,+Minster,+Thanet,+Kent,+England">3 Laundry Road, Minster, Thanet, Kent, England</a><br><p>Living in 1965</p>'); markers.push(marker);
-var marker = L.marker([51.3473889, 1.3392577]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=7+Pouces+Cottages,+Minster,+Thanet,+Kent,+England">7 Pouces Cottages, Minster, Thanet, Kent, England</a><br><p>Living on Jun 19, 1921</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
+var marker = L.marker([51.3473889, 1.3392577]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=7+Pouces+Cottages,+Minster,+Thanet,+Kent,+England">7 Pouces Cottages, Minster, Thanet, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne+Bay,+Kent,+England">Herne Bay, Kent, England</a><br><p>Death on Jan 14, 2003</p>'); markers.push(marker);
 var marker = L.marker([51.3305031, 1.315666]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Marys+Church,+Minster,+Thanet,+Kent,+England">St Marys Church, Minster, Thanet, Kent, England</a><br><p>Marriage on Oct 21, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.1948725, 1.3410496]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sutton,+Kent,+England">Sutton, Kent, England</a><br><p>Birth on Nov 14, 1917</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.28076975, 1.2371913], 12);
+			map.setView([51.34225508479329, 1.3247563217615144], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

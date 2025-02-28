@@ -12,13 +12,13 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([52.368313675, -0.0264943141177821], 12);
+			var map = L.map('map').setView([51.3604284241334, 1.4432301738912718], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.3604284241334, 1.4432301738912718]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=1+Nelson+Place,+St+Peters,+Thanet,+Kent,+England">1 Nelson Place, St Peters, Thanet, Kent, England</a><br><p>Living on Apr 2, 1871</p><p>Living on Apr 7, 1861</p>'); markers.push(marker);
+	var marker = L.marker([51.3604284241334, 1.4432301738912718]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=1+Nelson+Place,+St+Peters,+Thanet,+Kent,+England">1 Nelson Place, St Peters, Thanet, Kent, England</a><br><p>Living on Apr 7, 1861</p><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.36058202683178, 1.4443731317644357]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Shutler+Road,+Broadstairs,+Kent,+England">5 Shutler Road, Broadstairs, Kent, England</a><br><p>Living in 1945</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([53.3716722, -1.4947768678298807]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=50+Southgrove+Road,+Broomhall,+South+Yorkshire,+England">50 Southgrove Road, Broomhall, South Yorkshire, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.358967, 1.391367]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Broadstairs,+Kent,+England">Broadstairs, Kent, England</a><br><p>Birth on Feb 23, 1857</p>'); markers.push(marker);
@@ -26,7 +26,7 @@ var marker = L.marker([51.3605001, 1.4435165466834174]).addTo(map).bindPopup('<a
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death on Jul 13, 1945</p><p>Marriage <i>c.</i> Feb 1881</p>'); markers.push(marker);
 var marker = L.marker([53.37766035, -1.49736176]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Watson+Road,+Ecclesall,+South+Yorkshire,+England">Watson Road, Ecclesall, South Yorkshire, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([52.368313675, -0.0264943141177821], 12);
+			map.setView([51.3604284241334, 1.4432301738912718], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

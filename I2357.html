@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([39.31125, -87.269114], 12);
+			var map = L.map('map').setView([39.19338, -87.23113], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,11 +21,11 @@
 	var marker = L.marker([39.19338, -87.23113]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Coalmont,+Howesville,+Clay,+Indiana,+USA">Coalmont, Howesville, Clay, Indiana, USA</a><br><p>Living on Apr 1, 1940</p>'); markers.push(marker);
 var marker = L.marker([39.17699, -87.14696]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Howesville,+Clay,+Indiana,+USA">Howesville, Clay, Indiana, USA</a><br><p>Burial</p>'); markers.push(marker);
 var marker = L.marker([39.1631, -87.19918]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Jasonville,+Clay,+Indiana,+USA">Jasonville, Clay, Indiana, USA</a><br><p>Birth on May 30, 1906</p>'); markers.push(marker);
-var marker = L.marker([39.26004, -87.25752]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lewis,+Clay,+Indiana,+USA">Lewis, Clay, Indiana, USA</a><br><p>Living on Apr 1, 1930</p><p>Living on Apr 15, 1910</p>'); markers.push(marker);
+var marker = L.marker([39.26004, -87.25752]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lewis,+Clay,+Indiana,+USA">Lewis, Clay, Indiana, USA</a><br><p>Living on Apr 15, 1910</p><p>Living on Apr 1, 1930</p>'); markers.push(marker);
 var marker = L.marker([39.4594, -87.30359]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Terre+Haute,+Vigo,+Indiana,+USA">Terre Haute, Vigo, Indiana, USA</a><br><p>Death on Jun 1, 1997</p>'); markers.push(marker);
 var marker = L.marker([39.456887, -87.391268]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Vigo,+Indiana,+USA">Vigo, Indiana, USA</a><br><p>Marriage on Feb 10, 1920</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([39.31125, -87.269114], 12);
+			map.setView([39.19338, -87.23113], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

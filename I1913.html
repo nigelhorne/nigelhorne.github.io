@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([50.89207365, 1.92872987554966], 12);
+			var map = L.map('map').setView([51.24122235, 1.188605339575766], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([50.53873165, 2.6454821204678383]).addTo(map).bindPopup('<
 var marker = L.marker([51.22447795645812, 1.223753636734632]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Church+Street,+Nonington,+Kent,+England">Church Street, Nonington, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.2692021, 1.2261683]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Dambridge,+Kent,+England">Dambridge, Kent, England</a><br><p>Birth <i>c.</i> May 1894</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([50.89207365, 1.92872987554966], 12);
+			map.setView([51.24122235, 1.188605339575766], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

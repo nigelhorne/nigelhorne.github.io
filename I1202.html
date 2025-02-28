@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([42.120705, -94.889965], 12);
+			var map = L.map('map').setView([42.82942, -102.99991], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,10 +20,10 @@
 			var markers = [];
 	var marker = L.marker([42.82942, -102.99991]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chadron,+Dawes,+Nebraska,+USA">Chadron, Dawes, Nebraska, USA</a><br><p>Marriage on Nov 24, 1897</p>'); markers.push(marker);
 var marker = L.marker([42.383941, -92.785161]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Grundy,+Iowa,+USA">Grundy, Iowa, USA</a><br><p>Living in 1905</p><p>Living on Jan 1, 1920</p>'); markers.push(marker);
-var marker = L.marker([41.41199, -86.78002]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Hanna,+LaPorte,+Indiana,+USA">Hanna, LaPorte, Indiana, USA</a><br><p>Death on Sep 4, 1940</p><p>Living on Apr 1, 1940</p><p>Burial</p><p>Birth on Sep 20, 1863</p>'); markers.push(marker);
+var marker = L.marker([41.41199, -86.78002]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Hanna,+LaPorte,+Indiana,+USA">Hanna, LaPorte, Indiana, USA</a><br><p>Living on Apr 1, 1940</p><p>Burial</p><p>Death on Sep 4, 1940</p><p>Birth on Sep 20, 1863</p>'); markers.push(marker);
 var marker = L.marker([42.34182, -92.82271]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Palermo,+Grundy,+Iowa,+USA">Palermo, Grundy, Iowa, USA</a><br><p>Living on Apr 15, 1910</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([42.120705, -94.889965], 12);
+			map.setView([42.82942, -102.99991], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,14 +12,14 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([38.6106370808423, -39.61753445], 12);
+			var map = L.map('map').setView([50.8142348, -1.0767091], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([50.8142348, -1.0767091]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=61+Drayton+Road,+Portsmouth,+Hampshire,+England">61 Drayton Road, Portsmouth, Hampshire, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
-var marker = L.marker([51.430909161684504, 0.7711900675090738]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=95+Halfway+Road,+Minster,+Swale,+Kent,+England">95 Halfway Road, Minster, Swale, Kent, England</a><br><p>Living in 1962</p><p>Living on Sep 29, 1939</p>'); markers.push(marker);
+var marker = L.marker([51.430909161684504, 0.7711900675090738]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=95+Halfway+Road,+Minster,+Swale,+Kent,+England">95 Halfway Road, Minster, Swale, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Living in 1962</p>'); markers.push(marker);
 var marker = L.marker([25.790365, -80.137999]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=All+Saints,+Frindsbury,+Kent,+England">All Saints, Frindsbury, Kent, England</a><br><p>Baptized on Feb 12, 1882</p>'); markers.push(marker);
 var marker = L.marker([51.4013192, 0.49027975]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Brompton+Lane,+Strood,+Kent,+England">Brompton Lane, Strood, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.430909161684504, 0.7711900675090738]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Halfway+Road,+Minster,+Swale,+Kent,+England">Halfway Road, Minster, Swale, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
@@ -29,7 +29,7 @@ var marker = L.marker([51.4154046, 0.7931644]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([51.3961668, 0.4931967144771946]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Nicholas,+Strood,+Kent,+England">St Nicholas, Strood, Kent, England</a><br><p>Marriage on Jul 1, 1905</p>'); markers.push(marker);
 var marker = L.marker([51.0591101737035, 0.648357135231518]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Strood,+Kent,+England">Strood, Kent, England</a><br><p>Birth on Jan 12, 1882</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([38.6106370808423, -39.61753445], 12);
+			map.setView([50.8142348, -1.0767091], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

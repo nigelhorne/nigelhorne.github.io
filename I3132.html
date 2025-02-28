@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.506723, -0.1420887], 12);
+			var map = L.map('map').setView([51.527076, -0.1828474], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([51.527076, -0.1828474]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Europa+Cottage,+Church+Road,+Battersea,+London,+England">Europa Cottage, Church Road, Battersea, London, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.48637, -0.10133]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Newington,+London,+England">Newington, London, England</a><br><p>Birth <i>c.</i> May 1855</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.506723, -0.1420887], 12);
+			map.setView([51.527076, -0.1828474], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([40.39452, -81.109405], 12);
+			var map = L.map('map').setView([40.9367, -87.15086], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([40.9367, -87.15086]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Rensselaer,+Jasper,+Indiana,+USA">Rensselaer, Jasper, Indiana, USA</a><br><p>Death on Aug 6, 2000</p>'); markers.push(marker);
 var marker = L.marker([39.85234, -75.06795]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Runnemede,+Camden,+New+Jersey,+USA">Runnemede, Camden, New Jersey, USA</a><br><p>Marriage <i>c.</i> Jan 1953</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([40.39452, -81.109405], 12);
+			map.setView([40.9367, -87.15086], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

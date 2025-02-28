@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3392128361289, 0.113337933779064], 12);
+			var map = L.map('map').setView([51.488174796815024, -0.21531056346795321], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -26,7 +26,7 @@ var marker = L.marker([51.2873845, 0.44074943661462895]).addTo(map).bindPopup('<
 var marker = L.marker([51.44212918, -0.12584859]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Thomas,+Telford+Park,+Streatham,+London,+England">St Thomas, Telford Park, Streatham, London, England</a><br><p>Marriage on Apr 1, 1907</p>'); markers.push(marker);
 var marker = L.marker([51.456657354702024, 0.13282158181367268]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Standard+Road,+Bexley,+London,+England">Standard Road, Bexley, London, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3392128361289, 0.113337933779064], 12);
+			map.setView([51.488174796815024, -0.21531056346795321], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

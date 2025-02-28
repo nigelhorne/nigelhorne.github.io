@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.7862565, -3.121939], 12);
+			var map = L.map('map').setView([51.3175662, 0.89132115], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://no
 var marker = L.marker([52.255846, -7.143878]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Hazelbourne,+Dorking,+Surrey,+England">Hazelbourne, Dorking, Surrey, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.3171337, 0.894897296796754]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+of+Charity+Church,+Church+Road,+Faversham,+Kent,+England">St Mary of Charity Church, Church Road, Faversham, Kent, England</a><br><p>Baptized on Dec 21, 1881</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.7862565, -3.121939], 12);
+			map.setView([51.3175662, 0.89132115], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

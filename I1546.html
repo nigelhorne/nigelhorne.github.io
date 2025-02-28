@@ -12,18 +12,18 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2921332776221, 0.441967251450796], 12);
+			var map = L.map('map').setView([51.33908046168549, 0.5180328234152783], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.33908046168549, 0.5180328234152783]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=116+Victoria+Road,+Chatham,+Kent,+England">116 Victoria Road, Chatham, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.3716825, 0.5780853]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=37+Eastcourt+Lane,+Gillingham,+Kent,+England">37 Eastcourt Lane, Gillingham, Kent, England</a><br><p>Living in 1994</p><p>Living on Aug 18, 1945</p>'); markers.push(marker);
+var marker = L.marker([51.3716825, 0.5780853]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=37+Eastcourt+Lane,+Gillingham,+Kent,+England">37 Eastcourt Lane, Gillingham, Kent, England</a><br><p>Living on Aug 18, 1945</p><p>Living in 1994</p>'); markers.push(marker);
 var marker = L.marker([51.383333, .516667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chatham,+Kent,+England">Chatham, Kent, England</a><br><p>Death on Nov 8, 1994</p>'); markers.push(marker);
-var marker = L.marker([51.2009335552442, 0.3058492029015929]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Medway,+Kent,+England">Medway, Kent, England</a><br><p>Marriage <i>c.</i> Nov 1939</p><p>Birth on Oct 11, 1914</p>'); markers.push(marker);
+var marker = L.marker([51.2009335552442, 0.3058492029015929]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Medway,+Kent,+England">Medway, Kent, England</a><br><p>Birth on Oct 11, 1914</p><p>Marriage <i>c.</i> Nov 1939</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2921332776221, 0.441967251450796], 12);
+			map.setView([51.33908046168549, 0.5180328234152783], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

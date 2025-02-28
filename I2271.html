@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3155036413164, 1.36192329172914], 12);
+			var map = L.map('map').setView([51.2761432, 1.33755485], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([51.25559235, 1.34276223]).addTo(map).bindPopup('<a href="
 var marker = L.marker([51.366626249999996, 1.422089133458278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Peters,+Thanet,+Kent,+England">St Peters, Thanet, Kent, England</a><br><p>Birth <i>c.</i> 1863</p>'); markers.push(marker);
 var marker = L.marker([51.37541493263274, 1.3048362721409439]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Station+Road,+Birchington,+Kent,+England">Station Road, Birchington, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3155036413164, 1.36192329172914], 12);
+			map.setView([51.2761432, 1.33755485], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

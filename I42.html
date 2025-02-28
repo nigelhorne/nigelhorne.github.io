@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3530485, 1.27793885], 12);
+			var map = L.map('map').setView([51.3366403, 1.4044921637357195], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -26,7 +26,7 @@ var marker = L.marker([51.366667, 1.133333]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([51.370922, 1.127771]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Salts+Lane,+Herne+Bay,+Kent,+England">Salts Lane, Herne Bay, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.3396851, 1.4281067]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Seamans+Infirmary,+West+Cliff+Road,+Ramsgate,+Kent,+England">Seamans Infirmary, West Cliff Road, Ramsgate, Kent, England</a><br><p>Death on Jul 12, 1898</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3530485, 1.27793885], 12);
+			map.setView([51.3366403, 1.4044921637357195], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

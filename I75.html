@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([53.0645894734137, -0.202361], 12);
+			var map = L.map('map').setView([51.14140094682748, 0.2577482607944596], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -27,7 +27,7 @@ var marker = L.marker([51.4451837, 0.36485802673809264]).addTo(map).bindPopup('<
 var marker = L.marker([51.4393626, 0.3857308]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Milton,+Gravesend,+Kent,+England">Milton, Gravesend, Kent, England</a><br><p>Living in 1891</p>'); markers.push(marker);
 var marker = L.marker([54.987778, -1.421389]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=South+Shields,+Durham,+England">South Shields, Durham, England</a><br><p>Marriage on Jun 5, 1877</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([53.0645894734137, -0.202361], 12);
+			map.setView([51.14140094682748, 0.2577482607944596], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

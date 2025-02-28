@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([39.7718376130605, -86.1934166492185], 12);
+			var map = L.map('map').setView([39.775295226121, -86.228793298437], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([39.76921, -86.22388]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Floral+Park+Cemetery,+Indianapolis,+Marion,+Indiana,+USA">Floral Park Cemetery, Indianapolis, Marion, Indiana, USA</a><br><p>Burial on Aug 12, 2003</p>'); markers.push(marker);
 var marker = L.marker([39.76838, -86.15804]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Indianapolis,+Marion,+Indiana,+USA">Indianapolis, Marion, Indiana, USA</a><br><p>Birth on Jan 28, 1943</p><p>Marriage on Jul 3, 1974</p><p>Death on Aug 8, 2003</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([39.7718376130605, -86.1934166492185], 12);
+			map.setView([39.775295226121, -86.228793298437], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

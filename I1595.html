@@ -12,13 +12,13 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.34972415, 1.408995175], 12);
+			var map = L.map('map').setView([51.341320173059756, 1.4130248409808024], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.341320173059756, 1.4130248409808024]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=85+Winstanley+Crescent,+St+Lawrence,+Thanet,+Kent,+England">85 Winstanley Crescent, St Lawrence, Thanet, Kent, England</a><br><p>Living in 1927</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+	var marker = L.marker([51.341320173059756, 1.4130248409808024]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=85+Winstanley+Crescent,+St+Lawrence,+Thanet,+Kent,+England">85 Winstanley Crescent, St Lawrence, Thanet, Kent, England</a><br><p>Living on Apr 2, 1911</p><p>Living in 1927</p>'); markers.push(marker);
 var marker = L.marker([51.337545750000004, 1.4016984499999998]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence+Church,+St+Lawrence,+Thanet,+Kent,+England">St Lawrence Church, St Lawrence, Thanet, Kent, England</a><br><p>Marriage on Aug 16, 1902</p>'); markers.push(marker);
 var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Baptized on Dec 10, 1871</p><p>Birth <i>c.</i> Nov 1871</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death on Oct 5, 1927</p>'); markers.push(marker);
@@ -27,7 +27,7 @@ var marker = L.marker([51.3478922, 1.4176989]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([51.33615035, 1.40029145]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Whitehall+Waterworks,+St+Lawrence,+Thanet,+Kent,+England">Whitehall Waterworks, St Lawrence, Thanet, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 var marker = L.marker([51.341320173059756, 1.4130248409808024]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Winstanley+Crescent,+St+Lawrence,+Thanet,+Kent,+England">Winstanley Crescent, St Lawrence, Thanet, Kent, England</a><br><p>Living in 1903</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.34972415, 1.408995175], 12);
+			map.setView([51.341320173059756, 1.4130248409808024], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

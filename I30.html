@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([42.6883658, -58.5264232], 12);
+			var map = L.map('map').setView([51.3750656, 1.3848527], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,12 +23,12 @@ var marker = L.marker([51.271000150000006, 1.0148461685648626]).addTo(map).bindP
 var marker = L.marker([51.25, 1.016667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chartham,+Kent,+England">Chartham, Kent, England</a><br><p>Birth on Nov 15, 1853</p>'); markers.push(marker);
 var marker = L.marker([51.3690499, 1.3851466]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Nash+Court+Farm+Cottage,+Margate,+Kent,+England">Nash Court Farm Cottage, Margate, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([34.001666, -118.437993]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Shuart+Cottage,+Podden+Street,+St+Nicholas-at-Wade,+Kent,+England">Shuart Cottage, Podden Street, St Nicholas-at-Wade, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
-var marker = L.marker([51.2559658, 1.0180838]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Marys+Church,+Chartham,+Kent,+England">St Marys Church, Chartham, Kent, England</a><br><p>Baptized on Jan 1, 1854</p><p>Marriage on Nov 9, 1876</p>'); markers.push(marker);
+var marker = L.marker([51.2559658, 1.0180838]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Marys+Church,+Chartham,+Kent,+England">St Marys Church, Chartham, Kent, England</a><br><p>Marriage on Nov 9, 1876</p><p>Baptized on Jan 1, 1854</p>'); markers.push(marker);
 var marker = L.marker([51.35383187833515, 1.252269721575844]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Street,+St+Nicholas-at-Wade,+Kent,+England">The Street, St Nicholas-at-Wade, Kent, England</a><br><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 var marker = L.marker([51.2826043, 1.0054908]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Tonford+Farm,+Thanington,+Kent,+England">Tonford Farm, Thanington, Kent, England</a><br><p>Living in 1871</p>'); markers.push(marker);
 var marker = L.marker([51.3378743, 1.3327680000000015]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Way+Cottages,+Minster,+Thanet,+Kent,+England">Way Cottages, Minster, Thanet, Kent, England</a><br><p>Living on Sep 29, 1939</p><p>Death on Jan 6, 1940</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([42.6883658, -58.5264232], 12);
+			map.setView([51.3750656, 1.3848527], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

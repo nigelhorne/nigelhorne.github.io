@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([45.8834729, -39.50952905], 12);
+			var map = L.map('map').setView([51.3085407442095, 0.96169248524921], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([40.44062, -79.99589]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Pittsburgh,+Allegheny,+Pennsylvania,+USA">Pittsburgh, Allegheny, Pennsylvania, USA</a><br><p>Death on Sep 12, 1982</p>'); markers.push(marker);
 var marker = L.marker([51.3263258, 0.9768319]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Waterham,+Hernhill,+Kent,+England">Waterham, Hernhill, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([45.8834729, -39.50952905], 12);
+			map.setView([51.3085407442095, 0.96169248524921], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

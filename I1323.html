@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3505945, 1.366230725], 12);
+			var map = L.map('map').setView([51.340876550000004, 1.4105906111933848], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,13 +21,13 @@
 	var marker = L.marker([51.340876550000004, 1.4105906111933848]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=22+Central+Road,+Ramsgate,+Kent,+England">22 Central Road, Ramsgate, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.34109404979166, 1.4105146220437443]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=3+Central+Road,+Ramsgate,+Kent,+England">3 Central Road, Ramsgate, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.34109404979166, 1.4105146220437443]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Central+Road,+Ramsgate,+Kent,+England">5 Central Road, Ramsgate, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.3416012, 1.409864949999999]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=59+Central+Road,+Ramsgate,+Kent,+England">59 Central Road, Ramsgate, Kent, England</a><br><p>Living in 1936</p><p>Living in 1935</p>'); markers.push(marker);
+var marker = L.marker([51.3416012, 1.409864949999999]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=59+Central+Road,+Ramsgate,+Kent,+England">59 Central Road, Ramsgate, Kent, England</a><br><p>Living in 1935</p><p>Living in 1936</p>'); markers.push(marker);
 var marker = L.marker([51.3468142129372, 1.4049156797020343]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Coleman+Crescent,+Ramsgate,+Kent,+England">Coleman Crescent, Ramsgate, Kent, England</a><br><p>Living in 1938</p>'); markers.push(marker);
 var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth on Jan 7, 1905</p>'); markers.push(marker);
 var marker = L.marker([51.33465576, 1.41804445]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lukes+Church,+Ramsgate,+Kent,+England">St Lukes Church, Ramsgate, Kent, England</a><br><p>Baptized on Feb 1, 1905</p>'); markers.push(marker);
-var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> Nov 1924</p><p>Death <i>c.</i> Feb 1982</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death <i>c.</i> Feb 1982</p><p>Marriage <i>c.</i> Nov 1924</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3505945, 1.366230725], 12);
+			map.setView([51.340876550000004, 1.4105906111933848], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

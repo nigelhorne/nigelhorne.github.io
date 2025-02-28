@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.0685903, 0.33561325], 12);
+			var map = L.map('map').setView([51.33575660738381, 1.4011056385507556], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,9 +24,9 @@ var marker = L.marker([50.8087876, -0.4832171]).addTo(map).bindPopup('<a href="h
 var marker = L.marker([50.7705136, -0.7454405]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Hatford+Villa,+Highfield+Road,+Bognor,+West+Sussex,+England">Hatford Villa, Highfield Road, Bognor, West Sussex, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([50.7927956, -0.6716192]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Highfield+Road,+Bognor,+Westhampnett,+Sussex,+England">Highfield Road, Bognor, Westhampnett, Sussex, England</a><br><p>Living in 1921</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> Nov 1911</p>'); markers.push(marker);
-var marker = L.marker([51.3238777, 1.1958853]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Upstreet,+Kent,+England">Upstreet, Kent, England</a><br><p>Birth <i>c.</i> May 1884</p><p>Living on Apr 5, 1891</p>'); markers.push(marker);
+var marker = L.marker([51.3238777, 1.1958853]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Upstreet,+Kent,+England">Upstreet, Kent, England</a><br><p>Living on Apr 5, 1891</p><p>Birth <i>c.</i> May 1884</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.0685903, 0.33561325], 12);
+			map.setView([51.33575660738381, 1.4011056385507556], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

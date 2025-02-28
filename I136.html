@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2702031881978, 1.34609210361535], 12);
+			var map = L.map('map').setView([51.266667, 1.35], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([51.266667, 1.35]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sandwich,+Kent,+England">Sandwich, Kent, England</a><br><p>Living in 1807</p>'); markers.push(marker);
 var marker = L.marker([51.27373937639556, 1.3421842072306962]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St.+Clements+Church,+Sandwich,+Kent,+England">St. Clements Church, Sandwich, Kent, England</a><br><p>Marriage on Dec 18, 1807</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2702031881978, 1.34609210361535], 12);
+			map.setView([51.266667, 1.35], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.1166665, 1.15095866076088], 12);
+			var map = L.map('map').setView([51.085142547791634, 1.1852503215217545], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([51.106363594362826, 1.1575145960796824]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Gibraltar+Lane,+Folkestone,+Kent,+England">Gibraltar Lane, Folkestone, Kent, England</a><br><p>Living on Mar 30, 1851</p>'); markers.push(marker);
 var marker = L.marker([51.116436, 1.1639334]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Michael+the+Archangel+Church,+Hawkinge,+Kent,+England">St Michael the Archangel Church, Hawkinge, Kent, England</a><br><p>Baptized on May 12, 1844</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.1166665, 1.15095866076088], 12);
+			map.setView([51.085142547791634, 1.1852503215217545], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

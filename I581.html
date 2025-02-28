@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2539983, 1.16182458543662], 12);
+			var map = L.map('map').setView([51.2413296, 1.1895941], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.25, 1.133333]).addTo(map).bindPopup('<a href="https://
 var marker = L.marker([51.24408735, 1.1903161708732315]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Holy+Innocents+Church,+The+Street,+Adisham,+Kent,+England">Holy Innocents Church, The Street, Adisham, Kent, England</a><br><p>Burial on Nov 21, 1847</p>'); markers.push(marker);
 var marker = L.marker([51.266667, 1.166667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Littlebourne,+Kent,+England">Littlebourne, Kent, England</a><br><p>Death on Nov 16, 1847</p><p>Birth on Nov 13, 1763</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2539983, 1.16182458543662], 12);
+			map.setView([51.2413296, 1.1895941], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

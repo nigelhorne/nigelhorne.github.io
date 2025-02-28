@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2924097311195, 1.21911401450404], 12);
+			var map = L.map('map').setView([51.22301450223902, 1.394979379008072], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.36180496, 1.38640749]).addTo(map).bindPopup('<a href="
 var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth on May 21, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.30662918, 1.04324865]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Registry+Office,+Blean,+Kent,+England">Registry Office, Blean, Kent, England</a><br><p>Marriage on Dec 28, 1914</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2924097311195, 1.21911401450404], 12);
+			map.setView([51.22301450223902, 1.394979379008072], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2269934118518, 0.477103169066555], 12);
+			var map = L.map('map').setView([51.2009335552442, 0.3058492029015929], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,7 +22,7 @@
 var marker = L.marker([51.39487665, 0.49731785]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Newark+Street,+Strood,+Kent,+England">Newark Street, Strood, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.0591101737035, 0.648357135231518]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Strood,+Kent,+England">Strood, Kent, England</a><br><p>Birth in 1880</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2269934118518, 0.477103169066555], 12);
+			map.setView([51.2009335552442, 0.3058492029015929], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

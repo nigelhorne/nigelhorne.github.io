@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.34939085, 1.40939195], 12);
+			var map = L.map('map').setView([51.3321147, 1.4063944], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,10 +20,10 @@
 			var markers = [];
 	var marker = L.marker([51.3321147, 1.4063944]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Rear+of+Southwood+Lodge,+St+Lawrence,+Thanet,+Kent,+England">Rear of Southwood Lodge, St Lawrence, Thanet, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.33421417491212, 1.4024515307103347]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Southwood+Road,+St+Lawrence,+Thanet,+Kent,+England">Southwood Road, St Lawrence, Thanet, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
-var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Baptized on Oct 8, 1865</p><p>Burial on Aug 18, 1896</p><p>Birth <i>c.</i> Jul 1865</p><p>Death on Aug 14, 1896</p>'); markers.push(marker);
+var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Baptized on Oct 8, 1865</p><p>Birth <i>c.</i> Jul 1865</p><p>Burial on Aug 18, 1896</p><p>Death on Aug 14, 1896</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage in Oct/nov/dec 1884</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.34939085, 1.40939195], 12);
+			map.setView([51.3321147, 1.4063944], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

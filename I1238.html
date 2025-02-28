@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([32.182233, -129.4957805], 12);
+			var map = L.map('map').setView([21.426126, -158.035861], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([42.93834, -100.9557]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([42.60796, -113.78335]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Paul,+Minidoka,+Idaho,+USA">Paul, Minidoka, Idaho, USA</a><br><p>Burial</p>'); markers.push(marker);
 var marker = L.marker([42.61908, -113.67723]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Rupert,+Minidoka,+Idaho,+USA">Rupert, Minidoka, Idaho, USA</a><br><p>Death on Jul 27, 2013</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([32.182233, -129.4957805], 12);
+			map.setView([21.426126, -158.035861], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

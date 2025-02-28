@@ -12,17 +12,17 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([37.821, -101.324272], 12);
+			var map = L.map('map').setView([37.03701, -94.49689], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([37.03701, -94.49689]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Leawood,+Newton,+Missouri,+USA">Leawood, Newton, Missouri, USA</a><br><p>Death on Aug 25, 1995</p>'); markers.push(marker);
-var marker = L.marker([38.413615, -108.151654]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Montrose,+Colorado,+USA">Montrose, Colorado, USA</a><br><p>Living on Jan 1, 1920</p><p>Birth on Apr 2, 1917</p>'); markers.push(marker);
+var marker = L.marker([38.413615, -108.151654]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Montrose,+Colorado,+USA">Montrose, Colorado, USA</a><br><p>Birth on Apr 2, 1917</p><p>Living on Jan 1, 1920</p>'); markers.push(marker);
 var marker = L.marker([38.60499, -107.98229]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Olathe,+Montrose,+Colorado,+USA">Olathe, Montrose, Colorado, USA</a><br><p>Living on Apr 1, 1930</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([37.821, -101.324272], 12);
+			map.setView([37.03701, -94.49689], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

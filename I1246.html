@@ -12,17 +12,17 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([50.98056085, 2.0624199934864], 12);
+			var map = L.map('map').setView([51.0879332, 1.1373721869728088], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.0879332, 1.1373721869728088]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=4+Richmond+Street,+Folkestone,+Kent,+England">4 Richmond Street, Folkestone, Kent, England</a><br><p>Living on Apr 5, 1891</p><p>Living on Mar 31, 1901</p>'); markers.push(marker);
+	var marker = L.marker([51.0879332, 1.1373721869728088]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=4+Richmond+Street,+Folkestone,+Kent,+England">4 Richmond Street, Folkestone, Kent, England</a><br><p>Living on Mar 31, 1901</p><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.083333, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Folkestone,+Kent,+England">Folkestone, Kent, England</a><br><p>Birth on Jun 24, 1881</p>'); markers.push(marker);
 var marker = L.marker([50.8731885, 2.9874678]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Zonnebeke,+Ypres,+West+Flanders,+Belgium">Zonnebeke, Ypres, West Flanders, Belgium</a><br><p>Burial</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([50.98056085, 2.0624199934864], 12);
+			map.setView([51.0879332, 1.1373721869728088], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

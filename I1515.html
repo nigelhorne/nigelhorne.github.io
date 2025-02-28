@@ -12,23 +12,23 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2886124776221, 0.865988501450796], 12);
+			var map = L.map('map').setView([51.3747913, 0.5461351], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.3747913, 0.5461351]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=131+Chatham+Hill,+Chatham,+Kent,+England">131 Chatham Hill, Chatham, Kent, England</a><br><p>Living in 1937</p>'); markers.push(marker);
-var marker = L.marker([51.372692, 0.532351]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=157+Glencoe+Road,+Chatham,+Kent,+England">157 Glencoe Road, Chatham, Kent, England</a><br><p>Living on Jun 19, 1921</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.372692, 0.532351]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=157+Glencoe+Road,+Chatham,+Kent,+England">157 Glencoe Road, Chatham, Kent, England</a><br><p>Living on Apr 2, 1911</p><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.33101033023226, 1.4133388583420625]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2+Rodney+Street,+Ramsgate,+Kent,+England">2 Rodney Street, Ramsgate, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
-var marker = L.marker([51.3762914, 0.5331976]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Hope+Street,+Chatham,+Kent,+England">5 Hope Street, Chatham, Kent, England</a><br><p>Living on Mar 31, 1901</p><p>Living on Apr 5, 1891</p>'); markers.push(marker);
+var marker = L.marker([51.3762914, 0.5331976]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Hope+Street,+Chatham,+Kent,+England">5 Hope Street, Chatham, Kent, England</a><br><p>Living on Apr 5, 1891</p><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.3374195, 1.4261278]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Belle+Vue+Hill,+Ramsgate,+Kent,+England">Belle Vue Hill, Ramsgate, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 var marker = L.marker([51.37092985, 0.52052088]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chatham+Cemetery,+Maidstone+Road,+Chatham,+Kent,+England">Chatham Cemetery, Maidstone Road, Chatham, Kent, England</a><br><p>Burial on Jul 5, 1937</p>'); markers.push(marker);
 var marker = L.marker([51.2009335552442, 0.3058492029015929]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Medway,+Kent,+England">Medway, Kent, England</a><br><p>Death on Jul 1, 1937</p><p>Marriage <i>c.</i> May 1881</p>'); markers.push(marker);
 var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth <i>c.</i> Nov 1858</p>'); markers.push(marker);
 var marker = L.marker([51.3360596, 1.4179069]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Georges+Church,+Ramsgate,+Kent,+England">St Georges Church, Ramsgate, Kent, England</a><br><p>Baptized on Dec 26, 1858</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2886124776221, 0.865988501450796], 12);
+			map.setView([51.3747913, 0.5461351], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

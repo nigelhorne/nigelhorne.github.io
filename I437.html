@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.424357933617, 0.676473349687678], 12);
+			var map = L.map('map').setView([51.514193867234006, -0.0648315774524626], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -27,7 +27,7 @@ var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([51.38743973, 1.38076293]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+John+the+Baptists+Church,+Margate,+Kent,+England">St John the Baptists Church, Margate, Kent, England</a><br><p>Baptized on Jul 15, 1827</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death <i>c.</i> Jan 1905</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.424357933617, 0.676473349687678], 12);
+			map.setView([51.514193867234006, -0.0648315774524626], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

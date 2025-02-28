@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([52.651040275, -0.8273932], 12);
+			var map = L.map('map').setView([51.52620455, -0.19658374999999892], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -26,9 +26,9 @@ var marker = L.marker([51.54281, -0.15942]).addTo(map).bindPopup('<a href="https
 var marker = L.marker([51.51558, -0.1763]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Paddington,+London,+England">Paddington, London, England</a><br><p>Death on Sep 30, 1973</p>'); markers.push(marker);
 var marker = L.marker([53.80548395, -1.5493298]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Police+Station,+Hyde+Park,+London,+England">Police Station, Hyde Park, London, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.4965966, -0.1054566]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Judes+Church,+Grays+Inn+Road,+Camden,+London,+England">St Judes Church, Grays Inn Road, Camden, London, England</a><br><p>Marriage on Apr 18, 1912</p>'); markers.push(marker);
-var marker = L.marker([51.533333, -.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Pancras,+London,+England">St Pancras, London, England</a><br><p>Baptized on Apr 21, 1886</p><p>Birth on Feb 18, 1886</p>'); markers.push(marker);
+var marker = L.marker([51.533333, -.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Pancras,+London,+England">St Pancras, London, England</a><br><p>Birth on Feb 18, 1886</p><p>Baptized on Apr 21, 1886</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([52.651040275, -0.8273932], 12);
+			map.setView([51.52620455, -0.19658374999999892], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

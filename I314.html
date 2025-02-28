@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([49.91190345, -38.97708075], 12);
+			var map = L.map('map').setView([45.50906372, -73.55335999], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -25,7 +25,7 @@ var marker = L.marker([54.316667, -4.416667]).addTo(map).bindPopup('<a href="htt
 var marker = L.marker([45.504084, -73.421648]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Saint-Hubert,+Longueuil,+Quebec,+Canada">Saint-Hubert, Longueuil, Quebec, Canada</a><br><p>Living on Jun 1, 1921</p>'); markers.push(marker);
 var marker = L.marker([45.506790, -73.557607]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Antoine,+Montreal,+Quebec,+Canada">St Antoine, Montreal, Quebec, Canada</a><br><p>Living in 1911</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([49.91190345, -38.97708075], 12);
+			map.setView([45.50906372, -73.55335999], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

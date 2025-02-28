@@ -12,17 +12,17 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([41.08213, -85.43234], 12);
+			var map = L.map('map').setView([41.06338, -85.25303], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([41.059775451978, -85.252735233929]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=8408+Covington+Road,+Fort+Wayne,+Allen,+Indiana,+USA">8408 Covington Road, Fort Wayne, Allen, Indiana, USA</a><br><p>Burial</p>'); markers.push(marker);
-var marker = L.marker([41.1306, -85.12886]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fort+Wayne,+Allen,+Indiana,+USA">Fort Wayne, Allen, Indiana, USA</a><br><p>Living on Apr 1, 1940</p><p>Birth on Sep 9, 1930</p>'); markers.push(marker);
+var marker = L.marker([41.1306, -85.12886]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fort+Wayne,+Allen,+Indiana,+USA">Fort Wayne, Allen, Indiana, USA</a><br><p>Birth on Sep 9, 1930</p><p>Living on Apr 1, 1940</p>'); markers.push(marker);
 var marker = L.marker([41.03366, -85.73582]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Liberty+Mills,+Wabash,+Indiana,+USA">Liberty Mills, Wabash, Indiana, USA</a><br><p>Death on Feb 27, 2001</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([41.08213, -85.43234], 12);
+			map.setView([41.06338, -85.25303], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

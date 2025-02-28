@@ -12,18 +12,18 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([40.8364065, -98.257139], 12);
+			var map = L.map('map').setView([40.494463, -98.961728], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([40.494463, -98.961728]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Kearney,+Nebraska,+USA">Kearney, Nebraska, USA</a><br><p>Marriage on Oct 3, 1941</p>'); markers.push(marker);
-var marker = L.marker([41.17835, -97.55255]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Osceola,+Polk,+Nebraska,+USA">Osceola, Polk, Nebraska, USA</a><br><p>Living on Apr 2, 1940</p><p>Living on Apr 3, 1930</p><p>Birth on Dec 6, 1920</p>'); markers.push(marker);
+var marker = L.marker([41.17835, -97.55255]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Osceola,+Polk,+Nebraska,+USA">Osceola, Polk, Nebraska, USA</a><br><p>Living on Apr 3, 1930</p><p>Living on Apr 2, 1940</p><p>Birth on Dec 6, 1920</p>'); markers.push(marker);
 var marker = L.marker([40.88557, -97.79283]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Plainfield+Cemetery,+Bradshaw,+York,+Nebraska,+USA">Plainfield Cemetery, Bradshaw, York, Nebraska, USA</a><br><p>Burial</p>'); markers.push(marker);
 var marker = L.marker([40.868213, -97.599156]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=York,+York,+Nebraska,+USA">York, York, Nebraska, USA</a><br><p>Death on Jan 6, 2014</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([40.8364065, -98.257139], 12);
+			map.setView([40.494463, -98.961728], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

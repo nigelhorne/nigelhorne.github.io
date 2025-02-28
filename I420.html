@@ -12,19 +12,19 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.1784334728465, 5.25706411783765], 12);
+			var map = L.map('map').setView([51.53155161423932, 0.0004885902125518594], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.53155161423932, 0.0004885902125518594]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=83+Abbey+Lane,+West+Ham,+London,+England">83 Abbey Lane, West Ham, London, England</a><br><p>Living on Mar 31, 1901</p><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+	var marker = L.marker([51.53155161423932, 0.0004885902125518594]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=83+Abbey+Lane,+West+Ham,+London,+England">83 Abbey Lane, West Ham, London, England</a><br><p>Living on Apr 2, 1911</p><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([53.6215203, -2.1313543]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=92+Bellshill+Crescent,+Rochdale,+Lancashire,+England">92 Bellshill Crescent, Rochdale, Lancashire, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([53.66295694569302, -2.2914447643246976]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Rochdale,+Lancashire,+England">Rochdale, Lancashire, England</a><br><p>Death <i>c.</i> May 1961</p>'); markers.push(marker);
 var marker = L.marker([48.69391, 12.805573]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Alban,+Rochdale,+Lancashire,+England">St Alban, Rochdale, Lancashire, England</a><br><p>Marriage on Jun 8, 1918</p>'); markers.push(marker);
 var marker = L.marker([51.533333, 0]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stratford,+London,+England">Stratford, London, England</a><br><p>Birth on Sep 28, 1898</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.1784334728465, 5.25706411783765], 12);
+			map.setView([51.53155161423932, 0.0004885902125518594], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

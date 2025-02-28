@@ -12,20 +12,20 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.237055375, 1.11676985], 12);
+			var map = L.map('map').setView([51.2563318, 1.0182848], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.2563318, 1.0182848]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=East+Kent+County+Lunatic+Asylum,+Chartham,+Kent,+England">East Kent County Lunatic Asylum, Chartham, Kent, England</a><br><p>Death on Nov 12, 1877</p><p>Living from May 27, 1875 to Nov 12, 1877</p>'); markers.push(marker);
+	var marker = L.marker([51.2563318, 1.0182848]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=East+Kent+County+Lunatic+Asylum,+Chartham,+Kent,+England">East Kent County Lunatic Asylum, Chartham, Kent, England</a><br><p>Living from May 27, 1875 to Nov 12, 1877</p><p>Death on Nov 12, 1877</p>'); markers.push(marker);
 var marker = L.marker([51.269253, 1.0677479]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Old+Farm+House,+Wingham,+Kent,+England">Old Farm House, Wingham, Kent, England</a><br><p>Living on Mar 30, 1851</p>'); markers.push(marker);
 var marker = L.marker([51.2109628, 1.1879474]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Margaret+of+Antioch+Church,+Womenswold,+Kent,+England">St Margaret of Antioch Church, Womenswold, Kent, England</a><br><p>Baptized on Jan 12, 1800</p>'); markers.push(marker);
 var marker = L.marker([51.27411075, 1.2152549000000001]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wingham+Street,+Wingham,+Kent,+England">Wingham Street, Wingham, Kent, England</a><br><p>Living in 1871</p><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 var marker = L.marker([51.265499376815, 1.19819671655927]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wingham+Well,+Kent,+England">Wingham Well, Kent, England</a><br><p>Living on Jun 6, 1841</p>'); markers.push(marker);
-var marker = L.marker([51.2, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Womenswold,+Kent,+England">Womenswold, Kent, England</a><br><p>Marriage on Feb 6, 1819</p><p>Birth <i>c.</i> 1796</p>'); markers.push(marker);
+var marker = L.marker([51.2, 1.183333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Womenswold,+Kent,+England">Womenswold, Kent, England</a><br><p>Birth <i>c.</i> 1796</p><p>Marriage on Feb 6, 1819</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.237055375, 1.11676985], 12);
+			map.setView([51.2563318, 1.0182848], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

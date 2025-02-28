@@ -12,19 +12,19 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3333335, 7.21404277857956], 12);
+			var map = L.map('map').setView([51.33589675650212, 1.3114185571591226], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.33589675650212, 1.3114185571591226]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=69+Augustine+Road,+Minster,+Thanet,+Kent,+England">69 Augustine Road, Minster, Thanet, Kent, England</a><br><p>Living in 1963</p>'); markers.push(marker);
-var marker = L.marker([51.3291803, 1.3171687]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Minster,+Thanet,+Kent,+England">Minster, Thanet, Kent, England</a><br><p>Birth on Nov 23, 1920</p><p>Death <i>c.</i> Nov 2006</p>'); markers.push(marker);
+var marker = L.marker([51.3291803, 1.3171687]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Minster,+Thanet,+Kent,+England">Minster, Thanet, Kent, England</a><br><p>Death <i>c.</i> Nov 2006</p><p>Birth on Nov 23, 1920</p>'); markers.push(marker);
 var marker = L.marker([51.3, 13.116667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Oschatz,+Saxony,+Germany">Oschatz, Saxony, Germany</a><br><p>Living in 1942</p>'); markers.push(marker);
 var marker = L.marker([51.336085100000005, 1.3303234867664075]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Pansy+Cottage,+Way,+Minster,+Thanet,+Kent,+England">Pansy Cottage, Way, Minster, Thanet, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> Aug 1961</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3333335, 7.21404277857956], 12);
+			map.setView([51.33589675650212, 1.3114185571591226], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

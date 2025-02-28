@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([39.6135195, -94.4728275], 12);
+			var map = L.map('map').setView([40.053614009916636, -94.5178404430598], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([40.203034, -94.421535]).addTo(map).bindPopup('<a href="ht
 var marker = L.marker([39.024005, -94.463242]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Jackson,+Gentry,+Missouri,+USA">Jackson, Gentry, Missouri, USA</a><br><p>Living on Apr 15, 1910</p>'); markers.push(marker);
 var marker = L.marker([40.05138, -94.52412]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=King+City,+Gentry,+Missouri,+USA">King City, Gentry, Missouri, USA</a><br><p>Burial</p><p>Marriage on Oct 1, 1899</p><p>Death on May 7, 1911</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([39.6135195, -94.4728275], 12);
+			map.setView([40.053614009916636, -94.5178404430598], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

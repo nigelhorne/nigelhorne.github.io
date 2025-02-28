@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3000661, 1.32112123824767], 12);
+			var map = L.map('map').setView([51.3348916, 1.4018475], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,11 +23,11 @@ var marker = L.marker([51.33111458, 1.39950584]).addTo(map).bindPopup('<a href="
 var marker = L.marker([51.33514255382559, 1.4148543764953339]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chapel+Lane,+St+Lawrence,+Thanet,+Kent,+England">Chapel Lane, St Lawrence, Thanet, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
 var marker = L.marker([51.3035393, 1.2273881]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Preston,+Kent,+England">Preston, Kent, England</a><br><p>Living in 1841</p>'); markers.push(marker);
 var marker = L.marker([51.3321147, 1.4063944]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Rear+of+Southwood+Lodge,+St+Lawrence,+Thanet,+Kent,+England">Rear of Southwood Lodge, St Lawrence, Thanet, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
-var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Burial on Jun 15, 1898</p><p>Marriage on Nov 22, 1851</p>'); markers.push(marker);
+var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Marriage on Nov 22, 1851</p><p>Burial on Jun 15, 1898</p>'); markers.push(marker);
 var marker = L.marker([51.2628718, 1.3074168550244178]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+The+Blessed+Virgin+Church,+Woodnesborough,+Kent,+England">St Mary The Blessed Virgin Church, Woodnesborough, Kent, England</a><br><p>Baptized on Aug 5, 1827</p>'); markers.push(marker);
 var marker = L.marker([51.27487946, 1.3396455]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Word+in+Worth,+Sandwich,+Kent,+England">Word in Worth, Sandwich, Kent, England</a><br><p>Birth <i>c.</i> 1827</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3000661, 1.32112123824767], 12);
+			map.setView([51.3348916, 1.4018475], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

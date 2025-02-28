@@ -12,17 +12,17 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([39.3011005, -87.188736], 12);
+			var map = L.map('map').setView([39.439101, -87.119952], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([39.439101, -87.119952]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Clay,+Indiana,+USA">Clay, Indiana, USA</a><br><p>Living on Jun 1, 1880</p><p>Living on Jan 1, 1920</p><p>Living on Jun 1, 1900</p><p>Marriage on Aug 2, 1891</p>'); markers.push(marker);
+	var marker = L.marker([39.439101, -87.119952]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Clay,+Indiana,+USA">Clay, Indiana, USA</a><br><p>Living on Jun 1, 1880</p><p>Living on Jun 1, 1900</p><p>Living on Jan 1, 1920</p><p>Marriage on Aug 2, 1891</p>'); markers.push(marker);
 var marker = L.marker([39.1631, -87.19918]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Jasonville,+Greene,+Indiana,+USA">Jasonville, Greene, Indiana, USA</a><br><p>Death on Aug 7, 1959</p>'); markers.push(marker);
-var marker = L.marker([39.26004, -87.25752]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lewis,+Clay,+Indiana,+USA">Lewis, Clay, Indiana, USA</a><br><p>Living on Apr 15, 1910</p><p>Birth on Apr 15, 1873</p>'); markers.push(marker);
+var marker = L.marker([39.26004, -87.25752]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lewis,+Clay,+Indiana,+USA">Lewis, Clay, Indiana, USA</a><br><p>Birth on Apr 15, 1873</p><p>Living on Apr 15, 1910</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([39.3011005, -87.188736], 12);
+			map.setView([39.439101, -87.119952], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

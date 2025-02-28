@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3728393390572, 1.36134652581286], 12);
+			var map = L.map('map').setView([51.37532515, 1.3323406000000002], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,9 +22,9 @@
 var marker = L.marker([51.37702988574126, 1.3355055400533389]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=17+Lymington+Road,+Westgate,+Kent,+England">17 Lymington Road, Westgate, Kent, England</a><br><p>Living in 1972</p><p>Living in 1965</p>'); markers.push(marker);
 var marker = L.marker([51.379011678114324, 1.3629210776424938]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=59+Westfield+Road,+Margate,+Kent,+England">59 Westfield Road, Margate, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.37367275, 1.3060260516257176]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=All+Saints+Church,+Birchington,+Kent,+England">All Saints Church, Birchington, Kent, England</a><br><p>Marriage on May 6, 1946</p>'); markers.push(marker);
-var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Birth on Aug 30, 1915</p><p>Death on May 4, 1972</p>'); markers.push(marker);
+var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death on May 4, 1972</p><p>Birth on Aug 30, 1915</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3728393390572, 1.36134652581286], 12);
+			map.setView([51.37532515, 1.3323406000000002], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

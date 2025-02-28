@@ -12,17 +12,17 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([40.994554, -84.8496385], 12);
+			var map = L.map('map').setView([41.101645947525, -85.10943127373], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([41.101645947525, -85.10943127373]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2318+Curdes+Avenue,+Fort+Wayne,+Allen,+Indiana,+USA">2318 Curdes Avenue, Fort Wayne, Allen, Indiana, USA</a><br><p>Living in 1939</p><p>Living on Apr 1, 1940</p>'); markers.push(marker);
+	var marker = L.marker([41.101645947525, -85.10943127373]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=2318+Curdes+Avenue,+Fort+Wayne,+Allen,+Indiana,+USA">2318 Curdes Avenue, Fort Wayne, Allen, Indiana, USA</a><br><p>Living on Apr 1, 1940</p><p>Living in 1939</p>'); markers.push(marker);
 var marker = L.marker([41.1306, -85.12886]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Fort+Wayne,+Allen,+Indiana,+USA">Fort Wayne, Allen, Indiana, USA</a><br><p>Marriage on Oct 30, 1976</p>'); markers.push(marker);
 var marker = L.marker([40.858508, -84.570417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Van+Wert,+Ohio,+USA">Van Wert, Ohio, USA</a><br><p>Death on Mar 15, 1996</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([40.994554, -84.8496385], 12);
+			map.setView([41.101645947525, -85.10943127373], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

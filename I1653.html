@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([39.069737, -92.7141124], 12);
+			var map = L.map('map').setView([40.203034, -94.421535], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -24,7 +24,7 @@ var marker = L.marker([40.05473, -94.50735]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([37.93644, -90.78791]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Potosi,+Washington,+Missouri,+USA">Potosi, Washington, Missouri, USA</a><br><p>Death on Feb 7, 1986</p>'); markers.push(marker);
 var marker = L.marker([40.0831514, -94.6403148]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Star+Chapel+Methodist+Church,+Andrew,+Missouri,+USA">Star Chapel Methodist Church, Andrew, Missouri, USA</a><br><p>Marriage on Jan 8, 1963</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([39.069737, -92.7141124], 12);
+			map.setView([40.203034, -94.421535], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2544067388993, 0.94329945], 12);
+			var map = L.map('map').setView([51.2045143777986, 0.941251420818213], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,7 +23,7 @@ var marker = L.marker([51.25, 1.016667]).addTo(map).bindPopup('<a href="https://
 var marker = L.marker([51.3042991, 0.8699319]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Round+Oast+Cottage,+Ospringe,+Kent,+England">Round Oast Cottage, Ospringe, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.2438852, 0.9639758]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=The+Lees,+Chilham,+Kent,+England">The Lees, Chilham, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2544067388993, 0.94329945], 12);
+			map.setView([51.2045143777986, 0.941251420818213], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

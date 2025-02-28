@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3361861452706, 1.40560196743056], 12);
+			var map = L.map('map').setView([51.33179833456586, 1.4013584130953776], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([51.33179833456586, 1.4013584130953776]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Clarence+Road,+St+Lawrence,+Thanet,+Kent,+England">Clarence Road, St Lawrence, Thanet, Kent, England</a><br><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.34057395597527, 1.409845521765747]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Hillbrow+Road,+St+Lawrence,+Thanet,+Kent,+England">Hillbrow Road, St Lawrence, Thanet, Kent, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3361861452706, 1.40560196743056], 12);
+			map.setView([51.33179833456586, 1.4013584130953776], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

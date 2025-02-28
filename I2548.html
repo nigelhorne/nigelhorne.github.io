@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3938926424017, 0.438301], 12);
+			var map = L.map('map').setView([51.394822, 0.027249], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -23,10 +23,10 @@ var marker = L.marker([51.44751628963835, 0.016927789766051676]).addTo(map).bind
 var marker = L.marker([51.31521449579275, 0.8843295995241746]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=56+Tanners+Street,+Faversham,+Kent,+England">56 Tanners Street, Faversham, Kent, England</a><br><p>Living on Apr 5, 1891</p><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 var marker = L.marker([51.47257078901073, -0.010239484783612366]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Blackheath+Hill,+Lewisham,+London,+England">Blackheath Hill, Lewisham, London, England</a><br><p>Living on Mar 31, 1901</p>'); markers.push(marker);
 var marker = L.marker([51.355878, -0.023398]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Elmside,+Dartmouth+Place,+Lewisham,+London,+England">Elmside, Dartmouth Place, Lewisham, London, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
-var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Birth on Jun 29, 1880</p><p>Baptized on Jul 21, 1880</p>'); markers.push(marker);
+var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Baptized on Jul 21, 1880</p><p>Birth on Jun 29, 1880</p>'); markers.push(marker);
 var marker = L.marker([51.46431, -0.01193]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lewisham,+London,+England">Lewisham, London, England</a><br><p>Death on May 12, 1968</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3938926424017, 0.438301], 12);
+			map.setView([51.394822, 0.027249], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

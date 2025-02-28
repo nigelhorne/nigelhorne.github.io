@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.34037385, 0.776304345], 12);
+			var map = L.map('map').setView([51.2590065, 0.74056119], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([51.2590065, 0.74056119]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Louis+Villi,+Minster,+Sheppey,+Kent,+England">Louis Villi, Minster, Sheppey, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.4217412, 0.8120475]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Minster,+Swale,+Kent,+England">Minster, Swale, Kent, England</a><br><p>Birth on Mar 29, 1904</p><p>Baptized on May 1, 1904</p><p>Death <i>c.</i> Oct 1985</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.34037385, 0.776304345], 12);
+			map.setView([51.2590065, 0.74056119], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

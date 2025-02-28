@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.349637875, 1.15085515528374], 12);
+			var map = L.map('map').setView([51.32157185, 0.8850433105674824], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,10 +20,10 @@
 			var markers = [];
 	var marker = L.marker([51.32157185, 0.8850433105674824]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=39+Priory+Row,+Faversham,+Kent,+England">39 Priory Row, Faversham, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.38260875, 1.4030347620819672]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=54+Cedar+Close,+Cliftonville,+Kent,+England">54 Cedar Close, Cliftonville, Kent, England</a><br><p>Living in 1993</p>'); markers.push(marker);
-var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Marriage <i>c.</i> Aug 1936</p><p>Birth on Jan 8, 1912</p>'); markers.push(marker);
+var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Birth on Jan 8, 1912</p><p>Marriage <i>c.</i> Aug 1936</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death on Nov 29, 1993</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.349637875, 1.15085515528374], 12);
+			map.setView([51.32157185, 0.8850433105674824], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

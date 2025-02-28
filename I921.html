@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.265210475, 2.1806713], 12);
+			var map = L.map('map').setView([51.3018369, 1.2819083], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,10 +20,10 @@
 			var markers = [];
 	var marker = L.marker([51.3018369, 1.2819083]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=3+Paramour+Grange+Cottages,+Ash,+Kent,+England">3 Paramour Grange Cottages, Ash, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.330420950000004, 1.3159574613327614]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+the+Virgin+Church,+Minster,+Thanet,+Kent,+England">St Mary the Virgin Church, Minster, Thanet, Kent, England</a><br><p>Marriage on Jun 4, 1932</p>'); markers.push(marker);
-var marker = L.marker([51.2, 1.283333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Tilmanstone,+Kent,+England">Tilmanstone, Kent, England</a><br><p>Birth on May 15, 1904</p><p>Baptized on Jul 31, 1904</p>'); markers.push(marker);
+var marker = L.marker([51.2, 1.283333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Tilmanstone,+Kent,+England">Tilmanstone, Kent, England</a><br><p>Baptized on Jul 31, 1904</p><p>Birth on May 15, 1904</p>'); markers.push(marker);
 var marker = L.marker([51.299095, 3.0794343]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wenduine,+West-Vlaanderen,+Belgium">Wenduine, West-Vlaanderen, Belgium</a><br><p>Death on Feb 20, 1961</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.265210475, 2.1806713], 12);
+			map.setView([51.3018369, 1.2819083], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.251227825, 0.5916665], 12);
+			var map = L.map('map').setView([51.3168074, 0.8997469], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -20,11 +20,11 @@
 			var markers = [];
 	var marker = L.marker([51.3168074, 0.8997469]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=6+Standard+Square,+Faversham,+Kent,+England">6 Standard Square, Faversham, Kent, England</a><br><p>Living in 1906</p>'); markers.push(marker);
 var marker = L.marker([51.31912265, 0.8954295500000047]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=76+Abbey+Street,+Faversham,+Kent,+England">76 Abbey Street, Faversham, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
-var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Marriage <i>c.</i> Nov 1922</p><p>Birth on Oct 10, 1903</p><p>Baptized on Nov 1, 1903</p>'); markers.push(marker);
+var marker = L.marker([51.316667, .9]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Faversham,+Kent,+England">Faversham, Kent, England</a><br><p>Birth on Oct 10, 1903</p><p>Baptized on Nov 1, 1903</p><p>Marriage <i>c.</i> Nov 1922</p>'); markers.push(marker);
 var marker = L.marker([51.1916845, 0.3278568]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sherenden+Farm,+Tonbridge,+Kent,+England">Sherenden Farm, Tonbridge, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
 var marker = L.marker([51.183333, .283333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Tonbridge,+Kent,+England">Tonbridge, Kent, England</a><br><p>Death <i>c.</i> May 1966</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.251227825, 0.5916665], 12);
+			map.setView([51.3168074, 0.8997469], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([38.11565775, -86.638996], 12);
+			var map = L.map('map').setView([39.634418689984, -86.847345546438], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -26,7 +26,7 @@ var marker = L.marker([39.76838, -86.15804]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([39.30795, -86.818225]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Owen,+Indiana,+USA">Owen, Indiana, USA</a><br><p>Marriage <i>c.</i> Sep 1946</p>'); markers.push(marker);
 var marker = L.marker([39.64111, -86.63]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stilesville+Cemetery,+Stilesville,+Hendricks,+Indiana,+USA">Stilesville Cemetery, Stilesville, Hendricks, Indiana, USA</a><br><p>Burial on Jul 18, 1990</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([38.11565775, -86.638996], 12);
+			map.setView([39.634418689984, -86.847345546438], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

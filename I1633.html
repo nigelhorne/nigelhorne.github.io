@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([38.10398775, -86.35083], 12);
+			var map = L.map('map').setView([39.288055857804, -86.756323487246], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -26,7 +26,7 @@ var marker = L.marker([39.74504, -85.57664]).addTo(map).bindPopup('<a href="http
 var marker = L.marker([39.2191565, -86.73480992]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Spencer+Nursing+Home,+Spencer,+Owen,+Indiana,+USA">Spencer Nursing Home, Spencer, Owen, Indiana, USA</a><br><p>Death on Dec 12, 2003</p>'); markers.push(marker);
 var marker = L.marker([38.589628, -86.096807]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Washington,+Owen,+Indiana,+USA">Washington, Owen, Indiana, USA</a><br><p>Birth on Jan 29, 1922</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([38.10398775, -86.35083], 12);
+			map.setView([39.288055857804, -86.756323487246], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

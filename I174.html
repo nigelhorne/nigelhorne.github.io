@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.33605015, 0.80899502], 12);
+			var map = L.map('map').setView([51.3721003, 0.48465704], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -22,10 +22,10 @@
 var marker = L.marker([51.37126923, 1.12629914]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Alfred+Cottages,+Grand+Drive,+Herne+Bay,+Kent,+England">Alfred Cottages, Grand Drive, Herne Bay, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
 var marker = L.marker([51.3, 1.05]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Blean,+Kent,+England">Blean, Kent, England</a><br><p>Death <i>c.</i> May 1917</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne+Bay,+Kent,+England">Herne Bay, Kent, England</a><br><p>Birth <i>c.</i> May 1838</p>'); markers.push(marker);
-var marker = L.marker([51.333333, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne,+Kent,+England">Herne, Kent, England</a><br><p>Living in 1851</p><p>Baptized on Sep 2, 1838</p>'); markers.push(marker);
+var marker = L.marker([51.333333, 1.133333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Herne,+Kent,+England">Herne, Kent, England</a><br><p>Baptized on Sep 2, 1838</p><p>Living in 1851</p>'); markers.push(marker);
 var marker = L.marker([51.36979258143734, 1.1272978194205807]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Queen+Street,+Herne+Bay,+Kent,+England">Queen Street, Herne Bay, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.33605015, 0.80899502], 12);
+			map.setView([51.3721003, 0.48465704], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

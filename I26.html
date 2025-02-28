@@ -12,21 +12,21 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.23250255, 1.30004395], 12);
+			var map = L.map('map').setView([51.3829785, 1.3860385], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.3829785, 1.3860385]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=22+Church+Square,+Margate,+Kent,+England">22 Church Square, Margate, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.37198344234214, 1.3858958136292332]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=41+Nash+Road,+Margate,+Kent,+England">41 Nash Road, Margate, Kent, England</a><br><p>Living in 1963</p><p>Living in 1953</p><p>Living in 1965</p><p>Living in 1955</p><p>Living in 1974</p>'); markers.push(marker);
+var marker = L.marker([51.37198344234214, 1.3858958136292332]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=41+Nash+Road,+Margate,+Kent,+England">41 Nash Road, Margate, Kent, England</a><br><p>Living in 1974</p><p>Living in 1953</p><p>Living in 1963</p><p>Living in 1965</p><p>Living in 1955</p>'); markers.push(marker);
 var marker = L.marker([51.3473889, 1.3392577]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=7+Pouces+Cottages,+Minster,+Thanet,+Kent,+England">7 Pouces Cottages, Minster, Thanet, Kent, England</a><br><p>Living on Jun 19, 1921</p>'); markers.push(marker);
 var marker = L.marker([51.3804472, 1.4148905388006343]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Holy+Trinity+Church,+Margate,+Kent,+England">Holy Trinity Church, Margate, Kent, England</a><br><p>Marriage on Oct 26, 1935</p>'); markers.push(marker);
 var marker = L.marker([51.37198344234214, 1.3858958136292332]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Nash+Road,+Margate,+Kent,+England">Nash Road, Margate, Kent, England</a><br><p>Living in 1944</p>'); markers.push(marker);
 var marker = L.marker([51.0820266, 1.1834209]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Michaels+Street,+Folkestone,+Kent,+England">St Michaels Street, Folkestone, Kent, England</a><br><p>Birth on Sep 28, 1913</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Death in Nov 1984</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.23250255, 1.30004395], 12);
+			map.setView([51.3829785, 1.3860385], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

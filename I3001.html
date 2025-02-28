@@ -12,18 +12,18 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3634967889965, 1.4164396], 12);
+			var map = L.map('map').setView([51.3617607, 1.4415122], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
 	var marker = L.marker([51.3617607, 1.4415122]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=5+Staines+Place,+Broadstairs,+Kent,+England">5 Staines Place, Broadstairs, Kent, England</a><br><p>Living on Sep 29, 1939</p>'); markers.push(marker);
-var marker = L.marker([51.358967, 1.391367]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Broadstairs,+Kent,+England">Broadstairs, Kent, England</a><br><p>Birth on Mar 26, 1913</p><p>Death on Jan 28, 2000</p>'); markers.push(marker);
+var marker = L.marker([51.358967, 1.391367]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Broadstairs,+Kent,+England">Broadstairs, Kent, England</a><br><p>Death on Jan 28, 2000</p><p>Birth on Mar 26, 1913</p>'); markers.push(marker);
 var marker = L.marker([51.368026577993035, 1.4206013852908415]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Northdown+Road,+St+Peters,+Thanet,+Kent,+England">Northdown Road, St Peters, Thanet, Kent, England</a><br><p>Living in 1969</p>'); markers.push(marker);
 var marker = L.marker([51.366667, 1.416667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Thanet,+Kent,+England">Thanet, Kent, England</a><br><p>Marriage <i>c.</i> Feb 1937</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3634967889965, 1.4164396], 12);
+			map.setView([51.3617607, 1.4415122], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {

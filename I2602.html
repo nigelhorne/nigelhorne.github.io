@@ -12,7 +12,7 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.382335055, 0.97874025], 12);
+			var map = L.map('map').setView([51.41467011, 0.8574805], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
@@ -21,7 +21,7 @@
 	var marker = L.marker([51.41467011, 0.8574805]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Plough+Row,+Harbledown,+Kent,+England">Plough Row, Harbledown, Kent, England</a><br><p>Living on Mar 31, 1901</p><p>Living on Apr 5, 1891</p>'); markers.push(marker);
 var marker = L.marker([51.35, 1.1]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Whitstable,+Kent,+England">Whitstable, Kent, England</a><br><p>Birth in 1889</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.382335055, 0.97874025], 12);
+			map.setView([51.41467011, 0.8574805], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
