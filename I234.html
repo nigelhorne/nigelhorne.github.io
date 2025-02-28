@@ -1,27 +1,26 @@
-<html><head><title>Thomas Lawrence 1720 - 1758</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Thomas Lawrence 1720 - 1758</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I237.html">Thomas Lawrence</a> and <a href="I236.html">Elizabeth</a><b>Thomas Lawrence</b>, the 5 times great-grandfather of <a href="I1.html">Nigel Horne</a>, was born in Kent, England in 1720, was baptised in Eastry, Kent, England on 18 Dec 1720 andhad 1 child, with Anne Chalcroft: Thomas, .<p>He died in Jul 1758.</p><h2>Parents</h2><ol><li><a href="I237.html">Thomas</a> was born in 1690</li><li><a href="I236.html">Elizabeth</a> was born <i>c.</i> 1690</li></ol><h2>Children</h2><ol><li><a href="I232.html">Thomas</a> was born in 1741</li></ol><h2>Family Tree</h2><img src="img/family-tree-I234.png" width="379" height="264" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I237.html" title="Thomas Lawrence\nb. 1690" alt="" coords="5,5,152,53"/><area shape="rect" id="node3" href="I234.html" title="Thomas Lawrence\nb. 1720\nd. Jul 1758" alt="" coords="79,101,225,156"/><area shape="rect" id="node2" href="I236.html" title="Elizabeth\nb. abt 1690" alt="" coords="177,5,274,53"/><area shape="rect" id="node4" href="I235.html" title="Anne Chalcroft\nb. abt 1725" alt="" coords="250,105,374,153"/><area shape="rect" id="node5" href="I232.html" title="Thomas Lawrence\nb. 1741\nd. 1827" alt="" coords="79,204,225,259"/></map>
-			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-			<style>
-				#map { width: 600px; height: 400px; }
-				#search-box { margin: 10px; padding: 5px; }
-				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
-			</style>
-	<h2>Map</h2><center>
+<html><head><title>Thomas Lawrence 1720 - 1758</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Thomas Lawrence 1720 - 1758</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I237.html">Thomas Lawrence</a> and <a href="I236.html">Elizabeth</a><b>Thomas Lawrence</b>, the 5 times great-grandfather of <a href="I1.html">Nigel Horne</a>, was born in Kent, England in 1720, was baptized in Eastry, Kent, England on Dec 18, 1720 andhad 1 child, with Anne Chalcroft: Thomas,.<p>He died in Jul 1758.</p><h2>Parents</h2><ol><li><a href="I237.html">Thomas</a> was born in 1690</li><li><a href="I236.html">Elizabeth</a> was born <i>c.</i> 1690</li></ol><h2>Children</h2><ol><li><a href="I232.html">Thomas</a> was born in 1741</li></ol><h2>Family Tree</h2><img src="img/family-tree-I234.png" width="324" height="266" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I237.html" title="Thomas Lawrence\nb. 1690" alt="" coords="5,5,126,53"/><area shape="rect" id="node3" href="I234.html" title="Thomas Lawrence\nb. 1720\nd. Jul 1758" alt="" coords="68,101,188,157"/><area shape="rect" id="node2" href="I236.html" title="Elizabeth\nb. abt 1690" alt="" coords="150,5,232,53"/><area shape="rect" id="node4" href="I235.html" title="Anne Chalcroft\nb. abt 1725" alt="" coords="213,105,318,153"/><area shape="rect" id="node5" href="I232.html" title="Thomas Lawrence\nb. 1741\nd. 1827" alt="" coords="68,205,188,261"/></map><link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<style>
+#map { width: 600px; height: 400px; }
+#search-box { margin: 10px; padding: 5px; }
+#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+</style>
+<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
 			<button id="reset-button">Reset Map</button>
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.240231, 1.300222], 17);
+			var map = L.map('map').setView([51.233333, 1.3], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.240231, 1.300222]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Eastry,+Kent,+England">Eastry, Kent, England</a><br><p>Baptised on 18 Dec 1720</p>'); markers.push(marker);
+	var marker = L.marker([51.233333, 1.3]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Eastry,+Kent,+England">Eastry, Kent, England</a><br><p>Baptized on Dec 18, 1720</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.240231, 1.300222], 17);
+			map.setView([51.233333, 1.3], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -56,4 +55,4 @@
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 28, 2025</i></p></body></html>

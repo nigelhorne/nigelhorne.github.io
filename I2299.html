@@ -1,28 +1,27 @@
-<html><head><title>James White c1851 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>James White c1851 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I119.html">William Cowell</a> (a carter) and <a href="I855.html">Hannah White</a><b>James White</b>, the first cousin three-times-removed on the mother&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Stodmarsh, Kent, England <i>c.</i> 1851. In 1851, he lived in Wingham, Kent, England. </p><h2>Parents</h2><ol><li><a href="I119.html">William</a> was born <i>c.</i> 1829</li><li><a href="I855.html">Hannah D</a> was born <i>c.</i> 1831</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=GBC/1851/0005915476" target="_blank">1851 England, Wales &amp; Scotland Census Transcription - GBC-1851-0005915476</a><br><a href="https://search.findmypast.co.uk/record?id=gbc/1901/0006674449" target="_blank">1901 England, Wales &amp; Scotland Census - GBC/1901/0006674449</a><br><h2>Family Tree</h2><img src="img/family-tree-I2299.png" width="283" height="161" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I119.html" title="William Cowell\nb. abt 1829\nd. abt Feb 1868" alt="" coords="5,5,132,60"/><area shape="rect" id="node3" href="I2299.html" title="James White\nb. abt 1851" alt="" coords="89,108,195,156"/><area shape="rect" id="node2" href="I855.html" title="Hannah White\nb. abt 1831\nd. 1898" alt="" coords="156,5,277,60"/></map>
-			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-			<style>
-				#map { width: 600px; height: 400px; }
-				#search-box { margin: 10px; padding: 5px; }
-				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
-			</style>
-	<h2>Map</h2><center>
+<html><head><title>James White c1851 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>James White c1851 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I119.html">William Cowell</a> (a carter) and <a href="I855.html">Hannah White</a><b>James White</b>, the first cousin three-times-removed on the mother&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Stodmarsh, Kent, England <i>c.</i> 1851. In 1851, he lived in Wingham, Kent, England. </p><h2>Parents</h2><ol><li><a href="I119.html">William</a> was born <i>c.</i> 1829</li><li><a href="I855.html">Hannah D</a> was born <i>c.</i> 1831</li></ol><h2>Media</h2><a href="https://search.findmypast.co.uk/record?id=GBC/1851/0005915476" target="_blank">1851 England, Wales &amp; Scotland Census Transcription - GBC-1851-0005915476</a><br><a href="https://search.findmypast.co.uk/record?id=gbc/1901/0006674449" target="_blank">1901 England, Wales &amp; Scotland Census - GBC/1901/0006674449</a><br><h2>Family Tree</h2><img src="img/family-tree-I2299.png" width="243" height="162" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I119.html" title="William Cowell\nb. abt 1829\nd. abt Feb 1868" alt="" coords="5,5,113,61"/><area shape="rect" id="node3" href="I2299.html" title="James White\nb. abt 1851" alt="" coords="78,109,168,157"/><area shape="rect" id="node2" href="I855.html" title="Hannah White\nb. abt 1831\nd. 1898" alt="" coords="137,5,237,61"/></map><link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<style>
+#map { width: 600px; height: 400px; }
+#search-box { margin: 10px; padding: 5px; }
+#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+</style>
+<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
 			<button id="reset-button">Reset Map</button>
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.2874435, 1.199912], 17);
+			var map = L.map('map').setView([51.2871105921903, 1.19892336093444], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.304755, 1.18156]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stodmarsh,+Kent,+England">Stodmarsh, Kent, England</a><br><p>Birth <i>c.</i> 1851</p>'); markers.push(marker);
-var marker = L.marker([51.270132, 1.218264]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wingham,+Kent,+England">Wingham, Kent, England</a><br><p>Living in 1851</p>'); markers.push(marker);
+	var marker = L.marker([51.3008647, 1.1827564]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Stodmarsh,+Kent,+England">Stodmarsh, Kent, England</a><br><p>Birth <i>c.</i> 1851</p>'); markers.push(marker);
+var marker = L.marker([51.2733564843807, 1.21509032186889]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Wingham,+Kent,+England">Wingham, Kent, England</a><br><p>Living in 1851</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.2874435, 1.199912], 17);
+			map.setView([51.2871105921903, 1.19892336093444], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -57,4 +56,4 @@ var marker = L.marker([51.270132, 1.218264]).addTo(map).bindPopup('<a href="http
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 28, 2025</i></p></body></html>

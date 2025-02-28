@@ -1,28 +1,27 @@
-<html><head><title>Besse Bonter (n&eacute;e Crist) 1884 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Besse Bonter (n&eacute;e Crist) 1884 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Besse Crist</b>, the wife of <a href="I2264.html">Ferdinand Swain Bonter</a> (the third cousin three-times-removed on the mother's side of <a href="I1.html">Nigel Horne</a>), was born in Dupont, Ohio, USA on 28 Oct 1884<span class="citation">1,2</span>. She married Ferdinand in Allen, Indiana, USA on 1 Feb 1910<span class="citation">2</span>. On 1 Jan 1920, she lived in Allen<span class="citation">1</span>. </p><h2>Citations</h2><ol><li>US Census 1920 - Findmypast (was age 35 and the wife of the head of the household)</li><li>United States Marriages - Findmypast</li></ol><h2>Family Tree</h2><img src="img/family-tree-I2265.png" width="296" height="65" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2265.html" title="Besse Crist\nb. 28 Oct 1884" alt="" coords="5,9,124,57"/><area shape="rect" id="node2" href="I2264.html" title="Ferdinand Bonter\nb. 11 Aug 1879\nd. 8 Jun 1944" alt="" coords="148,5,291,60"/></map>
-			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-			<style>
-				#map { width: 600px; height: 400px; }
-				#search-box { margin: 10px; padding: 5px; }
-				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
-			</style>
-	<h2>Map</h2><center>
+<html><head><title>Besse Bonter (n&eacute;e Crist) 1884 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Besse Bonter (n&eacute;e Crist) 1884 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Besse Crist</b>, the wife of <a href="I2264.html">Ferdinand Swain Bonter</a> (the third cousin three-times-removed on the mother's side of <a href="I1.html">Nigel Horne</a>), was born in Dupont, Ohio, USA on Oct 28, 1884<span class="citation">1,2</span>. She married Ferdinand in Allen, Indiana, USA on Feb 1, 1910<span class="citation">2</span>. On Jan 1, 1920, she lived in Allen<span class="citation">1</span>. </p><h2>Citations</h2><ol><li>US Census 1920 - Findmypast (was age 35 and the wife of the head of the household)</li><li>United States Marriages - Findmypast</li></ol><h2>Family Tree</h2><img src="img/family-tree-I2265.png" width="253" height="66" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I2265.html" title="Besse Crist\nb. 28 Oct 1884" alt="" coords="5,9,108,57"/><area shape="rect" id="node2" href="I2264.html" title="Ferdinand Bonter\nb. 11 Aug 1879\nd. 8 Jun 1944" alt="" coords="132,5,248,61"/></map><link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<style>
+#map { width: 600px; height: 400px; }
+#search-box { margin: 10px; padding: 5px; }
+#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+</style>
+<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
 			<button id="reset-button">Reset Map</button>
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([41.073362, -84.702229], 17);
+			var map = L.map('map').setView([41.073362, -84.702229], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([41.090284, -85.100068]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Allen,+Indiana,+USA">Allen, Indiana, USA</a><br><p>Living on 1 Jan 1920</p><p>Marriage on 1 Feb 1910</p>'); markers.push(marker);
-var marker = L.marker([41.05644, -84.30439]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Dupont,+Ohio,+USA">Dupont, Ohio, USA</a><br><p>Birth on 28 Oct 1884</p>'); markers.push(marker);
+	var marker = L.marker([41.090284, -85.100068]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Allen,+Indiana,+USA">Allen, Indiana, USA</a><br><p>Living on Jan 1, 1920</p><p>Marriage on Feb 1, 1910</p>'); markers.push(marker);
+var marker = L.marker([41.05644, -84.30439]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Dupont,+Ohio,+USA">Dupont, Ohio, USA</a><br><p>Birth on Oct 28, 1884</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([41.073362, -84.702229], 17);
+			map.setView([41.073362, -84.702229], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -57,4 +56,4 @@ var marker = L.marker([41.05644, -84.30439]).addTo(map).bindPopup('<a href="http
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 28, 2025</i></p></body></html>

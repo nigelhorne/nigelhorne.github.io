@@ -1,27 +1,26 @@
-<html><head><title>Charles Peters 1735 - 1789</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Charles Peters 1735 - 1789</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I565.html">Henry Peters</a><b>Charles Peters</b>, the 5 times great-grandfather of <a href="I1.html">Nigel Horne</a>, was born in Ore, Sussex, England in 1735 and married his cousin on his father&apos;s side <a href="I388.html">Ann Peters</a> (with whom he had 1 child, Henry, ) in Ore on 7 Jun 1755, which is also where he died in 1789.</p><h2>Parents</h2><ol><li><a href="I565.html">Henry</a> was born in 1695</li></ol><h2>Children</h2><ol><li><a href="I383.html">Henry</a> was born in 1755</li></ol><h2>Family Tree</h2><img src="img/family-tree-I389.png" width="253" height="264" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I565.html" title="Henry Peters\nb. 1695" alt="" coords="10,5,122,53"/><area shape="rect" id="node2" href="I389.html" title="Charles Peters\nb. 1735\nd. 1789" alt="" coords="5,101,127,156"/><area shape="rect" id="node3" href="I388.html" title="Ann Peters\nb. 1736\nd. 1809" alt="" coords="151,101,248,156"/><area shape="rect" id="node4" href="I383.html" title="Henry Peters\nb. 1755\nd. 8 Sep 1829" alt="" coords="9,204,123,259"/></map>
-			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-			<style>
-				#map { width: 600px; height: 400px; }
-				#search-box { margin: 10px; padding: 5px; }
-				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
-			</style>
-	<h2>Map</h2><center>
+<html><head><title>Charles Peters 1735 - 1789</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Charles Peters 1735 - 1789</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I565.html">Henry Peters</a><b>Charles Peters</b>, the 5 times great-grandfather of <a href="I1.html">Nigel Horne</a>, was born in Ore, Sussex, England in 1735 and married his cousin on his father&apos;s side <a href="I388.html">Ann Peters</a> (with whom he had 1 child, Henry) in Ore on Jun 7, 1755, which is also where he died in 1789.</p><h2>Parents</h2><ol><li><a href="I565.html">Henry</a> was born in 1695</li></ol><h2>Children</h2><ol><li><a href="I383.html">Henry</a> was born in 1755</li></ol><h2>Family Tree</h2><img src="img/family-tree-I389.png" width="213" height="266" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I565.html" title="Henry Peters\nb. 1695" alt="" coords="9,5,99,53"/><area shape="rect" id="node2" href="I389.html" title="Charles Peters\nb. 1735\nd. 1789" alt="" coords="5,101,103,157"/><area shape="rect" id="node3" href="I388.html" title="Ann Peters\nb. 1736\nd. 1809" alt="" coords="127,101,208,157"/><area shape="rect" id="node4" href="I383.html" title="Henry Peters\nb. 1755\nd. 8 Sep 1829" alt="" coords="6,205,102,261"/></map><link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<style>
+#map { width: 600px; height: 400px; }
+#search-box { margin: 10px; padding: 5px; }
+#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+</style>
+<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
 			<button id="reset-button">Reset Map</button>
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([50.866667, 0.616667], 17);
+			var map = L.map('map').setView([50.866667, 0.616667], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([50.866667, .616667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ore,+Sussex,+England">Ore, Sussex, England</a><br><p>Death in 1789</p><p>Birth in 1735</p><p>Marriage on 7 Jun 1755</p>'); markers.push(marker);
+	var marker = L.marker([50.866667, .616667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ore,+Sussex,+England">Ore, Sussex, England</a><br><p>Marriage on Jun 7, 1755</p><p>Death in 1789</p><p>Birth in 1735</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([50.866667, 0.616667], 17);
+			map.setView([50.866667, 0.616667], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -56,4 +55,4 @@
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 28, 2025</i></p></body></html>

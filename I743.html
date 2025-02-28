@@ -1,27 +1,26 @@
-<html><head><title>Sarah Marsh (n&eacute;e Skinner) c1731 - 1762</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Sarah Marsh (n&eacute;e Skinner) c1731 - 1762</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I1001.html">Thomas Skinner</a> and <a href="I1000.html">Catherine Burget</a><b>Sarah Skinner</b>, the 5 times great-grandmother of <a href="I1.html">Nigel Horne</a>, was born in Elham, Kent, England <i>c.</i> 1731, was baptised there on 5 Nov 1731 and also married <a href="I744.html">John Marsh</a> (with whom she had 1 child, Richard, ) there, on 12 Nov 1753.<p>She died in Apr 1762 in Elham and was buried there on 5 May 1762 (St Mary the Virgin Church).</p><h2>Parents</h2><ol><li><a href="I1001.html">Thomas</a> was born in 1690</li><li><a href="I1000.html">Catherine</a> was born in 1693</li></ol><h2>Children</h2><ol><li><a href="I714.html">Richard</a> was born <i>c.</i> 1757</li></ol><h2>Family Tree</h2><img src="img/family-tree-I743.png" width="364" height="264" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I1001.html" title="Thomas Skinner\nb. 1690" alt="" coords="5,5,139,53"/><area shape="rect" id="node3" href="I743.html" title="Sarah Skinner\nb. abt 1731\nd. Apr 1762" alt="" coords="93,101,211,156"/><area shape="rect" id="node2" href="I1000.html" title="Catherine Burget\nb. 1693" alt="" coords="163,5,303,53"/><area shape="rect" id="node4" href="I744.html" title="John Marsh\nb. 12 Mar 1727\nd. 1762" alt="" coords="236,101,359,156"/><area shape="rect" id="node5" href="I714.html" title="Richard Marsh\nb. abt 1757\nd. abt 1808" alt="" coords="91,204,213,259"/></map>
-			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-			<style>
-				#map { width: 600px; height: 400px; }
-				#search-box { margin: 10px; padding: 5px; }
-				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
-			</style>
-	<h2>Map</h2><center>
+<html><head><title>Sarah Marsh (n&eacute;e Skinner) c1731 - 1762</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Sarah Marsh (n&eacute;e Skinner) c1731 - 1762</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I1001.html">Thomas Skinner</a> and <a href="I1000.html">Catherine Burget</a><b>Sarah Skinner</b>, the 5 times great-grandmother of <a href="I1.html">Nigel Horne</a>, was born in Elham, Kent, England <i>c.</i> 1731, was baptized there on Nov 5, 1731 and also married <a href="I744.html">John Marsh</a> (with whom she had 1 child, Richard) there, on Nov 12, 1753.<p>She died in Apr 1762 in Elham and was buried there on May 5, 1762 (St Mary the Virgin Church).</p><h2>Parents</h2><ol><li><a href="I1001.html">Thomas</a> was born in 1690</li><li><a href="I1000.html">Catherine</a> was born in 1693</li></ol><h2>Children</h2><ol><li><a href="I714.html">Richard</a> was born <i>c.</i> 1757</li></ol><h2>Family Tree</h2><img src="img/family-tree-I743.png" width="310" height="266" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I1001.html" title="Thomas Skinner\nb. 1690" alt="" coords="5,5,115,53"/><area shape="rect" id="node3" href="I743.html" title="Sarah Skinner\nb. abt 1731\nd. Apr 1762" alt="" coords="80,101,176,157"/><area shape="rect" id="node2" href="I1000.html" title="Catherine Burget\nb. 1693" alt="" coords="139,5,253,53"/><area shape="rect" id="node4" href="I744.html" title="John Marsh\nb. 12 Mar 1727\nd. 1762" alt="" coords="200,101,304,157"/><area shape="rect" id="node5" href="I714.html" title="Richard Marsh\nb. abt 1757\nd. abt 1808" alt="" coords="77,205,179,261"/></map><link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<style>
+#map { width: 600px; height: 400px; }
+#search-box { margin: 10px; padding: 5px; }
+#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+</style>
+<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
 			<button id="reset-button">Reset Map</button>
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.159429, 1.112812], 17);
+			var map = L.map('map').setView([51.15, 1.116667], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.159429, 1.112812]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Elham,+Kent,+England">Elham, Kent, England</a><br><p>Death in Apr 1762</p><p>Baptised on 5 Nov 1731</p><p>Birth <i>c.</i> 1731</p><p>Marriage on 12 Nov 1753</p><p>Burial on 5 May 1762</p>'); markers.push(marker);
+	var marker = L.marker([51.15, 1.116667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Elham,+Kent,+England">Elham, Kent, England</a><br><p>Death in Apr 1762</p><p>Marriage on Nov 12, 1753</p><p>Baptized on Nov 5, 1731</p><p>Birth <i>c.</i> 1731</p><p>Burial on May 5, 1762</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.159429, 1.112812], 17);
+			map.setView([51.15, 1.116667], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -56,4 +55,4 @@
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 28, 2025</i></p></body></html>

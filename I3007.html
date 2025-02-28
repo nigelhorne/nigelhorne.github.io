@@ -1,27 +1,26 @@
-<html><head><title>Mary Page 1847 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Mary Page 1847 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I1970.html">Stephen Page</a> (an agricultural labourer) and <a href="I1971.html">Mary Butcher</a><b>Mary Page</b>, the first cousin three-times-removed on the father&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Kent, England in 1847<span class="citation">1</span>. On 30 Mar 1851, she lived on Gibraltar Lane, Folkestone, Kent<span class="citation">1</span>. </p><h2>Parents</h2><ol><li><a href="I1970.html">Stephen</a> was born in 1817</li><li><a href="I1971.html">Mary Julia</a> was born in 1819</li></ol><h2>Citations</h2><ol><li>1851 England, Wales &amp; Scotland Census - Findmypast (was age 4 and the daughter of the head of the household)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I3007.png" width="275" height="161" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I1970.html" title="Stephen Page\nb. 1817\nd. 2 Jan 1900" alt="" coords="5,5,123,60"/><area shape="rect" id="node3" href="I3007.html" title="Mary Page\nb. 1847" alt="" coords="88,108,184,156"/><area shape="rect" id="node2" href="I1971.html" title="Mary Butcher\nb. 1819\nd. 24 Aug 1907" alt="" coords="147,5,269,60"/></map>
-			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-			<style>
-				#map { width: 600px; height: 400px; }
-				#search-box { margin: 10px; padding: 5px; }
-				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
-			</style>
-	<h2>Map</h2><center>
+<html><head><title>Mary Page 1847 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Mary Page 1847 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I1970.html">Stephen Page</a> (an agricultural laborer) and <a href="I1971.html">Mary Butcher</a><b>Mary Page</b>, the first cousin three-times-removed on the father&apos;s side of <a href="I1.html">Nigel Horne</a>, was born in Kent, England in 1847<span class="citation">1</span>. On Mar 30, 1851, she lived on Gibraltar Lane, Folkestone, Kent<span class="citation">1</span>. </p><h2>Parents</h2><ol><li><a href="I1970.html">Stephen</a> was born in 1817</li><li><a href="I1971.html">Mary Julia</a> was born in 1819</li></ol><h2>Citations</h2><ol><li>1851 England, Wales &amp; Scotland Census - Findmypast (was age 4 and the daughter of the head of the household)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I3007.png" width="235" height="162" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I1970.html" title="Stephen Page\nb. 1817\nd. 2 Jan 1900" alt="" coords="5,5,100,61"/><area shape="rect" id="node3" href="I3007.html" title="Mary Page\nb. 1847" alt="" coords="74,109,154,157"/><area shape="rect" id="node2" href="I1971.html" title="Mary Butcher\nb. 1819\nd. 24 Aug 1907" alt="" coords="124,5,229,61"/></map><link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<style>
+#map { width: 600px; height: 400px; }
+#search-box { margin: 10px; padding: 5px; }
+#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+</style>
+<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
 			<button id="reset-button">Reset Map</button>
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.1063635943628, 1.15751459607968], 17);
+			var map = L.map('map').setView([51.1063635943628, 1.15751459607968], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.106363594362826, 1.1575145960796824]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Gibraltar+Lane,+Folkestone,+Kent,+England">Gibraltar Lane, Folkestone, Kent, England</a><br><p>Living on 30 Mar 1851</p>'); markers.push(marker);
+	var marker = L.marker([51.106363594362826, 1.1575145960796824]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Gibraltar+Lane,+Folkestone,+Kent,+England">Gibraltar Lane, Folkestone, Kent, England</a><br><p>Living on Mar 30, 1851</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.1063635943628, 1.15751459607968], 17);
+			map.setView([51.1063635943628, 1.15751459607968], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -56,4 +55,4 @@
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 28, 2025</i></p></body></html>

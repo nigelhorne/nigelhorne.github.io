@@ -1,28 +1,27 @@
-<html><head><title>Reuben Arthur Melander 1920 - 2012</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Reuben Arthur Melander 1920 - 2012</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Reuben Melander</b>, the husband of <a href="I3229.html">Emma Elizabeth Atkinson</a> (the fourth cousin once-removed on the father's side of <a href="I1.html">Nigel Horne</a>), was born in Central Butte, Saskatchewan, Canada on 15 Feb 1920 and. He had 1 child, Ruth.<p>He died on 25 Aug 2012 at Cypress Regional Hospital, Saskatchewan Dr, Swift Current, Saskatchewan, Canada.</p><h2>Family Tree</h2><img src="img/family-tree-I3230.png" width="311" height="161" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I3230.html" title="Reuben Melander\nb. 15 Feb 1920\nd. 25 Aug 2012" alt="" coords="5,5,151,60"/><area shape="rect" id="node2" href="I3229.html" title="Emma Atkinson\nb. 24 Aug 1925\nd. 2002" alt="" coords="175,5,306,60"/></map>
-			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-			<style>
-				#map { width: 600px; height: 400px; }
-				#search-box { margin: 10px; padding: 5px; }
-				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
-			</style>
-	<h2>Map</h2><center>
+<html><head><title>Reuben Arthur Melander 1920 - 2012</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Reuben Arthur Melander 1920 - 2012</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Reuben Melander</b>, the husband of <a href="I3229.html">Emma Elizabeth Atkinson</a> (the fourth cousin once-removed on the father's side of <a href="I1.html">Nigel Horne</a>), was born in Central Butte, Saskatchewan, Canada on Feb 15, 1920 and. He had 1 child, Ruth.<p>He died on Aug 25, 2012 at Cypress Regional Hospital, Saskatchewan Dr, Swift Current, Saskatchewan, Canada.</p><h2>Family Tree</h2><img src="img/family-tree-I3230.png" width="261" height="162" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I3230.html" title="Reuben Melander\nb. 15 Feb 1920\nd. 25 Aug 2012" alt="" coords="5,5,124,61"/><area shape="rect" id="node2" href="I3229.html" title="Emma Atkinson\nb. 24 Aug 1925\nd. 2002" alt="" coords="148,5,256,61"/></map><link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<style>
+#map { width: 600px; height: 400px; }
+#search-box { margin: 10px; padding: 5px; }
+#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+</style>
+<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
 			<button id="reset-button">Reset Map</button>
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([50.555457675, -107.146758357729], 17);
+			var map = L.map('map').setView([50.555457675, -107.146758357729], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([50.80006, -106.51794]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Central+Butte,+Saskatchewan,+Canada">Central Butte, Saskatchewan, Canada</a><br><p>Birth on 15 Feb 1920</p>'); markers.push(marker);
-var marker = L.marker([50.31085535, -107.77557671545827]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Cypress+Regional+Hospital,+Saskatchewan+Dr,+Swift+Current,+Saskatchewan,+Canada">Cypress Regional Hospital, Saskatchewan Dr, Swift Current, Saskatchewan, Canada</a><br><p>Death on 25 Aug 2012</p>'); markers.push(marker);
+	var marker = L.marker([50.80006, -106.51794]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Central+Butte,+Saskatchewan,+Canada">Central Butte, Saskatchewan, Canada</a><br><p>Birth on Feb 15, 1920</p>'); markers.push(marker);
+var marker = L.marker([50.31085535, -107.77557671545827]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Cypress+Regional+Hospital,+Saskatchewan+Dr,+Swift+Current,+Saskatchewan,+Canada">Cypress Regional Hospital, Saskatchewan Dr, Swift Current, Saskatchewan, Canada</a><br><p>Death on Aug 25, 2012</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([50.555457675, -107.146758357729], 17);
+			map.setView([50.555457675, -107.146758357729], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -57,4 +56,4 @@ var marker = L.marker([50.31085535, -107.77557671545827]).addTo(map).bindPopup('
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 28, 2025</i></p></body></html>

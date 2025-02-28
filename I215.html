@@ -1,28 +1,27 @@
-<html><head><title>Barbara Bennett 1835 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Barbara Bennett 1835 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I89.html">John Bennett</a> (an agricultural labourer) and <a href="I88.html">Mary Measday</a><b>Barbara Bennett</b>, the three times great-aunt of <a href="I1.html">Nigel Horne</a>, was born in Preston, Kent, England in 1835<span class="citation">1</span>. In 1861, she lived in Dover, Kent, England<span class="citation">1</span>. </p><h2>Parents</h2><ol><li><a href="I89.html">John</a> was born <i>c.</i> 1807</li><li><a href="I88.html">Mary</a> was born <i>c.</i> 1811</li></ol><h2>Citations</h2><ol><li>1861 England Census Online publication - Provo, UT, USA: The Generations Network, Inc., 2005.Original data - Census Returns of England and Wales, 1861. Kew, Surrey, England: The National Archives of the UK (TNA): Public Record Office (PRO), 1861. Data imaged from the National (Relation to Head of House: Servant)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I215.png" width="314" height="161" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I89.html" title="John Bennett\nb. abt 1807\nd. Jul/Aug/Sep 1895" alt="" coords="5,5,160,60"/><area shape="rect" id="node3" href="I215.html" title="Barbara Bennett\nb. 1835" alt="" coords="97,108,231,156"/><area shape="rect" id="node2" href="I88.html" title="Mary Measday\nb. abt 1811\nd. abt Jan 1897" alt="" coords="185,5,309,60"/></map>
-			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-			<style>
-				#map { width: 600px; height: 400px; }
-				#search-box { margin: 10px; padding: 5px; }
-				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
-			</style>
-	<h2>Map</h2><center>
+<html><head><title>Barbara Bennett 1835 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Barbara Bennett 1835 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p>The child of <a href="I89.html">John Bennett</a> (an agricultural laborer) and <a href="I88.html">Mary Measday</a><b>Barbara Bennett</b>, the three times great-aunt of <a href="I1.html">Nigel Horne</a>, was born in Preston, Kent, England in 1835<span class="citation">1</span>. In 1861, she lived in Dover, Kent, England<span class="citation">1</span>. </p><h2>Parents</h2><ol><li><a href="I89.html">John</a> was born <i>c.</i> 1807</li><li><a href="I88.html">Mary</a> was born <i>c.</i> 1811</li></ol><h2>Citations</h2><ol><li>1861 England Census Online publication - Provo, UT, USA: The Generations Network, Inc., 2005.Original data - Census Returns of England and Wales, 1861. Kew, Surrey, England: The National Archives of the UK (TNA): Public Record Office (PRO), 1861. Data imaged from the National (Relation to Head of House: Servant)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I215.png" width="272" height="162" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I89.html" title="John Bennett\nb. abt 1807\nd. Jul/Aug/Sep 1895" alt="" coords="5,5,139,61"/><area shape="rect" id="node3" href="I215.html" title="Barbara Bennett\nb. 1835" alt="" coords="88,109,197,157"/><area shape="rect" id="node2" href="I88.html" title="Mary Measday\nb. abt 1811\nd. abt Jan 1897" alt="" coords="163,5,266,61"/></map><link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<style>
+#map { width: 600px; height: 400px; }
+#search-box { margin: 10px; padding: 5px; }
+#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+</style>
+<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
 			<button id="reset-button">Reset Map</button>
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.21433865, 1.26064905], 17);
+			var map = L.map('map').setView([51.21843615, 1.26369405], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.125138, 1.29391]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Dover,+Kent,+England">Dover, Kent, England</a><br><p>Living in 1861</p>'); markers.push(marker);
+	var marker = L.marker([51.133333, 1.3]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Dover,+Kent,+England">Dover, Kent, England</a><br><p>Living in 1861</p>'); markers.push(marker);
 var marker = L.marker([51.3035393, 1.2273881]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Preston,+Kent,+England">Preston, Kent, England</a><br><p>Birth in 1835</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.21433865, 1.26064905], 17);
+			map.setView([51.21843615, 1.26369405], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -57,4 +56,4 @@ var marker = L.marker([51.3035393, 1.2273881]).addTo(map).bindPopup('<a href="ht
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 28, 2025</i></p></body></html>

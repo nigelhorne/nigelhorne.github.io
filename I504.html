@@ -1,27 +1,26 @@
-<html><head><title>William Brooks 1705 - c1780</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>William Brooks 1705 - c1780</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>William Brooks</b>, the 6 times great-grandfather of <a href="I1.html">Nigel Horne</a>, was born in 1705 and married <a href="I505.html">Mary Golds</a> (with whom he had 3 children: <a href="I484.html">James</a>, <a href="I516.html">Mary</a> and <a href="I515.html">William</a>) in Barham, Kent, England on 11 Oct 1725.<p>He died <i>c.</i> 1780 in Barham and was buried there on 15 Mar 1780<span class="citation">1</span>.</p><h2>Children</h2><ol><li><a href="I484.html">James</a> was born in 1729</li><li><a href="I516.html">Mary</a> was born in 1731</li><li><a href="I515.html">William</a> was born in 1732</li></ol><h2>Citations</h2><ol><li>Familysearch.org (<a href="http://www.familysearch.org/Eng/search/IGI/individual_record.asp?recid=100010036903&amp;lds=1&amp;region=2&amp;frompage=99">www.familysearch.org</a>)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I504.png" width="407" height="168" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I504.html" title="William Brooks\nb. 1705\nd. abt 1780" alt="" coords="137,5,261,60"/><area shape="rect" id="node2" href="I505.html" title="Mary Golds\nb. 1705" alt="" coords="285,9,387,57"/><area shape="rect" id="node3" href="I484.html" title="James Brooks\nb. 1729\nd. abt 1798" alt="" coords="5,108,120,163"/><area shape="rect" id="node4" href="I516.html" title="Mary Brooks\nb. 1731" alt="" coords="144,111,253,159"/><area shape="rect" id="node5" href="I515.html" title="William Brooks\nb. 1732" alt="" coords="278,111,402,159"/></map>
-			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-			<style>
-				#map { width: 600px; height: 400px; }
-				#search-box { margin: 10px; padding: 5px; }
-				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
-			</style>
-	<h2>Map</h2><center>
+<html><head><title>William Brooks 1705 - c1780</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>William Brooks 1705 - c1780</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>William Brooks</b>, the 6 times great-grandfather of <a href="I1.html">Nigel Horne</a>, was born in 1705 and married <a href="I505.html">Mary Golds</a> (with whom he had 3 children: <a href="I484.html">James</a>, <a href="I516.html">Mary</a> and <a href="I515.html">William</a>) in Barham, Kent, England on Oct 11, 1725.<p>He died <i>c.</i> 1780 in Barham and was buried there on Mar 15, 1780<span class="citation">1</span>.</p><h2>Children</h2><ol><li><a href="I484.html">James</a> was born in 1729</li><li><a href="I516.html">Mary</a> was born in 1731</li><li><a href="I515.html">William</a> was born in 1732</li></ol><h2>Citations</h2><ol><li>Familysearch.org (<a href="http://www.familysearch.org/Eng/search/IGI/individual_record.asp?recid=100010036903&amp;lds=1&amp;region=2&amp;frompage=99">www.familysearch.org</a>)</li></ol><h2>Family Tree</h2><img src="img/family-tree-I504.png" width="353" height="170" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I504.html" title="William Brooks\nb. 1705\nd. abt 1780" alt="" coords="117,5,224,61"/><area shape="rect" id="node2" href="I505.html" title="Mary Golds\nb. 1705" alt="" coords="247,9,334,57"/><area shape="rect" id="node3" href="I484.html" title="James Brooks\nb. 1729\nd. abt 1798" alt="" coords="5,109,101,165"/><area shape="rect" id="node4" href="I516.html" title="Mary Brooks\nb. 1731" alt="" coords="124,113,216,161"/><area shape="rect" id="node5" href="I515.html" title="William Brooks\nb. 1732" alt="" coords="241,113,348,161"/></map><link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<style>
+#map { width: 600px; height: 400px; }
+#search-box { margin: 10px; padding: 5px; }
+#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+</style>
+<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
 			<button id="reset-button">Reset Map</button>
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.19761, 1.146127], 17);
+			var map = L.map('map').setView([51.2069757933717, 1.15726577495603], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.19761, 1.146127]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Barham,+Kent,+England">Barham, Kent, England</a><br><p>Marriage on 11 Oct 1725</p><p>Burial on 15 Mar 1780</p><p>Death <i>c.</i> 1780</p>'); markers.push(marker);
+	var marker = L.marker([51.2069757933717, 1.15726577495603]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Barham,+Kent,+England">Barham, Kent, England</a><br><p>Marriage on Oct 11, 1725</p><p>Death <i>c.</i> 1780</p><p>Burial on Mar 15, 1780</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.19761, 1.146127], 17);
+			map.setView([51.2069757933717, 1.15726577495603], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -56,4 +55,4 @@
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 28, 2025</i></p></body></html>

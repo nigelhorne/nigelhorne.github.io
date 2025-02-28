@@ -1,28 +1,27 @@
-<html><head><title>Richard Troward 1547 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Richard Troward 1547 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Richard Troward</b>, the 10 times great-grandfather of <a href="I1.html">Nigel Horne</a>, was born in Ramsgate, Kent, England in 1547 and married <a href="I555.html">Mary Spracklyn</a> (with whom he had 1 child, Edward, ) in St Lawrence, Thanet, Kent, England on 21 May 1572.</p><h2>Children</h2><ol><li><a href="I554.html">Edward</a> was born in 1590</li></ol><h2>Family Tree</h2><img src="img/family-tree-I556.png" width="301" height="155" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I556.html" title="Richard Troward\nb. 1547" alt="" coords="5,5,141,53"/><area shape="rect" id="node2" href="I555.html" title="Mary Spracklyn\nb. 1549" alt="" coords="165,5,296,53"/><area shape="rect" id="node3" href="I554.html" title="Edward Troward\nb. 1590" alt="" coords="5,101,141,149"/></map>
-			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-			<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-			<style>
-				#map { width: 600px; height: 400px; }
-				#search-box { margin: 10px; padding: 5px; }
-				#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
-			</style>
-	<h2>Map</h2><center>
+<html><head><title>Richard Troward 1547 -</title><link rel="stylesheet" href="https://genealogy.nigelhorne.com/css/web.css" type="text/css" media="screen"></head><body><center><h1>Richard Troward 1547 -</h1>[ <a href="I1.html">Home</a> ] | [ <a href="calendar/index.html">Calendar</a> ] | [ <a href="surnames.html">Surnames Index</a> ] | [ <a href="history.html">Family History</a> ]</center><p><b>Richard Troward</b>, the 10 times great-grandfather of <a href="I1.html">Nigel Horne</a>, was born in Ramsgate, Kent, England in 1547 and married <a href="I555.html">Mary Spracklyn</a> (with whom he had 1 child, Edward) in St Lawrence, Thanet, Kent, England on May 21, 1572.</p><h2>Children</h2><ol><li><a href="I554.html">Edward</a> was born in 1590</li></ol><h2>Family Tree</h2><img src="img/family-tree-I556.png" width="256" height="155" usemap="#family" alt="Family Tree"><map id="family" name="family"><area shape="rect" id="node1" href="I556.html" title="Richard Troward\nb. 1547" alt="" coords="5,5,119,53"/><area shape="rect" id="node2" href="I555.html" title="Mary Spracklyn\nb. 1549" alt="" coords="142,5,251,53"/><area shape="rect" id="node3" href="I554.html" title="Edward Troward\nb. 1590" alt="" coords="6,101,118,149"/></map><link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<style>
+#map { width: 600px; height: 400px; }
+#search-box { margin: 10px; padding: 5px; }
+#reset-button { margin: 10px; padding: 5px; cursor: pointer; }
+</style>
+<h2>Map</h2><center>
 		<!--
 			<input type="text" id="search-box" placeholder="Enter location">
 			<button id="reset-button">Reset Map</button>
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.3377422, 1.40398395], 17);
+			var map = L.map('map').setView([51.3358912, 1.35826695], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.338224, 1.405851]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth in 1547</p>'); markers.push(marker);
-var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Marriage on 21 May 1572</p>'); markers.push(marker);
+	var marker = L.marker([51.334522, 1.314417]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Ramsgate,+Kent,+England">Ramsgate, Kent, England</a><br><p>Birth in 1547</p>'); markers.push(marker);
+var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Lawrence,+Thanet,+Kent,+England">St Lawrence, Thanet, Kent, England</a><br><p>Marriage on May 21, 1572</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.3377422, 1.40398395], 17);
+			map.setView([51.3358912, 1.35826695], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -57,4 +56,4 @@ var marker = L.marker([51.3372604, 1.4021169]).addTo(map).bindPopup('<a href="ht
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 19, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 28, 2025</i></p></body></html>
