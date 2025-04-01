@@ -12,24 +12,24 @@
 		-->
 		<div id="map"></div>
 		<script>
-			var map = L.map('map').setView([51.266667, 1.083333], 12);
+			var map = L.map('map').setView([51.2796743497818, 1.07888279719462], 12);
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 
 			var markers = [];
-	var marker = L.marker([51.266667, 1.083333]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Canterbury,+Kent,+England">Canterbury, Kent, England</a><br><p>Death <i>c.</i> Jul 1915</p><p>Living in 1881</p><p>Living in 1901</p>'); markers.push(marker);
-var marker = L.marker([51.271000150000006, 1.0148461685648626]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chartham+Hatch,+Kent,+England">Chartham Hatch, Kent, England</a><br><p>Living on Mar 30, 1851</p><p>Birth <i>c.</i> Nov 1837</p>'); markers.push(marker);
-var marker = L.marker([51.25, 1.016667]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chartham,+Kent,+England">Chartham, Kent, England</a><br><p>Living in 1861</p><p>Living in 1851</p><p>Living in 1841</p>'); markers.push(marker);
-var marker = L.marker([51.2998789, 1.1224908]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lion+Cottages,+Sturry+Road,+Canterbury,+Kent,+England">Lion Cottages, Sturry Road, Canterbury, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
-var marker = L.marker([51.25607681, 1.01697254]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Maygers+Row,+Chartham,+Kent,+England">Maygers Row, Chartham, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
-var marker = L.marker([51.2738031, 1.0739311]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Modern+Cottages,+Wincheap+Street,+Thanington,+Kent,+England">Modern Cottages, Wincheap Street, Thanington, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
+	var marker = L.marker([51.2796743497818, 1.07888279719462]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Canterbury,+Kent,+England">Canterbury, Kent, England</a><br><p>Living in 1881</p><p>Living in 1901</p><p>Death <i>c.</i> Jul 1915</p>'); markers.push(marker);
+var marker = L.marker([51.2699321174259, 1.00840273320425]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chartham+Hatch,+Kent,+England">Chartham Hatch, Kent, England</a><br><p>Birth <i>c.</i> Nov 1837</p><p>Living on Mar 30, 1851</p>'); markers.push(marker);
+var marker = L.marker([51.2560757060583, 1.01697239979833]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Chartham,+Kent,+England">Chartham, Kent, England</a><br><p>Living in 1861</p><p>Living in 1851</p><p>Living in 1841</p>'); markers.push(marker);
+var marker = L.marker([51.2874304, 1.0828949]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Lion+Cottages,+Sturry+Road,+Canterbury,+Kent,+England">Lion Cottages, Sturry Road, Canterbury, Kent, England</a><br><p>Living on Apr 2, 1911</p>'); markers.push(marker);
+var marker = L.marker([51.253549, 1.0158654]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Maygers+Row,+Chartham,+Kent,+England">Maygers Row, Chartham, Kent, England</a><br><p>Living on Apr 7, 1861</p>'); markers.push(marker);
+var marker = L.marker([51.2774524, 1.07723]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Modern+Cottages,+Wincheap+Street,+Thanington,+Kent,+England">Modern Cottages, Wincheap Street, Thanington, Kent, England</a><br><p>Living on Apr 2, 1871</p>'); markers.push(marker);
 var marker = L.marker([51.2825292, 1.0885079]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Gregory+the+Great,+Old+Ruttington+Lane,+Canterbury,+Kent,+England">St Gregory the Great, Old Ruttington Lane, Canterbury, Kent, England</a><br><p>Burial on Jul 6, 1915</p>'); markers.push(marker);
 var marker = L.marker([51.28119675, 1.0897669]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Gregory,+Canterbury,+Kent,+England">St Gregory, Canterbury, Kent, England</a><br><p>Marriage on Sep 22, 1860</p>'); markers.push(marker);
-var marker = L.marker([51.2821672, 1.0830933]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+Northgate,+Canterbury,+Kent,+England">St Mary Northgate, Canterbury, Kent, England</a><br><p>Living in 1891</p>'); markers.push(marker);
+var marker = L.marker([51.2822084, 1.0829975]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=St+Mary+Northgate,+Canterbury,+Kent,+England">St Mary Northgate, Canterbury, Kent, England</a><br><p>Living in 1891</p>'); markers.push(marker);
 var marker = L.marker([51.295462877738544, 1.1121515202263208]).addTo(map).bindPopup('<a href="https://nominatim.openstreetmap.org/ui/search.html?q=Sturry+Road,+Canterbury,+Kent,+England">Sturry Road, Canterbury, Kent, England</a><br><p>Living on Mar 31, 1901</p><p>Living on Apr 3, 1881</p>'); markers.push(marker);
 		document.getElementById('reset-button').addEventListener('click', function() {
-			map.setView([51.266667, 1.083333], 12);
+			map.setView([51.2796743497818, 1.07888279719462], 12);
 		});
 
 		document.getElementById('search-box').addEventListener('keyup', function(event) {
@@ -64,4 +64,4 @@ var marker = L.marker([51.295462877738544, 1.1121515202263208]).addTo(map).bindP
 
 		</script>
 	</center>
-<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">ged2site</a>. Last updated on Feb 28, 2025</i></p></body></html>
+<p align="right"><i>Generated by <a href="https://github.com/nigelhorne/ged2site">Ged2Site</a>. Last updated on Apr 1, 2025</i></p></body></html>
